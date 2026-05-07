@@ -1,0 +1,922 @@
+Group : $unit::arb_coverage#(4)::cg_arb
+
+===============================================================================
+Group : $unit::arb_coverage#(4)::cg_arb
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+ 92.45  92.45    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/arbiter/claude/claude_arbiter_uvm_tb_all.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME            
+ 92.45 1      100    1        64           64            arb_coverage_cg 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::arb_coverage#(4)::cg_arb
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 37       2         35      97.36   
+Crosses   35       25        10      28.57   
+
+
+Variables for Group  $unit::arb_coverage#(4)::cg_arb
+
+
+VARIABLE             EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_req               7        1         6       85.71   100  1      1        0                    
+cp_grant             5        1         4       80.00   100  1      1        0                    
+cp_req_bit0          2        0         2       100.00  100  1      1        2                    
+cp_req_bit1          2        0         2       100.00  100  1      1        2                    
+cp_req_bit2          2        0         2       100.00  100  1      1        2                    
+cp_req_bit3          2        0         2       100.00  100  1      1        2                    
+cp_grant_bit0        2        0         2       100.00  100  1      1        2                    
+cp_grant_bit1        2        0         2       100.00  100  1      1        2                    
+cp_grant_bit2        2        0         2       100.00  100  1      1        2                    
+cp_grant_bit3        2        0         2       100.00  100  1      1        2                    
+cp_grant_valid       1        0         1       100.00  100  1      1        0                    
+cp_rst_n             2        0         2       100.00  100  1      1        0                    
+cp_grant_transitions 6        0         6       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::arb_coverage#(4)::cg_arb
+
+
+CROSS        EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_req_grant 35       25        10      28.57   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_req
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 7        1         6       85.71   
+
+
+User Defined Bins for cp_req
+
+
+Uncovered bins
+
+NAME            COUNT AT LEAST SUBSUMED VALUES NUMBER 
+single_req[c:f] 0     1        --              1      
+
+
+Covered bins
+
+NAME            COUNT AT LEAST SUBSUMED VALUES 
+multi_req       174   1        --              
+single_req[0:3] 34    1        --              
+single_req[4:7] 32    1        --              
+single_req[8:b] 28    1        --              
+all_req         14    1        --              
+no_req          7     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_grant
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        1         4       80.00   
+
+
+User Defined Bins for cp_grant
+
+
+Uncovered bins
+
+NAME            COUNT AT LEAST SUBSUMED VALUES NUMBER 
+grant_port[c:f] 0     1        --              1      
+
+
+Covered bins
+
+NAME            COUNT AT LEAST SUBSUMED VALUES 
+grant_port[0:3] 125   1        --              
+grant_port[4:7] 84    1        --              
+grant_port[8:b] 73    1        --              
+no_grant        7     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_req_bit0
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for cp_req_bit0
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 144   1        { [ 0 ] }       
+auto[1] 145   1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_req_bit1
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for cp_req_bit1
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 176   1        { [ 0 ] }       
+auto[1] 113   1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_req_bit2
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for cp_req_bit2
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 125   1        { [ 0 ] }       
+auto[1] 164   1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_req_bit3
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for cp_req_bit3
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 153   1        { [ 0 ] }       
+auto[1] 136   1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_grant_bit0
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for cp_grant_bit0
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 212   1        { [ 0 ] }       
+auto[1] 77    1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_grant_bit1
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for cp_grant_bit1
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 241   1        { [ 0 ] }       
+auto[1] 48    1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_grant_bit2
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for cp_grant_bit2
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 205   1        { [ 0 ] }       
+auto[1] 84    1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_grant_bit3
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for cp_grant_bit3
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 216   1        { [ 0 ] }       
+auto[1] 73    1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_grant_valid
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 1        0         1       100.00  
+
+
+User Defined Bins for cp_grant_valid
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+valid 289   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_rst_n
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_rst_n
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+reset  4     1        --              
+active 285   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_grant_transitions
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 6        0         6       100.00  
+
+
+User Defined Bins for cp_grant_transitions
+
+
+Bins
+
+NAME      COUNT AT LEAST SUBSUMED VALUES 
+none_to_g 3     1        --              
+g_to_none 2     1        --              
+g3_to_g0  28    1        --              
+g2_to_g3  34    1        --              
+g1_to_g2  31    1        --              
+g0_to_g1  29    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_req_grant
+
+
+Samples crossed: cp_req cp_grant
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 35       25        10      28.57   25      
+
+
+Automatically Generated Cross Bins for cx_req_grant
+
+
+Element holes
+
+cp_req            cp_grant COUNT AT LEAST NUMBER 
+[single_req[c:f]] *        --    --       5      
+
+
+Uncovered bins
+
+cp_req            cp_grant                                                                COUNT AT LEAST NUMBER 
+[multi_req]       [grant_port[c:f] , no_grant]                                            --    --       2      
+[single_req[0:3]] [grant_port[4:7] , grant_port[8:b] , grant_port[c:f] , no_grant]        --    --       4      
+[single_req[4:7]] [grant_port[0:3]]                                                       0     1        1      
+[single_req[4:7]] [grant_port[8:b] , grant_port[c:f] , no_grant]                          --    --       3      
+[single_req[8:b]] [grant_port[0:3] , grant_port[4:7]]                                     --    --       2      
+[single_req[8:b]] [grant_port[c:f] , no_grant]                                            --    --       2      
+[all_req]         [grant_port[c:f] , no_grant]                                            --    --       2      
+[no_req]          [grant_port[0:3] , grant_port[4:7] , grant_port[8:b] , grant_port[c:f]] --    --       4      
+
+
+Covered bins
+
+cp_req          cp_grant        COUNT AT LEAST 
+multi_req       grant_port[8:b] 42    1        
+multi_req       grant_port[4:7] 48    1        
+multi_req       grant_port[0:3] 84    1        
+single_req[0:3] grant_port[0:3] 34    1        
+single_req[4:7] grant_port[4:7] 32    1        
+single_req[8:b] grant_port[8:b] 28    1        
+all_req         grant_port[8:b] 3     1        
+all_req         grant_port[4:7] 4     1        
+all_req         grant_port[0:3] 7     1        
+no_req          no_grant        7     1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : arb_coverage_cg
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 92.45 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                            
+ 92.45  92.45    1      100    1        1            64           64                    $unit::arb_coverage#(4)::cg_arb 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   arb_coverage_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 37       2         35      97.36   
+Crosses   35       25        10      28.57   
+
+
+Variables for Group Instance  arb_coverage_cg
+
+
+VARIABLE             EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_req               7        1         6       85.71   100  1      1        0                    
+cp_grant             5        1         4       80.00   100  1      1        0                    
+cp_req_bit0          2        0         2       100.00  100  1      1        2                    
+cp_req_bit1          2        0         2       100.00  100  1      1        2                    
+cp_req_bit2          2        0         2       100.00  100  1      1        2                    
+cp_req_bit3          2        0         2       100.00  100  1      1        2                    
+cp_grant_bit0        2        0         2       100.00  100  1      1        2                    
+cp_grant_bit1        2        0         2       100.00  100  1      1        2                    
+cp_grant_bit2        2        0         2       100.00  100  1      1        2                    
+cp_grant_bit3        2        0         2       100.00  100  1      1        2                    
+cp_grant_valid       1        0         1       100.00  100  1      1        0                    
+cp_rst_n             2        0         2       100.00  100  1      1        0                    
+cp_grant_transitions 6        0         6       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  arb_coverage_cg
+
+
+CROSS        EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_req_grant 35       25        10      28.57   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_req
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 7        1         6       85.71   
+
+
+User Defined Bins for cp_req
+
+
+Uncovered bins
+
+NAME            COUNT AT LEAST SUBSUMED VALUES NUMBER 
+single_req[c:f] 0     1        --              1      
+
+
+Covered bins
+
+NAME            COUNT AT LEAST SUBSUMED VALUES 
+multi_req       174   1        --              
+single_req[0:3] 34    1        --              
+single_req[4:7] 32    1        --              
+single_req[8:b] 28    1        --              
+all_req         14    1        --              
+no_req          7     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_grant
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        1         4       80.00   
+
+
+User Defined Bins for cp_grant
+
+
+Uncovered bins
+
+NAME            COUNT AT LEAST SUBSUMED VALUES NUMBER 
+grant_port[c:f] 0     1        --              1      
+
+
+Covered bins
+
+NAME            COUNT AT LEAST SUBSUMED VALUES 
+grant_port[0:3] 125   1        --              
+grant_port[4:7] 84    1        --              
+grant_port[8:b] 73    1        --              
+no_grant        7     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_req_bit0
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for cp_req_bit0
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 144   1        { [ 0 ] }       
+auto[1] 145   1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_req_bit1
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for cp_req_bit1
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 176   1        { [ 0 ] }       
+auto[1] 113   1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_req_bit2
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for cp_req_bit2
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 125   1        { [ 0 ] }       
+auto[1] 164   1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_req_bit3
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for cp_req_bit3
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 153   1        { [ 0 ] }       
+auto[1] 136   1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_grant_bit0
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for cp_grant_bit0
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 212   1        { [ 0 ] }       
+auto[1] 77    1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_grant_bit1
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for cp_grant_bit1
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 241   1        { [ 0 ] }       
+auto[1] 48    1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_grant_bit2
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for cp_grant_bit2
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 205   1        { [ 0 ] }       
+auto[1] 84    1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_grant_bit3
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for cp_grant_bit3
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 216   1        { [ 0 ] }       
+auto[1] 73    1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_grant_valid
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 1        0         1       100.00  
+
+
+User Defined Bins for cp_grant_valid
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+valid 289   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_rst_n
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_rst_n
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+reset  4     1        --              
+active 285   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_grant_transitions
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 6        0         6       100.00  
+
+
+User Defined Bins for cp_grant_transitions
+
+
+Bins
+
+NAME      COUNT AT LEAST SUBSUMED VALUES 
+none_to_g 3     1        --              
+g_to_none 2     1        --              
+g3_to_g0  28    1        --              
+g2_to_g3  34    1        --              
+g1_to_g2  31    1        --              
+g0_to_g1  29    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_req_grant
+
+
+Samples crossed: cp_req cp_grant
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 35       25        10      28.57   25      
+
+
+Automatically Generated Cross Bins for cx_req_grant
+
+
+Element holes
+
+cp_req            cp_grant COUNT AT LEAST NUMBER 
+[single_req[c:f]] *        --    --       5      
+
+
+Uncovered bins
+
+cp_req            cp_grant                                                                COUNT AT LEAST NUMBER 
+[multi_req]       [grant_port[c:f] , no_grant]                                            --    --       2      
+[single_req[0:3]] [grant_port[4:7] , grant_port[8:b] , grant_port[c:f] , no_grant]        --    --       4      
+[single_req[4:7]] [grant_port[0:3]]                                                       0     1        1      
+[single_req[4:7]] [grant_port[8:b] , grant_port[c:f] , no_grant]                          --    --       3      
+[single_req[8:b]] [grant_port[0:3] , grant_port[4:7]]                                     --    --       2      
+[single_req[8:b]] [grant_port[c:f] , no_grant]                                            --    --       2      
+[all_req]         [grant_port[c:f] , no_grant]                                            --    --       2      
+[no_req]          [grant_port[0:3] , grant_port[4:7] , grant_port[8:b] , grant_port[c:f]] --    --       4      
+
+
+Covered bins
+
+cp_req          cp_grant        COUNT AT LEAST 
+multi_req       grant_port[8:b] 42    1        
+multi_req       grant_port[4:7] 48    1        
+multi_req       grant_port[0:3] 84    1        
+single_req[0:3] grant_port[0:3] 34    1        
+single_req[4:7] grant_port[4:7] 32    1        
+single_req[8:b] grant_port[8:b] 28    1        
+all_req         grant_port[8:b] 3     1        
+all_req         grant_port[4:7] 4     1        
+all_req         grant_port[0:3] 7     1        
+no_req          no_grant        7     1        
+
+
+Group : $unit::arb_coverage#(4)::cg_sva_scenarios
+
+===============================================================================
+Group : $unit::arb_coverage#(4)::cg_sva_scenarios
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+100.00 100.00    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/arbiter/claude/claude_arbiter_uvm_tb_all.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME            
+100.00 1      100    1        64           64            sva_scenario_cg 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::arb_coverage#(4)::cg_sva_scenarios
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 3        0         3       100.00  
+
+
+Variables for Group  $unit::arb_coverage#(4)::cg_sva_scenarios
+
+
+VARIABLE           EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_no_req_no_grant 1        0         1       100.00  100  1      1        0                    
+cp_wrap_around     1        0         1       100.00  100  1      1        0                    
+cp_all_req         1        0         1       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_no_req_no_grant
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 1        0         1       100.00  
+
+
+User Defined Bins for cp_no_req_no_grant
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+hit  7     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_wrap_around
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 1        0         1       100.00  
+
+
+User Defined Bins for cp_wrap_around
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+wrap 87    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_all_req
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 1        0         1       100.00  
+
+
+User Defined Bins for cp_all_req
+
+
+Bins
+
+NAME           COUNT AT LEAST SUBSUMED VALUES 
+all_requesting 14    1        --              
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : sva_scenario_cg
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                                      
+100.00 100.00    1      100    1        1            64           64                    $unit::arb_coverage#(4)::cg_sva_scenarios 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   sva_scenario_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 3        0         3       100.00  
+
+
+Variables for Group Instance  sva_scenario_cg
+
+
+VARIABLE           EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_no_req_no_grant 1        0         1       100.00  100  1      1        0                    
+cp_wrap_around     1        0         1       100.00  100  1      1        0                    
+cp_all_req         1        0         1       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_no_req_no_grant
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 1        0         1       100.00  
+
+
+User Defined Bins for cp_no_req_no_grant
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+hit  7     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_wrap_around
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 1        0         1       100.00  
+
+
+User Defined Bins for cp_wrap_around
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+wrap 87    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_all_req
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 1        0         1       100.00  
+
+
+User Defined Bins for cp_all_req
+
+
+Bins
+
+NAME           COUNT AT LEAST SUBSUMED VALUES 
+all_requesting 14    1        --              
+
+

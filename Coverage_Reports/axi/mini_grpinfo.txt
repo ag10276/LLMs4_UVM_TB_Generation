@@ -1,0 +1,498 @@
+Group : $unit::axi_coverage::cg_axi
+
+===============================================================================
+Group : $unit::axi_coverage::cg_axi
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+ 88.54  88.54    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/axi/mini/mini_axi_uvm_tb_all.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME   
+ 88.54 1      100    1        64           64            cg_axi 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::axi_coverage::cg_axi
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 14       2         12      88.33   
+Crosses   16       2         14      88.89   
+
+
+Variables for Group  $unit::axi_coverage::cg_axi
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_op    2        0         2       100.00  100  1      1        0                    
+cp_burst 3        0         3       100.00  100  1      1        0                    
+cp_size  3        1         2       66.67   100  1      1        0                    
+cp_len   4        1         3       75.00   100  1      1        0                    
+cp_resp  2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::axi_coverage::cg_axi
+
+
+CROSS         EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_op_burst   6        0         6       100.00  100  1      1        0                     
+cx_size_burst 6        2         4       66.67   100  1      1        0                     
+cx_op_resp    4        0         4       100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_op
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_op
+
+
+Bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+read_op  11    1        --              
+write_op 11    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_burst
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_burst
+
+
+Excluded/Illegal bins
+
+NAME         COUNT SUBSUMED VALUES STATUS   
+fixed_unused 0     --              Excluded 
+
+
+Covered bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+reserved 2     1        --              
+wrap     10    1        --              
+incr     10    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_size
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        1         2       66.67   
+
+
+User Defined Bins for cp_size
+
+
+Uncovered bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES NUMBER 
+size_2B 0     1        --              1      
+
+
+Covered bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+size_4B 10    1        --              
+size_1B 12    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_len
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        1         3       75.00   
+
+
+User Defined Bins for cp_len
+
+
+Uncovered bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES NUMBER 
+single 0     1        --              1      
+
+
+Covered bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+long_b   8     1        --              
+medium_b 8     1        --              
+short_b  6     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_resp
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_resp
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+slverr 2     1        --              
+okay   20    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_op_burst
+
+
+Samples crossed: cp_op cp_burst
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 6        0         6       100.00          
+
+
+Automatically Generated Cross Bins for cx_op_burst
+
+
+Bins
+
+cp_op    cp_burst COUNT AT LEAST 
+read_op  reserved 1     1        
+read_op  wrap     5     1        
+read_op  incr     5     1        
+write_op reserved 1     1        
+write_op wrap     5     1        
+write_op incr     5     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_size_burst
+
+
+Samples crossed: cp_size cp_burst
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              6        2         4       66.67   2       
+Automatically Generated Cross Bins 6        2         4       66.67   2       
+User Defined Cross Bins            0        0         0                       
+
+
+Automatically Generated Cross Bins for cx_size_burst
+
+
+Uncovered bins
+
+cp_size   cp_burst      COUNT AT LEAST NUMBER 
+[size_2B] [wrap , incr] --    --       2      
+
+
+Covered bins
+
+cp_size cp_burst COUNT AT LEAST 
+size_4B wrap     8     1        
+size_4B incr     2     1        
+size_1B wrap     2     1        
+size_1B incr     8     1        
+
+
+User Defined Cross Bins for cx_size_burst
+
+
+Excluded/Illegal bins
+
+NAME         COUNT STATUS   
+ig_rsvd_size 0     Excluded 
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_op_resp
+
+
+Samples crossed: cp_op cp_resp
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 4        0         4       100.00          
+
+
+Automatically Generated Cross Bins for cx_op_resp
+
+
+Bins
+
+cp_op    cp_resp COUNT AT LEAST 
+read_op  okay    10    1        
+read_op  slverr  1     1        
+write_op okay    10    1        
+write_op slverr  1     1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : cg_axi
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 88.54 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                        
+ 88.54  88.54    1      100    1        1            64           64                    $unit::axi_coverage::cg_axi 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   cg_axi
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 14       2         12      88.33   
+Crosses   16       2         14      88.89   
+
+
+Variables for Group Instance  cg_axi
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_op    2        0         2       100.00  100  1      1        0                    
+cp_burst 3        0         3       100.00  100  1      1        0                    
+cp_size  3        1         2       66.67   100  1      1        0                    
+cp_len   4        1         3       75.00   100  1      1        0                    
+cp_resp  2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  cg_axi
+
+
+CROSS         EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_op_burst   6        0         6       100.00  100  1      1        0                     
+cx_size_burst 6        2         4       66.67   100  1      1        0                     
+cx_op_resp    4        0         4       100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_op
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_op
+
+
+Bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+read_op  11    1        --              
+write_op 11    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_burst
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_burst
+
+
+Excluded/Illegal bins
+
+NAME         COUNT SUBSUMED VALUES STATUS   
+fixed_unused 0     --              Excluded 
+
+
+Covered bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+reserved 2     1        --              
+wrap     10    1        --              
+incr     10    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_size
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        1         2       66.67   
+
+
+User Defined Bins for cp_size
+
+
+Uncovered bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES NUMBER 
+size_2B 0     1        --              1      
+
+
+Covered bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+size_4B 10    1        --              
+size_1B 12    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_len
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        1         3       75.00   
+
+
+User Defined Bins for cp_len
+
+
+Uncovered bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES NUMBER 
+single 0     1        --              1      
+
+
+Covered bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+long_b   8     1        --              
+medium_b 8     1        --              
+short_b  6     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_resp
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_resp
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+slverr 2     1        --              
+okay   20    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_op_burst
+
+
+Samples crossed: cp_op cp_burst
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 6        0         6       100.00          
+
+
+Automatically Generated Cross Bins for cx_op_burst
+
+
+Bins
+
+cp_op    cp_burst COUNT AT LEAST 
+read_op  reserved 1     1        
+read_op  wrap     5     1        
+read_op  incr     5     1        
+write_op reserved 1     1        
+write_op wrap     5     1        
+write_op incr     5     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_size_burst
+
+
+Samples crossed: cp_size cp_burst
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              6        2         4       66.67   2       
+Automatically Generated Cross Bins 6        2         4       66.67   2       
+User Defined Cross Bins            0        0         0                       
+
+
+Automatically Generated Cross Bins for cx_size_burst
+
+
+Uncovered bins
+
+cp_size   cp_burst      COUNT AT LEAST NUMBER 
+[size_2B] [wrap , incr] --    --       2      
+
+
+Covered bins
+
+cp_size cp_burst COUNT AT LEAST 
+size_4B wrap     8     1        
+size_4B incr     2     1        
+size_1B wrap     2     1        
+size_1B incr     8     1        
+
+
+User Defined Cross Bins for cx_size_burst
+
+
+Excluded/Illegal bins
+
+NAME         COUNT STATUS   
+ig_rsvd_size 0     Excluded 
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_op_resp
+
+
+Samples crossed: cp_op cp_resp
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 4        0         4       100.00          
+
+
+Automatically Generated Cross Bins for cx_op_resp
+
+
+Bins
+
+cp_op    cp_resp COUNT AT LEAST 
+read_op  okay    10    1        
+read_op  slverr  1     1        
+write_op okay    10    1        
+write_op slverr  1     1        
+
+

@@ -1,0 +1,54 @@
+Assertions
+
+
+Assertions by Category
+           ASSERT PROPERTIES SEQUENCES
+Total          11          0         0
+Category 0     11          0         0
+
+-------------------------------------------------------------------------------
+
+Assertions by Severity
+           ASSERT PROPERTIES SEQUENCES
+Total          11          0         0
+Severity 0     11          0         0
+
+-------------------------------------------------------------------------------
+
+Summary for Assertions
+                 NUMBER PERCENT
+Total Number         11  100.00
+Uncovered             3   27.27
+Success               8   72.73
+Failure               0    0.00
+Incomplete            0    0.00
+Without Attempts      3   27.27
+
+-------------------------------------------------------------------------------
+
+Detail Report for Assertions
+
+Assertions Uncovered:
+                                                        ASSERTIONS                                                         CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\mux_all_selects_sequence::body .unnamed$$_0.unnamed$$_1        0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1                                                                            0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1                                                                           0        0        0              0        0          0
+
+Assertions Success:
+                          ASSERTIONS                          CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+tb_top.dut.u_sva.NO_X_OUT                                            0        0      103            103        0          0
+tb_top.dut.u_sva.NO_X_SEL                                            0        0      103            103        0          0
+tb_top.dut.u_sva.OUT_VALID                                           0        0      104            104        0          0
+tb_top.dut.u_sva.SEL00                                               0        0       22             22        0          0
+tb_top.dut.u_sva.SEL01                                               0        0       30             30        0          0
+tb_top.dut.u_sva.SEL10                                               0        0       26             26        0          0
+tb_top.dut.u_sva.SEL11                                               0        0       26             26        0          0
+uvm_pkg.\uvm_component_name_check_visitor::visit .unnamed$$_0        0        0       56             56        0          0
+
+Assertions Without Attempts:
+                                                        ASSERTIONS                                                         CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\mux_all_selects_sequence::body .unnamed$$_0.unnamed$$_1        0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1                                                                            0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1                                                                           0        0        0              0        0          0
+
+

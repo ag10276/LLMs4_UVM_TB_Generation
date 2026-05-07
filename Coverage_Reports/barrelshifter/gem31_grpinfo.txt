@@ -1,0 +1,276 @@
+Group : $unit::bshifter_coverage::cg
+
+===============================================================================
+Group : $unit::bshifter_coverage::cg
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+ 61.67  61.67    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/barrelshifter/gem31/gem31_barrelshifter_uvm_tb_all.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME             
+ 61.67 1      100    1        64           64            tb_top.me.obj.cg 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::bshifter_coverage::cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 13       2         11      80.00   
+Crosses   40       30        10      25.00   
+
+
+Variables for Group  $unit::bshifter_coverage::cg
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_s     8        0         8       100.00  100  1      1        0                    
+cp_x     5        2         3       60.00   100  1      1        0                    
+
+
+Crosses for Group  $unit::bshifter_coverage::cg
+
+
+CROSS     EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cross_x_s 40       30        10      25.00   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_s
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 8        0         8       100.00  
+
+
+User Defined Bins for cp_s
+
+
+Bins
+
+NAME         COUNT AT LEAST SUBSUMED VALUES 
+shift_vals_0 11    1        --              
+shift_vals_1 7     1        --              
+shift_vals_2 9     1        --              
+shift_vals_3 8     1        --              
+shift_vals_4 3     1        --              
+shift_vals_5 8     1        --              
+shift_vals_6 10    1        --              
+shift_vals_7 7     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_x
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        2         3       60.00   
+
+
+User Defined Bins for cp_x
+
+
+Uncovered bins
+
+NAME         COUNT AT LEAST SUBSUMED VALUES NUMBER 
+alt_pattern2 0     1        --              1      
+alt_pattern1 0     1        --              1      
+
+
+Covered bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+others   61    1        --              
+all_ones 1     1        --              
+zero     1     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cross_x_s
+
+
+Samples crossed: cp_x cp_s
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 40       30        10      25.00   30      
+
+
+Automatically Generated Cross Bins for cross_x_s
+
+
+Element holes
+
+cp_x                          cp_s COUNT AT LEAST NUMBER 
+[alt_pattern2 , alt_pattern1] *    --    --       16     
+
+
+Uncovered bins
+
+cp_x       cp_s                                                                                                     COUNT AT LEAST NUMBER 
+[all_ones] [shift_vals_0 , shift_vals_1 , shift_vals_2]                                                             --    --       3      
+[all_ones] [shift_vals_4 , shift_vals_5 , shift_vals_6 , shift_vals_7]                                              --    --       4      
+[zero]     [shift_vals_1 , shift_vals_2 , shift_vals_3 , shift_vals_4 , shift_vals_5 , shift_vals_6 , shift_vals_7] --    --       7      
+
+
+Covered bins
+
+cp_x     cp_s         COUNT AT LEAST 
+others   shift_vals_1 7     1        
+others   shift_vals_6 10    1        
+others   shift_vals_7 7     1        
+others   shift_vals_0 10    1        
+others   shift_vals_3 7     1        
+others   shift_vals_5 8     1        
+others   shift_vals_4 3     1        
+others   shift_vals_2 9     1        
+all_ones shift_vals_3 1     1        
+zero     shift_vals_0 1     1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.cg
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 61.67 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                         
+ 61.67  61.67    1      100    1        1            64           64                    $unit::bshifter_coverage::cg 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 13       2         11      80.00   
+Crosses   40       30        10      25.00   
+
+
+Variables for Group Instance  tb_top.me.obj.cg
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_s     8        0         8       100.00  100  1      1        0                    
+cp_x     5        2         3       60.00   100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.cg
+
+
+CROSS     EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cross_x_s 40       30        10      25.00   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_s
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 8        0         8       100.00  
+
+
+User Defined Bins for cp_s
+
+
+Bins
+
+NAME         COUNT AT LEAST SUBSUMED VALUES 
+shift_vals_0 11    1        --              
+shift_vals_1 7     1        --              
+shift_vals_2 9     1        --              
+shift_vals_3 8     1        --              
+shift_vals_4 3     1        --              
+shift_vals_5 8     1        --              
+shift_vals_6 10    1        --              
+shift_vals_7 7     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_x
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        2         3       60.00   
+
+
+User Defined Bins for cp_x
+
+
+Uncovered bins
+
+NAME         COUNT AT LEAST SUBSUMED VALUES NUMBER 
+alt_pattern2 0     1        --              1      
+alt_pattern1 0     1        --              1      
+
+
+Covered bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+others   61    1        --              
+all_ones 1     1        --              
+zero     1     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cross_x_s
+
+
+Samples crossed: cp_x cp_s
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 40       30        10      25.00   30      
+
+
+Automatically Generated Cross Bins for cross_x_s
+
+
+Element holes
+
+cp_x                          cp_s COUNT AT LEAST NUMBER 
+[alt_pattern2 , alt_pattern1] *    --    --       16     
+
+
+Uncovered bins
+
+cp_x       cp_s                                                                                                     COUNT AT LEAST NUMBER 
+[all_ones] [shift_vals_0 , shift_vals_1 , shift_vals_2]                                                             --    --       3      
+[all_ones] [shift_vals_4 , shift_vals_5 , shift_vals_6 , shift_vals_7]                                              --    --       4      
+[zero]     [shift_vals_1 , shift_vals_2 , shift_vals_3 , shift_vals_4 , shift_vals_5 , shift_vals_6 , shift_vals_7] --    --       7      
+
+
+Covered bins
+
+cp_x     cp_s         COUNT AT LEAST 
+others   shift_vals_1 7     1        
+others   shift_vals_6 10    1        
+others   shift_vals_7 7     1        
+others   shift_vals_0 10    1        
+others   shift_vals_3 7     1        
+others   shift_vals_5 8     1        
+others   shift_vals_4 3     1        
+others   shift_vals_2 9     1        
+all_ones shift_vals_3 1     1        
+zero     shift_vals_0 1     1        
+
+

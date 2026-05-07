@@ -1,0 +1,77 @@
+Assertions
+
+
+Assertions by Category
+           ASSERT PROPERTIES SEQUENCES
+Total          12          6         0
+Category 0     12          6         0
+
+-------------------------------------------------------------------------------
+
+Assertions by Severity
+           ASSERT PROPERTIES SEQUENCES
+Total          12          6         0
+Severity 0     12          6         0
+
+-------------------------------------------------------------------------------
+
+Summary for Assertions
+                 NUMBER PERCENT
+Total Number         12  100.00
+Uncovered             4   33.33
+Success               8   66.67
+Failure               0    0.00
+Incomplete            0    0.00
+Without Attempts      4   33.33
+
+-------------------------------------------------------------------------------
+
+Summary for Cover Properties
+             NUMBER PERCENT
+Total Number      6  100.00
+Uncovered         0    0.00
+Matches           6  100.00
+
+-------------------------------------------------------------------------------
+
+Detail Report for Assertions
+
+Assertions Uncovered:
+                                                   ASSERTIONS                                                   CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\down_item_seq::body .unnamed$$_0.unnamed$$_1        0        0        0              0        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\up_item_seq::body .unnamed$$_0.unnamed$$_1          0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1                                                                 0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1                                                                0        0        0              0        0          0
+
+Assertions Success:
+                                                ASSERTIONS                                                 CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\item_seq::body .unnamed$$_0.unnamed$$_1        0        0      233            233        0          0
+tb_top.dut.u_counter_assertions.ASSERT_COUNT_DOWN                                                                 0        0      640            309        0          0
+tb_top.dut.u_counter_assertions.ASSERT_COUNT_UP                                                                   0        0      640            313        0          0
+tb_top.dut.u_counter_assertions.ASSERT_RESET_DOMINANCE                                                            0        0      640             15        0          0
+tb_top.dut.u_counter_assertions.ASSERT_SYNC_RESET                                                                 0        0      640             15        0          0
+tb_top.dut.u_counter_assertions.ASSERT_WRAP_DOWN                                                                  0        0      640             20        0          0
+tb_top.dut.u_counter_assertions.ASSERT_WRAP_UP                                                                    0        0      640             19        0          0
+uvm_pkg.\uvm_component_name_check_visitor::visit .unnamed$$_0                                                     0        0       75             75        0          0
+
+Assertions Without Attempts:
+                                                   ASSERTIONS                                                   CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\down_item_seq::body .unnamed$$_0.unnamed$$_1        0        0        0              0        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\up_item_seq::body .unnamed$$_0.unnamed$$_1          0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1                                                                 0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1                                                                0        0        0              0        0          0
+
+-------------------------------------------------------------------------------
+
+Detail Report for Cover Properties
+
+Cover Properties Matches:
+                   COVER PROPERTIES                   CATEGORY SEVERITY ATTEMPTS MATCHES INCOMPLETE
+tb_top.dut.u_counter_assertions.COVER_COUNT_DOWN             0        0      640     309          0
+tb_top.dut.u_counter_assertions.COVER_COUNT_UP               0        0      640     313          0
+tb_top.dut.u_counter_assertions.COVER_RESET_DOMINANCE        0        0      640      15          0
+tb_top.dut.u_counter_assertions.COVER_SYNC_RESET             0        0      640      15          0
+tb_top.dut.u_counter_assertions.COVER_WRAP_DOWN              0        0      640      20          0
+tb_top.dut.u_counter_assertions.COVER_WRAP_UP                0        0      640      19          0
+
+

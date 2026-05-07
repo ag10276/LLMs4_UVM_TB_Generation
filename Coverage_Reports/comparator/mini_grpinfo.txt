@@ -1,0 +1,137 @@
+Group : $unit::comp_coverage::cg_comp
+
+===============================================================================
+Group : $unit::comp_coverage::cg_comp
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 68.75 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/done/comparator/mini/mini_comparator_uvm_tb_all.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::comp_coverage::cg_comp
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 6        1         5       83.33   
+Crosses   8        6         2       25.00   
+
+
+Variables for Group  $unit::comp_coverage::cg_comp
+
+
+VARIABLE      EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+vif.agreaterb 2        1         1       50.00   100  1      1        2                    
+vif.aequalb   2        0         2       100.00  100  1      1        2                    
+vif.alesserb  2        0         2       100.00  100  1      1        2                    
+
+
+Crosses for Group  $unit::comp_coverage::cg_comp
+
+
+CROSS      EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cg_comp_cc 8        6         2       25.00   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable vif.agreaterb
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        1         1       50.00   
+
+
+Automatically Generated Bins for vif.agreaterb
+
+
+Uncovered bins
+
+NAME      COUNT AT LEAST SUBSUMED VALUES NUMBER 
+[auto[1]] 0     1        [{ [ 1 ] }]     1      
+
+
+Covered bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 12    1        { [ 0 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable vif.aequalb
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for vif.aequalb
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 11    1        { [ 0 ] }       
+auto[1] 1     1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable vif.alesserb
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for vif.alesserb
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 1     1        { [ 0 ] }       
+auto[1] 11    1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cg_comp_cc
+
+
+Samples crossed: vif.agreaterb vif.aequalb vif.alesserb
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 8        6         2       25.00   6       
+
+
+Automatically Generated Cross Bins for cg_comp_cc
+
+
+Element holes
+
+vif.agreaterb vif.aequalb vif.alesserb COUNT AT LEAST NUMBER 
+[auto[1]]     *           *            --    --       4      
+
+
+Uncovered bins
+
+vif.agreaterb vif.aequalb vif.alesserb COUNT AT LEAST NUMBER 
+[auto[0]]     [auto[0]]   [auto[0]]    0     1        1      
+[auto[0]]     [auto[1]]   [auto[1]]    0     1        1      
+
+
+Covered bins
+
+vif.agreaterb vif.aequalb vif.alesserb COUNT AT LEAST 
+auto[0]       auto[0]     auto[1]      11    1        
+auto[0]       auto[1]     auto[0]      1     1        
+
+

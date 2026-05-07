@@ -1,0 +1,73 @@
+Assertions
+
+
+Assertions by Category
+           ASSERT PROPERTIES SEQUENCES
+Total          10          6         0
+Category 0     10          6         0
+
+-------------------------------------------------------------------------------
+
+Assertions by Severity
+           ASSERT PROPERTIES SEQUENCES
+Total          10          6         0
+Severity 0     10          6         0
+
+-------------------------------------------------------------------------------
+
+Summary for Assertions
+                 NUMBER PERCENT
+Total Number         10  100.00
+Uncovered             2   20.00
+Success               8   80.00
+Failure               0    0.00
+Incomplete            0    0.00
+Without Attempts      2   20.00
+
+-------------------------------------------------------------------------------
+
+Summary for Cover Properties
+             NUMBER PERCENT
+Total Number      6  100.00
+Uncovered         0    0.00
+Matches           6  100.00
+
+-------------------------------------------------------------------------------
+
+Detail Report for Assertions
+
+Assertions Uncovered:
+                       ASSERTIONS                       CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1         0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1        0        0        0              0        0          0
+
+Assertions Success:
+                          ASSERTIONS                          CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+tb_top.dut.u_traffic_light_assertions.ASSERT_MUTUAL_EXCLUSION        0        0       77             66        0          0
+tb_top.dut.u_traffic_light_assertions.ASSERT_RESET_OUTPUTS           0        0       77             11        0          0
+tb_top.dut.u_traffic_light_assertions.ASSERT_S0_TO_S1                0        0       77             15        0          0
+tb_top.dut.u_traffic_light_assertions.ASSERT_S1_TO_S2                0        0       77             15        0          0
+tb_top.dut.u_traffic_light_assertions.ASSERT_S2_TO_S3                0        0       77             12        0          0
+tb_top.dut.u_traffic_light_assertions.ASSERT_S3_TO_S0                0        0       77             10        0          0
+tb_top.dut.u_traffic_light_assertions.ASSERT_VALID_ENCODING          0        0       77             77        0          0
+uvm_pkg.\uvm_component_name_check_visitor::visit .unnamed$$_0        0        0       27             27        0          0
+
+Assertions Without Attempts:
+                       ASSERTIONS                       CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1         0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1        0        0        0              0        0          0
+
+-------------------------------------------------------------------------------
+
+Detail Report for Cover Properties
+
+Cover Properties Matches:
+                      COVER PROPERTIES                       CATEGORY SEVERITY ATTEMPTS MATCHES INCOMPLETE
+tb_top.dut.u_traffic_light_assertions.COVER_MUTUAL_EXCLUSION        0        0       77      66          0
+tb_top.dut.u_traffic_light_assertions.COVER_RESET_OUTPUTS           0        0       77      11          0
+tb_top.dut.u_traffic_light_assertions.COVER_S0_TO_S1                0        0       77      15          0
+tb_top.dut.u_traffic_light_assertions.COVER_S1_TO_S2                0        0       77      15          0
+tb_top.dut.u_traffic_light_assertions.COVER_S2_TO_S3                0        0       77      12          0
+tb_top.dut.u_traffic_light_assertions.COVER_S3_TO_S0                0        0       77      10          0
+
+

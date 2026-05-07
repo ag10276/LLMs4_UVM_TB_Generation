@@ -1,0 +1,382 @@
+Group : $unit::func_cov#(4)::arb_cg
+
+===============================================================================
+Group : $unit::func_cov#(4)::arb_cg
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+ 88.33  88.33    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/arbiter/testbench.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                 
+ 88.33 1      100    1        64           64            tb_top.me.obj.arb_cg 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::func_cov#(4)::arb_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 21       0         21      100.00  
+Crosses   60       28        32      53.33   
+
+
+Variables for Group  $unit::func_cov#(4)::arb_cg
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_req   15       0         15      100.00  100  1      1        0                    
+cp_grant 4        0         4       100.00  100  1      1        0                    
+cp_rst   2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::func_cov#(4)::arb_cg
+
+
+CROSS        EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_req_grant 60       28        32      53.33   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_req
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 15       0         15      100.00  
+
+
+User Defined Bins for cp_req
+
+
+Bins
+
+NAME      COUNT AT LEAST SUBSUMED VALUES 
+all_req_1 57    1        --              
+all_req_2 63    1        --              
+all_req_3 6     1        --              
+all_req_4 42    1        --              
+all_req_5 6     1        --              
+all_req_6 3     1        --              
+all_req_7 6     1        --              
+all_req_8 57    1        --              
+all_req_9 5     1        --              
+all_req_a 4     1        --              
+all_req_b 8     1        --              
+all_req_c 4     1        --              
+all_req_d 11    1        --              
+all_req_e 8     1        --              
+all_req_f 200   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_grant
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_grant
+
+
+Bins
+
+NAME        COUNT AT LEAST SUBSUMED VALUES 
+all_grant_1 120   1        --              
+all_grant_2 126   1        --              
+all_grant_4 112   1        --              
+all_grant_8 122   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_rst
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_rst
+
+
+Bins
+
+NAME       COUNT AT LEAST SUBSUMED VALUES 
+deasserted 483   1        --              
+asserted   16    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_req_grant
+
+
+Samples crossed: cp_req cp_grant
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 60       28        32      53.33   28      
+
+
+Automatically Generated Cross Bins for cx_req_grant
+
+
+Uncovered bins
+
+cp_req      cp_grant                                  COUNT AT LEAST NUMBER 
+[all_req_1] [all_grant_2 , all_grant_4 , all_grant_8] --    --       3      
+[all_req_2] [all_grant_1]                             0     1        1      
+[all_req_2] [all_grant_4 , all_grant_8]               --    --       2      
+[all_req_3] [all_grant_4 , all_grant_8]               --    --       2      
+[all_req_4] [all_grant_1 , all_grant_2]               --    --       2      
+[all_req_4] [all_grant_8]                             0     1        1      
+[all_req_5] [all_grant_2]                             0     1        1      
+[all_req_5] [all_grant_8]                             0     1        1      
+[all_req_6] [all_grant_1]                             0     1        1      
+[all_req_6] [all_grant_8]                             0     1        1      
+[all_req_7] [all_grant_8]                             0     1        1      
+[all_req_8] [all_grant_1 , all_grant_2 , all_grant_4] --    --       3      
+[all_req_9] [all_grant_2 , all_grant_4]               --    --       2      
+[all_req_a] [all_grant_1]                             0     1        1      
+[all_req_a] [all_grant_4]                             0     1        1      
+[all_req_b] [all_grant_4]                             0     1        1      
+[all_req_c] [all_grant_1 , all_grant_2]               --    --       2      
+[all_req_d] [all_grant_2]                             0     1        1      
+[all_req_e] [all_grant_1]                             0     1        1      
+
+
+Covered bins
+
+cp_req    cp_grant    COUNT AT LEAST 
+all_req_1 all_grant_1 57    1        
+all_req_2 all_grant_2 63    1        
+all_req_3 all_grant_1 4     1        
+all_req_3 all_grant_2 2     1        
+all_req_4 all_grant_4 42    1        
+all_req_5 all_grant_1 2     1        
+all_req_5 all_grant_4 4     1        
+all_req_6 all_grant_2 2     1        
+all_req_6 all_grant_4 1     1        
+all_req_7 all_grant_1 1     1        
+all_req_7 all_grant_2 2     1        
+all_req_7 all_grant_4 3     1        
+all_req_8 all_grant_8 57    1        
+all_req_9 all_grant_1 1     1        
+all_req_9 all_grant_8 4     1        
+all_req_a all_grant_2 2     1        
+all_req_a all_grant_8 2     1        
+all_req_b all_grant_1 2     1        
+all_req_b all_grant_2 1     1        
+all_req_b all_grant_8 5     1        
+all_req_c all_grant_4 3     1        
+all_req_c all_grant_8 1     1        
+all_req_d all_grant_1 1     1        
+all_req_d all_grant_4 7     1        
+all_req_d all_grant_8 3     1        
+all_req_e all_grant_2 3     1        
+all_req_e all_grant_4 3     1        
+all_req_e all_grant_8 2     1        
+all_req_f all_grant_1 52    1        
+all_req_f all_grant_2 51    1        
+all_req_f all_grant_4 49    1        
+all_req_f all_grant_8 48    1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.arb_cg
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 88.33 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                        
+ 88.33  88.33    1      100    1        1            64           64                    $unit::func_cov#(4)::arb_cg 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.arb_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 21       0         21      100.00  
+Crosses   60       28        32      53.33   
+
+
+Variables for Group Instance  tb_top.me.obj.arb_cg
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_req   15       0         15      100.00  100  1      1        0                    
+cp_grant 4        0         4       100.00  100  1      1        0                    
+cp_rst   2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.arb_cg
+
+
+CROSS        EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_req_grant 60       28        32      53.33   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_req
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 15       0         15      100.00  
+
+
+User Defined Bins for cp_req
+
+
+Bins
+
+NAME      COUNT AT LEAST SUBSUMED VALUES 
+all_req_1 57    1        --              
+all_req_2 63    1        --              
+all_req_3 6     1        --              
+all_req_4 42    1        --              
+all_req_5 6     1        --              
+all_req_6 3     1        --              
+all_req_7 6     1        --              
+all_req_8 57    1        --              
+all_req_9 5     1        --              
+all_req_a 4     1        --              
+all_req_b 8     1        --              
+all_req_c 4     1        --              
+all_req_d 11    1        --              
+all_req_e 8     1        --              
+all_req_f 200   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_grant
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_grant
+
+
+Bins
+
+NAME        COUNT AT LEAST SUBSUMED VALUES 
+all_grant_1 120   1        --              
+all_grant_2 126   1        --              
+all_grant_4 112   1        --              
+all_grant_8 122   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_rst
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_rst
+
+
+Bins
+
+NAME       COUNT AT LEAST SUBSUMED VALUES 
+deasserted 483   1        --              
+asserted   16    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_req_grant
+
+
+Samples crossed: cp_req cp_grant
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 60       28        32      53.33   28      
+
+
+Automatically Generated Cross Bins for cx_req_grant
+
+
+Uncovered bins
+
+cp_req      cp_grant                                  COUNT AT LEAST NUMBER 
+[all_req_1] [all_grant_2 , all_grant_4 , all_grant_8] --    --       3      
+[all_req_2] [all_grant_1]                             0     1        1      
+[all_req_2] [all_grant_4 , all_grant_8]               --    --       2      
+[all_req_3] [all_grant_4 , all_grant_8]               --    --       2      
+[all_req_4] [all_grant_1 , all_grant_2]               --    --       2      
+[all_req_4] [all_grant_8]                             0     1        1      
+[all_req_5] [all_grant_2]                             0     1        1      
+[all_req_5] [all_grant_8]                             0     1        1      
+[all_req_6] [all_grant_1]                             0     1        1      
+[all_req_6] [all_grant_8]                             0     1        1      
+[all_req_7] [all_grant_8]                             0     1        1      
+[all_req_8] [all_grant_1 , all_grant_2 , all_grant_4] --    --       3      
+[all_req_9] [all_grant_2 , all_grant_4]               --    --       2      
+[all_req_a] [all_grant_1]                             0     1        1      
+[all_req_a] [all_grant_4]                             0     1        1      
+[all_req_b] [all_grant_4]                             0     1        1      
+[all_req_c] [all_grant_1 , all_grant_2]               --    --       2      
+[all_req_d] [all_grant_2]                             0     1        1      
+[all_req_e] [all_grant_1]                             0     1        1      
+
+
+Covered bins
+
+cp_req    cp_grant    COUNT AT LEAST 
+all_req_1 all_grant_1 57    1        
+all_req_2 all_grant_2 63    1        
+all_req_3 all_grant_1 4     1        
+all_req_3 all_grant_2 2     1        
+all_req_4 all_grant_4 42    1        
+all_req_5 all_grant_1 2     1        
+all_req_5 all_grant_4 4     1        
+all_req_6 all_grant_2 2     1        
+all_req_6 all_grant_4 1     1        
+all_req_7 all_grant_1 1     1        
+all_req_7 all_grant_2 2     1        
+all_req_7 all_grant_4 3     1        
+all_req_8 all_grant_8 57    1        
+all_req_9 all_grant_1 1     1        
+all_req_9 all_grant_8 4     1        
+all_req_a all_grant_2 2     1        
+all_req_a all_grant_8 2     1        
+all_req_b all_grant_1 2     1        
+all_req_b all_grant_2 1     1        
+all_req_b all_grant_8 5     1        
+all_req_c all_grant_4 3     1        
+all_req_c all_grant_8 1     1        
+all_req_d all_grant_1 1     1        
+all_req_d all_grant_4 7     1        
+all_req_d all_grant_8 3     1        
+all_req_e all_grant_2 3     1        
+all_req_e all_grant_4 3     1        
+all_req_e all_grant_8 2     1        
+all_req_f all_grant_1 52    1        
+all_req_f all_grant_2 51    1        
+all_req_f all_grant_4 49    1        
+all_req_f all_grant_8 48    1        
+
+

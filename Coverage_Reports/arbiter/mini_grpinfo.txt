@@ -1,0 +1,334 @@
+Group : $unit::arb_coverage::req_cover
+
+===============================================================================
+Group : $unit::arb_coverage::req_cover
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+ 21.74  21.74    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/arbiter/mini/mini_arbiter_uvm_tb_all.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                    
+ 21.74 1      100    1        64           64            tb_top.me.obj.req_cover 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::arb_coverage::req_cover
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 32       22        10      31.25   
+Crosses   256      249       7       2.73    
+
+
+Variables for Group  $unit::arb_coverage::req_cover
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+req_cp   16       10        6       37.50   100  1      1        0                    
+grant_cp 16       12        4       25.00   100  1      1        0                    
+
+
+Crosses for Group  $unit::arb_coverage::req_cover
+
+
+CROSS       EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+req_x_grant 256      249       7       2.73    100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable req_cp
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 16       10        6       37.50   
+
+
+User Defined Bins for req_cp
+
+
+Uncovered bins
+
+NAME         COUNT AT LEAST SUBSUMED VALUES NUMBER 
+req_values_3 0     1        --              1      
+req_values_4 0     1        --              1      
+req_values_5 0     1        --              1      
+req_values_6 0     1        --              1      
+req_values_7 0     1        --              1      
+req_values_8 0     1        --              1      
+req_values_a 0     1        --              1      
+req_values_e 0     1        --              1      
+req_values_f 0     1        --              1      
+no_req       0     1        --              1      
+
+
+Covered bins
+
+NAME         COUNT AT LEAST SUBSUMED VALUES 
+req_values_1 1     1        --              
+req_values_2 1     1        --              
+req_values_9 2     1        --              
+req_values_b 2     1        --              
+req_values_c 1     1        --              
+req_values_d 1     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable grant_cp
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 16       12        4       25.00   
+
+
+User Defined Bins for grant_cp
+
+
+Uncovered bins
+
+NAME           COUNT AT LEAST SUBSUMED VALUES NUMBER 
+grant_values_3 0     1        --              1      
+grant_values_5 0     1        --              1      
+grant_values_6 0     1        --              1      
+grant_values_7 0     1        --              1      
+grant_values_9 0     1        --              1      
+grant_values_a 0     1        --              1      
+grant_values_b 0     1        --              1      
+grant_values_c 0     1        --              1      
+grant_values_d 0     1        --              1      
+grant_values_e 0     1        --              1      
+grant_values_f 0     1        --              1      
+no_grant       0     1        --              1      
+
+
+Covered bins
+
+NAME           COUNT AT LEAST SUBSUMED VALUES 
+grant_values_1 2     1        --              
+grant_values_2 1     1        --              
+grant_values_4 2     1        --              
+grant_values_8 3     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross req_x_grant
+
+
+Samples crossed: req_cp grant_cp
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 256      249       7       2.73    249     
+
+
+Automatically Generated Cross Bins for req_x_grant
+
+
+Element holes
+
+req_cp                                                                                    grant_cp COUNT AT LEAST NUMBER 
+[req_values_3 , req_values_4 , req_values_5 , req_values_6 , req_values_7 , req_values_8] *        --    --       96     
+[req_values_a]                                                                            *        --    --       16     
+[req_values_e , req_values_f , no_req]                                                    *        --    --       48     
+
+
+Uncovered bins
+
+req_cp                        grant_cp                                                                                                                                                                                                                                                 COUNT AT LEAST NUMBER 
+[req_values_1]                [grant_values_2 , grant_values_3 , grant_values_4 , grant_values_5 , grant_values_6 , grant_values_7 , grant_values_8 , grant_values_9 , grant_values_a , grant_values_b , grant_values_c , grant_values_d , grant_values_e , grant_values_f , no_grant] --    --       15     
+[req_values_2]                [grant_values_1]                                                                                                                                                                                                                                         0     1        1      
+[req_values_2]                [grant_values_3 , grant_values_4 , grant_values_5 , grant_values_6 , grant_values_7 , grant_values_8 , grant_values_9 , grant_values_a , grant_values_b , grant_values_c , grant_values_d , grant_values_e , grant_values_f , no_grant]                  --    --       14     
+[req_values_9]                [grant_values_1 , grant_values_2 , grant_values_3 , grant_values_4 , grant_values_5 , grant_values_6 , grant_values_7]                                                                                                                                   --    --       7      
+[req_values_9]                [grant_values_9 , grant_values_a , grant_values_b , grant_values_c , grant_values_d , grant_values_e , grant_values_f , no_grant]                                                                                                                        --    --       8      
+[req_values_b]                [grant_values_2 , grant_values_3 , grant_values_4 , grant_values_5 , grant_values_6 , grant_values_7]                                                                                                                                                    --    --       6      
+[req_values_b]                [grant_values_9 , grant_values_a , grant_values_b , grant_values_c , grant_values_d , grant_values_e , grant_values_f , no_grant]                                                                                                                        --    --       8      
+[req_values_c , req_values_d] [grant_values_1 , grant_values_2 , grant_values_3]                                                                                                                                                                                                       --    --       6      
+[req_values_c , req_values_d] [grant_values_5 , grant_values_6 , grant_values_7 , grant_values_8 , grant_values_9 , grant_values_a , grant_values_b , grant_values_c , grant_values_d , grant_values_e , grant_values_f , no_grant]                                                    --    --       24     
+
+
+Covered bins
+
+req_cp       grant_cp       COUNT AT LEAST 
+req_values_1 grant_values_1 1     1        
+req_values_2 grant_values_2 1     1        
+req_values_9 grant_values_8 2     1        
+req_values_b grant_values_1 1     1        
+req_values_b grant_values_8 1     1        
+req_values_c grant_values_4 1     1        
+req_values_d grant_values_4 1     1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.req_cover
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 21.74 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                           
+ 21.74  21.74    1      100    1        1            64           64                    $unit::arb_coverage::req_cover 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.req_cover
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 32       22        10      31.25   
+Crosses   256      249       7       2.73    
+
+
+Variables for Group Instance  tb_top.me.obj.req_cover
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+req_cp   16       10        6       37.50   100  1      1        0                    
+grant_cp 16       12        4       25.00   100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.req_cover
+
+
+CROSS       EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+req_x_grant 256      249       7       2.73    100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable req_cp
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 16       10        6       37.50   
+
+
+User Defined Bins for req_cp
+
+
+Uncovered bins
+
+NAME         COUNT AT LEAST SUBSUMED VALUES NUMBER 
+req_values_3 0     1        --              1      
+req_values_4 0     1        --              1      
+req_values_5 0     1        --              1      
+req_values_6 0     1        --              1      
+req_values_7 0     1        --              1      
+req_values_8 0     1        --              1      
+req_values_a 0     1        --              1      
+req_values_e 0     1        --              1      
+req_values_f 0     1        --              1      
+no_req       0     1        --              1      
+
+
+Covered bins
+
+NAME         COUNT AT LEAST SUBSUMED VALUES 
+req_values_1 1     1        --              
+req_values_2 1     1        --              
+req_values_9 2     1        --              
+req_values_b 2     1        --              
+req_values_c 1     1        --              
+req_values_d 1     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable grant_cp
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 16       12        4       25.00   
+
+
+User Defined Bins for grant_cp
+
+
+Uncovered bins
+
+NAME           COUNT AT LEAST SUBSUMED VALUES NUMBER 
+grant_values_3 0     1        --              1      
+grant_values_5 0     1        --              1      
+grant_values_6 0     1        --              1      
+grant_values_7 0     1        --              1      
+grant_values_9 0     1        --              1      
+grant_values_a 0     1        --              1      
+grant_values_b 0     1        --              1      
+grant_values_c 0     1        --              1      
+grant_values_d 0     1        --              1      
+grant_values_e 0     1        --              1      
+grant_values_f 0     1        --              1      
+no_grant       0     1        --              1      
+
+
+Covered bins
+
+NAME           COUNT AT LEAST SUBSUMED VALUES 
+grant_values_1 2     1        --              
+grant_values_2 1     1        --              
+grant_values_4 2     1        --              
+grant_values_8 3     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross req_x_grant
+
+
+Samples crossed: req_cp grant_cp
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 256      249       7       2.73    249     
+
+
+Automatically Generated Cross Bins for req_x_grant
+
+
+Element holes
+
+req_cp                                                                                    grant_cp COUNT AT LEAST NUMBER 
+[req_values_3 , req_values_4 , req_values_5 , req_values_6 , req_values_7 , req_values_8] *        --    --       96     
+[req_values_a]                                                                            *        --    --       16     
+[req_values_e , req_values_f , no_req]                                                    *        --    --       48     
+
+
+Uncovered bins
+
+req_cp                        grant_cp                                                                                                                                                                                                                                                 COUNT AT LEAST NUMBER 
+[req_values_1]                [grant_values_2 , grant_values_3 , grant_values_4 , grant_values_5 , grant_values_6 , grant_values_7 , grant_values_8 , grant_values_9 , grant_values_a , grant_values_b , grant_values_c , grant_values_d , grant_values_e , grant_values_f , no_grant] --    --       15     
+[req_values_2]                [grant_values_1]                                                                                                                                                                                                                                         0     1        1      
+[req_values_2]                [grant_values_3 , grant_values_4 , grant_values_5 , grant_values_6 , grant_values_7 , grant_values_8 , grant_values_9 , grant_values_a , grant_values_b , grant_values_c , grant_values_d , grant_values_e , grant_values_f , no_grant]                  --    --       14     
+[req_values_9]                [grant_values_1 , grant_values_2 , grant_values_3 , grant_values_4 , grant_values_5 , grant_values_6 , grant_values_7]                                                                                                                                   --    --       7      
+[req_values_9]                [grant_values_9 , grant_values_a , grant_values_b , grant_values_c , grant_values_d , grant_values_e , grant_values_f , no_grant]                                                                                                                        --    --       8      
+[req_values_b]                [grant_values_2 , grant_values_3 , grant_values_4 , grant_values_5 , grant_values_6 , grant_values_7]                                                                                                                                                    --    --       6      
+[req_values_b]                [grant_values_9 , grant_values_a , grant_values_b , grant_values_c , grant_values_d , grant_values_e , grant_values_f , no_grant]                                                                                                                        --    --       8      
+[req_values_c , req_values_d] [grant_values_1 , grant_values_2 , grant_values_3]                                                                                                                                                                                                       --    --       6      
+[req_values_c , req_values_d] [grant_values_5 , grant_values_6 , grant_values_7 , grant_values_8 , grant_values_9 , grant_values_a , grant_values_b , grant_values_c , grant_values_d , grant_values_e , grant_values_f , no_grant]                                                    --    --       24     
+
+
+Covered bins
+
+req_cp       grant_cp       COUNT AT LEAST 
+req_values_1 grant_values_1 1     1        
+req_values_2 grant_values_2 1     1        
+req_values_9 grant_values_8 2     1        
+req_values_b grant_values_1 1     1        
+req_values_b grant_values_8 1     1        
+req_values_c grant_values_4 1     1        
+req_values_d grant_values_4 1     1        
+
+

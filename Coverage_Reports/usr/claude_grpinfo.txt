@@ -1,0 +1,402 @@
+Group : $unit::usr_coverage::usr_cg
+
+===============================================================================
+Group : $unit::usr_coverage::usr_cg
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/usr/claude/claude_usr_uvm_tb_all.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::usr_coverage::usr_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 25       0         25      100.00  
+Crosses   19       0         19      100.00  
+
+
+Variables for Group  $unit::usr_coverage::usr_cg
+
+
+VARIABLE            EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_clr              2        0         2       100.00  100  1      1        0                    
+cp_control          4        0         4       100.00  100  1      1        0                    
+cp_parallel_in      7        0         7       100.00  100  1      1        0                    
+cp_serial_in_right  2        0         2       100.00  100  1      1        0                    
+cp_serial_in_left   2        0         2       100.00  100  1      1        0                    
+cp_serial_out_right 2        0         2       100.00  100  1      1        0                    
+cp_serial_out_left  2        0         2       100.00  100  1      1        0                    
+cp_parallel_out     4        0         4       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::usr_coverage::usr_cg
+
+
+CROSS          EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_control_clr 8        0         8       100.00  100  1      1        0                     
+cx_control_sir 2        0         2       100.00  100  1      1        0                     
+cx_control_sil 2        0         2       100.00  100  1      1        0                     
+cx_pload_pin   7        0         7       100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_clr
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_clr
+
+
+Bins
+
+NAME       COUNT AT LEAST SUBSUMED VALUES 
+deasserted 484   1        --              
+asserted   79    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_control
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_control
+
+
+Bins
+
+NAME          COUNT AT LEAST SUBSUMED VALUES 
+parallel_load 153   1        --              
+left_shift    133   1        --              
+right_shift   120   1        --              
+hold          157   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_parallel_in
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 7        0         7       100.00  
+
+
+User Defined Bins for cp_parallel_in
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+high   162   1        --              
+mid    288   1        --              
+low    109   1        --              
+alt_hi 4     1        --              
+alt_lo 2     1        --              
+max    2     1        --              
+zero   2     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_serial_in_right
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_serial_in_right
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+val_0 285   1        --              
+val_1 278   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_serial_in_left
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_serial_in_left
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+val_0 287   1        --              
+val_1 276   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_serial_out_right
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_serial_out_right
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+val_0 351   1        --              
+val_1 211   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_serial_out_left
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_serial_out_left
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+val_0 331   1        --              
+val_1 231   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_parallel_out
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_parallel_out
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+high 223   1        --              
+low  196   1        --              
+max  8     1        --              
+zero 135   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_control_clr
+
+
+Samples crossed: cp_control cp_clr
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 8        0         8       100.00          
+
+
+Automatically Generated Cross Bins for cx_control_clr
+
+
+Bins
+
+cp_control    cp_clr     COUNT AT LEAST 
+parallel_load deasserted 134   1        
+parallel_load asserted   19    1        
+left_shift    deasserted 111   1        
+left_shift    asserted   22    1        
+right_shift   deasserted 104   1        
+right_shift   asserted   16    1        
+hold          deasserted 135   1        
+hold          asserted   22    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_control_sir
+
+
+Samples crossed: cp_control cp_serial_in_right
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              2        0         2       100.00          
+Automatically Generated Cross Bins 2        0         2       100.00          
+User Defined Cross Bins            0        0         0                       
+
+
+Automatically Generated Cross Bins for cx_control_sir
+
+
+Bins
+
+cp_control cp_serial_in_right COUNT AT LEAST 
+left_shift val_0              74    1        
+left_shift val_1              59    1        
+
+
+User Defined Cross Bins for cx_control_sir
+
+
+Excluded/Illegal bins
+
+NAME             COUNT STATUS   
+irrelevant_hold  0     Excluded 
+irrelevant_rsh   0     Excluded 
+irrelevant_pload 0     Excluded 
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_control_sil
+
+
+Samples crossed: cp_control cp_serial_in_left
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              2        0         2       100.00          
+Automatically Generated Cross Bins 2        0         2       100.00          
+User Defined Cross Bins            0        0         0                       
+
+
+Automatically Generated Cross Bins for cx_control_sil
+
+
+Bins
+
+cp_control  cp_serial_in_left COUNT AT LEAST 
+right_shift val_1             58    1        
+right_shift val_0             62    1        
+
+
+User Defined Cross Bins for cx_control_sil
+
+
+Excluded/Illegal bins
+
+NAME             COUNT STATUS   
+irrelevant_hold  0     Excluded 
+irrelevant_lsh   0     Excluded 
+irrelevant_pload 0     Excluded 
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_pload_pin
+
+
+Samples crossed: cp_control cp_parallel_in
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              7        0         7       100.00          
+Automatically Generated Cross Bins 7        0         7       100.00          
+User Defined Cross Bins            0        0         0                       
+
+
+Automatically Generated Cross Bins for cx_pload_pin
+
+
+Bins
+
+cp_control    cp_parallel_in COUNT AT LEAST 
+parallel_load low            31    1        
+parallel_load zero           2     1        
+parallel_load alt_lo         1     1        
+parallel_load mid            68    1        
+parallel_load high           50    1        
+parallel_load alt_hi         1     1        
+parallel_load max            2     1        
+
+
+User Defined Cross Bins for cx_pload_pin
+
+
+Excluded/Illegal bins
+
+NAME          COUNT STATUS   
+not_load_hold 0     Excluded 
+not_load_rsh  0     Excluded 
+not_load_lsh  0     Excluded 
+
+
+Group : $unit::usr_coverage::usr_transition_cg
+
+===============================================================================
+Group : $unit::usr_coverage::usr_transition_cg
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/usr/claude/claude_usr_uvm_tb_all.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::usr_coverage::usr_transition_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 12       0         12      100.00  
+
+
+Variables for Group  $unit::usr_coverage::usr_transition_cg
+
+
+VARIABLE      EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_ctrl_trans 12       0         12      100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_ctrl_trans
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 12       0         12      100.00  
+
+
+User Defined Bins for cp_ctrl_trans
+
+
+Bins
+
+NAME             COUNT AT LEAST SUBSUMED VALUES 
+pload_to_pload   51    1        --              
+lshift_to_rshift 22    1        --              
+rshift_to_lshift 25    1        --              
+pload_to_lshift  34    1        --              
+pload_to_rshift  27    1        --              
+pload_to_hold    41    1        --              
+lshift_to_hold   34    1        --              
+rshift_to_hold   33    1        --              
+hold_to_pload    33    1        --              
+hold_to_lshift   37    1        --              
+hold_to_rshift   38    1        --              
+hold_to_hold     48    1        --              
+
+

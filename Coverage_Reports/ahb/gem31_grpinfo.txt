@@ -1,0 +1,372 @@
+Group : $unit::ahb_coverage::ahb_cg
+
+===============================================================================
+Group : $unit::ahb_coverage::ahb_cg
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+ 91.67  91.67    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/ahb/gem31/gem31_ahb_uvm_tb_all.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                 
+ 91.67 1      100    1        64           64            tb_top.me.obj.ahb_cg 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::ahb_coverage::ahb_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 10       0         10      100.00  
+Crosses   16       4         12      75.00   
+
+
+Variables for Group  $unit::ahb_coverage::ahb_cg
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_size  4        0         4       100.00  100  1      1        0                    
+cp_write 2        0         2       100.00  100  1      1        0                    
+cp_trans 2        0         2       100.00  100  1      1        0                    
+cp_resp  2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::ahb_coverage::ahb_cg
+
+
+CROSS         EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cr_size_write 8        2         6       75.00   100  1      1        0                     
+cr_size_resp  8        2         6       75.00   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_size
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_size
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+err_sz  5     1        --              
+word_sz 14    1        --              
+half_sz 4     1        --              
+byte_sz 4     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_write
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_write
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+write 17    1        --              
+read  10    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_trans
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_trans
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+seq    10    1        --              
+nonseq 17    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_resp
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_resp
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+err  15    1        --              
+okay 12    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cr_size_write
+
+
+Samples crossed: cp_size cp_write
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 8        2         6       75.00   2       
+
+
+Automatically Generated Cross Bins for cr_size_write
+
+
+Uncovered bins
+
+cp_size             cp_write COUNT AT LEAST NUMBER 
+[half_sz , byte_sz] [read]   --    --       2      
+
+
+Covered bins
+
+cp_size cp_write COUNT AT LEAST 
+err_sz  write    2     1        
+err_sz  read     3     1        
+word_sz write    7     1        
+word_sz read     7     1        
+half_sz write    4     1        
+byte_sz write    4     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cr_size_resp
+
+
+Samples crossed: cp_size cp_resp
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 8        2         6       75.00   2       
+
+
+Automatically Generated Cross Bins for cr_size_resp
+
+
+Uncovered bins
+
+cp_size   cp_resp COUNT AT LEAST NUMBER 
+[err_sz]  [okay]  0     1        1      
+[byte_sz] [err]   0     1        1      
+
+
+Covered bins
+
+cp_size cp_resp COUNT AT LEAST 
+err_sz  err     5     1        
+word_sz err     8     1        
+word_sz okay    6     1        
+half_sz err     2     1        
+half_sz okay    2     1        
+byte_sz okay    4     1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.ahb_cg
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 91.67 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                        
+ 91.67  91.67    1      100    1        1            64           64                    $unit::ahb_coverage::ahb_cg 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.ahb_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 10       0         10      100.00  
+Crosses   16       4         12      75.00   
+
+
+Variables for Group Instance  tb_top.me.obj.ahb_cg
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_size  4        0         4       100.00  100  1      1        0                    
+cp_write 2        0         2       100.00  100  1      1        0                    
+cp_trans 2        0         2       100.00  100  1      1        0                    
+cp_resp  2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.ahb_cg
+
+
+CROSS         EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cr_size_write 8        2         6       75.00   100  1      1        0                     
+cr_size_resp  8        2         6       75.00   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_size
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_size
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+err_sz  5     1        --              
+word_sz 14    1        --              
+half_sz 4     1        --              
+byte_sz 4     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_write
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_write
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+write 17    1        --              
+read  10    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_trans
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_trans
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+seq    10    1        --              
+nonseq 17    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_resp
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_resp
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+err  15    1        --              
+okay 12    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cr_size_write
+
+
+Samples crossed: cp_size cp_write
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 8        2         6       75.00   2       
+
+
+Automatically Generated Cross Bins for cr_size_write
+
+
+Uncovered bins
+
+cp_size             cp_write COUNT AT LEAST NUMBER 
+[half_sz , byte_sz] [read]   --    --       2      
+
+
+Covered bins
+
+cp_size cp_write COUNT AT LEAST 
+err_sz  write    2     1        
+err_sz  read     3     1        
+word_sz write    7     1        
+word_sz read     7     1        
+half_sz write    4     1        
+byte_sz write    4     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cr_size_resp
+
+
+Samples crossed: cp_size cp_resp
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 8        2         6       75.00   2       
+
+
+Automatically Generated Cross Bins for cr_size_resp
+
+
+Uncovered bins
+
+cp_size   cp_resp COUNT AT LEAST NUMBER 
+[err_sz]  [okay]  0     1        1      
+[byte_sz] [err]   0     1        1      
+
+
+Covered bins
+
+cp_size cp_resp COUNT AT LEAST 
+err_sz  err     5     1        
+word_sz err     8     1        
+word_sz okay    6     1        
+half_sz err     2     1        
+half_sz okay    2     1        
+byte_sz okay    4     1        
+
+

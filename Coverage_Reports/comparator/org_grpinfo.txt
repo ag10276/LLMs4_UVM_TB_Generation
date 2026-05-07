@@ -1,0 +1,240 @@
+Group : $unit::fun_cov::cg
+
+===============================================================================
+Group : $unit::fun_cov::cg
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+100.00 100.00    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/comparator/testbench.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME             
+100.00 1      100    1        64           64            tb_top.me.obj.cg 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::fun_cov::cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 8        0         8       100.00  
+Crosses   16       0         16      100.00  
+
+
+Variables for Group  $unit::fun_cov::cg
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_a     4        0         4       100.00  100  1      1        0                    
+cp_b     4        0         4       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::fun_cov::cg
+
+
+CROSS  EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cp_axb 16       0         16      100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_a
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_a
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 602   1        --              
+all_1 653   1        --              
+all_2 612   1        --              
+all_3 640   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_b
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_b
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 648   1        --              
+all_1 634   1        --              
+all_2 626   1        --              
+all_3 599   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cp_axb
+
+
+Samples crossed: cp_a cp_b
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       0         16      100.00          
+
+
+Automatically Generated Cross Bins for cp_axb
+
+
+Bins
+
+cp_a  cp_b  COUNT AT LEAST 
+all_0 all_1 150   1        
+all_0 all_0 159   1        
+all_0 all_2 141   1        
+all_0 all_3 152   1        
+all_1 all_1 156   1        
+all_1 all_0 165   1        
+all_1 all_3 174   1        
+all_1 all_2 158   1        
+all_2 all_1 159   1        
+all_2 all_0 167   1        
+all_2 all_3 130   1        
+all_2 all_2 156   1        
+all_3 all_0 157   1        
+all_3 all_1 169   1        
+all_3 all_3 143   1        
+all_3 all_2 171   1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.cg
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME               
+100.00 100.00    1      100    1        1            64           64                    $unit::fun_cov::cg 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 8        0         8       100.00  
+Crosses   16       0         16      100.00  
+
+
+Variables for Group Instance  tb_top.me.obj.cg
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_a     4        0         4       100.00  100  1      1        0                    
+cp_b     4        0         4       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.cg
+
+
+CROSS  EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cp_axb 16       0         16      100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_a
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_a
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 602   1        --              
+all_1 653   1        --              
+all_2 612   1        --              
+all_3 640   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_b
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_b
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 648   1        --              
+all_1 634   1        --              
+all_2 626   1        --              
+all_3 599   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cp_axb
+
+
+Samples crossed: cp_a cp_b
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       0         16      100.00          
+
+
+Automatically Generated Cross Bins for cp_axb
+
+
+Bins
+
+cp_a  cp_b  COUNT AT LEAST 
+all_0 all_1 150   1        
+all_0 all_0 159   1        
+all_0 all_2 141   1        
+all_0 all_3 152   1        
+all_1 all_1 156   1        
+all_1 all_0 165   1        
+all_1 all_3 174   1        
+all_1 all_2 158   1        
+all_2 all_1 159   1        
+all_2 all_0 167   1        
+all_2 all_3 130   1        
+all_2 all_2 156   1        
+all_3 all_0 157   1        
+all_3 all_1 169   1        
+all_3 all_3 143   1        
+all_3 all_2 171   1        
+
+

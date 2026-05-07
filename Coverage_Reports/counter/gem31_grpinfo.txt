@@ -1,0 +1,354 @@
+Group : $unit::counter_coverage::cg_counter
+
+===============================================================================
+Group : $unit::counter_coverage::cg_counter
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+ 99.31  99.31    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/counter/gem31/gem31_counter_uvm_tb_all.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                     
+ 99.31 1      100    1        64           64            tb_top.me.obj.cg_counter 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::counter_coverage::cg_counter
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 22       0         22      100.00  
+Crosses   36       1         35      97.22   
+
+
+Variables for Group  $unit::counter_coverage::cg_counter
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_rst   2        0         2       100.00  100  1      1        2                    
+cp_up    2        0         2       100.00  100  1      1        2                    
+cp_dout  18       0         18      100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::counter_coverage::cg_counter
+
+
+CROSS         EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cross_up_dout 36       1         35      97.22   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_rst
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for cp_rst
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 89    1        { [ 0 ] }       
+auto[1] 6     1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_up
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for cp_up
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 43    1        { [ 0 ] }       
+auto[1] 52    1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_dout
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 18       0         18      100.00  
+
+
+User Defined Bins for cp_dout
+
+
+Bins
+
+NAME      COUNT AT LEAST SUBSUMED VALUES 
+other_1   15    1        --              
+other_2   17    1        --              
+other_3   13    1        --              
+other_4   8     1        --              
+other_5   4     1        --              
+other_6   2     1        --              
+other_7   2     1        --              
+other_8   2     1        --              
+other_9   2     1        --              
+other_a   2     1        --              
+other_b   2     1        --              
+other_c   2     1        --              
+other_d   2     1        --              
+other_e   3     1        --              
+max       5     1        --              
+zero      13    1        --              
+wrap_down 3     1        --              
+wrap_up   3     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cross_up_dout
+
+
+Samples crossed: cp_up cp_dout
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 36       1         35      97.22   1       
+
+
+Automatically Generated Cross Bins for cross_up_dout
+
+
+Uncovered bins
+
+cp_up     cp_dout   COUNT AT LEAST NUMBER 
+[auto[0]] [wrap_up] 0     1        1      
+
+
+Covered bins
+
+cp_up   cp_dout   COUNT AT LEAST 
+auto[0] other_c   1     1        
+auto[0] other_8   1     1        
+auto[0] other_6   1     1        
+auto[0] max       2     1        
+auto[0] other_3   7     1        
+auto[0] zero      3     1        
+auto[0] other_1   5     1        
+auto[0] other_d   1     1        
+auto[0] other_4   5     1        
+auto[0] other_a   1     1        
+auto[0] other_b   1     1        
+auto[0] other_9   1     1        
+auto[0] other_7   1     1        
+auto[0] wrap_down 2     1        
+auto[0] other_2   9     1        
+auto[0] other_e   1     1        
+auto[0] other_5   3     1        
+auto[1] other_6   1     1        
+auto[1] other_8   1     1        
+auto[1] other_c   1     1        
+auto[1] other_3   6     1        
+auto[1] max       3     1        
+auto[1] other_1   10    1        
+auto[1] zero      10    1        
+auto[1] other_d   1     1        
+auto[1] other_4   3     1        
+auto[1] other_a   1     1        
+auto[1] wrap_up   3     1        
+auto[1] other_7   1     1        
+auto[1] other_9   1     1        
+auto[1] other_b   1     1        
+auto[1] wrap_down 1     1        
+auto[1] other_2   8     1        
+auto[1] other_e   2     1        
+auto[1] other_5   1     1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.cg_counter
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 99.31 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                                
+ 99.31  99.31    1      100    1        1            64           64                    $unit::counter_coverage::cg_counter 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.cg_counter
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 22       0         22      100.00  
+Crosses   36       1         35      97.22   
+
+
+Variables for Group Instance  tb_top.me.obj.cg_counter
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_rst   2        0         2       100.00  100  1      1        2                    
+cp_up    2        0         2       100.00  100  1      1        2                    
+cp_dout  18       0         18      100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.cg_counter
+
+
+CROSS         EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cross_up_dout 36       1         35      97.22   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_rst
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for cp_rst
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 89    1        { [ 0 ] }       
+auto[1] 6     1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_up
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for cp_up
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 43    1        { [ 0 ] }       
+auto[1] 52    1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_dout
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 18       0         18      100.00  
+
+
+User Defined Bins for cp_dout
+
+
+Bins
+
+NAME      COUNT AT LEAST SUBSUMED VALUES 
+other_1   15    1        --              
+other_2   17    1        --              
+other_3   13    1        --              
+other_4   8     1        --              
+other_5   4     1        --              
+other_6   2     1        --              
+other_7   2     1        --              
+other_8   2     1        --              
+other_9   2     1        --              
+other_a   2     1        --              
+other_b   2     1        --              
+other_c   2     1        --              
+other_d   2     1        --              
+other_e   3     1        --              
+max       5     1        --              
+zero      13    1        --              
+wrap_down 3     1        --              
+wrap_up   3     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cross_up_dout
+
+
+Samples crossed: cp_up cp_dout
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 36       1         35      97.22   1       
+
+
+Automatically Generated Cross Bins for cross_up_dout
+
+
+Uncovered bins
+
+cp_up     cp_dout   COUNT AT LEAST NUMBER 
+[auto[0]] [wrap_up] 0     1        1      
+
+
+Covered bins
+
+cp_up   cp_dout   COUNT AT LEAST 
+auto[0] other_c   1     1        
+auto[0] other_8   1     1        
+auto[0] other_6   1     1        
+auto[0] max       2     1        
+auto[0] other_3   7     1        
+auto[0] zero      3     1        
+auto[0] other_1   5     1        
+auto[0] other_d   1     1        
+auto[0] other_4   5     1        
+auto[0] other_a   1     1        
+auto[0] other_b   1     1        
+auto[0] other_9   1     1        
+auto[0] other_7   1     1        
+auto[0] wrap_down 2     1        
+auto[0] other_2   9     1        
+auto[0] other_e   1     1        
+auto[0] other_5   3     1        
+auto[1] other_6   1     1        
+auto[1] other_8   1     1        
+auto[1] other_c   1     1        
+auto[1] other_3   6     1        
+auto[1] max       3     1        
+auto[1] other_1   10    1        
+auto[1] zero      10    1        
+auto[1] other_d   1     1        
+auto[1] other_4   3     1        
+auto[1] other_a   1     1        
+auto[1] wrap_up   3     1        
+auto[1] other_7   1     1        
+auto[1] other_9   1     1        
+auto[1] other_b   1     1        
+auto[1] wrap_down 1     1        
+auto[1] other_2   8     1        
+auto[1] other_e   2     1        
+auto[1] other_5   1     1        
+
+

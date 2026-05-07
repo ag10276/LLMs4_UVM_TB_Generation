@@ -1,0 +1,696 @@
+Group : $unit::sync_fifo_coverage::cg_fifo_ops
+
+===============================================================================
+Group : $unit::sync_fifo_coverage::cg_fifo_ops
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+ 97.50  97.50    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/syncfifo/claude/claude_syncfifo_uvm_tb_all.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                      
+ 97.50 1      100    1        64           64            tb_top.me.obj.cg_fifo_ops 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::sync_fifo_coverage::cg_fifo_ops
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 23       0         23      100.00  
+Crosses   33       6         27      94.00   
+
+
+Variables for Group  $unit::sync_fifo_coverage::cg_fifo_ops
+
+
+VARIABLE   EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_w_en    2        0         2       100.00  100  1      1        0                    
+cp_r_en    2        0         2       100.00  100  1      1        0                    
+cp_full    2        0         2       100.00  100  1      1        0                    
+cp_empty   2        0         2       100.00  100  1      1        0                    
+cp_wr_data 5        0         5       100.00  100  1      1        0                    
+cp_rd_data 5        0         5       100.00  100  1      1        0                    
+cp_count   5        0         5       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::sync_fifo_coverage::cg_fifo_ops
+
+
+CROSS               EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cp_operation        4        0         4       100.00  100  1      1        0                     
+cp_write_when_full  4        0         4       100.00  100  1      1        0                     
+cp_read_when_empty  4        0         4       100.00  100  1      1        0                     
+cp_ops_vs_count     20       6         14      70.00   100  1      1        0                     
+cp_full_empty_mutex 1        0         1       100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_w_en
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_w_en
+
+
+Bins
+
+NAME           COUNT AT LEAST SUBSUMED VALUES 
+write_inactive 139   1        --              
+write_active   162   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_r_en
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_r_en
+
+
+Bins
+
+NAME          COUNT AT LEAST SUBSUMED VALUES 
+read_inactive 115   1        --              
+read_active   186   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_full
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_full
+
+
+Bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+is_full  13    1        --              
+not_full 288   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_empty
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_empty
+
+
+Bins
+
+NAME      COUNT AT LEAST SUBSUMED VALUES 
+is_empty  48    1        --              
+not_empty 253   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_wr_data
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_wr_data
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+high 72    1        --              
+mid  138   1        --              
+low  55    1        --              
+max  1     1        --              
+zero 35    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_rd_data
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_rd_data
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+high 85    1        --              
+mid  146   1        --              
+low  46    1        --              
+max  4     1        --              
+zero 20    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_count
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_count
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+full  10    1        --              
+high  40    1        --              
+mid   84    1        --              
+low   118   1        --              
+empty 49    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cp_operation
+
+
+Samples crossed: cp_w_en cp_r_en
+CATEGORY                EXPECTED UNCOVERED COVERED PERCENT MISSING 
+User Defined Cross Bins 4        0         4       100.00          
+
+
+User Defined Cross Bins for cp_operation
+
+
+Bins
+
+NAME       COUNT AT LEAST 
+idle       19    1        
+write_only 96    1        
+read_only  120   1        
+both       66    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cp_write_when_full
+
+
+Samples crossed: cp_w_en cp_full
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              4        0         4       100.00          
+Automatically Generated Cross Bins 3        0         3       100.00          
+User Defined Cross Bins            1        0         1       100.00          
+
+
+Automatically Generated Cross Bins for cp_write_when_full
+
+
+Bins
+
+cp_w_en        cp_full  COUNT AT LEAST 
+write_inactive is_full  5     1        
+write_inactive not_full 134   1        
+write_active   not_full 154   1        
+
+
+User Defined Cross Bins for cp_write_when_full
+
+
+Bins
+
+NAME          COUNT AT LEAST 
+write_at_full 8     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cp_read_when_empty
+
+
+Samples crossed: cp_r_en cp_empty
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              4        0         4       100.00          
+Automatically Generated Cross Bins 3        0         3       100.00          
+User Defined Cross Bins            1        0         1       100.00          
+
+
+Automatically Generated Cross Bins for cp_read_when_empty
+
+
+Bins
+
+cp_r_en       cp_empty  COUNT AT LEAST 
+read_inactive is_empty  19    1        
+read_inactive not_empty 96    1        
+read_active   not_empty 157   1        
+
+
+User Defined Cross Bins for cp_read_when_empty
+
+
+Bins
+
+NAME          COUNT AT LEAST 
+read_at_empty 29    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cp_ops_vs_count
+
+
+Samples crossed: cp_w_en cp_r_en cp_count
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 20       6         14      70.00   6       
+
+
+Automatically Generated Cross Bins for cp_ops_vs_count
+
+
+Uncovered bins
+
+cp_w_en          cp_r_en         cp_count      COUNT AT LEAST NUMBER 
+[write_inactive] [read_inactive] [full , high] --    --       2      
+[write_inactive] [read_active]   [full]        0     1        1      
+[write_active]   [read_inactive] [empty]       0     1        1      
+[write_active]   [read_active]   [full]        0     1        1      
+[write_active]   [read_active]   [empty]       0     1        1      
+
+
+Covered bins
+
+cp_w_en        cp_r_en       cp_count COUNT AT LEAST 
+write_inactive read_inactive mid      8     1        
+write_inactive read_inactive low      7     1        
+write_inactive read_inactive empty    4     1        
+write_inactive read_active   low      38    1        
+write_inactive read_active   mid      25    1        
+write_inactive read_active   empty    45    1        
+write_inactive read_active   high     12    1        
+write_active   read_inactive mid      29    1        
+write_active   read_inactive low      40    1        
+write_active   read_inactive full     10    1        
+write_active   read_inactive high     17    1        
+write_active   read_active   mid      22    1        
+write_active   read_active   low      33    1        
+write_active   read_active   high     11    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cp_full_empty_mutex
+
+
+Samples crossed: cp_full cp_empty
+CATEGORY                EXPECTED UNCOVERED COVERED PERCENT MISSING 
+User Defined Cross Bins 1        0         1       100.00          
+
+
+User Defined Cross Bins for cp_full_empty_mutex
+
+
+Excluded/Illegal bins
+
+NAME            COUNT STATUS  
+mutex_violation 0     Illegal 
+
+
+Covered bins
+
+NAME         COUNT AT LEAST 
+valid_states 301   1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.cg_fifo_ops
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 97.50 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                                   
+ 97.50  97.50    1      100    1        1            64           64                    $unit::sync_fifo_coverage::cg_fifo_ops 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.cg_fifo_ops
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 23       0         23      100.00  
+Crosses   33       6         27      94.00   
+
+
+Variables for Group Instance  tb_top.me.obj.cg_fifo_ops
+
+
+VARIABLE   EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_w_en    2        0         2       100.00  100  1      1        0                    
+cp_r_en    2        0         2       100.00  100  1      1        0                    
+cp_full    2        0         2       100.00  100  1      1        0                    
+cp_empty   2        0         2       100.00  100  1      1        0                    
+cp_wr_data 5        0         5       100.00  100  1      1        0                    
+cp_rd_data 5        0         5       100.00  100  1      1        0                    
+cp_count   5        0         5       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.cg_fifo_ops
+
+
+CROSS               EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cp_operation        4        0         4       100.00  100  1      1        0                     
+cp_write_when_full  4        0         4       100.00  100  1      1        0                     
+cp_read_when_empty  4        0         4       100.00  100  1      1        0                     
+cp_ops_vs_count     20       6         14      70.00   100  1      1        0                     
+cp_full_empty_mutex 1        0         1       100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_w_en
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_w_en
+
+
+Bins
+
+NAME           COUNT AT LEAST SUBSUMED VALUES 
+write_inactive 139   1        --              
+write_active   162   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_r_en
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_r_en
+
+
+Bins
+
+NAME          COUNT AT LEAST SUBSUMED VALUES 
+read_inactive 115   1        --              
+read_active   186   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_full
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_full
+
+
+Bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+is_full  13    1        --              
+not_full 288   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_empty
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_empty
+
+
+Bins
+
+NAME      COUNT AT LEAST SUBSUMED VALUES 
+is_empty  48    1        --              
+not_empty 253   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_wr_data
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_wr_data
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+high 72    1        --              
+mid  138   1        --              
+low  55    1        --              
+max  1     1        --              
+zero 35    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_rd_data
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_rd_data
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+high 85    1        --              
+mid  146   1        --              
+low  46    1        --              
+max  4     1        --              
+zero 20    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_count
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_count
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+full  10    1        --              
+high  40    1        --              
+mid   84    1        --              
+low   118   1        --              
+empty 49    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cp_operation
+
+
+Samples crossed: cp_w_en cp_r_en
+CATEGORY                EXPECTED UNCOVERED COVERED PERCENT MISSING 
+User Defined Cross Bins 4        0         4       100.00          
+
+
+User Defined Cross Bins for cp_operation
+
+
+Bins
+
+NAME       COUNT AT LEAST 
+idle       19    1        
+write_only 96    1        
+read_only  120   1        
+both       66    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cp_write_when_full
+
+
+Samples crossed: cp_w_en cp_full
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              4        0         4       100.00          
+Automatically Generated Cross Bins 3        0         3       100.00          
+User Defined Cross Bins            1        0         1       100.00          
+
+
+Automatically Generated Cross Bins for cp_write_when_full
+
+
+Bins
+
+cp_w_en        cp_full  COUNT AT LEAST 
+write_inactive is_full  5     1        
+write_inactive not_full 134   1        
+write_active   not_full 154   1        
+
+
+User Defined Cross Bins for cp_write_when_full
+
+
+Bins
+
+NAME          COUNT AT LEAST 
+write_at_full 8     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cp_read_when_empty
+
+
+Samples crossed: cp_r_en cp_empty
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              4        0         4       100.00          
+Automatically Generated Cross Bins 3        0         3       100.00          
+User Defined Cross Bins            1        0         1       100.00          
+
+
+Automatically Generated Cross Bins for cp_read_when_empty
+
+
+Bins
+
+cp_r_en       cp_empty  COUNT AT LEAST 
+read_inactive is_empty  19    1        
+read_inactive not_empty 96    1        
+read_active   not_empty 157   1        
+
+
+User Defined Cross Bins for cp_read_when_empty
+
+
+Bins
+
+NAME          COUNT AT LEAST 
+read_at_empty 29    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cp_ops_vs_count
+
+
+Samples crossed: cp_w_en cp_r_en cp_count
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 20       6         14      70.00   6       
+
+
+Automatically Generated Cross Bins for cp_ops_vs_count
+
+
+Uncovered bins
+
+cp_w_en          cp_r_en         cp_count      COUNT AT LEAST NUMBER 
+[write_inactive] [read_inactive] [full , high] --    --       2      
+[write_inactive] [read_active]   [full]        0     1        1      
+[write_active]   [read_inactive] [empty]       0     1        1      
+[write_active]   [read_active]   [full]        0     1        1      
+[write_active]   [read_active]   [empty]       0     1        1      
+
+
+Covered bins
+
+cp_w_en        cp_r_en       cp_count COUNT AT LEAST 
+write_inactive read_inactive mid      8     1        
+write_inactive read_inactive low      7     1        
+write_inactive read_inactive empty    4     1        
+write_inactive read_active   low      38    1        
+write_inactive read_active   mid      25    1        
+write_inactive read_active   empty    45    1        
+write_inactive read_active   high     12    1        
+write_active   read_inactive mid      29    1        
+write_active   read_inactive low      40    1        
+write_active   read_inactive full     10    1        
+write_active   read_inactive high     17    1        
+write_active   read_active   mid      22    1        
+write_active   read_active   low      33    1        
+write_active   read_active   high     11    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cp_full_empty_mutex
+
+
+Samples crossed: cp_full cp_empty
+CATEGORY                EXPECTED UNCOVERED COVERED PERCENT MISSING 
+User Defined Cross Bins 1        0         1       100.00          
+
+
+User Defined Cross Bins for cp_full_empty_mutex
+
+
+Excluded/Illegal bins
+
+NAME            COUNT STATUS  
+mutex_violation 0     Illegal 
+
+
+Covered bins
+
+NAME         COUNT AT LEAST 
+valid_states 301   1        
+
+

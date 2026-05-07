@@ -1,0 +1,806 @@
+Group : $unit::fun_cov::cg
+
+===============================================================================
+Group : $unit::fun_cov::cg
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+ 80.08  80.08    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/adder/testbench.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME             
+ 80.08 1      100    1        64           64            tb_top.me.obj.cg 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::fun_cov::cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 34       0         34      100.00  
+Crosses   512      408       104     20.31   
+
+
+Variables for Group  $unit::fun_cov::cg
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_a     16       0         16      100.00  100  1      1        0                    
+cp_b     16       0         16      100.00  100  1      1        0                    
+cp_cin   2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::fun_cov::cg
+
+
+CROSS      EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cp_a_b_cin 512      408       104     20.31   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_a
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 16       0         16      100.00  
+
+
+User Defined Bins for cp_a
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 7     1        --              
+all_1 7     1        --              
+all_2 4     1        --              
+all_3 7     1        --              
+all_4 10    1        --              
+all_5 5     1        --              
+all_6 6     1        --              
+all_7 8     1        --              
+all_8 7     1        --              
+all_9 5     1        --              
+all_a 2     1        --              
+all_b 8     1        --              
+all_c 7     1        --              
+all_d 6     1        --              
+all_e 6     1        --              
+all_f 9     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_b
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 16       0         16      100.00  
+
+
+User Defined Bins for cp_b
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 8     1        --              
+all_1 2     1        --              
+all_2 5     1        --              
+all_3 9     1        --              
+all_4 8     1        --              
+all_5 8     1        --              
+all_6 7     1        --              
+all_7 6     1        --              
+all_8 6     1        --              
+all_9 4     1        --              
+all_a 10    1        --              
+all_b 7     1        --              
+all_c 7     1        --              
+all_d 3     1        --              
+all_e 10    1        --              
+all_f 4     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_cin
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_cin
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 52    1        --              
+all_1 52    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cp_a_b_cin
+
+
+Samples crossed: cp_a cp_b cp_cin
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 512      408       104     20.31   408     
+
+
+Automatically Generated Cross Bins for cp_a_b_cin
+
+
+Element holes
+
+cp_a    cp_b                                                    cp_cin COUNT AT LEAST NUMBER 
+[all_0] [all_1 , all_2 , all_3]                                 *      --    --       6      
+[all_0] [all_7 , all_8 , all_9 , all_a]                         *      --    --       8      
+[all_0] [all_c , all_d]                                         *      --    --       4      
+[all_1] [all_0 , all_1]                                         *      --    --       4      
+[all_1] [all_3 , all_4]                                         *      --    --       4      
+[all_1] [all_6 , all_7]                                         *      --    --       4      
+[all_1] [all_9]                                                 *      --    --       2      
+[all_1] [all_c , all_d , all_e]                                 *      --    --       6      
+[all_2] [all_0 , all_1 , all_2]                                 *      --    --       6      
+[all_2] [all_5 , all_6 , all_7 , all_8 , all_9]                 *      --    --       10     
+[all_2] [all_b]                                                 *      --    --       2      
+[all_2] [all_d , all_e , all_f]                                 *      --    --       6      
+[all_3] [all_0 , all_1 , all_2]                                 *      --    --       6      
+[all_3] [all_4]                                                 *      --    --       2      
+[all_3] [all_7 , all_8 , all_9]                                 *      --    --       6      
+[all_3] [all_c , all_d]                                         *      --    --       4      
+[all_3] [all_f]                                                 *      --    --       2      
+[all_4] [all_1 , all_2]                                         *      --    --       4      
+[all_4] [all_4]                                                 *      --    --       2      
+[all_4] [all_6]                                                 *      --    --       2      
+[all_4] [all_8 , all_9]                                         *      --    --       4      
+[all_4] [all_d]                                                 *      --    --       2      
+[all_5] [all_1 , all_2 , all_3]                                 *      --    --       6      
+[all_5] [all_5 , all_6 , all_7 , all_8 , all_9 , all_a]         *      --    --       12     
+[all_5] [all_c , all_d]                                         *      --    --       4      
+[all_5] [all_f]                                                 *      --    --       2      
+[all_6] [all_1 , all_2]                                         *      --    --       4      
+[all_6] [all_5 , all_6 , all_7]                                 *      --    --       6      
+[all_6] [all_9 , all_a , all_b , all_c , all_d]                 *      --    --       10     
+[all_6] [all_f]                                                 *      --    --       2      
+[all_7] [all_0]                                                 *      --    --       2      
+[all_7] [all_5 , all_6 , all_7 , all_8]                         *      --    --       8      
+[all_7] [all_a , all_b]                                         *      --    --       4      
+[all_7] [all_d]                                                 *      --    --       2      
+[all_7] [all_f]                                                 *      --    --       2      
+[all_8] [all_0 , all_1]                                         *      --    --       4      
+[all_8] [all_3]                                                 *      --    --       2      
+[all_8] [all_5]                                                 *      --    --       2      
+[all_8] [all_7]                                                 *      --    --       2      
+[all_8] [all_9]                                                 *      --    --       2      
+[all_8] [all_b , all_c , all_d , all_e , all_f]                 *      --    --       10     
+[all_9] [all_0 , all_1 , all_2 , all_3 , all_4]                 *      --    --       10     
+[all_9] [all_9 , all_a , all_b , all_c , all_d , all_e , all_f] *      --    --       14     
+[all_a] [all_0 , all_1]                                         *      --    --       4      
+[all_a] [all_3 , all_4 , all_5 , all_6 , all_7 , all_8]         *      --    --       12     
+[all_a] [all_a , all_b , all_c , all_d , all_e , all_f]         *      --    --       12     
+[all_b] [all_1 , all_2]                                         *      --    --       4      
+[all_b] [all_4]                                                 *      --    --       2      
+[all_b] [all_6]                                                 *      --    --       2      
+[all_b] [all_8 , all_9 , all_a , all_b , all_c]                 *      --    --       10     
+[all_b] [all_f]                                                 *      --    --       2      
+[all_c] [all_2]                                                 *      --    --       2      
+[all_c] [all_4 , all_5 , all_6 , all_7 , all_8 , all_9]         *      --    --       12     
+[all_c] [all_b]                                                 *      --    --       2      
+[all_c] [all_d , all_e]                                         *      --    --       4      
+[all_d] [all_1 , all_2]                                         *      --    --       4      
+[all_d] [all_4 , all_5 , all_6]                                 *      --    --       6      
+[all_d] [all_9]                                                 *      --    --       2      
+[all_d] [all_b , all_c , all_d]                                 *      --    --       6      
+[all_d] [all_f]                                                 *      --    --       2      
+[all_e] [all_0 , all_1 , all_2 , all_3]                         *      --    --       8      
+[all_e] [all_6]                                                 *      --    --       2      
+[all_e] [all_8]                                                 *      --    --       2      
+[all_e] [all_a , all_b]                                         *      --    --       4      
+[all_e] [all_e , all_f]                                         *      --    --       4      
+[all_f] [all_0 , all_1]                                         *      --    --       4      
+[all_f] [all_3]                                                 *      --    --       2      
+[all_f] [all_5]                                                 *      --    --       2      
+[all_f] [all_7 , all_8]                                         *      --    --       4      
+[all_f] [all_f]                                                 *      --    --       2      
+
+
+Uncovered bins
+
+cp_a    cp_b            cp_cin  COUNT AT LEAST NUMBER 
+[all_0] [all_0]         [all_0] 0     1        1      
+[all_0] [all_4]         [all_0] 0     1        1      
+[all_0] [all_5]         [all_1] 0     1        1      
+[all_0] [all_6]         [all_0] 0     1        1      
+[all_0] [all_b]         [all_0] 0     1        1      
+[all_0] [all_e]         [all_1] 0     1        1      
+[all_0] [all_f]         [all_0] 0     1        1      
+[all_1] [all_2]         [all_1] 0     1        1      
+[all_1] [all_5]         [all_1] 0     1        1      
+[all_1] [all_a]         [all_1] 0     1        1      
+[all_1] [all_b]         [all_0] 0     1        1      
+[all_1] [all_f]         [all_0] 0     1        1      
+[all_2] [all_3 , all_4] [all_0] --    --       2      
+[all_2] [all_a]         [all_0] 0     1        1      
+[all_2] [all_c]         [all_1] 0     1        1      
+[all_3] [all_3]         [all_0] 0     1        1      
+[all_3] [all_5]         [all_0] 0     1        1      
+[all_3] [all_a]         [all_1] 0     1        1      
+[all_3] [all_b]         [all_0] 0     1        1      
+[all_3] [all_e]         [all_1] 0     1        1      
+[all_4] [all_3]         [all_0] 0     1        1      
+[all_4] [all_5]         [all_1] 0     1        1      
+[all_4] [all_7]         [all_1] 0     1        1      
+[all_4] [all_a]         [all_0] 0     1        1      
+[all_4] [all_b , all_c] [all_1] --    --       2      
+[all_4] [all_e]         [all_1] 0     1        1      
+[all_4] [all_f]         [all_0] 0     1        1      
+[all_5] [all_0]         [all_0] 0     1        1      
+[all_5] [all_4]         [all_0] 0     1        1      
+[all_5] [all_e]         [all_1] 0     1        1      
+[all_6] [all_0]         [all_1] 0     1        1      
+[all_6] [all_3]         [all_1] 0     1        1      
+[all_6] [all_4]         [all_0] 0     1        1      
+[all_6] [all_8]         [all_0] 0     1        1      
+[all_7] [all_1]         [all_1] 0     1        1      
+[all_7] [all_2 , all_3] [all_0] --    --       2      
+[all_7] [all_4]         [all_1] 0     1        1      
+[all_7] [all_9]         [all_1] 0     1        1      
+[all_7] [all_e]         [all_1] 0     1        1      
+[all_8] [all_2]         [all_1] 0     1        1      
+[all_8] [all_4]         [all_0] 0     1        1      
+[all_8] [all_8]         [all_0] 0     1        1      
+[all_9] [all_5 , all_6] [all_1] --    --       2      
+[all_9] [all_8]         [all_1] 0     1        1      
+[all_a] [all_2]         [all_0] 0     1        1      
+[all_a] [all_9]         [all_0] 0     1        1      
+[all_b] [all_0]         [all_0] 0     1        1      
+[all_b] [all_7]         [all_1] 0     1        1      
+[all_b] [all_d , all_e] [all_1] --    --       2      
+[all_c] [all_0 , all_1] [all_1] --    --       2      
+[all_c] [all_3]         [all_0] 0     1        1      
+[all_c] [all_c]         [all_0] 0     1        1      
+[all_c] [all_f]         [all_1] 0     1        1      
+[all_d] [all_0]         [all_0] 0     1        1      
+[all_d] [all_3]         [all_0] 0     1        1      
+[all_d] [all_7]         [all_0] 0     1        1      
+[all_d] [all_8]         [all_1] 0     1        1      
+[all_d] [all_a]         [all_1] 0     1        1      
+[all_d] [all_e]         [all_0] 0     1        1      
+[all_e] [all_4 , all_5] [all_1] --    --       2      
+[all_e] [all_7]         [all_0] 0     1        1      
+[all_e] [all_9]         [all_0] 0     1        1      
+[all_e] [all_c]         [all_1] 0     1        1      
+[all_e] [all_d]         [all_0] 0     1        1      
+[all_f] [all_2]         [all_0] 0     1        1      
+[all_f] [all_4]         [all_1] 0     1        1      
+[all_f] [all_6]         [all_1] 0     1        1      
+[all_f] [all_9]         [all_1] 0     1        1      
+[all_f] [all_a]         [all_0] 0     1        1      
+[all_f] [all_b , all_c] [all_1] --    --       2      
+[all_f] [all_d , all_e] [all_0] --    --       2      
+
+
+Covered bins
+
+cp_a  cp_b  cp_cin COUNT AT LEAST 
+all_0 all_0 all_1  1     1        
+all_0 all_4 all_1  1     1        
+all_0 all_5 all_0  1     1        
+all_0 all_6 all_1  1     1        
+all_0 all_b all_1  1     1        
+all_0 all_e all_0  1     1        
+all_0 all_f all_1  1     1        
+all_1 all_2 all_0  1     1        
+all_1 all_5 all_0  1     1        
+all_1 all_8 all_1  1     1        
+all_1 all_8 all_0  1     1        
+all_1 all_a all_0  1     1        
+all_1 all_b all_1  1     1        
+all_1 all_f all_1  1     1        
+all_2 all_3 all_1  1     1        
+all_2 all_4 all_1  1     1        
+all_2 all_a all_1  1     1        
+all_2 all_c all_0  1     1        
+all_3 all_3 all_1  1     1        
+all_3 all_5 all_1  1     1        
+all_3 all_6 all_1  1     1        
+all_3 all_6 all_0  1     1        
+all_3 all_a all_0  1     1        
+all_3 all_b all_1  1     1        
+all_3 all_e all_0  1     1        
+all_4 all_0 all_1  1     1        
+all_4 all_0 all_0  1     1        
+all_4 all_3 all_1  1     1        
+all_4 all_5 all_0  1     1        
+all_4 all_7 all_0  1     1        
+all_4 all_a all_1  1     1        
+all_4 all_b all_0  1     1        
+all_4 all_c all_0  1     1        
+all_4 all_e all_0  1     1        
+all_4 all_f all_1  1     1        
+all_5 all_0 all_1  1     1        
+all_5 all_4 all_1  1     1        
+all_5 all_b all_1  1     1        
+all_5 all_b all_0  1     1        
+all_5 all_e all_0  1     1        
+all_6 all_0 all_0  1     1        
+all_6 all_3 all_0  1     1        
+all_6 all_4 all_1  1     1        
+all_6 all_8 all_1  1     1        
+all_6 all_e all_1  1     1        
+all_6 all_e all_0  1     1        
+all_7 all_1 all_0  1     1        
+all_7 all_2 all_1  1     1        
+all_7 all_3 all_1  1     1        
+all_7 all_4 all_0  1     1        
+all_7 all_9 all_0  1     1        
+all_7 all_c all_1  1     1        
+all_7 all_c all_0  1     1        
+all_7 all_e all_0  1     1        
+all_8 all_2 all_0  1     1        
+all_8 all_4 all_1  1     1        
+all_8 all_6 all_1  1     1        
+all_8 all_6 all_0  1     1        
+all_8 all_8 all_1  1     1        
+all_8 all_a all_1  1     1        
+all_8 all_a all_0  1     1        
+all_9 all_5 all_0  1     1        
+all_9 all_6 all_0  1     1        
+all_9 all_7 all_1  1     1        
+all_9 all_7 all_0  1     1        
+all_9 all_8 all_0  1     1        
+all_a all_2 all_1  1     1        
+all_a all_9 all_1  1     1        
+all_b all_0 all_1  1     1        
+all_b all_3 all_1  1     1        
+all_b all_3 all_0  1     1        
+all_b all_5 all_1  1     1        
+all_b all_5 all_0  1     1        
+all_b all_7 all_0  1     1        
+all_b all_d all_0  1     1        
+all_b all_e all_0  1     1        
+all_c all_0 all_0  1     1        
+all_c all_1 all_0  1     1        
+all_c all_3 all_1  1     1        
+all_c all_a all_1  1     1        
+all_c all_a all_0  1     1        
+all_c all_c all_1  1     1        
+all_c all_f all_0  1     1        
+all_d all_0 all_1  1     1        
+all_d all_3 all_1  1     1        
+all_d all_7 all_1  1     1        
+all_d all_8 all_0  1     1        
+all_d all_a all_0  1     1        
+all_d all_e all_1  1     1        
+all_e all_4 all_0  1     1        
+all_e all_5 all_0  1     1        
+all_e all_7 all_1  1     1        
+all_e all_9 all_1  1     1        
+all_e all_c all_0  1     1        
+all_e all_d all_1  1     1        
+all_f all_2 all_1  1     1        
+all_f all_4 all_0  1     1        
+all_f all_6 all_0  1     1        
+all_f all_9 all_0  1     1        
+all_f all_a all_1  1     1        
+all_f all_b all_0  1     1        
+all_f all_c all_0  1     1        
+all_f all_d all_1  1     1        
+all_f all_e all_1  1     1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.cg
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 80.08 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME               
+ 80.08  80.08    1      100    1        1            64           64                    $unit::fun_cov::cg 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 34       0         34      100.00  
+Crosses   512      408       104     20.31   
+
+
+Variables for Group Instance  tb_top.me.obj.cg
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_a     16       0         16      100.00  100  1      1        0                    
+cp_b     16       0         16      100.00  100  1      1        0                    
+cp_cin   2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.cg
+
+
+CROSS      EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cp_a_b_cin 512      408       104     20.31   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_a
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 16       0         16      100.00  
+
+
+User Defined Bins for cp_a
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 7     1        --              
+all_1 7     1        --              
+all_2 4     1        --              
+all_3 7     1        --              
+all_4 10    1        --              
+all_5 5     1        --              
+all_6 6     1        --              
+all_7 8     1        --              
+all_8 7     1        --              
+all_9 5     1        --              
+all_a 2     1        --              
+all_b 8     1        --              
+all_c 7     1        --              
+all_d 6     1        --              
+all_e 6     1        --              
+all_f 9     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_b
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 16       0         16      100.00  
+
+
+User Defined Bins for cp_b
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 8     1        --              
+all_1 2     1        --              
+all_2 5     1        --              
+all_3 9     1        --              
+all_4 8     1        --              
+all_5 8     1        --              
+all_6 7     1        --              
+all_7 6     1        --              
+all_8 6     1        --              
+all_9 4     1        --              
+all_a 10    1        --              
+all_b 7     1        --              
+all_c 7     1        --              
+all_d 3     1        --              
+all_e 10    1        --              
+all_f 4     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_cin
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_cin
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 52    1        --              
+all_1 52    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cp_a_b_cin
+
+
+Samples crossed: cp_a cp_b cp_cin
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 512      408       104     20.31   408     
+
+
+Automatically Generated Cross Bins for cp_a_b_cin
+
+
+Element holes
+
+cp_a    cp_b                                                    cp_cin COUNT AT LEAST NUMBER 
+[all_0] [all_1 , all_2 , all_3]                                 *      --    --       6      
+[all_0] [all_7 , all_8 , all_9 , all_a]                         *      --    --       8      
+[all_0] [all_c , all_d]                                         *      --    --       4      
+[all_1] [all_0 , all_1]                                         *      --    --       4      
+[all_1] [all_3 , all_4]                                         *      --    --       4      
+[all_1] [all_6 , all_7]                                         *      --    --       4      
+[all_1] [all_9]                                                 *      --    --       2      
+[all_1] [all_c , all_d , all_e]                                 *      --    --       6      
+[all_2] [all_0 , all_1 , all_2]                                 *      --    --       6      
+[all_2] [all_5 , all_6 , all_7 , all_8 , all_9]                 *      --    --       10     
+[all_2] [all_b]                                                 *      --    --       2      
+[all_2] [all_d , all_e , all_f]                                 *      --    --       6      
+[all_3] [all_0 , all_1 , all_2]                                 *      --    --       6      
+[all_3] [all_4]                                                 *      --    --       2      
+[all_3] [all_7 , all_8 , all_9]                                 *      --    --       6      
+[all_3] [all_c , all_d]                                         *      --    --       4      
+[all_3] [all_f]                                                 *      --    --       2      
+[all_4] [all_1 , all_2]                                         *      --    --       4      
+[all_4] [all_4]                                                 *      --    --       2      
+[all_4] [all_6]                                                 *      --    --       2      
+[all_4] [all_8 , all_9]                                         *      --    --       4      
+[all_4] [all_d]                                                 *      --    --       2      
+[all_5] [all_1 , all_2 , all_3]                                 *      --    --       6      
+[all_5] [all_5 , all_6 , all_7 , all_8 , all_9 , all_a]         *      --    --       12     
+[all_5] [all_c , all_d]                                         *      --    --       4      
+[all_5] [all_f]                                                 *      --    --       2      
+[all_6] [all_1 , all_2]                                         *      --    --       4      
+[all_6] [all_5 , all_6 , all_7]                                 *      --    --       6      
+[all_6] [all_9 , all_a , all_b , all_c , all_d]                 *      --    --       10     
+[all_6] [all_f]                                                 *      --    --       2      
+[all_7] [all_0]                                                 *      --    --       2      
+[all_7] [all_5 , all_6 , all_7 , all_8]                         *      --    --       8      
+[all_7] [all_a , all_b]                                         *      --    --       4      
+[all_7] [all_d]                                                 *      --    --       2      
+[all_7] [all_f]                                                 *      --    --       2      
+[all_8] [all_0 , all_1]                                         *      --    --       4      
+[all_8] [all_3]                                                 *      --    --       2      
+[all_8] [all_5]                                                 *      --    --       2      
+[all_8] [all_7]                                                 *      --    --       2      
+[all_8] [all_9]                                                 *      --    --       2      
+[all_8] [all_b , all_c , all_d , all_e , all_f]                 *      --    --       10     
+[all_9] [all_0 , all_1 , all_2 , all_3 , all_4]                 *      --    --       10     
+[all_9] [all_9 , all_a , all_b , all_c , all_d , all_e , all_f] *      --    --       14     
+[all_a] [all_0 , all_1]                                         *      --    --       4      
+[all_a] [all_3 , all_4 , all_5 , all_6 , all_7 , all_8]         *      --    --       12     
+[all_a] [all_a , all_b , all_c , all_d , all_e , all_f]         *      --    --       12     
+[all_b] [all_1 , all_2]                                         *      --    --       4      
+[all_b] [all_4]                                                 *      --    --       2      
+[all_b] [all_6]                                                 *      --    --       2      
+[all_b] [all_8 , all_9 , all_a , all_b , all_c]                 *      --    --       10     
+[all_b] [all_f]                                                 *      --    --       2      
+[all_c] [all_2]                                                 *      --    --       2      
+[all_c] [all_4 , all_5 , all_6 , all_7 , all_8 , all_9]         *      --    --       12     
+[all_c] [all_b]                                                 *      --    --       2      
+[all_c] [all_d , all_e]                                         *      --    --       4      
+[all_d] [all_1 , all_2]                                         *      --    --       4      
+[all_d] [all_4 , all_5 , all_6]                                 *      --    --       6      
+[all_d] [all_9]                                                 *      --    --       2      
+[all_d] [all_b , all_c , all_d]                                 *      --    --       6      
+[all_d] [all_f]                                                 *      --    --       2      
+[all_e] [all_0 , all_1 , all_2 , all_3]                         *      --    --       8      
+[all_e] [all_6]                                                 *      --    --       2      
+[all_e] [all_8]                                                 *      --    --       2      
+[all_e] [all_a , all_b]                                         *      --    --       4      
+[all_e] [all_e , all_f]                                         *      --    --       4      
+[all_f] [all_0 , all_1]                                         *      --    --       4      
+[all_f] [all_3]                                                 *      --    --       2      
+[all_f] [all_5]                                                 *      --    --       2      
+[all_f] [all_7 , all_8]                                         *      --    --       4      
+[all_f] [all_f]                                                 *      --    --       2      
+
+
+Uncovered bins
+
+cp_a    cp_b            cp_cin  COUNT AT LEAST NUMBER 
+[all_0] [all_0]         [all_0] 0     1        1      
+[all_0] [all_4]         [all_0] 0     1        1      
+[all_0] [all_5]         [all_1] 0     1        1      
+[all_0] [all_6]         [all_0] 0     1        1      
+[all_0] [all_b]         [all_0] 0     1        1      
+[all_0] [all_e]         [all_1] 0     1        1      
+[all_0] [all_f]         [all_0] 0     1        1      
+[all_1] [all_2]         [all_1] 0     1        1      
+[all_1] [all_5]         [all_1] 0     1        1      
+[all_1] [all_a]         [all_1] 0     1        1      
+[all_1] [all_b]         [all_0] 0     1        1      
+[all_1] [all_f]         [all_0] 0     1        1      
+[all_2] [all_3 , all_4] [all_0] --    --       2      
+[all_2] [all_a]         [all_0] 0     1        1      
+[all_2] [all_c]         [all_1] 0     1        1      
+[all_3] [all_3]         [all_0] 0     1        1      
+[all_3] [all_5]         [all_0] 0     1        1      
+[all_3] [all_a]         [all_1] 0     1        1      
+[all_3] [all_b]         [all_0] 0     1        1      
+[all_3] [all_e]         [all_1] 0     1        1      
+[all_4] [all_3]         [all_0] 0     1        1      
+[all_4] [all_5]         [all_1] 0     1        1      
+[all_4] [all_7]         [all_1] 0     1        1      
+[all_4] [all_a]         [all_0] 0     1        1      
+[all_4] [all_b , all_c] [all_1] --    --       2      
+[all_4] [all_e]         [all_1] 0     1        1      
+[all_4] [all_f]         [all_0] 0     1        1      
+[all_5] [all_0]         [all_0] 0     1        1      
+[all_5] [all_4]         [all_0] 0     1        1      
+[all_5] [all_e]         [all_1] 0     1        1      
+[all_6] [all_0]         [all_1] 0     1        1      
+[all_6] [all_3]         [all_1] 0     1        1      
+[all_6] [all_4]         [all_0] 0     1        1      
+[all_6] [all_8]         [all_0] 0     1        1      
+[all_7] [all_1]         [all_1] 0     1        1      
+[all_7] [all_2 , all_3] [all_0] --    --       2      
+[all_7] [all_4]         [all_1] 0     1        1      
+[all_7] [all_9]         [all_1] 0     1        1      
+[all_7] [all_e]         [all_1] 0     1        1      
+[all_8] [all_2]         [all_1] 0     1        1      
+[all_8] [all_4]         [all_0] 0     1        1      
+[all_8] [all_8]         [all_0] 0     1        1      
+[all_9] [all_5 , all_6] [all_1] --    --       2      
+[all_9] [all_8]         [all_1] 0     1        1      
+[all_a] [all_2]         [all_0] 0     1        1      
+[all_a] [all_9]         [all_0] 0     1        1      
+[all_b] [all_0]         [all_0] 0     1        1      
+[all_b] [all_7]         [all_1] 0     1        1      
+[all_b] [all_d , all_e] [all_1] --    --       2      
+[all_c] [all_0 , all_1] [all_1] --    --       2      
+[all_c] [all_3]         [all_0] 0     1        1      
+[all_c] [all_c]         [all_0] 0     1        1      
+[all_c] [all_f]         [all_1] 0     1        1      
+[all_d] [all_0]         [all_0] 0     1        1      
+[all_d] [all_3]         [all_0] 0     1        1      
+[all_d] [all_7]         [all_0] 0     1        1      
+[all_d] [all_8]         [all_1] 0     1        1      
+[all_d] [all_a]         [all_1] 0     1        1      
+[all_d] [all_e]         [all_0] 0     1        1      
+[all_e] [all_4 , all_5] [all_1] --    --       2      
+[all_e] [all_7]         [all_0] 0     1        1      
+[all_e] [all_9]         [all_0] 0     1        1      
+[all_e] [all_c]         [all_1] 0     1        1      
+[all_e] [all_d]         [all_0] 0     1        1      
+[all_f] [all_2]         [all_0] 0     1        1      
+[all_f] [all_4]         [all_1] 0     1        1      
+[all_f] [all_6]         [all_1] 0     1        1      
+[all_f] [all_9]         [all_1] 0     1        1      
+[all_f] [all_a]         [all_0] 0     1        1      
+[all_f] [all_b , all_c] [all_1] --    --       2      
+[all_f] [all_d , all_e] [all_0] --    --       2      
+
+
+Covered bins
+
+cp_a  cp_b  cp_cin COUNT AT LEAST 
+all_0 all_0 all_1  1     1        
+all_0 all_4 all_1  1     1        
+all_0 all_5 all_0  1     1        
+all_0 all_6 all_1  1     1        
+all_0 all_b all_1  1     1        
+all_0 all_e all_0  1     1        
+all_0 all_f all_1  1     1        
+all_1 all_2 all_0  1     1        
+all_1 all_5 all_0  1     1        
+all_1 all_8 all_1  1     1        
+all_1 all_8 all_0  1     1        
+all_1 all_a all_0  1     1        
+all_1 all_b all_1  1     1        
+all_1 all_f all_1  1     1        
+all_2 all_3 all_1  1     1        
+all_2 all_4 all_1  1     1        
+all_2 all_a all_1  1     1        
+all_2 all_c all_0  1     1        
+all_3 all_3 all_1  1     1        
+all_3 all_5 all_1  1     1        
+all_3 all_6 all_1  1     1        
+all_3 all_6 all_0  1     1        
+all_3 all_a all_0  1     1        
+all_3 all_b all_1  1     1        
+all_3 all_e all_0  1     1        
+all_4 all_0 all_1  1     1        
+all_4 all_0 all_0  1     1        
+all_4 all_3 all_1  1     1        
+all_4 all_5 all_0  1     1        
+all_4 all_7 all_0  1     1        
+all_4 all_a all_1  1     1        
+all_4 all_b all_0  1     1        
+all_4 all_c all_0  1     1        
+all_4 all_e all_0  1     1        
+all_4 all_f all_1  1     1        
+all_5 all_0 all_1  1     1        
+all_5 all_4 all_1  1     1        
+all_5 all_b all_1  1     1        
+all_5 all_b all_0  1     1        
+all_5 all_e all_0  1     1        
+all_6 all_0 all_0  1     1        
+all_6 all_3 all_0  1     1        
+all_6 all_4 all_1  1     1        
+all_6 all_8 all_1  1     1        
+all_6 all_e all_1  1     1        
+all_6 all_e all_0  1     1        
+all_7 all_1 all_0  1     1        
+all_7 all_2 all_1  1     1        
+all_7 all_3 all_1  1     1        
+all_7 all_4 all_0  1     1        
+all_7 all_9 all_0  1     1        
+all_7 all_c all_1  1     1        
+all_7 all_c all_0  1     1        
+all_7 all_e all_0  1     1        
+all_8 all_2 all_0  1     1        
+all_8 all_4 all_1  1     1        
+all_8 all_6 all_1  1     1        
+all_8 all_6 all_0  1     1        
+all_8 all_8 all_1  1     1        
+all_8 all_a all_1  1     1        
+all_8 all_a all_0  1     1        
+all_9 all_5 all_0  1     1        
+all_9 all_6 all_0  1     1        
+all_9 all_7 all_1  1     1        
+all_9 all_7 all_0  1     1        
+all_9 all_8 all_0  1     1        
+all_a all_2 all_1  1     1        
+all_a all_9 all_1  1     1        
+all_b all_0 all_1  1     1        
+all_b all_3 all_1  1     1        
+all_b all_3 all_0  1     1        
+all_b all_5 all_1  1     1        
+all_b all_5 all_0  1     1        
+all_b all_7 all_0  1     1        
+all_b all_d all_0  1     1        
+all_b all_e all_0  1     1        
+all_c all_0 all_0  1     1        
+all_c all_1 all_0  1     1        
+all_c all_3 all_1  1     1        
+all_c all_a all_1  1     1        
+all_c all_a all_0  1     1        
+all_c all_c all_1  1     1        
+all_c all_f all_0  1     1        
+all_d all_0 all_1  1     1        
+all_d all_3 all_1  1     1        
+all_d all_7 all_1  1     1        
+all_d all_8 all_0  1     1        
+all_d all_a all_0  1     1        
+all_d all_e all_1  1     1        
+all_e all_4 all_0  1     1        
+all_e all_5 all_0  1     1        
+all_e all_7 all_1  1     1        
+all_e all_9 all_1  1     1        
+all_e all_c all_0  1     1        
+all_e all_d all_1  1     1        
+all_f all_2 all_1  1     1        
+all_f all_4 all_0  1     1        
+all_f all_6 all_0  1     1        
+all_f all_9 all_0  1     1        
+all_f all_a all_1  1     1        
+all_f all_b all_0  1     1        
+all_f all_c all_0  1     1        
+all_f all_d all_1  1     1        
+all_f all_e all_1  1     1        
+
+

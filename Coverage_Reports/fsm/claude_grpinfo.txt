@@ -1,0 +1,722 @@
+Group : $unit::tlc_coverage::cg_traffic_lights
+
+===============================================================================
+Group : $unit::tlc_coverage::cg_traffic_lights
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+ 60.00  60.00    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/fsm/claude/claude_fsm_uvm_tb_all.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                            
+ 60.00 1      100    1        64           64            tb_top.me.obj.cg_traffic_lights 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::tlc_coverage::cg_traffic_lights
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 10       2         8       83.33   
+Crosses   48       37        11      25.00   
+
+
+Variables for Group  $unit::tlc_coverage::cg_traffic_lights
+
+
+VARIABLE    EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_light_NS 4        1         3       75.00   100  1      1        0                    
+cp_light_EW 4        1         3       75.00   100  1      1        0                    
+cp_reset    2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::tlc_coverage::cg_traffic_lights
+
+
+CROSS           EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_lights       16       11        5       31.25   100  1      1        0                     
+cx_reset_lights 32       26        6       18.75   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_light_NS
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        1         3       75.00   
+
+
+User Defined Bins for cp_light_NS
+
+
+Uncovered bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES NUMBER 
+illegal 0     1        --              1      
+
+
+Covered bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+green  20    1        --              
+yellow 17    1        --              
+red    64    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_light_EW
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        1         3       75.00   
+
+
+User Defined Bins for cp_light_EW
+
+
+Uncovered bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES NUMBER 
+illegal 0     1        --              1      
+
+
+Covered bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+green  15    1        --              
+yellow 14    1        --              
+red    72    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_reset
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_reset
+
+
+Bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+inactive 77    1        --              
+active   24    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_lights
+
+
+Samples crossed: cp_light_NS cp_light_EW
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              16       11        5       31.25   11      
+Automatically Generated Cross Bins 11       11        0       0.00    11      
+User Defined Cross Bins            5        0         5       100.00          
+
+
+Automatically Generated Cross Bins for cx_lights
+
+
+Element holes
+
+cp_light_NS cp_light_EW COUNT AT LEAST NUMBER 
+[illegal]   *           --    --       4      
+
+
+Uncovered bins
+
+cp_light_NS      cp_light_EW                COUNT AT LEAST NUMBER 
+[green , yellow] [illegal , green , yellow] --    --       6      
+[red]            [illegal]                  0     1        1      
+
+
+User Defined Cross Bins for cx_lights
+
+
+Bins
+
+NAME     COUNT AT LEAST 
+s0_state 20    1        
+s1_state 17    1        
+s2_state 15    1        
+s3_state 14    1        
+sr_state 35    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_reset_lights
+
+
+Samples crossed: cp_reset cp_light_NS cp_light_EW
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              32       26        6       18.75   26      
+Automatically Generated Cross Bins 31       26        5       16.13   26      
+User Defined Cross Bins            1        0         1       100.00          
+
+
+Automatically Generated Cross Bins for cx_reset_lights
+
+
+Element holes
+
+cp_reset   cp_light_NS                cp_light_EW COUNT AT LEAST NUMBER 
+[inactive] [illegal]                  *           --    --       4      
+[active]   [illegal , green , yellow] *           --    --       12     
+
+
+Uncovered bins
+
+cp_reset   cp_light_NS      cp_light_EW                COUNT AT LEAST NUMBER 
+[inactive] [green , yellow] [illegal , green , yellow] --    --       6      
+[inactive] [red]            [illegal]                  0     1        1      
+[active]   [red]            [illegal , green , yellow] --    --       3      
+
+
+Covered bins
+
+cp_reset cp_light_NS cp_light_EW COUNT AT LEAST 
+inactive green       red         20    1        
+inactive yellow      red         17    1        
+inactive red         green       15    1        
+inactive red         yellow      14    1        
+inactive red         red         11    1        
+
+
+User Defined Cross Bins for cx_reset_lights
+
+
+Bins
+
+NAME           COUNT AT LEAST 
+reset_both_red 24    1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.cg_traffic_lights
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 60.00 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                                   
+ 60.00  60.00    1      100    1        1            64           64                    $unit::tlc_coverage::cg_traffic_lights 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.cg_traffic_lights
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 10       2         8       83.33   
+Crosses   48       37        11      25.00   
+
+
+Variables for Group Instance  tb_top.me.obj.cg_traffic_lights
+
+
+VARIABLE    EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_light_NS 4        1         3       75.00   100  1      1        0                    
+cp_light_EW 4        1         3       75.00   100  1      1        0                    
+cp_reset    2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.cg_traffic_lights
+
+
+CROSS           EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_lights       16       11        5       31.25   100  1      1        0                     
+cx_reset_lights 32       26        6       18.75   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_light_NS
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        1         3       75.00   
+
+
+User Defined Bins for cp_light_NS
+
+
+Uncovered bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES NUMBER 
+illegal 0     1        --              1      
+
+
+Covered bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+green  20    1        --              
+yellow 17    1        --              
+red    64    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_light_EW
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        1         3       75.00   
+
+
+User Defined Bins for cp_light_EW
+
+
+Uncovered bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES NUMBER 
+illegal 0     1        --              1      
+
+
+Covered bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+green  15    1        --              
+yellow 14    1        --              
+red    72    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_reset
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_reset
+
+
+Bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+inactive 77    1        --              
+active   24    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_lights
+
+
+Samples crossed: cp_light_NS cp_light_EW
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              16       11        5       31.25   11      
+Automatically Generated Cross Bins 11       11        0       0.00    11      
+User Defined Cross Bins            5        0         5       100.00          
+
+
+Automatically Generated Cross Bins for cx_lights
+
+
+Element holes
+
+cp_light_NS cp_light_EW COUNT AT LEAST NUMBER 
+[illegal]   *           --    --       4      
+
+
+Uncovered bins
+
+cp_light_NS      cp_light_EW                COUNT AT LEAST NUMBER 
+[green , yellow] [illegal , green , yellow] --    --       6      
+[red]            [illegal]                  0     1        1      
+
+
+User Defined Cross Bins for cx_lights
+
+
+Bins
+
+NAME     COUNT AT LEAST 
+s0_state 20    1        
+s1_state 17    1        
+s2_state 15    1        
+s3_state 14    1        
+sr_state 35    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_reset_lights
+
+
+Samples crossed: cp_reset cp_light_NS cp_light_EW
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              32       26        6       18.75   26      
+Automatically Generated Cross Bins 31       26        5       16.13   26      
+User Defined Cross Bins            1        0         1       100.00          
+
+
+Automatically Generated Cross Bins for cx_reset_lights
+
+
+Element holes
+
+cp_reset   cp_light_NS                cp_light_EW COUNT AT LEAST NUMBER 
+[inactive] [illegal]                  *           --    --       4      
+[active]   [illegal , green , yellow] *           --    --       12     
+
+
+Uncovered bins
+
+cp_reset   cp_light_NS      cp_light_EW                COUNT AT LEAST NUMBER 
+[inactive] [green , yellow] [illegal , green , yellow] --    --       6      
+[inactive] [red]            [illegal]                  0     1        1      
+[active]   [red]            [illegal , green , yellow] --    --       3      
+
+
+Covered bins
+
+cp_reset cp_light_NS cp_light_EW COUNT AT LEAST 
+inactive green       red         20    1        
+inactive yellow      red         17    1        
+inactive red         green       15    1        
+inactive red         yellow      14    1        
+inactive red         red         11    1        
+
+
+User Defined Cross Bins for cx_reset_lights
+
+
+Bins
+
+NAME           COUNT AT LEAST 
+reset_both_red 24    1        
+
+
+Group : $unit::tlc_coverage::cg_state_outputs
+
+===============================================================================
+Group : $unit::tlc_coverage::cg_state_outputs
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+100.00 100.00    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/fsm/claude/claude_fsm_uvm_tb_all.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                           
+100.00 1      100    1        64           64            tb_top.me.obj.cg_state_outputs 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::tlc_coverage::cg_state_outputs
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 6        0         6       100.00  
+
+
+Variables for Group  $unit::tlc_coverage::cg_state_outputs
+
+
+VARIABLE      EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_combined   5        0         5       100.00  100  1      1        0                    
+cp_full_cycle 1        0         1       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_combined
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_combined
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+sr   35    1        --              
+s3   14    1        --              
+s2   15    1        --              
+s1   17    1        --              
+s0   20    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_full_cycle
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 1        0         1       100.00  
+
+
+User Defined Bins for cp_full_cycle
+
+
+Bins
+
+NAME       COUNT AT LEAST SUBSUMED VALUES 
+full_cycle 13    1        --              
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.cg_state_outputs
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                                  
+100.00 100.00    1      100    1        1            64           64                    $unit::tlc_coverage::cg_state_outputs 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.cg_state_outputs
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 6        0         6       100.00  
+
+
+Variables for Group Instance  tb_top.me.obj.cg_state_outputs
+
+
+VARIABLE      EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_combined   5        0         5       100.00  100  1      1        0                    
+cp_full_cycle 1        0         1       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_combined
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_combined
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+sr   35    1        --              
+s3   14    1        --              
+s2   15    1        --              
+s1   17    1        --              
+s0   20    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_full_cycle
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 1        0         1       100.00  
+
+
+User Defined Bins for cp_full_cycle
+
+
+Bins
+
+NAME       COUNT AT LEAST SUBSUMED VALUES 
+full_cycle 13    1        --              
+
+
+Group : $unit::tlc_coverage::cg_transitions
+
+===============================================================================
+Group : $unit::tlc_coverage::cg_transitions
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+100.00 100.00    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/fsm/claude/claude_fsm_uvm_tb_all.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                         
+100.00 1      100    1        64           64            tb_top.me.obj.cg_transitions 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::tlc_coverage::cg_transitions
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 8        0         8       100.00  
+
+
+Variables for Group  $unit::tlc_coverage::cg_transitions
+
+
+VARIABLE    EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_ns_trans 4        0         4       100.00  100  1      1        0                    
+cp_ew_trans 4        0         4       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_ns_trans
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_ns_trans
+
+
+Bins
+
+NAME            COUNT AT LEAST SUBSUMED VALUES 
+red_to_green    20    1        --              
+red_to_red      40    1        --              
+yellow_to_red   15    1        --              
+green_to_yellow 17    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_ew_trans
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_ew_trans
+
+
+Bins
+
+NAME            COUNT AT LEAST SUBSUMED VALUES 
+yellow_to_red   13    1        --              
+green_to_yellow 14    1        --              
+red_to_green    15    1        --              
+red_to_red      52    1        --              
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.cg_transitions
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                                
+100.00 100.00    1      100    1        1            64           64                    $unit::tlc_coverage::cg_transitions 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.cg_transitions
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 8        0         8       100.00  
+
+
+Variables for Group Instance  tb_top.me.obj.cg_transitions
+
+
+VARIABLE    EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_ns_trans 4        0         4       100.00  100  1      1        0                    
+cp_ew_trans 4        0         4       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_ns_trans
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_ns_trans
+
+
+Bins
+
+NAME            COUNT AT LEAST SUBSUMED VALUES 
+red_to_green    20    1        --              
+red_to_red      40    1        --              
+yellow_to_red   15    1        --              
+green_to_yellow 17    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_ew_trans
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_ew_trans
+
+
+Bins
+
+NAME            COUNT AT LEAST SUBSUMED VALUES 
+yellow_to_red   13    1        --              
+green_to_yellow 14    1        --              
+red_to_green    15    1        --              
+red_to_red      52    1        --              
+
+

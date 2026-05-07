@@ -1,0 +1,1022 @@
+Group : $unit::fun_cov::cg
+
+===============================================================================
+Group : $unit::fun_cov::cg
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+100.00 100.00    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/mux/testbench.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME             
+100.00 1      100    1        64           64            tb_top.me.obj.cg 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::fun_cov::cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 68       0         68      100.00  
+Crosses   196      0         196     100.00  
+
+
+Variables for Group  $unit::fun_cov::cg
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_sel   4        0         4       100.00  100  1      1        0                    
+cp_in0   16       0         16      100.00  100  1      1        0                    
+cp_in1   16       0         16      100.00  100  1      1        0                    
+cp_in2   16       0         16      100.00  100  1      1        0                    
+cp_in3   16       0         16      100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::fun_cov::cg
+
+
+CROSS      EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_sel_in0 49       0         49      100.00  100  1      1        0                     
+cx_sel_in1 49       0         49      100.00  100  1      1        0                     
+cx_sel_in2 49       0         49      100.00  100  1      1        0                     
+cx_sel_in3 49       0         49      100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_sel
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_sel
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+s11  133   1        --              
+s10  147   1        --              
+s01  119   1        --              
+s00  134   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_in0
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 16       0         16      100.00  
+
+
+User Defined Bins for cp_in0
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 35    1        --              
+all_1 35    1        --              
+all_2 35    1        --              
+all_3 37    1        --              
+all_4 19    1        --              
+all_5 45    1        --              
+all_6 40    1        --              
+all_7 34    1        --              
+all_8 31    1        --              
+all_9 26    1        --              
+all_a 33    1        --              
+all_b 36    1        --              
+all_c 39    1        --              
+all_d 20    1        --              
+all_e 31    1        --              
+all_f 37    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_in1
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 16       0         16      100.00  
+
+
+User Defined Bins for cp_in1
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 29    1        --              
+all_1 31    1        --              
+all_2 32    1        --              
+all_3 25    1        --              
+all_4 29    1        --              
+all_5 37    1        --              
+all_6 23    1        --              
+all_7 42    1        --              
+all_8 41    1        --              
+all_9 23    1        --              
+all_a 38    1        --              
+all_b 32    1        --              
+all_c 28    1        --              
+all_d 46    1        --              
+all_e 37    1        --              
+all_f 40    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_in2
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 16       0         16      100.00  
+
+
+User Defined Bins for cp_in2
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 34    1        --              
+all_1 27    1        --              
+all_2 34    1        --              
+all_3 37    1        --              
+all_4 34    1        --              
+all_5 30    1        --              
+all_6 38    1        --              
+all_7 27    1        --              
+all_8 31    1        --              
+all_9 30    1        --              
+all_a 37    1        --              
+all_b 35    1        --              
+all_c 38    1        --              
+all_d 39    1        --              
+all_e 26    1        --              
+all_f 36    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_in3
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 16       0         16      100.00  
+
+
+User Defined Bins for cp_in3
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 37    1        --              
+all_1 28    1        --              
+all_2 39    1        --              
+all_3 32    1        --              
+all_4 38    1        --              
+all_5 33    1        --              
+all_6 28    1        --              
+all_7 42    1        --              
+all_8 44    1        --              
+all_9 29    1        --              
+all_a 32    1        --              
+all_b 20    1        --              
+all_c 31    1        --              
+all_d 31    1        --              
+all_e 37    1        --              
+all_f 32    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_sel_in0
+
+
+Samples crossed: cp_sel cp_in0
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              49       0         49      100.00          
+Automatically Generated Cross Bins 48       0         48      100.00          
+User Defined Cross Bins            1        0         1       100.00          
+
+
+Automatically Generated Cross Bins for cx_sel_in0
+
+
+Bins
+
+cp_sel cp_in0 COUNT AT LEAST 
+s11    all_8  3     1        
+s11    all_9  5     1        
+s11    all_7  10    1        
+s11    all_c  12    1        
+s11    all_6  16    1        
+s11    all_b  7     1        
+s11    all_3  7     1        
+s11    all_2  8     1        
+s11    all_f  9     1        
+s11    all_e  7     1        
+s11    all_1  12    1        
+s11    all_d  4     1        
+s11    all_0  10    1        
+s11    all_4  5     1        
+s11    all_5  13    1        
+s11    all_a  5     1        
+s10    all_c  11    1        
+s10    all_b  9     1        
+s10    all_6  7     1        
+s10    all_8  11    1        
+s10    all_7  10    1        
+s10    all_9  7     1        
+s10    all_2  4     1        
+s10    all_3  13    1        
+s10    all_f  11    1        
+s10    all_e  9     1        
+s10    all_d  3     1        
+s10    all_1  12    1        
+s10    all_0  9     1        
+s10    all_4  7     1        
+s10    all_5  16    1        
+s10    all_a  8     1        
+s01    all_6  6     1        
+s01    all_9  10    1        
+s01    all_c  7     1        
+s01    all_b  12    1        
+s01    all_8  10    1        
+s01    all_7  4     1        
+s01    all_f  6     1        
+s01    all_3  9     1        
+s01    all_2  8     1        
+s01    all_1  4     1        
+s01    all_d  6     1        
+s01    all_0  7     1        
+s01    all_e  8     1        
+s01    all_5  10    1        
+s01    all_4  4     1        
+s01    all_a  8     1        
+
+
+User Defined Cross Bins for cx_sel_in0
+
+
+Bins
+
+NAME       COUNT AT LEAST 
+valid_sel0 134   1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_sel_in1
+
+
+Samples crossed: cp_sel cp_in1
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              49       0         49      100.00          
+Automatically Generated Cross Bins 48       0         48      100.00          
+User Defined Cross Bins            1        0         1       100.00          
+
+
+Automatically Generated Cross Bins for cx_sel_in1
+
+
+Bins
+
+cp_sel cp_in1 COUNT AT LEAST 
+s11    all_6  8     1        
+s11    all_c  6     1        
+s11    all_9  11    1        
+s11    all_8  12    1        
+s11    all_7  10    1        
+s11    all_b  9     1        
+s11    all_f  13    1        
+s11    all_3  6     1        
+s11    all_2  10    1        
+s11    all_0  3     1        
+s11    all_1  3     1        
+s11    all_e  10    1        
+s11    all_d  15    1        
+s11    all_a  7     1        
+s11    all_4  3     1        
+s11    all_5  7     1        
+s10    all_c  8     1        
+s10    all_9  5     1        
+s10    all_b  11    1        
+s10    all_8  9     1        
+s10    all_6  6     1        
+s10    all_7  11    1        
+s10    all_3  7     1        
+s10    all_f  12    1        
+s10    all_2  9     1        
+s10    all_0  5     1        
+s10    all_e  5     1        
+s10    all_1  9     1        
+s10    all_d  14    1        
+s10    all_a  14    1        
+s10    all_4  11    1        
+s10    all_5  11    1        
+s00    all_6  6     1        
+s00    all_7  10    1        
+s00    all_c  9     1        
+s00    all_9  4     1        
+s00    all_b  5     1        
+s00    all_8  9     1        
+s00    all_2  7     1        
+s00    all_f  10    1        
+s00    all_3  5     1        
+s00    all_d  7     1        
+s00    all_e  8     1        
+s00    all_0  14    1        
+s00    all_1  9     1        
+s00    all_4  9     1        
+s00    all_a  11    1        
+s00    all_5  11    1        
+
+
+User Defined Cross Bins for cx_sel_in1
+
+
+Bins
+
+NAME       COUNT AT LEAST 
+valid_sel1 119   1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_sel_in2
+
+
+Samples crossed: cp_sel cp_in2
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              49       0         49      100.00          
+Automatically Generated Cross Bins 48       0         48      100.00          
+User Defined Cross Bins            1        0         1       100.00          
+
+
+Automatically Generated Cross Bins for cx_sel_in2
+
+
+Bins
+
+cp_sel cp_in2 COUNT AT LEAST 
+s11    all_b  6     1        
+s11    all_6  14    1        
+s11    all_8  7     1        
+s11    all_9  5     1        
+s11    all_c  12    1        
+s11    all_7  6     1        
+s11    all_f  9     1        
+s11    all_3  9     1        
+s11    all_2  14    1        
+s11    all_1  4     1        
+s11    all_d  7     1        
+s11    all_0  9     1        
+s11    all_e  6     1        
+s11    all_5  4     1        
+s11    all_4  11    1        
+s11    all_a  10    1        
+s01    all_8  7     1        
+s01    all_b  10    1        
+s01    all_7  10    1        
+s01    all_c  9     1        
+s01    all_6  6     1        
+s01    all_9  5     1        
+s01    all_f  8     1        
+s01    all_3  13    1        
+s01    all_2  7     1        
+s01    all_0  6     1        
+s01    all_1  4     1        
+s01    all_d  8     1        
+s01    all_e  7     1        
+s01    all_5  6     1        
+s01    all_a  5     1        
+s01    all_4  8     1        
+s00    all_9  9     1        
+s00    all_8  7     1        
+s00    all_b  11    1        
+s00    all_7  5     1        
+s00    all_6  9     1        
+s00    all_c  7     1        
+s00    all_f  8     1        
+s00    all_2  7     1        
+s00    all_3  8     1        
+s00    all_e  5     1        
+s00    all_d  8     1        
+s00    all_1  14    1        
+s00    all_0  8     1        
+s00    all_4  8     1        
+s00    all_5  9     1        
+s00    all_a  11    1        
+
+
+User Defined Cross Bins for cx_sel_in2
+
+
+Bins
+
+NAME       COUNT AT LEAST 
+valid_sel2 147   1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_sel_in3
+
+
+Samples crossed: cp_sel cp_in3
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              49       0         49      100.00          
+Automatically Generated Cross Bins 48       0         48      100.00          
+User Defined Cross Bins            1        0         1       100.00          
+
+
+Automatically Generated Cross Bins for cx_sel_in3
+
+
+Bins
+
+cp_sel cp_in3 COUNT AT LEAST 
+s10    all_7  13    1        
+s10    all_9  6     1        
+s10    all_8  12    1        
+s10    all_b  6     1        
+s10    all_c  10    1        
+s10    all_6  8     1        
+s10    all_f  6     1        
+s10    all_2  6     1        
+s10    all_3  9     1        
+s10    all_d  9     1        
+s10    all_1  7     1        
+s10    all_0  15    1        
+s10    all_e  15    1        
+s10    all_4  6     1        
+s10    all_5  7     1        
+s10    all_a  12    1        
+s01    all_6  3     1        
+s01    all_c  10    1        
+s01    all_9  7     1        
+s01    all_7  14    1        
+s01    all_8  8     1        
+s01    all_b  3     1        
+s01    all_f  9     1        
+s01    all_3  11    1        
+s01    all_2  11    1        
+s01    all_d  6     1        
+s01    all_1  6     1        
+s01    all_0  4     1        
+s01    all_e  8     1        
+s01    all_5  5     1        
+s01    all_a  5     1        
+s01    all_4  9     1        
+s00    all_7  8     1        
+s00    all_6  7     1        
+s00    all_8  10    1        
+s00    all_c  8     1        
+s00    all_9  10    1        
+s00    all_b  5     1        
+s00    all_f  7     1        
+s00    all_3  9     1        
+s00    all_2  14    1        
+s00    all_1  5     1        
+s00    all_0  7     1        
+s00    all_e  8     1        
+s00    all_d  7     1        
+s00    all_a  6     1        
+s00    all_5  14    1        
+s00    all_4  9     1        
+
+
+User Defined Cross Bins for cx_sel_in3
+
+
+Bins
+
+NAME       COUNT AT LEAST 
+valid_sel3 133   1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.cg
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME               
+100.00 100.00    1      100    1        1            64           64                    $unit::fun_cov::cg 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 68       0         68      100.00  
+Crosses   196      0         196     100.00  
+
+
+Variables for Group Instance  tb_top.me.obj.cg
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_sel   4        0         4       100.00  100  1      1        0                    
+cp_in0   16       0         16      100.00  100  1      1        0                    
+cp_in1   16       0         16      100.00  100  1      1        0                    
+cp_in2   16       0         16      100.00  100  1      1        0                    
+cp_in3   16       0         16      100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.cg
+
+
+CROSS      EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_sel_in0 49       0         49      100.00  100  1      1        0                     
+cx_sel_in1 49       0         49      100.00  100  1      1        0                     
+cx_sel_in2 49       0         49      100.00  100  1      1        0                     
+cx_sel_in3 49       0         49      100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_sel
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_sel
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+s11  133   1        --              
+s10  147   1        --              
+s01  119   1        --              
+s00  134   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_in0
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 16       0         16      100.00  
+
+
+User Defined Bins for cp_in0
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 35    1        --              
+all_1 35    1        --              
+all_2 35    1        --              
+all_3 37    1        --              
+all_4 19    1        --              
+all_5 45    1        --              
+all_6 40    1        --              
+all_7 34    1        --              
+all_8 31    1        --              
+all_9 26    1        --              
+all_a 33    1        --              
+all_b 36    1        --              
+all_c 39    1        --              
+all_d 20    1        --              
+all_e 31    1        --              
+all_f 37    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_in1
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 16       0         16      100.00  
+
+
+User Defined Bins for cp_in1
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 29    1        --              
+all_1 31    1        --              
+all_2 32    1        --              
+all_3 25    1        --              
+all_4 29    1        --              
+all_5 37    1        --              
+all_6 23    1        --              
+all_7 42    1        --              
+all_8 41    1        --              
+all_9 23    1        --              
+all_a 38    1        --              
+all_b 32    1        --              
+all_c 28    1        --              
+all_d 46    1        --              
+all_e 37    1        --              
+all_f 40    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_in2
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 16       0         16      100.00  
+
+
+User Defined Bins for cp_in2
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 34    1        --              
+all_1 27    1        --              
+all_2 34    1        --              
+all_3 37    1        --              
+all_4 34    1        --              
+all_5 30    1        --              
+all_6 38    1        --              
+all_7 27    1        --              
+all_8 31    1        --              
+all_9 30    1        --              
+all_a 37    1        --              
+all_b 35    1        --              
+all_c 38    1        --              
+all_d 39    1        --              
+all_e 26    1        --              
+all_f 36    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_in3
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 16       0         16      100.00  
+
+
+User Defined Bins for cp_in3
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 37    1        --              
+all_1 28    1        --              
+all_2 39    1        --              
+all_3 32    1        --              
+all_4 38    1        --              
+all_5 33    1        --              
+all_6 28    1        --              
+all_7 42    1        --              
+all_8 44    1        --              
+all_9 29    1        --              
+all_a 32    1        --              
+all_b 20    1        --              
+all_c 31    1        --              
+all_d 31    1        --              
+all_e 37    1        --              
+all_f 32    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_sel_in0
+
+
+Samples crossed: cp_sel cp_in0
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              49       0         49      100.00          
+Automatically Generated Cross Bins 48       0         48      100.00          
+User Defined Cross Bins            1        0         1       100.00          
+
+
+Automatically Generated Cross Bins for cx_sel_in0
+
+
+Bins
+
+cp_sel cp_in0 COUNT AT LEAST 
+s11    all_8  3     1        
+s11    all_9  5     1        
+s11    all_7  10    1        
+s11    all_c  12    1        
+s11    all_6  16    1        
+s11    all_b  7     1        
+s11    all_3  7     1        
+s11    all_2  8     1        
+s11    all_f  9     1        
+s11    all_e  7     1        
+s11    all_1  12    1        
+s11    all_d  4     1        
+s11    all_0  10    1        
+s11    all_4  5     1        
+s11    all_5  13    1        
+s11    all_a  5     1        
+s10    all_c  11    1        
+s10    all_b  9     1        
+s10    all_6  7     1        
+s10    all_8  11    1        
+s10    all_7  10    1        
+s10    all_9  7     1        
+s10    all_2  4     1        
+s10    all_3  13    1        
+s10    all_f  11    1        
+s10    all_e  9     1        
+s10    all_d  3     1        
+s10    all_1  12    1        
+s10    all_0  9     1        
+s10    all_4  7     1        
+s10    all_5  16    1        
+s10    all_a  8     1        
+s01    all_6  6     1        
+s01    all_9  10    1        
+s01    all_c  7     1        
+s01    all_b  12    1        
+s01    all_8  10    1        
+s01    all_7  4     1        
+s01    all_f  6     1        
+s01    all_3  9     1        
+s01    all_2  8     1        
+s01    all_1  4     1        
+s01    all_d  6     1        
+s01    all_0  7     1        
+s01    all_e  8     1        
+s01    all_5  10    1        
+s01    all_4  4     1        
+s01    all_a  8     1        
+
+
+User Defined Cross Bins for cx_sel_in0
+
+
+Bins
+
+NAME       COUNT AT LEAST 
+valid_sel0 134   1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_sel_in1
+
+
+Samples crossed: cp_sel cp_in1
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              49       0         49      100.00          
+Automatically Generated Cross Bins 48       0         48      100.00          
+User Defined Cross Bins            1        0         1       100.00          
+
+
+Automatically Generated Cross Bins for cx_sel_in1
+
+
+Bins
+
+cp_sel cp_in1 COUNT AT LEAST 
+s11    all_6  8     1        
+s11    all_c  6     1        
+s11    all_9  11    1        
+s11    all_8  12    1        
+s11    all_7  10    1        
+s11    all_b  9     1        
+s11    all_f  13    1        
+s11    all_3  6     1        
+s11    all_2  10    1        
+s11    all_0  3     1        
+s11    all_1  3     1        
+s11    all_e  10    1        
+s11    all_d  15    1        
+s11    all_a  7     1        
+s11    all_4  3     1        
+s11    all_5  7     1        
+s10    all_c  8     1        
+s10    all_9  5     1        
+s10    all_b  11    1        
+s10    all_8  9     1        
+s10    all_6  6     1        
+s10    all_7  11    1        
+s10    all_3  7     1        
+s10    all_f  12    1        
+s10    all_2  9     1        
+s10    all_0  5     1        
+s10    all_e  5     1        
+s10    all_1  9     1        
+s10    all_d  14    1        
+s10    all_a  14    1        
+s10    all_4  11    1        
+s10    all_5  11    1        
+s00    all_6  6     1        
+s00    all_7  10    1        
+s00    all_c  9     1        
+s00    all_9  4     1        
+s00    all_b  5     1        
+s00    all_8  9     1        
+s00    all_2  7     1        
+s00    all_f  10    1        
+s00    all_3  5     1        
+s00    all_d  7     1        
+s00    all_e  8     1        
+s00    all_0  14    1        
+s00    all_1  9     1        
+s00    all_4  9     1        
+s00    all_a  11    1        
+s00    all_5  11    1        
+
+
+User Defined Cross Bins for cx_sel_in1
+
+
+Bins
+
+NAME       COUNT AT LEAST 
+valid_sel1 119   1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_sel_in2
+
+
+Samples crossed: cp_sel cp_in2
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              49       0         49      100.00          
+Automatically Generated Cross Bins 48       0         48      100.00          
+User Defined Cross Bins            1        0         1       100.00          
+
+
+Automatically Generated Cross Bins for cx_sel_in2
+
+
+Bins
+
+cp_sel cp_in2 COUNT AT LEAST 
+s11    all_b  6     1        
+s11    all_6  14    1        
+s11    all_8  7     1        
+s11    all_9  5     1        
+s11    all_c  12    1        
+s11    all_7  6     1        
+s11    all_f  9     1        
+s11    all_3  9     1        
+s11    all_2  14    1        
+s11    all_1  4     1        
+s11    all_d  7     1        
+s11    all_0  9     1        
+s11    all_e  6     1        
+s11    all_5  4     1        
+s11    all_4  11    1        
+s11    all_a  10    1        
+s01    all_8  7     1        
+s01    all_b  10    1        
+s01    all_7  10    1        
+s01    all_c  9     1        
+s01    all_6  6     1        
+s01    all_9  5     1        
+s01    all_f  8     1        
+s01    all_3  13    1        
+s01    all_2  7     1        
+s01    all_0  6     1        
+s01    all_1  4     1        
+s01    all_d  8     1        
+s01    all_e  7     1        
+s01    all_5  6     1        
+s01    all_a  5     1        
+s01    all_4  8     1        
+s00    all_9  9     1        
+s00    all_8  7     1        
+s00    all_b  11    1        
+s00    all_7  5     1        
+s00    all_6  9     1        
+s00    all_c  7     1        
+s00    all_f  8     1        
+s00    all_2  7     1        
+s00    all_3  8     1        
+s00    all_e  5     1        
+s00    all_d  8     1        
+s00    all_1  14    1        
+s00    all_0  8     1        
+s00    all_4  8     1        
+s00    all_5  9     1        
+s00    all_a  11    1        
+
+
+User Defined Cross Bins for cx_sel_in2
+
+
+Bins
+
+NAME       COUNT AT LEAST 
+valid_sel2 147   1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_sel_in3
+
+
+Samples crossed: cp_sel cp_in3
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              49       0         49      100.00          
+Automatically Generated Cross Bins 48       0         48      100.00          
+User Defined Cross Bins            1        0         1       100.00          
+
+
+Automatically Generated Cross Bins for cx_sel_in3
+
+
+Bins
+
+cp_sel cp_in3 COUNT AT LEAST 
+s10    all_7  13    1        
+s10    all_9  6     1        
+s10    all_8  12    1        
+s10    all_b  6     1        
+s10    all_c  10    1        
+s10    all_6  8     1        
+s10    all_f  6     1        
+s10    all_2  6     1        
+s10    all_3  9     1        
+s10    all_d  9     1        
+s10    all_1  7     1        
+s10    all_0  15    1        
+s10    all_e  15    1        
+s10    all_4  6     1        
+s10    all_5  7     1        
+s10    all_a  12    1        
+s01    all_6  3     1        
+s01    all_c  10    1        
+s01    all_9  7     1        
+s01    all_7  14    1        
+s01    all_8  8     1        
+s01    all_b  3     1        
+s01    all_f  9     1        
+s01    all_3  11    1        
+s01    all_2  11    1        
+s01    all_d  6     1        
+s01    all_1  6     1        
+s01    all_0  4     1        
+s01    all_e  8     1        
+s01    all_5  5     1        
+s01    all_a  5     1        
+s01    all_4  9     1        
+s00    all_7  8     1        
+s00    all_6  7     1        
+s00    all_8  10    1        
+s00    all_c  8     1        
+s00    all_9  10    1        
+s00    all_b  5     1        
+s00    all_f  7     1        
+s00    all_3  9     1        
+s00    all_2  14    1        
+s00    all_1  5     1        
+s00    all_0  7     1        
+s00    all_e  8     1        
+s00    all_d  7     1        
+s00    all_a  6     1        
+s00    all_5  14    1        
+s00    all_4  9     1        
+
+
+User Defined Cross Bins for cx_sel_in3
+
+
+Bins
+
+NAME       COUNT AT LEAST 
+valid_sel3 133   1        
+
+

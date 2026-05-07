@@ -1,0 +1,226 @@
+Group : $unit::traffic_light_coverage::cg_light
+
+===============================================================================
+Group : $unit::traffic_light_coverage::cg_light
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+ 85.19  85.19    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/fsm/mini/mini_fsm_uvm_tb_all.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                   
+ 85.19 1      100    1        64           64            tb_top.me.obj.cg_light 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::traffic_light_coverage::cg_light
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 6        0         6       100.00  
+Crosses   9        4         5       55.56   
+
+
+Variables for Group  $unit::traffic_light_coverage::cg_light
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_NS    3        0         3       100.00  100  1      1        0                    
+cp_EW    3        0         3       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::traffic_light_coverage::cg_light
+
+
+CROSS       EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cross_NS_EW 9        4         5       55.56   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_NS
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_NS
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+green  4     1        --              
+yellow 3     1        --              
+red    15    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_EW
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_EW
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+green  2     1        --              
+yellow 2     1        --              
+red    18    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cross_NS_EW
+
+
+Samples crossed: cp_NS cp_EW
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 9        4         5       55.56   4       
+
+
+Automatically Generated Cross Bins for cross_NS_EW
+
+
+Uncovered bins
+
+cp_NS            cp_EW            COUNT AT LEAST NUMBER 
+[green , yellow] [green , yellow] --    --       4      
+
+
+Covered bins
+
+cp_NS  cp_EW  COUNT AT LEAST 
+green  red    4     1        
+yellow red    3     1        
+red    yellow 2     1        
+red    green  2     1        
+red    red    11    1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.cg_light
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 85.19 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                                    
+ 85.19  85.19    1      100    1        1            64           64                    $unit::traffic_light_coverage::cg_light 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.cg_light
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 6        0         6       100.00  
+Crosses   9        4         5       55.56   
+
+
+Variables for Group Instance  tb_top.me.obj.cg_light
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_NS    3        0         3       100.00  100  1      1        0                    
+cp_EW    3        0         3       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.cg_light
+
+
+CROSS       EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cross_NS_EW 9        4         5       55.56   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_NS
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_NS
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+green  4     1        --              
+yellow 3     1        --              
+red    15    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_EW
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_EW
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+green  2     1        --              
+yellow 2     1        --              
+red    18    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cross_NS_EW
+
+
+Samples crossed: cp_NS cp_EW
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 9        4         5       55.56   4       
+
+
+Automatically Generated Cross Bins for cross_NS_EW
+
+
+Uncovered bins
+
+cp_NS            cp_EW            COUNT AT LEAST NUMBER 
+[green , yellow] [green , yellow] --    --       4      
+
+
+Covered bins
+
+cp_NS  cp_EW  COUNT AT LEAST 
+green  red    4     1        
+yellow red    3     1        
+red    yellow 2     1        
+red    green  2     1        
+red    red    11    1        
+
+

@@ -1,0 +1,1302 @@
+Group : $unit::fun_cov::cg
+
+===============================================================================
+Group : $unit::fun_cov::cg
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+ 95.02  95.02    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/adder/testbench.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME             
+ 95.02 1      100    1        64           64            tb_top.me.obj.cg 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::fun_cov::cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 34       0         34      100.00  
+Crosses   512      102       410     80.08   
+
+
+Variables for Group  $unit::fun_cov::cg
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_a     16       0         16      100.00  100  1      1        0                    
+cp_b     16       0         16      100.00  100  1      1        0                    
+cp_cin   2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::fun_cov::cg
+
+
+CROSS      EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cp_a_b_cin 512      102       410     80.08   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_a
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 16       0         16      100.00  
+
+
+User Defined Bins for cp_a
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 50    1        --              
+all_1 49    1        --              
+all_2 61    1        --              
+all_3 54    1        --              
+all_4 39    1        --              
+all_5 48    1        --              
+all_6 58    1        --              
+all_7 42    1        --              
+all_8 47    1        --              
+all_9 53    1        --              
+all_a 63    1        --              
+all_b 52    1        --              
+all_c 60    1        --              
+all_d 54    1        --              
+all_e 48    1        --              
+all_f 54    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_b
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 16       0         16      100.00  
+
+
+User Defined Bins for cp_b
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 49    1        --              
+all_1 62    1        --              
+all_2 45    1        --              
+all_3 54    1        --              
+all_4 54    1        --              
+all_5 48    1        --              
+all_6 55    1        --              
+all_7 50    1        --              
+all_8 49    1        --              
+all_9 53    1        --              
+all_a 38    1        --              
+all_b 45    1        --              
+all_c 56    1        --              
+all_d 71    1        --              
+all_e 47    1        --              
+all_f 56    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_cin
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_cin
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 415   1        --              
+all_1 417   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cp_a_b_cin
+
+
+Samples crossed: cp_a cp_b cp_cin
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 512      102       410     80.08   102     
+
+
+Automatically Generated Cross Bins for cp_a_b_cin
+
+
+Element holes
+
+cp_a    cp_b    cp_cin COUNT AT LEAST NUMBER 
+[all_1] [all_8] *      --    --       2      
+[all_3] [all_6] *      --    --       2      
+[all_4] [all_0] *      --    --       2      
+[all_5] [all_b] *      --    --       2      
+[all_6] [all_e] *      --    --       2      
+[all_7] [all_c] *      --    --       2      
+[all_8] [all_6] *      --    --       2      
+[all_8] [all_a] *      --    --       2      
+[all_9] [all_7] *      --    --       2      
+[all_b] [all_3] *      --    --       2      
+[all_b] [all_5] *      --    --       2      
+[all_c] [all_a] *      --    --       2      
+
+
+Uncovered bins
+
+cp_a    cp_b            cp_cin  COUNT AT LEAST NUMBER 
+[all_0] [all_0]         [all_1] 0     1        1      
+[all_0] [all_4]         [all_1] 0     1        1      
+[all_0] [all_5]         [all_0] 0     1        1      
+[all_0] [all_6]         [all_1] 0     1        1      
+[all_0] [all_b]         [all_1] 0     1        1      
+[all_0] [all_e]         [all_0] 0     1        1      
+[all_0] [all_f]         [all_1] 0     1        1      
+[all_1] [all_2]         [all_0] 0     1        1      
+[all_1] [all_5]         [all_0] 0     1        1      
+[all_1] [all_a]         [all_0] 0     1        1      
+[all_1] [all_b]         [all_1] 0     1        1      
+[all_1] [all_f]         [all_1] 0     1        1      
+[all_2] [all_3 , all_4] [all_1] --    --       2      
+[all_2] [all_a]         [all_1] 0     1        1      
+[all_2] [all_c]         [all_0] 0     1        1      
+[all_3] [all_3]         [all_1] 0     1        1      
+[all_3] [all_5]         [all_1] 0     1        1      
+[all_3] [all_a]         [all_0] 0     1        1      
+[all_3] [all_b]         [all_1] 0     1        1      
+[all_3] [all_e]         [all_0] 0     1        1      
+[all_4] [all_3]         [all_1] 0     1        1      
+[all_4] [all_5]         [all_0] 0     1        1      
+[all_4] [all_7]         [all_0] 0     1        1      
+[all_4] [all_a]         [all_1] 0     1        1      
+[all_4] [all_b , all_c] [all_0] --    --       2      
+[all_4] [all_e]         [all_0] 0     1        1      
+[all_4] [all_f]         [all_1] 0     1        1      
+[all_5] [all_0]         [all_1] 0     1        1      
+[all_5] [all_4]         [all_1] 0     1        1      
+[all_5] [all_e]         [all_0] 0     1        1      
+[all_6] [all_0]         [all_0] 0     1        1      
+[all_6] [all_3]         [all_0] 0     1        1      
+[all_6] [all_4]         [all_1] 0     1        1      
+[all_6] [all_8]         [all_1] 0     1        1      
+[all_7] [all_1]         [all_0] 0     1        1      
+[all_7] [all_2 , all_3] [all_1] --    --       2      
+[all_7] [all_4]         [all_0] 0     1        1      
+[all_7] [all_9]         [all_0] 0     1        1      
+[all_7] [all_e]         [all_0] 0     1        1      
+[all_8] [all_2]         [all_0] 0     1        1      
+[all_8] [all_4]         [all_1] 0     1        1      
+[all_8] [all_8]         [all_1] 0     1        1      
+[all_9] [all_5 , all_6] [all_0] --    --       2      
+[all_9] [all_8]         [all_0] 0     1        1      
+[all_a] [all_2]         [all_1] 0     1        1      
+[all_a] [all_9]         [all_1] 0     1        1      
+[all_b] [all_0]         [all_1] 0     1        1      
+[all_b] [all_7]         [all_0] 0     1        1      
+[all_b] [all_d , all_e] [all_0] --    --       2      
+[all_c] [all_0 , all_1] [all_0] --    --       2      
+[all_c] [all_3]         [all_1] 0     1        1      
+[all_c] [all_c]         [all_1] 0     1        1      
+[all_c] [all_f]         [all_0] 0     1        1      
+[all_d] [all_0]         [all_1] 0     1        1      
+[all_d] [all_3]         [all_1] 0     1        1      
+[all_d] [all_7]         [all_1] 0     1        1      
+[all_d] [all_8]         [all_0] 0     1        1      
+[all_d] [all_a]         [all_0] 0     1        1      
+[all_d] [all_e]         [all_1] 0     1        1      
+[all_e] [all_4 , all_5] [all_0] --    --       2      
+[all_e] [all_7]         [all_1] 0     1        1      
+[all_e] [all_9]         [all_1] 0     1        1      
+[all_e] [all_a]         [all_0] 0     1        1      
+[all_e] [all_c]         [all_0] 0     1        1      
+[all_e] [all_f]         [all_0] 0     1        1      
+[all_f] [all_2]         [all_1] 0     1        1      
+[all_f] [all_4]         [all_0] 0     1        1      
+[all_f] [all_6]         [all_0] 0     1        1      
+[all_f] [all_a]         [all_1] 0     1        1      
+[all_f] [all_c]         [all_0] 0     1        1      
+[all_f] [all_d]         [all_1] 0     1        1      
+
+
+Covered bins
+
+cp_a  cp_b  cp_cin COUNT AT LEAST 
+all_0 all_0 all_0  2     1        
+all_0 all_1 all_0  1     1        
+all_0 all_1 all_1  2     1        
+all_0 all_2 all_0  3     1        
+all_0 all_2 all_1  1     1        
+all_0 all_3 all_0  1     1        
+all_0 all_3 all_1  4     1        
+all_0 all_4 all_0  2     1        
+all_0 all_5 all_1  1     1        
+all_0 all_6 all_0  2     1        
+all_0 all_7 all_1  2     1        
+all_0 all_7 all_0  4     1        
+all_0 all_8 all_1  2     1        
+all_0 all_8 all_0  3     1        
+all_0 all_9 all_0  2     1        
+all_0 all_9 all_1  1     1        
+all_0 all_a all_1  1     1        
+all_0 all_a all_0  1     1        
+all_0 all_b all_0  1     1        
+all_0 all_c all_1  2     1        
+all_0 all_c all_0  3     1        
+all_0 all_d all_1  2     1        
+all_0 all_d all_0  4     1        
+all_0 all_e all_1  2     1        
+all_0 all_f all_0  1     1        
+all_1 all_0 all_1  1     1        
+all_1 all_0 all_0  3     1        
+all_1 all_1 all_1  3     1        
+all_1 all_1 all_0  4     1        
+all_1 all_2 all_1  1     1        
+all_1 all_3 all_0  1     1        
+all_1 all_3 all_1  2     1        
+all_1 all_4 all_0  1     1        
+all_1 all_4 all_1  1     1        
+all_1 all_5 all_1  2     1        
+all_1 all_6 all_1  1     1        
+all_1 all_6 all_0  2     1        
+all_1 all_7 all_1  1     1        
+all_1 all_7 all_0  2     1        
+all_1 all_9 all_0  1     1        
+all_1 all_9 all_1  1     1        
+all_1 all_a all_1  4     1        
+all_1 all_b all_0  1     1        
+all_1 all_c all_1  2     1        
+all_1 all_c all_0  4     1        
+all_1 all_d all_0  1     1        
+all_1 all_d all_1  5     1        
+all_1 all_e all_1  2     1        
+all_1 all_e all_0  2     1        
+all_1 all_f all_0  1     1        
+all_2 all_0 all_1  4     1        
+all_2 all_0 all_0  5     1        
+all_2 all_1 all_0  1     1        
+all_2 all_1 all_1  2     1        
+all_2 all_2 all_1  2     1        
+all_2 all_2 all_0  4     1        
+all_2 all_3 all_0  1     1        
+all_2 all_4 all_0  1     1        
+all_2 all_5 all_0  1     1        
+all_2 all_5 all_1  1     1        
+all_2 all_6 all_0  1     1        
+all_2 all_6 all_1  3     1        
+all_2 all_7 all_1  1     1        
+all_2 all_7 all_0  2     1        
+all_2 all_8 all_0  1     1        
+all_2 all_8 all_1  3     1        
+all_2 all_9 all_1  1     1        
+all_2 all_9 all_0  2     1        
+all_2 all_a all_0  1     1        
+all_2 all_b all_0  2     1        
+all_2 all_b all_1  2     1        
+all_2 all_c all_1  2     1        
+all_2 all_d all_1  1     1        
+all_2 all_d all_0  4     1        
+all_2 all_e all_1  3     1        
+all_2 all_e all_0  2     1        
+all_2 all_f all_1  4     1        
+all_2 all_f all_0  4     1        
+all_3 all_0 all_0  2     1        
+all_3 all_0 all_1  1     1        
+all_3 all_1 all_0  2     1        
+all_3 all_1 all_1  2     1        
+all_3 all_2 all_1  1     1        
+all_3 all_2 all_0  3     1        
+all_3 all_3 all_0  4     1        
+all_3 all_4 all_0  3     1        
+all_3 all_4 all_1  2     1        
+all_3 all_5 all_0  1     1        
+all_3 all_7 all_1  3     1        
+all_3 all_7 all_0  3     1        
+all_3 all_8 all_1  2     1        
+all_3 all_8 all_0  3     1        
+all_3 all_9 all_0  2     1        
+all_3 all_9 all_1  2     1        
+all_3 all_a all_1  3     1        
+all_3 all_b all_0  2     1        
+all_3 all_c all_0  2     1        
+all_3 all_c all_1  2     1        
+all_3 all_d all_1  2     1        
+all_3 all_d all_0  2     1        
+all_3 all_e all_1  3     1        
+all_3 all_f all_1  1     1        
+all_3 all_f all_0  1     1        
+all_4 all_1 all_1  2     1        
+all_4 all_1 all_0  1     1        
+all_4 all_2 all_1  1     1        
+all_4 all_2 all_0  1     1        
+all_4 all_3 all_0  2     1        
+all_4 all_4 all_1  2     1        
+all_4 all_4 all_0  3     1        
+all_4 all_5 all_1  1     1        
+all_4 all_6 all_1  1     1        
+all_4 all_6 all_0  2     1        
+all_4 all_7 all_1  2     1        
+all_4 all_8 all_1  1     1        
+all_4 all_8 all_0  2     1        
+all_4 all_9 all_1  1     1        
+all_4 all_9 all_0  2     1        
+all_4 all_a all_0  1     1        
+all_4 all_b all_1  1     1        
+all_4 all_c all_1  3     1        
+all_4 all_d all_1  3     1        
+all_4 all_d all_0  5     1        
+all_4 all_e all_1  1     1        
+all_4 all_f all_0  1     1        
+all_5 all_0 all_0  1     1        
+all_5 all_1 all_1  3     1        
+all_5 all_1 all_0  1     1        
+all_5 all_2 all_0  1     1        
+all_5 all_2 all_1  1     1        
+all_5 all_3 all_0  1     1        
+all_5 all_3 all_1  1     1        
+all_5 all_4 all_0  2     1        
+all_5 all_5 all_0  1     1        
+all_5 all_5 all_1  2     1        
+all_5 all_6 all_0  2     1        
+all_5 all_6 all_1  2     1        
+all_5 all_7 all_0  4     1        
+all_5 all_7 all_1  2     1        
+all_5 all_8 all_1  2     1        
+all_5 all_8 all_0  1     1        
+all_5 all_9 all_1  1     1        
+all_5 all_9 all_0  3     1        
+all_5 all_a all_1  1     1        
+all_5 all_a all_0  2     1        
+all_5 all_c all_0  1     1        
+all_5 all_c all_1  2     1        
+all_5 all_d all_1  4     1        
+all_5 all_d all_0  2     1        
+all_5 all_e all_1  3     1        
+all_5 all_f all_1  1     1        
+all_5 all_f all_0  1     1        
+all_6 all_0 all_1  5     1        
+all_6 all_1 all_1  2     1        
+all_6 all_1 all_0  3     1        
+all_6 all_2 all_1  1     1        
+all_6 all_2 all_0  3     1        
+all_6 all_3 all_1  2     1        
+all_6 all_4 all_0  3     1        
+all_6 all_5 all_0  1     1        
+all_6 all_5 all_1  2     1        
+all_6 all_6 all_0  2     1        
+all_6 all_6 all_1  1     1        
+all_6 all_7 all_0  1     1        
+all_6 all_7 all_1  1     1        
+all_6 all_8 all_0  1     1        
+all_6 all_9 all_0  1     1        
+all_6 all_9 all_1  4     1        
+all_6 all_a all_1  1     1        
+all_6 all_a all_0  3     1        
+all_6 all_b all_0  3     1        
+all_6 all_b all_1  2     1        
+all_6 all_c all_0  2     1        
+all_6 all_c all_1  5     1        
+all_6 all_d all_0  1     1        
+all_6 all_d all_1  3     1        
+all_6 all_f all_1  3     1        
+all_6 all_f all_0  2     1        
+all_7 all_0 all_0  2     1        
+all_7 all_0 all_1  1     1        
+all_7 all_1 all_1  1     1        
+all_7 all_2 all_0  2     1        
+all_7 all_3 all_0  3     1        
+all_7 all_4 all_1  1     1        
+all_7 all_5 all_0  4     1        
+all_7 all_5 all_1  1     1        
+all_7 all_6 all_0  1     1        
+all_7 all_6 all_1  4     1        
+all_7 all_7 all_0  2     1        
+all_7 all_7 all_1  2     1        
+all_7 all_8 all_1  1     1        
+all_7 all_8 all_0  1     1        
+all_7 all_9 all_1  1     1        
+all_7 all_a all_0  1     1        
+all_7 all_a all_1  1     1        
+all_7 all_b all_0  2     1        
+all_7 all_b all_1  3     1        
+all_7 all_d all_0  1     1        
+all_7 all_d all_1  2     1        
+all_7 all_e all_1  1     1        
+all_7 all_f all_0  2     1        
+all_7 all_f all_1  2     1        
+all_8 all_0 all_0  1     1        
+all_8 all_0 all_1  1     1        
+all_8 all_1 all_1  2     1        
+all_8 all_1 all_0  4     1        
+all_8 all_2 all_1  1     1        
+all_8 all_3 all_0  1     1        
+all_8 all_3 all_1  5     1        
+all_8 all_4 all_0  4     1        
+all_8 all_5 all_1  1     1        
+all_8 all_5 all_0  1     1        
+all_8 all_7 all_0  1     1        
+all_8 all_7 all_1  2     1        
+all_8 all_8 all_0  1     1        
+all_8 all_9 all_0  1     1        
+all_8 all_9 all_1  2     1        
+all_8 all_b all_1  3     1        
+all_8 all_b all_0  2     1        
+all_8 all_c all_0  1     1        
+all_8 all_c all_1  1     1        
+all_8 all_d all_0  1     1        
+all_8 all_d all_1  1     1        
+all_8 all_e all_1  1     1        
+all_8 all_e all_0  2     1        
+all_8 all_f all_1  4     1        
+all_8 all_f all_0  3     1        
+all_9 all_0 all_0  1     1        
+all_9 all_0 all_1  3     1        
+all_9 all_1 all_0  2     1        
+all_9 all_1 all_1  2     1        
+all_9 all_2 all_0  1     1        
+all_9 all_2 all_1  1     1        
+all_9 all_3 all_0  2     1        
+all_9 all_3 all_1  2     1        
+all_9 all_4 all_1  3     1        
+all_9 all_4 all_0  2     1        
+all_9 all_5 all_1  1     1        
+all_9 all_6 all_1  2     1        
+all_9 all_8 all_1  1     1        
+all_9 all_9 all_0  2     1        
+all_9 all_9 all_1  1     1        
+all_9 all_a all_0  2     1        
+all_9 all_a all_1  4     1        
+all_9 all_b all_0  2     1        
+all_9 all_b all_1  3     1        
+all_9 all_c all_0  2     1        
+all_9 all_c all_1  3     1        
+all_9 all_d all_1  1     1        
+all_9 all_d all_0  4     1        
+all_9 all_e all_1  2     1        
+all_9 all_e all_0  2     1        
+all_9 all_f all_0  1     1        
+all_9 all_f all_1  1     1        
+all_a all_0 all_1  2     1        
+all_a all_0 all_0  2     1        
+all_a all_1 all_1  1     1        
+all_a all_1 all_0  1     1        
+all_a all_2 all_0  3     1        
+all_a all_3 all_1  3     1        
+all_a all_3 all_0  1     1        
+all_a all_4 all_1  3     1        
+all_a all_4 all_0  3     1        
+all_a all_5 all_1  2     1        
+all_a all_5 all_0  3     1        
+all_a all_6 all_1  2     1        
+all_a all_6 all_0  3     1        
+all_a all_7 all_0  1     1        
+all_a all_7 all_1  1     1        
+all_a all_8 all_0  1     1        
+all_a all_8 all_1  4     1        
+all_a all_9 all_0  2     1        
+all_a all_a all_0  1     1        
+all_a all_a all_1  5     1        
+all_a all_b all_0  1     1        
+all_a all_b all_1  2     1        
+all_a all_c all_0  2     1        
+all_a all_c all_1  1     1        
+all_a all_d all_0  4     1        
+all_a all_d all_1  1     1        
+all_a all_e all_0  1     1        
+all_a all_e all_1  2     1        
+all_a all_f all_1  1     1        
+all_a all_f all_0  4     1        
+all_b all_0 all_0  3     1        
+all_b all_1 all_0  2     1        
+all_b all_1 all_1  3     1        
+all_b all_2 all_0  1     1        
+all_b all_2 all_1  2     1        
+all_b all_4 all_0  3     1        
+all_b all_4 all_1  1     1        
+all_b all_6 all_1  2     1        
+all_b all_6 all_0  4     1        
+all_b all_7 all_1  2     1        
+all_b all_8 all_1  1     1        
+all_b all_8 all_0  1     1        
+all_b all_9 all_0  6     1        
+all_b all_9 all_1  1     1        
+all_b all_a all_1  1     1        
+all_b all_a all_0  1     1        
+all_b all_b all_0  1     1        
+all_b all_b all_1  1     1        
+all_b all_c all_0  4     1        
+all_b all_c all_1  4     1        
+all_b all_d all_1  2     1        
+all_b all_e all_1  3     1        
+all_b all_f all_1  1     1        
+all_b all_f all_0  2     1        
+all_c all_0 all_1  3     1        
+all_c all_1 all_1  2     1        
+all_c all_2 all_0  2     1        
+all_c all_2 all_1  1     1        
+all_c all_3 all_0  2     1        
+all_c all_4 all_1  5     1        
+all_c all_4 all_0  2     1        
+all_c all_5 all_1  3     1        
+all_c all_5 all_0  1     1        
+all_c all_6 all_0  4     1        
+all_c all_6 all_1  3     1        
+all_c all_7 all_1  1     1        
+all_c all_7 all_0  3     1        
+all_c all_8 all_1  2     1        
+all_c all_8 all_0  3     1        
+all_c all_9 all_0  1     1        
+all_c all_9 all_1  3     1        
+all_c all_b all_0  1     1        
+all_c all_b all_1  2     1        
+all_c all_c all_0  1     1        
+all_c all_d all_1  1     1        
+all_c all_d all_0  5     1        
+all_c all_e all_1  2     1        
+all_c all_e all_0  3     1        
+all_c all_f all_1  4     1        
+all_d all_0 all_0  1     1        
+all_d all_1 all_1  2     1        
+all_d all_1 all_0  2     1        
+all_d all_2 all_1  1     1        
+all_d all_2 all_0  2     1        
+all_d all_3 all_0  3     1        
+all_d all_4 all_1  1     1        
+all_d all_4 all_0  3     1        
+all_d all_5 all_1  5     1        
+all_d all_5 all_0  3     1        
+all_d all_6 all_1  1     1        
+all_d all_6 all_0  2     1        
+all_d all_7 all_0  2     1        
+all_d all_8 all_1  3     1        
+all_d all_9 all_0  1     1        
+all_d all_9 all_1  2     1        
+all_d all_a all_1  1     1        
+all_d all_b all_0  2     1        
+all_d all_b all_1  1     1        
+all_d all_c all_1  1     1        
+all_d all_c all_0  4     1        
+all_d all_d all_1  2     1        
+all_d all_d all_0  2     1        
+all_d all_e all_0  3     1        
+all_d all_f all_0  2     1        
+all_d all_f all_1  2     1        
+all_e all_0 all_1  1     1        
+all_e all_0 all_0  1     1        
+all_e all_1 all_0  2     1        
+all_e all_1 all_1  1     1        
+all_e all_2 all_0  2     1        
+all_e all_2 all_1  2     1        
+all_e all_3 all_0  2     1        
+all_e all_3 all_1  4     1        
+all_e all_4 all_1  1     1        
+all_e all_5 all_1  2     1        
+all_e all_6 all_1  1     1        
+all_e all_6 all_0  5     1        
+all_e all_7 all_0  1     1        
+all_e all_8 all_1  2     1        
+all_e all_8 all_0  4     1        
+all_e all_9 all_0  1     1        
+all_e all_a all_1  2     1        
+all_e all_b all_1  1     1        
+all_e all_b all_0  1     1        
+all_e all_c all_1  1     1        
+all_e all_d all_1  2     1        
+all_e all_d all_0  1     1        
+all_e all_e all_1  4     1        
+all_e all_e all_0  1     1        
+all_e all_f all_1  3     1        
+all_f all_0 all_0  1     1        
+all_f all_0 all_1  2     1        
+all_f all_1 all_1  5     1        
+all_f all_1 all_0  1     1        
+all_f all_2 all_0  1     1        
+all_f all_3 all_0  3     1        
+all_f all_3 all_1  4     1        
+all_f all_4 all_1  2     1        
+all_f all_5 all_0  1     1        
+all_f all_5 all_1  7     1        
+all_f all_6 all_1  2     1        
+all_f all_7 all_1  1     1        
+all_f all_7 all_0  3     1        
+all_f all_8 all_0  1     1        
+all_f all_8 all_1  2     1        
+all_f all_9 all_1  2     1        
+all_f all_9 all_0  3     1        
+all_f all_a all_0  1     1        
+all_f all_b all_0  2     1        
+all_f all_b all_1  1     1        
+all_f all_c all_1  1     1        
+all_f all_d all_0  2     1        
+all_f all_e all_0  1     1        
+all_f all_e all_1  1     1        
+all_f all_f all_0  2     1        
+all_f all_f all_1  2     1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.cg
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 95.02 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME               
+ 95.02  95.02    1      100    1        1            64           64                    $unit::fun_cov::cg 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 34       0         34      100.00  
+Crosses   512      102       410     80.08   
+
+
+Variables for Group Instance  tb_top.me.obj.cg
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_a     16       0         16      100.00  100  1      1        0                    
+cp_b     16       0         16      100.00  100  1      1        0                    
+cp_cin   2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.cg
+
+
+CROSS      EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cp_a_b_cin 512      102       410     80.08   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_a
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 16       0         16      100.00  
+
+
+User Defined Bins for cp_a
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 50    1        --              
+all_1 49    1        --              
+all_2 61    1        --              
+all_3 54    1        --              
+all_4 39    1        --              
+all_5 48    1        --              
+all_6 58    1        --              
+all_7 42    1        --              
+all_8 47    1        --              
+all_9 53    1        --              
+all_a 63    1        --              
+all_b 52    1        --              
+all_c 60    1        --              
+all_d 54    1        --              
+all_e 48    1        --              
+all_f 54    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_b
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 16       0         16      100.00  
+
+
+User Defined Bins for cp_b
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 49    1        --              
+all_1 62    1        --              
+all_2 45    1        --              
+all_3 54    1        --              
+all_4 54    1        --              
+all_5 48    1        --              
+all_6 55    1        --              
+all_7 50    1        --              
+all_8 49    1        --              
+all_9 53    1        --              
+all_a 38    1        --              
+all_b 45    1        --              
+all_c 56    1        --              
+all_d 71    1        --              
+all_e 47    1        --              
+all_f 56    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_cin
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_cin
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 415   1        --              
+all_1 417   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cp_a_b_cin
+
+
+Samples crossed: cp_a cp_b cp_cin
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 512      102       410     80.08   102     
+
+
+Automatically Generated Cross Bins for cp_a_b_cin
+
+
+Element holes
+
+cp_a    cp_b    cp_cin COUNT AT LEAST NUMBER 
+[all_1] [all_8] *      --    --       2      
+[all_3] [all_6] *      --    --       2      
+[all_4] [all_0] *      --    --       2      
+[all_5] [all_b] *      --    --       2      
+[all_6] [all_e] *      --    --       2      
+[all_7] [all_c] *      --    --       2      
+[all_8] [all_6] *      --    --       2      
+[all_8] [all_a] *      --    --       2      
+[all_9] [all_7] *      --    --       2      
+[all_b] [all_3] *      --    --       2      
+[all_b] [all_5] *      --    --       2      
+[all_c] [all_a] *      --    --       2      
+
+
+Uncovered bins
+
+cp_a    cp_b            cp_cin  COUNT AT LEAST NUMBER 
+[all_0] [all_0]         [all_1] 0     1        1      
+[all_0] [all_4]         [all_1] 0     1        1      
+[all_0] [all_5]         [all_0] 0     1        1      
+[all_0] [all_6]         [all_1] 0     1        1      
+[all_0] [all_b]         [all_1] 0     1        1      
+[all_0] [all_e]         [all_0] 0     1        1      
+[all_0] [all_f]         [all_1] 0     1        1      
+[all_1] [all_2]         [all_0] 0     1        1      
+[all_1] [all_5]         [all_0] 0     1        1      
+[all_1] [all_a]         [all_0] 0     1        1      
+[all_1] [all_b]         [all_1] 0     1        1      
+[all_1] [all_f]         [all_1] 0     1        1      
+[all_2] [all_3 , all_4] [all_1] --    --       2      
+[all_2] [all_a]         [all_1] 0     1        1      
+[all_2] [all_c]         [all_0] 0     1        1      
+[all_3] [all_3]         [all_1] 0     1        1      
+[all_3] [all_5]         [all_1] 0     1        1      
+[all_3] [all_a]         [all_0] 0     1        1      
+[all_3] [all_b]         [all_1] 0     1        1      
+[all_3] [all_e]         [all_0] 0     1        1      
+[all_4] [all_3]         [all_1] 0     1        1      
+[all_4] [all_5]         [all_0] 0     1        1      
+[all_4] [all_7]         [all_0] 0     1        1      
+[all_4] [all_a]         [all_1] 0     1        1      
+[all_4] [all_b , all_c] [all_0] --    --       2      
+[all_4] [all_e]         [all_0] 0     1        1      
+[all_4] [all_f]         [all_1] 0     1        1      
+[all_5] [all_0]         [all_1] 0     1        1      
+[all_5] [all_4]         [all_1] 0     1        1      
+[all_5] [all_e]         [all_0] 0     1        1      
+[all_6] [all_0]         [all_0] 0     1        1      
+[all_6] [all_3]         [all_0] 0     1        1      
+[all_6] [all_4]         [all_1] 0     1        1      
+[all_6] [all_8]         [all_1] 0     1        1      
+[all_7] [all_1]         [all_0] 0     1        1      
+[all_7] [all_2 , all_3] [all_1] --    --       2      
+[all_7] [all_4]         [all_0] 0     1        1      
+[all_7] [all_9]         [all_0] 0     1        1      
+[all_7] [all_e]         [all_0] 0     1        1      
+[all_8] [all_2]         [all_0] 0     1        1      
+[all_8] [all_4]         [all_1] 0     1        1      
+[all_8] [all_8]         [all_1] 0     1        1      
+[all_9] [all_5 , all_6] [all_0] --    --       2      
+[all_9] [all_8]         [all_0] 0     1        1      
+[all_a] [all_2]         [all_1] 0     1        1      
+[all_a] [all_9]         [all_1] 0     1        1      
+[all_b] [all_0]         [all_1] 0     1        1      
+[all_b] [all_7]         [all_0] 0     1        1      
+[all_b] [all_d , all_e] [all_0] --    --       2      
+[all_c] [all_0 , all_1] [all_0] --    --       2      
+[all_c] [all_3]         [all_1] 0     1        1      
+[all_c] [all_c]         [all_1] 0     1        1      
+[all_c] [all_f]         [all_0] 0     1        1      
+[all_d] [all_0]         [all_1] 0     1        1      
+[all_d] [all_3]         [all_1] 0     1        1      
+[all_d] [all_7]         [all_1] 0     1        1      
+[all_d] [all_8]         [all_0] 0     1        1      
+[all_d] [all_a]         [all_0] 0     1        1      
+[all_d] [all_e]         [all_1] 0     1        1      
+[all_e] [all_4 , all_5] [all_0] --    --       2      
+[all_e] [all_7]         [all_1] 0     1        1      
+[all_e] [all_9]         [all_1] 0     1        1      
+[all_e] [all_a]         [all_0] 0     1        1      
+[all_e] [all_c]         [all_0] 0     1        1      
+[all_e] [all_f]         [all_0] 0     1        1      
+[all_f] [all_2]         [all_1] 0     1        1      
+[all_f] [all_4]         [all_0] 0     1        1      
+[all_f] [all_6]         [all_0] 0     1        1      
+[all_f] [all_a]         [all_1] 0     1        1      
+[all_f] [all_c]         [all_0] 0     1        1      
+[all_f] [all_d]         [all_1] 0     1        1      
+
+
+Covered bins
+
+cp_a  cp_b  cp_cin COUNT AT LEAST 
+all_0 all_0 all_0  2     1        
+all_0 all_1 all_0  1     1        
+all_0 all_1 all_1  2     1        
+all_0 all_2 all_0  3     1        
+all_0 all_2 all_1  1     1        
+all_0 all_3 all_0  1     1        
+all_0 all_3 all_1  4     1        
+all_0 all_4 all_0  2     1        
+all_0 all_5 all_1  1     1        
+all_0 all_6 all_0  2     1        
+all_0 all_7 all_1  2     1        
+all_0 all_7 all_0  4     1        
+all_0 all_8 all_1  2     1        
+all_0 all_8 all_0  3     1        
+all_0 all_9 all_0  2     1        
+all_0 all_9 all_1  1     1        
+all_0 all_a all_1  1     1        
+all_0 all_a all_0  1     1        
+all_0 all_b all_0  1     1        
+all_0 all_c all_1  2     1        
+all_0 all_c all_0  3     1        
+all_0 all_d all_1  2     1        
+all_0 all_d all_0  4     1        
+all_0 all_e all_1  2     1        
+all_0 all_f all_0  1     1        
+all_1 all_0 all_1  1     1        
+all_1 all_0 all_0  3     1        
+all_1 all_1 all_1  3     1        
+all_1 all_1 all_0  4     1        
+all_1 all_2 all_1  1     1        
+all_1 all_3 all_0  1     1        
+all_1 all_3 all_1  2     1        
+all_1 all_4 all_0  1     1        
+all_1 all_4 all_1  1     1        
+all_1 all_5 all_1  2     1        
+all_1 all_6 all_1  1     1        
+all_1 all_6 all_0  2     1        
+all_1 all_7 all_1  1     1        
+all_1 all_7 all_0  2     1        
+all_1 all_9 all_0  1     1        
+all_1 all_9 all_1  1     1        
+all_1 all_a all_1  4     1        
+all_1 all_b all_0  1     1        
+all_1 all_c all_1  2     1        
+all_1 all_c all_0  4     1        
+all_1 all_d all_0  1     1        
+all_1 all_d all_1  5     1        
+all_1 all_e all_1  2     1        
+all_1 all_e all_0  2     1        
+all_1 all_f all_0  1     1        
+all_2 all_0 all_1  4     1        
+all_2 all_0 all_0  5     1        
+all_2 all_1 all_0  1     1        
+all_2 all_1 all_1  2     1        
+all_2 all_2 all_1  2     1        
+all_2 all_2 all_0  4     1        
+all_2 all_3 all_0  1     1        
+all_2 all_4 all_0  1     1        
+all_2 all_5 all_0  1     1        
+all_2 all_5 all_1  1     1        
+all_2 all_6 all_0  1     1        
+all_2 all_6 all_1  3     1        
+all_2 all_7 all_1  1     1        
+all_2 all_7 all_0  2     1        
+all_2 all_8 all_0  1     1        
+all_2 all_8 all_1  3     1        
+all_2 all_9 all_1  1     1        
+all_2 all_9 all_0  2     1        
+all_2 all_a all_0  1     1        
+all_2 all_b all_0  2     1        
+all_2 all_b all_1  2     1        
+all_2 all_c all_1  2     1        
+all_2 all_d all_1  1     1        
+all_2 all_d all_0  4     1        
+all_2 all_e all_1  3     1        
+all_2 all_e all_0  2     1        
+all_2 all_f all_1  4     1        
+all_2 all_f all_0  4     1        
+all_3 all_0 all_0  2     1        
+all_3 all_0 all_1  1     1        
+all_3 all_1 all_0  2     1        
+all_3 all_1 all_1  2     1        
+all_3 all_2 all_1  1     1        
+all_3 all_2 all_0  3     1        
+all_3 all_3 all_0  4     1        
+all_3 all_4 all_0  3     1        
+all_3 all_4 all_1  2     1        
+all_3 all_5 all_0  1     1        
+all_3 all_7 all_1  3     1        
+all_3 all_7 all_0  3     1        
+all_3 all_8 all_1  2     1        
+all_3 all_8 all_0  3     1        
+all_3 all_9 all_0  2     1        
+all_3 all_9 all_1  2     1        
+all_3 all_a all_1  3     1        
+all_3 all_b all_0  2     1        
+all_3 all_c all_0  2     1        
+all_3 all_c all_1  2     1        
+all_3 all_d all_1  2     1        
+all_3 all_d all_0  2     1        
+all_3 all_e all_1  3     1        
+all_3 all_f all_1  1     1        
+all_3 all_f all_0  1     1        
+all_4 all_1 all_1  2     1        
+all_4 all_1 all_0  1     1        
+all_4 all_2 all_1  1     1        
+all_4 all_2 all_0  1     1        
+all_4 all_3 all_0  2     1        
+all_4 all_4 all_1  2     1        
+all_4 all_4 all_0  3     1        
+all_4 all_5 all_1  1     1        
+all_4 all_6 all_1  1     1        
+all_4 all_6 all_0  2     1        
+all_4 all_7 all_1  2     1        
+all_4 all_8 all_1  1     1        
+all_4 all_8 all_0  2     1        
+all_4 all_9 all_1  1     1        
+all_4 all_9 all_0  2     1        
+all_4 all_a all_0  1     1        
+all_4 all_b all_1  1     1        
+all_4 all_c all_1  3     1        
+all_4 all_d all_1  3     1        
+all_4 all_d all_0  5     1        
+all_4 all_e all_1  1     1        
+all_4 all_f all_0  1     1        
+all_5 all_0 all_0  1     1        
+all_5 all_1 all_1  3     1        
+all_5 all_1 all_0  1     1        
+all_5 all_2 all_0  1     1        
+all_5 all_2 all_1  1     1        
+all_5 all_3 all_0  1     1        
+all_5 all_3 all_1  1     1        
+all_5 all_4 all_0  2     1        
+all_5 all_5 all_0  1     1        
+all_5 all_5 all_1  2     1        
+all_5 all_6 all_0  2     1        
+all_5 all_6 all_1  2     1        
+all_5 all_7 all_0  4     1        
+all_5 all_7 all_1  2     1        
+all_5 all_8 all_1  2     1        
+all_5 all_8 all_0  1     1        
+all_5 all_9 all_1  1     1        
+all_5 all_9 all_0  3     1        
+all_5 all_a all_1  1     1        
+all_5 all_a all_0  2     1        
+all_5 all_c all_0  1     1        
+all_5 all_c all_1  2     1        
+all_5 all_d all_1  4     1        
+all_5 all_d all_0  2     1        
+all_5 all_e all_1  3     1        
+all_5 all_f all_1  1     1        
+all_5 all_f all_0  1     1        
+all_6 all_0 all_1  5     1        
+all_6 all_1 all_1  2     1        
+all_6 all_1 all_0  3     1        
+all_6 all_2 all_1  1     1        
+all_6 all_2 all_0  3     1        
+all_6 all_3 all_1  2     1        
+all_6 all_4 all_0  3     1        
+all_6 all_5 all_0  1     1        
+all_6 all_5 all_1  2     1        
+all_6 all_6 all_0  2     1        
+all_6 all_6 all_1  1     1        
+all_6 all_7 all_0  1     1        
+all_6 all_7 all_1  1     1        
+all_6 all_8 all_0  1     1        
+all_6 all_9 all_0  1     1        
+all_6 all_9 all_1  4     1        
+all_6 all_a all_1  1     1        
+all_6 all_a all_0  3     1        
+all_6 all_b all_0  3     1        
+all_6 all_b all_1  2     1        
+all_6 all_c all_0  2     1        
+all_6 all_c all_1  5     1        
+all_6 all_d all_0  1     1        
+all_6 all_d all_1  3     1        
+all_6 all_f all_1  3     1        
+all_6 all_f all_0  2     1        
+all_7 all_0 all_0  2     1        
+all_7 all_0 all_1  1     1        
+all_7 all_1 all_1  1     1        
+all_7 all_2 all_0  2     1        
+all_7 all_3 all_0  3     1        
+all_7 all_4 all_1  1     1        
+all_7 all_5 all_0  4     1        
+all_7 all_5 all_1  1     1        
+all_7 all_6 all_0  1     1        
+all_7 all_6 all_1  4     1        
+all_7 all_7 all_0  2     1        
+all_7 all_7 all_1  2     1        
+all_7 all_8 all_1  1     1        
+all_7 all_8 all_0  1     1        
+all_7 all_9 all_1  1     1        
+all_7 all_a all_0  1     1        
+all_7 all_a all_1  1     1        
+all_7 all_b all_0  2     1        
+all_7 all_b all_1  3     1        
+all_7 all_d all_0  1     1        
+all_7 all_d all_1  2     1        
+all_7 all_e all_1  1     1        
+all_7 all_f all_0  2     1        
+all_7 all_f all_1  2     1        
+all_8 all_0 all_0  1     1        
+all_8 all_0 all_1  1     1        
+all_8 all_1 all_1  2     1        
+all_8 all_1 all_0  4     1        
+all_8 all_2 all_1  1     1        
+all_8 all_3 all_0  1     1        
+all_8 all_3 all_1  5     1        
+all_8 all_4 all_0  4     1        
+all_8 all_5 all_1  1     1        
+all_8 all_5 all_0  1     1        
+all_8 all_7 all_0  1     1        
+all_8 all_7 all_1  2     1        
+all_8 all_8 all_0  1     1        
+all_8 all_9 all_0  1     1        
+all_8 all_9 all_1  2     1        
+all_8 all_b all_1  3     1        
+all_8 all_b all_0  2     1        
+all_8 all_c all_0  1     1        
+all_8 all_c all_1  1     1        
+all_8 all_d all_0  1     1        
+all_8 all_d all_1  1     1        
+all_8 all_e all_1  1     1        
+all_8 all_e all_0  2     1        
+all_8 all_f all_1  4     1        
+all_8 all_f all_0  3     1        
+all_9 all_0 all_0  1     1        
+all_9 all_0 all_1  3     1        
+all_9 all_1 all_0  2     1        
+all_9 all_1 all_1  2     1        
+all_9 all_2 all_0  1     1        
+all_9 all_2 all_1  1     1        
+all_9 all_3 all_0  2     1        
+all_9 all_3 all_1  2     1        
+all_9 all_4 all_1  3     1        
+all_9 all_4 all_0  2     1        
+all_9 all_5 all_1  1     1        
+all_9 all_6 all_1  2     1        
+all_9 all_8 all_1  1     1        
+all_9 all_9 all_0  2     1        
+all_9 all_9 all_1  1     1        
+all_9 all_a all_0  2     1        
+all_9 all_a all_1  4     1        
+all_9 all_b all_0  2     1        
+all_9 all_b all_1  3     1        
+all_9 all_c all_0  2     1        
+all_9 all_c all_1  3     1        
+all_9 all_d all_1  1     1        
+all_9 all_d all_0  4     1        
+all_9 all_e all_1  2     1        
+all_9 all_e all_0  2     1        
+all_9 all_f all_0  1     1        
+all_9 all_f all_1  1     1        
+all_a all_0 all_1  2     1        
+all_a all_0 all_0  2     1        
+all_a all_1 all_1  1     1        
+all_a all_1 all_0  1     1        
+all_a all_2 all_0  3     1        
+all_a all_3 all_1  3     1        
+all_a all_3 all_0  1     1        
+all_a all_4 all_1  3     1        
+all_a all_4 all_0  3     1        
+all_a all_5 all_1  2     1        
+all_a all_5 all_0  3     1        
+all_a all_6 all_1  2     1        
+all_a all_6 all_0  3     1        
+all_a all_7 all_0  1     1        
+all_a all_7 all_1  1     1        
+all_a all_8 all_0  1     1        
+all_a all_8 all_1  4     1        
+all_a all_9 all_0  2     1        
+all_a all_a all_0  1     1        
+all_a all_a all_1  5     1        
+all_a all_b all_0  1     1        
+all_a all_b all_1  2     1        
+all_a all_c all_0  2     1        
+all_a all_c all_1  1     1        
+all_a all_d all_0  4     1        
+all_a all_d all_1  1     1        
+all_a all_e all_0  1     1        
+all_a all_e all_1  2     1        
+all_a all_f all_1  1     1        
+all_a all_f all_0  4     1        
+all_b all_0 all_0  3     1        
+all_b all_1 all_0  2     1        
+all_b all_1 all_1  3     1        
+all_b all_2 all_0  1     1        
+all_b all_2 all_1  2     1        
+all_b all_4 all_0  3     1        
+all_b all_4 all_1  1     1        
+all_b all_6 all_1  2     1        
+all_b all_6 all_0  4     1        
+all_b all_7 all_1  2     1        
+all_b all_8 all_1  1     1        
+all_b all_8 all_0  1     1        
+all_b all_9 all_0  6     1        
+all_b all_9 all_1  1     1        
+all_b all_a all_1  1     1        
+all_b all_a all_0  1     1        
+all_b all_b all_0  1     1        
+all_b all_b all_1  1     1        
+all_b all_c all_0  4     1        
+all_b all_c all_1  4     1        
+all_b all_d all_1  2     1        
+all_b all_e all_1  3     1        
+all_b all_f all_1  1     1        
+all_b all_f all_0  2     1        
+all_c all_0 all_1  3     1        
+all_c all_1 all_1  2     1        
+all_c all_2 all_0  2     1        
+all_c all_2 all_1  1     1        
+all_c all_3 all_0  2     1        
+all_c all_4 all_1  5     1        
+all_c all_4 all_0  2     1        
+all_c all_5 all_1  3     1        
+all_c all_5 all_0  1     1        
+all_c all_6 all_0  4     1        
+all_c all_6 all_1  3     1        
+all_c all_7 all_1  1     1        
+all_c all_7 all_0  3     1        
+all_c all_8 all_1  2     1        
+all_c all_8 all_0  3     1        
+all_c all_9 all_0  1     1        
+all_c all_9 all_1  3     1        
+all_c all_b all_0  1     1        
+all_c all_b all_1  2     1        
+all_c all_c all_0  1     1        
+all_c all_d all_1  1     1        
+all_c all_d all_0  5     1        
+all_c all_e all_1  2     1        
+all_c all_e all_0  3     1        
+all_c all_f all_1  4     1        
+all_d all_0 all_0  1     1        
+all_d all_1 all_1  2     1        
+all_d all_1 all_0  2     1        
+all_d all_2 all_1  1     1        
+all_d all_2 all_0  2     1        
+all_d all_3 all_0  3     1        
+all_d all_4 all_1  1     1        
+all_d all_4 all_0  3     1        
+all_d all_5 all_1  5     1        
+all_d all_5 all_0  3     1        
+all_d all_6 all_1  1     1        
+all_d all_6 all_0  2     1        
+all_d all_7 all_0  2     1        
+all_d all_8 all_1  3     1        
+all_d all_9 all_0  1     1        
+all_d all_9 all_1  2     1        
+all_d all_a all_1  1     1        
+all_d all_b all_0  2     1        
+all_d all_b all_1  1     1        
+all_d all_c all_1  1     1        
+all_d all_c all_0  4     1        
+all_d all_d all_1  2     1        
+all_d all_d all_0  2     1        
+all_d all_e all_0  3     1        
+all_d all_f all_0  2     1        
+all_d all_f all_1  2     1        
+all_e all_0 all_1  1     1        
+all_e all_0 all_0  1     1        
+all_e all_1 all_0  2     1        
+all_e all_1 all_1  1     1        
+all_e all_2 all_0  2     1        
+all_e all_2 all_1  2     1        
+all_e all_3 all_0  2     1        
+all_e all_3 all_1  4     1        
+all_e all_4 all_1  1     1        
+all_e all_5 all_1  2     1        
+all_e all_6 all_1  1     1        
+all_e all_6 all_0  5     1        
+all_e all_7 all_0  1     1        
+all_e all_8 all_1  2     1        
+all_e all_8 all_0  4     1        
+all_e all_9 all_0  1     1        
+all_e all_a all_1  2     1        
+all_e all_b all_1  1     1        
+all_e all_b all_0  1     1        
+all_e all_c all_1  1     1        
+all_e all_d all_1  2     1        
+all_e all_d all_0  1     1        
+all_e all_e all_1  4     1        
+all_e all_e all_0  1     1        
+all_e all_f all_1  3     1        
+all_f all_0 all_0  1     1        
+all_f all_0 all_1  2     1        
+all_f all_1 all_1  5     1        
+all_f all_1 all_0  1     1        
+all_f all_2 all_0  1     1        
+all_f all_3 all_0  3     1        
+all_f all_3 all_1  4     1        
+all_f all_4 all_1  2     1        
+all_f all_5 all_0  1     1        
+all_f all_5 all_1  7     1        
+all_f all_6 all_1  2     1        
+all_f all_7 all_1  1     1        
+all_f all_7 all_0  3     1        
+all_f all_8 all_0  1     1        
+all_f all_8 all_1  2     1        
+all_f all_9 all_1  2     1        
+all_f all_9 all_0  3     1        
+all_f all_a all_0  1     1        
+all_f all_b all_0  2     1        
+all_f all_b all_1  1     1        
+all_f all_c all_1  1     1        
+all_f all_d all_0  2     1        
+all_f all_e all_0  1     1        
+all_f all_e all_1  1     1        
+all_f all_f all_0  2     1        
+all_f all_f all_1  2     1        
+
+

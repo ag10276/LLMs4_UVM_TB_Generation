@@ -1,0 +1,824 @@
+Group : $unit::mux_coverage::mux_cg
+
+===============================================================================
+Group : $unit::mux_coverage::mux_cg
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+100.00 100.00    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/mux/claude_mux_uvm_tb_all.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                 
+100.00 1      100    1        64           64            tb_top.me.obj.mux_cg 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::mux_coverage::mux_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 34       0         34      100.00  
+Crosses   80       0         80      100.00  
+
+
+Variables for Group  $unit::mux_coverage::mux_cg
+
+
+VARIABLE      EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_sel        4        0         4       100.00  100  1      1        0                    
+cp_in0        4        0         4       100.00  100  1      1        0                    
+cp_in1        4        0         4       100.00  100  1      1        0                    
+cp_in2        4        0         4       100.00  100  1      1        0                    
+cp_in3        4        0         4       100.00  100  1      1        0                    
+cp_out        4        0         4       100.00  100  1      1        0                    
+cp_all_same   2        0         2       100.00  100  1      1        0                    
+cp_all_unique 2        0         2       100.00  100  1      1        0                    
+cp_sel_trans  6        0         6       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::mux_coverage::mux_cg
+
+
+CROSS      EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_sel_in0 16       0         16      100.00  100  1      1        0                     
+cx_sel_in1 16       0         16      100.00  100  1      1        0                     
+cx_sel_in2 16       0         16      100.00  100  1      1        0                     
+cx_sel_in3 16       0         16      100.00  100  1      1        0                     
+cx_sel_out 16       0         16      100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_sel
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_sel
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+sel_11 51    1        --              
+sel_10 60    1        --              
+sel_01 55    1        --              
+sel_00 57    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_in0
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_in0
+
+
+Bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+mid_high 64    1        --              
+mid_low  75    1        --              
+max_val  45    1        --              
+zero     39    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_in1
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_in1
+
+
+Bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+mid_high 69    1        --              
+mid_low  72    1        --              
+max_val  42    1        --              
+zero     40    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_in2
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_in2
+
+
+Bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+mid_high 66    1        --              
+mid_low  61    1        --              
+max_val  51    1        --              
+zero     45    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_in3
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_in3
+
+
+Bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+mid_high 75    1        --              
+mid_low  59    1        --              
+max_val  43    1        --              
+zero     46    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_out
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_out
+
+
+Bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+mid_high 64    1        --              
+mid_low  73    1        --              
+max_val  41    1        --              
+zero     45    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_all_same
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_all_same
+
+
+Bins
+
+NAME         COUNT AT LEAST SUBSUMED VALUES 
+not_all_same 212   1        --              
+all_same     11    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_all_unique
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_all_unique
+
+
+Bins
+
+NAME           COUNT AT LEAST SUBSUMED VALUES 
+not_all_unique 11    1        --              
+all_unique     212   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_sel_trans
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 6        0         6       100.00  
+
+
+User Defined Bins for cp_sel_trans
+
+
+Bins
+
+NAME        COUNT AT LEAST SUBSUMED VALUES 
+trans_11_01 10    1        --              
+trans_00_11 16    1        --              
+trans_11_00 19    1        --              
+trans_10_11 19    1        --              
+trans_01_10 19    1        --              
+trans_00_01 14    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_sel_in0
+
+
+Samples crossed: cp_sel cp_in0
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       0         16      100.00          
+
+
+Automatically Generated Cross Bins for cx_sel_in0
+
+
+Bins
+
+cp_sel cp_in0   COUNT AT LEAST 
+sel_11 mid_high 15    1        
+sel_11 mid_low  20    1        
+sel_11 max_val  10    1        
+sel_11 zero     6     1        
+sel_10 mid_high 19    1        
+sel_10 mid_low  18    1        
+sel_10 max_val  15    1        
+sel_10 zero     8     1        
+sel_01 mid_high 12    1        
+sel_01 mid_low  18    1        
+sel_01 max_val  9     1        
+sel_01 zero     16    1        
+sel_00 zero     9     1        
+sel_00 mid_high 18    1        
+sel_00 mid_low  19    1        
+sel_00 max_val  11    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_sel_in1
+
+
+Samples crossed: cp_sel cp_in1
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       0         16      100.00          
+
+
+Automatically Generated Cross Bins for cx_sel_in1
+
+
+Bins
+
+cp_sel cp_in1   COUNT AT LEAST 
+sel_11 mid_high 16    1        
+sel_11 mid_low  15    1        
+sel_11 max_val  10    1        
+sel_11 zero     10    1        
+sel_10 mid_high 16    1        
+sel_10 mid_low  15    1        
+sel_10 max_val  14    1        
+sel_10 zero     15    1        
+sel_01 mid_high 20    1        
+sel_01 mid_low  21    1        
+sel_01 max_val  6     1        
+sel_01 zero     8     1        
+sel_00 zero     7     1        
+sel_00 mid_high 17    1        
+sel_00 mid_low  21    1        
+sel_00 max_val  12    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_sel_in2
+
+
+Samples crossed: cp_sel cp_in2
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       0         16      100.00          
+
+
+Automatically Generated Cross Bins for cx_sel_in2
+
+
+Bins
+
+cp_sel cp_in2   COUNT AT LEAST 
+sel_11 mid_high 20    1        
+sel_11 mid_low  10    1        
+sel_11 max_val  14    1        
+sel_11 zero     7     1        
+sel_10 mid_high 16    1        
+sel_10 mid_low  18    1        
+sel_10 max_val  13    1        
+sel_10 zero     13    1        
+sel_01 mid_high 14    1        
+sel_01 mid_low  17    1        
+sel_01 max_val  14    1        
+sel_01 zero     10    1        
+sel_00 zero     15    1        
+sel_00 mid_high 16    1        
+sel_00 mid_low  16    1        
+sel_00 max_val  10    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_sel_in3
+
+
+Samples crossed: cp_sel cp_in3
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       0         16      100.00          
+
+
+Automatically Generated Cross Bins for cx_sel_in3
+
+
+Bins
+
+cp_sel cp_in3   COUNT AT LEAST 
+sel_11 mid_low  15    1        
+sel_11 mid_high 10    1        
+sel_11 max_val  11    1        
+sel_11 zero     15    1        
+sel_10 mid_low  20    1        
+sel_10 mid_high 20    1        
+sel_10 max_val  10    1        
+sel_10 zero     10    1        
+sel_01 mid_low  10    1        
+sel_01 mid_high 23    1        
+sel_01 max_val  13    1        
+sel_01 zero     9     1        
+sel_00 mid_low  14    1        
+sel_00 zero     12    1        
+sel_00 mid_high 22    1        
+sel_00 max_val  9     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_sel_out
+
+
+Samples crossed: cp_sel cp_out
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       0         16      100.00          
+
+
+Automatically Generated Cross Bins for cx_sel_out
+
+
+Bins
+
+cp_sel cp_out   COUNT AT LEAST 
+sel_11 mid_low  15    1        
+sel_11 mid_high 10    1        
+sel_11 max_val  11    1        
+sel_11 zero     15    1        
+sel_10 mid_high 16    1        
+sel_10 mid_low  18    1        
+sel_10 max_val  13    1        
+sel_10 zero     13    1        
+sel_01 mid_high 20    1        
+sel_01 mid_low  21    1        
+sel_01 max_val  6     1        
+sel_01 zero     8     1        
+sel_00 zero     9     1        
+sel_00 mid_high 18    1        
+sel_00 mid_low  19    1        
+sel_00 max_val  11    1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.mux_cg
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                        
+100.00 100.00    1      100    1        1            64           64                    $unit::mux_coverage::mux_cg 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.mux_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 34       0         34      100.00  
+Crosses   80       0         80      100.00  
+
+
+Variables for Group Instance  tb_top.me.obj.mux_cg
+
+
+VARIABLE      EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_sel        4        0         4       100.00  100  1      1        0                    
+cp_in0        4        0         4       100.00  100  1      1        0                    
+cp_in1        4        0         4       100.00  100  1      1        0                    
+cp_in2        4        0         4       100.00  100  1      1        0                    
+cp_in3        4        0         4       100.00  100  1      1        0                    
+cp_out        4        0         4       100.00  100  1      1        0                    
+cp_all_same   2        0         2       100.00  100  1      1        0                    
+cp_all_unique 2        0         2       100.00  100  1      1        0                    
+cp_sel_trans  6        0         6       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.mux_cg
+
+
+CROSS      EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_sel_in0 16       0         16      100.00  100  1      1        0                     
+cx_sel_in1 16       0         16      100.00  100  1      1        0                     
+cx_sel_in2 16       0         16      100.00  100  1      1        0                     
+cx_sel_in3 16       0         16      100.00  100  1      1        0                     
+cx_sel_out 16       0         16      100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_sel
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_sel
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+sel_11 51    1        --              
+sel_10 60    1        --              
+sel_01 55    1        --              
+sel_00 57    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_in0
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_in0
+
+
+Bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+mid_high 64    1        --              
+mid_low  75    1        --              
+max_val  45    1        --              
+zero     39    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_in1
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_in1
+
+
+Bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+mid_high 69    1        --              
+mid_low  72    1        --              
+max_val  42    1        --              
+zero     40    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_in2
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_in2
+
+
+Bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+mid_high 66    1        --              
+mid_low  61    1        --              
+max_val  51    1        --              
+zero     45    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_in3
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_in3
+
+
+Bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+mid_high 75    1        --              
+mid_low  59    1        --              
+max_val  43    1        --              
+zero     46    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_out
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_out
+
+
+Bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+mid_high 64    1        --              
+mid_low  73    1        --              
+max_val  41    1        --              
+zero     45    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_all_same
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_all_same
+
+
+Bins
+
+NAME         COUNT AT LEAST SUBSUMED VALUES 
+not_all_same 212   1        --              
+all_same     11    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_all_unique
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_all_unique
+
+
+Bins
+
+NAME           COUNT AT LEAST SUBSUMED VALUES 
+not_all_unique 11    1        --              
+all_unique     212   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_sel_trans
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 6        0         6       100.00  
+
+
+User Defined Bins for cp_sel_trans
+
+
+Bins
+
+NAME        COUNT AT LEAST SUBSUMED VALUES 
+trans_11_01 10    1        --              
+trans_00_11 16    1        --              
+trans_11_00 19    1        --              
+trans_10_11 19    1        --              
+trans_01_10 19    1        --              
+trans_00_01 14    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_sel_in0
+
+
+Samples crossed: cp_sel cp_in0
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       0         16      100.00          
+
+
+Automatically Generated Cross Bins for cx_sel_in0
+
+
+Bins
+
+cp_sel cp_in0   COUNT AT LEAST 
+sel_11 mid_high 15    1        
+sel_11 mid_low  20    1        
+sel_11 max_val  10    1        
+sel_11 zero     6     1        
+sel_10 mid_high 19    1        
+sel_10 mid_low  18    1        
+sel_10 max_val  15    1        
+sel_10 zero     8     1        
+sel_01 mid_high 12    1        
+sel_01 mid_low  18    1        
+sel_01 max_val  9     1        
+sel_01 zero     16    1        
+sel_00 zero     9     1        
+sel_00 mid_high 18    1        
+sel_00 mid_low  19    1        
+sel_00 max_val  11    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_sel_in1
+
+
+Samples crossed: cp_sel cp_in1
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       0         16      100.00          
+
+
+Automatically Generated Cross Bins for cx_sel_in1
+
+
+Bins
+
+cp_sel cp_in1   COUNT AT LEAST 
+sel_11 mid_high 16    1        
+sel_11 mid_low  15    1        
+sel_11 max_val  10    1        
+sel_11 zero     10    1        
+sel_10 mid_high 16    1        
+sel_10 mid_low  15    1        
+sel_10 max_val  14    1        
+sel_10 zero     15    1        
+sel_01 mid_high 20    1        
+sel_01 mid_low  21    1        
+sel_01 max_val  6     1        
+sel_01 zero     8     1        
+sel_00 zero     7     1        
+sel_00 mid_high 17    1        
+sel_00 mid_low  21    1        
+sel_00 max_val  12    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_sel_in2
+
+
+Samples crossed: cp_sel cp_in2
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       0         16      100.00          
+
+
+Automatically Generated Cross Bins for cx_sel_in2
+
+
+Bins
+
+cp_sel cp_in2   COUNT AT LEAST 
+sel_11 mid_high 20    1        
+sel_11 mid_low  10    1        
+sel_11 max_val  14    1        
+sel_11 zero     7     1        
+sel_10 mid_high 16    1        
+sel_10 mid_low  18    1        
+sel_10 max_val  13    1        
+sel_10 zero     13    1        
+sel_01 mid_high 14    1        
+sel_01 mid_low  17    1        
+sel_01 max_val  14    1        
+sel_01 zero     10    1        
+sel_00 zero     15    1        
+sel_00 mid_high 16    1        
+sel_00 mid_low  16    1        
+sel_00 max_val  10    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_sel_in3
+
+
+Samples crossed: cp_sel cp_in3
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       0         16      100.00          
+
+
+Automatically Generated Cross Bins for cx_sel_in3
+
+
+Bins
+
+cp_sel cp_in3   COUNT AT LEAST 
+sel_11 mid_low  15    1        
+sel_11 mid_high 10    1        
+sel_11 max_val  11    1        
+sel_11 zero     15    1        
+sel_10 mid_low  20    1        
+sel_10 mid_high 20    1        
+sel_10 max_val  10    1        
+sel_10 zero     10    1        
+sel_01 mid_low  10    1        
+sel_01 mid_high 23    1        
+sel_01 max_val  13    1        
+sel_01 zero     9     1        
+sel_00 mid_low  14    1        
+sel_00 zero     12    1        
+sel_00 mid_high 22    1        
+sel_00 max_val  9     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_sel_out
+
+
+Samples crossed: cp_sel cp_out
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       0         16      100.00          
+
+
+Automatically Generated Cross Bins for cx_sel_out
+
+
+Bins
+
+cp_sel cp_out   COUNT AT LEAST 
+sel_11 mid_low  15    1        
+sel_11 mid_high 10    1        
+sel_11 max_val  11    1        
+sel_11 zero     15    1        
+sel_10 mid_high 16    1        
+sel_10 mid_low  18    1        
+sel_10 max_val  13    1        
+sel_10 zero     13    1        
+sel_01 mid_high 20    1        
+sel_01 mid_low  21    1        
+sel_01 max_val  6     1        
+sel_01 zero     8     1        
+sel_00 zero     9     1        
+sel_00 mid_high 18    1        
+sel_00 mid_low  19    1        
+sel_00 max_val  11    1        
+
+

@@ -1,0 +1,93 @@
+Assertions
+
+
+Assertions by Category
+           ASSERT PROPERTIES SEQUENCES
+Total          29          7         0
+Category 0     29          7         0
+
+-------------------------------------------------------------------------------
+
+Assertions by Severity
+           ASSERT PROPERTIES SEQUENCES
+Total          29          7         0
+Severity 0     29          7         0
+
+-------------------------------------------------------------------------------
+
+Summary for Assertions
+                 NUMBER PERCENT
+Total Number         29  100.00
+Uncovered             3   10.34
+Success              26   89.66
+Failure               0    0.00
+Incomplete            0    0.00
+Without Attempts      2    6.90
+
+-------------------------------------------------------------------------------
+
+Summary for Cover Properties
+             NUMBER PERCENT
+Total Number      7  100.00
+Uncovered         0    0.00
+Matches           7  100.00
+
+-------------------------------------------------------------------------------
+
+Detail Report for Assertions
+
+Assertions Uncovered:
+                            ASSERTIONS                            CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+tb_top.dut.u_apb_memory_assertions.ASSERT_STABILITY_DURING_ACCESS        0        0     1162              0        0          0
+uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1                   0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1                  0        0        0              0        0          0
+
+Assertions Success:
+                                                        ASSERTIONS                                                        CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\apb_directed_sequence::body .unnamed$$_0                      0        0        1              1        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\apb_directed_sequence::body .unnamed$$_1                      0        0        1              1        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\apb_directed_sequence::body .unnamed$$_10.unnamed$$_11        0        0       32             32        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\apb_directed_sequence::body .unnamed$$_12.unnamed$$_13        0        0       32             32        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\apb_directed_sequence::body .unnamed$$_14                     0        0        1              1        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\apb_directed_sequence::body .unnamed$$_15                     0        0        1              1        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\apb_directed_sequence::body .unnamed$$_16                     0        0        1              1        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\apb_directed_sequence::body .unnamed$$_17                     0        0        1              1        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\apb_directed_sequence::body .unnamed$$_2                      0        0        1              1        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\apb_directed_sequence::body .unnamed$$_3                      0        0        1              1        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\apb_directed_sequence::body .unnamed$$_4                      0        0        1              1        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\apb_directed_sequence::body .unnamed$$_5                      0        0        1              1        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\apb_directed_sequence::body .unnamed$$_6.unnamed$$_7          0        0        5              5        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\apb_directed_sequence::body .unnamed$$_8.unnamed$$_9          0        0        5              5        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\apb_random_sequence::body .unnamed$$_0.unnamed$$_1            0        0      200            200        0          0
+tb_top.dut.u_apb_memory_assertions.ASSERT_ACCESS_TO_IDLE                                                                         0        0     1162              1        0          0
+tb_top.dut.u_apb_memory_assertions.ASSERT_ACCESS_TO_SETUP                                                                        0        0     1162            573        0          0
+tb_top.dut.u_apb_memory_assertions.ASSERT_ADDR_OOR_ERROR                                                                         0        0     1162             33        0          0
+tb_top.dut.u_apb_memory_assertions.ASSERT_IDLE_TO_SETUP                                                                          0        0     1162              1        0          0
+tb_top.dut.u_apb_memory_assertions.ASSERT_NO_PENABLE_IN_IDLE                                                                     0        0     1162             10        0          0
+tb_top.dut.u_apb_memory_assertions.ASSERT_PREADY_ONLY_IN_ACCESS                                                                  0        0     1162            584        0          0
+tb_top.dut.u_apb_memory_assertions.ASSERT_RESET                                                                                  0        0     1162              5        0          0
+tb_top.dut.u_apb_memory_assertions.ASSERT_SETUP_TO_ACCESS_SHAPE                                                                  0        0     1162            287        0          0
+tb_top.dut.u_apb_memory_assertions.ASSERT_VALID_READ_NO_ERROR                                                                    0        0     1162            137        0          0
+tb_top.dut.u_apb_memory_assertions.ASSERT_VALID_WRITE_NO_ERROR                                                                   0        0     1162            117        0          0
+uvm_pkg.\uvm_component_name_check_visitor::visit .unnamed$$_0                                                                    0        0       27             27        0          0
+
+Assertions Without Attempts:
+                       ASSERTIONS                       CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1         0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1        0        0        0              0        0          0
+
+-------------------------------------------------------------------------------
+
+Detail Report for Cover Properties
+
+Cover Properties Matches:
+                       COVER PROPERTIES                       CATEGORY SEVERITY ATTEMPTS MATCHES INCOMPLETE
+tb_top.dut.u_apb_memory_assertions.COVER_ACCESS_TO_IDLE              0        0     1162       1          0
+tb_top.dut.u_apb_memory_assertions.COVER_ACCESS_TO_SETUP             0        0     1162     573          0
+tb_top.dut.u_apb_memory_assertions.COVER_ADDR_OOR_ERROR              0        0     1162      33          0
+tb_top.dut.u_apb_memory_assertions.COVER_IDLE_TO_SETUP               0        0     1162       1          0
+tb_top.dut.u_apb_memory_assertions.COVER_RESET                       0        0     1162       5          0
+tb_top.dut.u_apb_memory_assertions.COVER_VALID_READ_NO_ERROR         0        0     1162     137          0
+tb_top.dut.u_apb_memory_assertions.COVER_VALID_WRITE_NO_ERROR        0        0     1162     117          0
+
+

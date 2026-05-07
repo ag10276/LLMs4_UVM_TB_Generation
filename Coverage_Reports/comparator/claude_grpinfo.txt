@@ -1,0 +1,714 @@
+Group : $unit::comp_coverage::comp_cg
+
+===============================================================================
+Group : $unit::comp_coverage::comp_cg
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+ 90.91  90.91    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/comparator/claude/claude_comparator_uvm_tb_all.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME    
+ 90.91 1      100    1        64           64            comp_cg 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::comp_coverage::comp_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 23       0         23      100.00  
+Crosses   88       36        52      75.00   
+
+
+Variables for Group  $unit::comp_coverage::comp_cg
+
+
+VARIABLE     EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_a         4        0         4       100.00  100  1      1        0                    
+cp_b         4        0         4       100.00  100  1      1        0                    
+cp_agreaterb 2        0         2       100.00  100  1      1        0                    
+cp_aequalb   2        0         2       100.00  100  1      1        0                    
+cp_alesserb  2        0         2       100.00  100  1      1        0                    
+cp_result    3        0         3       100.00  100  1      1        0                    
+cp_boundary  6        0         6       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::comp_coverage::comp_cg
+
+
+CROSS       EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_a_b      16       0         16      100.00  100  1      1        0                     
+cx_a_result 12       2         10      83.33   100  1      1        0                     
+cx_b_result 12       2         10      83.33   100  1      1        0                     
+cx_full     48       32        16      33.33   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_a
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_a
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+three 26    1        --              
+two   21    1        --              
+one   40    1        --              
+zero  23    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_b
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_b
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+three 25    1        --              
+two   38    1        --              
+one   27    1        --              
+zero  20    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_agreaterb
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_agreaterb
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+low  70    1        --              
+high 40    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_aequalb
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_aequalb
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+low  88    1        --              
+high 22    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_alesserb
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_alesserb
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+low  62    1        --              
+high 48    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_result
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_result
+
+
+Excluded/Illegal bins
+
+NAME    COUNT SUBSUMED VALUES STATUS  
+invalid 0     --              Illegal 
+
+
+Covered bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+lesser  48    1        --              
+equal   22    1        --              
+greater 40    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_boundary
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 6        0         6       100.00  
+
+
+User Defined Bins for cp_boundary
+
+
+Bins
+
+NAME         COUNT AT LEAST SUBSUMED VALUES 
+a_eq_b_mid2  6     1        --              
+a_eq_b_mid1  9     1        --              
+a_max_b_zero 4     1        --              
+a_zero_b_max 5     1        --              
+both_max     5     1        --              
+both_zero    2     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_a_b
+
+
+Samples crossed: cp_a cp_b
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       0         16      100.00          
+
+
+Automatically Generated Cross Bins for cx_a_b
+
+
+Bins
+
+cp_a  cp_b  COUNT AT LEAST 
+three three 5     1        
+three zero  4     1        
+three two   11    1        
+three one   6     1        
+two   three 6     1        
+two   zero  4     1        
+two   two   6     1        
+two   one   5     1        
+one   three 9     1        
+one   zero  10    1        
+one   two   12    1        
+one   one   9     1        
+zero  zero  2     1        
+zero  three 5     1        
+zero  two   9     1        
+zero  one   7     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_a_result
+
+
+Samples crossed: cp_a cp_result
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 12       2         10      83.33   2       
+
+
+Automatically Generated Cross Bins for cx_a_result
+
+
+Uncovered bins
+
+cp_a    cp_result COUNT AT LEAST NUMBER 
+[three] [lesser]  0     1        1      
+[zero]  [greater] 0     1        1      
+
+
+Covered bins
+
+cp_a  cp_result COUNT AT LEAST 
+three greater   21    1        
+three equal     5     1        
+two   greater   9     1        
+two   lesser    6     1        
+two   equal     6     1        
+one   greater   10    1        
+one   lesser    21    1        
+one   equal     9     1        
+zero  equal     2     1        
+zero  lesser    21    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_b_result
+
+
+Samples crossed: cp_b cp_result
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 12       2         10      83.33   2       
+
+
+Automatically Generated Cross Bins for cx_b_result
+
+
+Uncovered bins
+
+cp_b    cp_result COUNT AT LEAST NUMBER 
+[three] [greater] 0     1        1      
+[zero]  [lesser]  0     1        1      
+
+
+Covered bins
+
+cp_b  cp_result COUNT AT LEAST 
+three equal     5     1        
+three lesser    20    1        
+two   greater   11    1        
+two   equal     6     1        
+two   lesser    21    1        
+one   greater   11    1        
+one   equal     9     1        
+one   lesser    7     1        
+zero  greater   18    1        
+zero  equal     2     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_full
+
+
+Samples crossed: cp_a cp_b cp_result
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 48       32        16      33.33   32      
+
+
+Automatically Generated Cross Bins for cx_full
+
+
+Uncovered bins
+
+cp_a    cp_b                cp_result         COUNT AT LEAST NUMBER 
+[three] [three]             [lesser]          0     1        1      
+[three] [three]             [greater]         0     1        1      
+[three] [two , one , zero]  [lesser , equal]  --    --       6      
+[two]   [three]             [equal , greater] --    --       2      
+[two]   [two]               [lesser]          0     1        1      
+[two]   [two]               [greater]         0     1        1      
+[two]   [one , zero]        [lesser , equal]  --    --       4      
+[one]   [three , two]       [equal , greater] --    --       4      
+[one]   [one]               [lesser]          0     1        1      
+[one]   [one]               [greater]         0     1        1      
+[one]   [zero]              [lesser , equal]  --    --       2      
+[zero]  [three , two , one] [equal , greater] --    --       6      
+[zero]  [zero]              [lesser]          0     1        1      
+[zero]  [zero]              [greater]         0     1        1      
+
+
+Covered bins
+
+cp_a  cp_b  cp_result COUNT AT LEAST 
+three three equal     5     1        
+three two   greater   11    1        
+three one   greater   6     1        
+three zero  greater   4     1        
+two   three lesser    6     1        
+two   two   equal     6     1        
+two   one   greater   5     1        
+two   zero  greater   4     1        
+one   three lesser    9     1        
+one   two   lesser    12    1        
+one   one   equal     9     1        
+one   zero  greater   10    1        
+zero  three lesser    5     1        
+zero  two   lesser    9     1        
+zero  one   lesser    7     1        
+zero  zero  equal     2     1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : comp_cg
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 90.91 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                          
+ 90.91  90.91    1      100    1        1            64           64                    $unit::comp_coverage::comp_cg 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   comp_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 23       0         23      100.00  
+Crosses   88       36        52      75.00   
+
+
+Variables for Group Instance  comp_cg
+
+
+VARIABLE     EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_a         4        0         4       100.00  100  1      1        0                    
+cp_b         4        0         4       100.00  100  1      1        0                    
+cp_agreaterb 2        0         2       100.00  100  1      1        0                    
+cp_aequalb   2        0         2       100.00  100  1      1        0                    
+cp_alesserb  2        0         2       100.00  100  1      1        0                    
+cp_result    3        0         3       100.00  100  1      1        0                    
+cp_boundary  6        0         6       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  comp_cg
+
+
+CROSS       EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_a_b      16       0         16      100.00  100  1      1        0                     
+cx_a_result 12       2         10      83.33   100  1      1        0                     
+cx_b_result 12       2         10      83.33   100  1      1        0                     
+cx_full     48       32        16      33.33   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_a
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_a
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+three 26    1        --              
+two   21    1        --              
+one   40    1        --              
+zero  23    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_b
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_b
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+three 25    1        --              
+two   38    1        --              
+one   27    1        --              
+zero  20    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_agreaterb
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_agreaterb
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+low  70    1        --              
+high 40    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_aequalb
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_aequalb
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+low  88    1        --              
+high 22    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_alesserb
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_alesserb
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+low  62    1        --              
+high 48    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_result
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_result
+
+
+Excluded/Illegal bins
+
+NAME    COUNT SUBSUMED VALUES STATUS  
+invalid 0     --              Illegal 
+
+
+Covered bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+lesser  48    1        --              
+equal   22    1        --              
+greater 40    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_boundary
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 6        0         6       100.00  
+
+
+User Defined Bins for cp_boundary
+
+
+Bins
+
+NAME         COUNT AT LEAST SUBSUMED VALUES 
+a_eq_b_mid2  6     1        --              
+a_eq_b_mid1  9     1        --              
+a_max_b_zero 4     1        --              
+a_zero_b_max 5     1        --              
+both_max     5     1        --              
+both_zero    2     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_a_b
+
+
+Samples crossed: cp_a cp_b
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       0         16      100.00          
+
+
+Automatically Generated Cross Bins for cx_a_b
+
+
+Bins
+
+cp_a  cp_b  COUNT AT LEAST 
+three three 5     1        
+three zero  4     1        
+three two   11    1        
+three one   6     1        
+two   three 6     1        
+two   zero  4     1        
+two   two   6     1        
+two   one   5     1        
+one   three 9     1        
+one   zero  10    1        
+one   two   12    1        
+one   one   9     1        
+zero  zero  2     1        
+zero  three 5     1        
+zero  two   9     1        
+zero  one   7     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_a_result
+
+
+Samples crossed: cp_a cp_result
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 12       2         10      83.33   2       
+
+
+Automatically Generated Cross Bins for cx_a_result
+
+
+Uncovered bins
+
+cp_a    cp_result COUNT AT LEAST NUMBER 
+[three] [lesser]  0     1        1      
+[zero]  [greater] 0     1        1      
+
+
+Covered bins
+
+cp_a  cp_result COUNT AT LEAST 
+three greater   21    1        
+three equal     5     1        
+two   greater   9     1        
+two   lesser    6     1        
+two   equal     6     1        
+one   greater   10    1        
+one   lesser    21    1        
+one   equal     9     1        
+zero  equal     2     1        
+zero  lesser    21    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_b_result
+
+
+Samples crossed: cp_b cp_result
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 12       2         10      83.33   2       
+
+
+Automatically Generated Cross Bins for cx_b_result
+
+
+Uncovered bins
+
+cp_b    cp_result COUNT AT LEAST NUMBER 
+[three] [greater] 0     1        1      
+[zero]  [lesser]  0     1        1      
+
+
+Covered bins
+
+cp_b  cp_result COUNT AT LEAST 
+three equal     5     1        
+three lesser    20    1        
+two   greater   11    1        
+two   equal     6     1        
+two   lesser    21    1        
+one   greater   11    1        
+one   equal     9     1        
+one   lesser    7     1        
+zero  greater   18    1        
+zero  equal     2     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_full
+
+
+Samples crossed: cp_a cp_b cp_result
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 48       32        16      33.33   32      
+
+
+Automatically Generated Cross Bins for cx_full
+
+
+Uncovered bins
+
+cp_a    cp_b                cp_result         COUNT AT LEAST NUMBER 
+[three] [three]             [lesser]          0     1        1      
+[three] [three]             [greater]         0     1        1      
+[three] [two , one , zero]  [lesser , equal]  --    --       6      
+[two]   [three]             [equal , greater] --    --       2      
+[two]   [two]               [lesser]          0     1        1      
+[two]   [two]               [greater]         0     1        1      
+[two]   [one , zero]        [lesser , equal]  --    --       4      
+[one]   [three , two]       [equal , greater] --    --       4      
+[one]   [one]               [lesser]          0     1        1      
+[one]   [one]               [greater]         0     1        1      
+[one]   [zero]              [lesser , equal]  --    --       2      
+[zero]  [three , two , one] [equal , greater] --    --       6      
+[zero]  [zero]              [lesser]          0     1        1      
+[zero]  [zero]              [greater]         0     1        1      
+
+
+Covered bins
+
+cp_a  cp_b  cp_result COUNT AT LEAST 
+three three equal     5     1        
+three two   greater   11    1        
+three one   greater   6     1        
+three zero  greater   4     1        
+two   three lesser    6     1        
+two   two   equal     6     1        
+two   one   greater   5     1        
+two   zero  greater   4     1        
+one   three lesser    9     1        
+one   two   lesser    12    1        
+one   one   equal     9     1        
+one   zero  greater   10    1        
+zero  three lesser    5     1        
+zero  two   lesser    9     1        
+zero  one   lesser    7     1        
+zero  zero  equal     2     1        
+
+

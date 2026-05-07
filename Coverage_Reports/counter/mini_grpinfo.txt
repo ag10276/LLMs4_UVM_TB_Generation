@@ -1,0 +1,105 @@
+Group : $unit::counter_coverage::cg
+
+===============================================================================
+Group : $unit::counter_coverage::cg
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/counter/mini/mini_counter_uvm_tb_all.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::counter_coverage::cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 20       0         20      100.00  
+
+
+Variables for Group  $unit::counter_coverage::cg
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+dout     16       0         16      100.00  100  1      1        0                    
+up       2        0         2       100.00  100  1      1        2                    
+rst      2        0         2       100.00  100  1      1        2                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable dout
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 16       0         16      100.00  
+
+
+User Defined Bins for dout
+
+
+Bins
+
+NAME                  COUNT AT LEAST SUBSUMED VALUES 
+all_possible_values_0 4     1        --              
+all_possible_values_1 4     1        --              
+all_possible_values_2 4     1        --              
+all_possible_values_3 4     1        --              
+all_possible_values_4 3     1        --              
+all_possible_values_5 2     1        --              
+all_possible_values_6 2     1        --              
+all_possible_values_7 2     1        --              
+all_possible_values_8 2     1        --              
+all_possible_values_9 2     1        --              
+all_possible_values_a 2     1        --              
+all_possible_values_b 2     1        --              
+all_possible_values_c 2     1        --              
+all_possible_values_d 2     1        --              
+all_possible_values_e 2     1        --              
+all_possible_values_f 2     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable up
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for up
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 23    1        { [ 0 ] }       
+auto[1] 20    1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable rst
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for rst
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 41    1        { [ 0 ] }       
+auto[1] 2     1        { [ 1 ] }       
+
+

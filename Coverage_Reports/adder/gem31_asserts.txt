@@ -1,0 +1,78 @@
+Assertions
+
+
+Assertions by Category
+           ASSERT PROPERTIES SEQUENCES
+Total          36          0         0
+Category 0     36          0         0
+
+-------------------------------------------------------------------------------
+
+Assertions by Severity
+           ASSERT PROPERTIES SEQUENCES
+Total          36          0         0
+Severity 0     36          0         0
+
+-------------------------------------------------------------------------------
+
+Summary for Assertions
+                 NUMBER PERCENT
+Total Number         36  100.00
+Uncovered             2    5.56
+Success              34   94.44
+Failure               0    0.00
+Incomplete            0    0.00
+Without Attempts      2    5.56
+
+-------------------------------------------------------------------------------
+
+Detail Report for Assertions
+
+Assertions Uncovered:
+                       ASSERTIONS                       CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1         0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1        0        0        0              0        0          0
+
+Assertions Success:
+                          ASSERTIONS                          CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+tb_top.dut.fa1.u_fa_sva.FA_FUNC                                      0        0       93             93        0          0
+tb_top.dut.fa1.u_fa_sva.NO_X_A                                       0        0       93             93        0          0
+tb_top.dut.fa1.u_fa_sva.NO_X_B                                       0        0       93             93        0          0
+tb_top.dut.fa1.u_fa_sva.NO_X_CIN                                     0        0       93             93        0          0
+tb_top.dut.fa1.u_fa_sva.NO_X_CO                                      0        0       93             93        0          0
+tb_top.dut.fa1.u_fa_sva.NO_X_SUM                                     0        0       93             93        0          0
+tb_top.dut.fa2.u_fa_sva.FA_FUNC                                      0        0       96             96        0          0
+tb_top.dut.fa2.u_fa_sva.NO_X_A                                       0        0       96             96        0          0
+tb_top.dut.fa2.u_fa_sva.NO_X_B                                       0        0       96             96        0          0
+tb_top.dut.fa2.u_fa_sva.NO_X_CIN                                     0        0       96             96        0          0
+tb_top.dut.fa2.u_fa_sva.NO_X_CO                                      0        0       96             96        0          0
+tb_top.dut.fa2.u_fa_sva.NO_X_SUM                                     0        0       96             96        0          0
+tb_top.dut.fa3.u_fa_sva.FA_FUNC                                      0        0       94             94        0          0
+tb_top.dut.fa3.u_fa_sva.NO_X_A                                       0        0       94             94        0          0
+tb_top.dut.fa3.u_fa_sva.NO_X_B                                       0        0       94             94        0          0
+tb_top.dut.fa3.u_fa_sva.NO_X_CIN                                     0        0       94             94        0          0
+tb_top.dut.fa3.u_fa_sva.NO_X_CO                                      0        0       94             94        0          0
+tb_top.dut.fa3.u_fa_sva.NO_X_SUM                                     0        0       94             94        0          0
+tb_top.dut.fa4.u_fa_sva.FA_FUNC                                      0        0       92             92        0          0
+tb_top.dut.fa4.u_fa_sva.NO_X_A                                       0        0       92             92        0          0
+tb_top.dut.fa4.u_fa_sva.NO_X_B                                       0        0       92             92        0          0
+tb_top.dut.fa4.u_fa_sva.NO_X_CIN                                     0        0       92             92        0          0
+tb_top.dut.fa4.u_fa_sva.NO_X_CO                                      0        0       92             92        0          0
+tb_top.dut.fa4.u_fa_sva.NO_X_SUM                                     0        0       92             92        0          0
+tb_top.dut.u_adder_sva.COUT_SET                                      0        0      104            104        0          0
+tb_top.dut.u_adder_sva.FULL_ADD                                      0        0      104            104        0          0
+tb_top.dut.u_adder_sva.NO_OVERFLOW                                   0        0      104            104        0          0
+tb_top.dut.u_adder_sva.NO_X_A                                        0        0      104            104        0          0
+tb_top.dut.u_adder_sva.NO_X_B                                        0        0      104            104        0          0
+tb_top.dut.u_adder_sva.NO_X_CIN                                      0        0      104            104        0          0
+tb_top.dut.u_adder_sva.NO_X_CO                                       0        0      104            104        0          0
+tb_top.dut.u_adder_sva.NO_X_SUM                                      0        0      104            104        0          0
+tb_top.dut.u_adder_sva.SUM_RANGE                                     0        0      101            101        0          0
+uvm_pkg.\uvm_component_name_check_visitor::visit .unnamed$$_0        0        0       27             27        0          0
+
+Assertions Without Attempts:
+                       ASSERTIONS                       CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1         0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1        0        0        0              0        0          0
+
+

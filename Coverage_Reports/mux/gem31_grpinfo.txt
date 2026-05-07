@@ -1,0 +1,652 @@
+Group : $unit::mux_coverage::mux_cg
+
+===============================================================================
+Group : $unit::mux_coverage::mux_cg
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+ 65.28  65.28    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/mux/gem_mux_uvm_tb_all.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                 
+ 65.28 1      100    1        64           64            tb_top.me.obj.mux_cg 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::mux_coverage::mux_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 12       0         12      100.00  
+Crosses   32       25        7       21.88   
+
+
+Variables for Group  $unit::mux_coverage::mux_cg
+
+
+VARIABLE    EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_sel      4        0         4       100.00  100  1      1        0                    
+cp_in0_vals 2        0         2       100.00  100  1      1        0                    
+cp_in1_vals 2        0         2       100.00  100  1      1        0                    
+cp_in2_vals 2        0         2       100.00  100  1      1        0                    
+cp_in3_vals 2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::mux_coverage::mux_cg
+
+
+CROSS              EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cross_sel_in0_zero 8        7         1       12.50   100  1      1        0                     
+cross_sel_in1_zero 8        6         2       25.00   100  1      1        0                     
+cross_sel_in2_zero 8        6         2       25.00   100  1      1        0                     
+cross_sel_in3_zero 8        6         2       25.00   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_sel
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_sel
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+sel_11 25    1        --              
+sel_10 26    1        --              
+sel_01 30    1        --              
+sel_00 21    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_in0_vals
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_in0_vals
+
+
+Excluded/Illegal bins
+
+NAME   COUNT SUBSUMED VALUES STATUS   
+others 89    --              Excluded 
+
+
+Covered bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+max  3     1        --              
+zero 10    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_in1_vals
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_in1_vals
+
+
+Excluded/Illegal bins
+
+NAME   COUNT SUBSUMED VALUES STATUS   
+others 85    --              Excluded 
+
+
+Covered bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+max  6     1        --              
+zero 11    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_in2_vals
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_in2_vals
+
+
+Excluded/Illegal bins
+
+NAME   COUNT SUBSUMED VALUES STATUS   
+others 87    --              Excluded 
+
+
+Covered bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+max  6     1        --              
+zero 9     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_in3_vals
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_in3_vals
+
+
+Excluded/Illegal bins
+
+NAME   COUNT SUBSUMED VALUES STATUS   
+others 87    --              Excluded 
+
+
+Covered bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+max  9     1        --              
+zero 6     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cross_sel_in0_zero
+
+
+Samples crossed: cp_sel cp_in0_vals
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              8        7         1       12.50   7       
+Automatically Generated Cross Bins 8        7         1       12.50   7       
+User Defined Cross Bins            0        0         0                       
+
+
+Automatically Generated Cross Bins for cross_sel_in0_zero
+
+
+Element holes
+
+cp_sel                     cp_in0_vals COUNT AT LEAST NUMBER 
+[sel_11 , sel_10 , sel_01] *           --    --       6      
+
+
+Uncovered bins
+
+cp_sel   cp_in0_vals COUNT AT LEAST NUMBER 
+[sel_00] [max]       0     1        1      
+
+
+Covered bins
+
+cp_sel cp_in0_vals COUNT AT LEAST 
+sel_00 zero        2     1        
+
+
+User Defined Cross Bins for cross_sel_in0_zero
+
+
+Excluded/Illegal bins
+
+NAME       COUNT STATUS   
+others_bin 0     Excluded 
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cross_sel_in1_zero
+
+
+Samples crossed: cp_sel cp_in1_vals
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              8        6         2       25.00   6       
+Automatically Generated Cross Bins 8        6         2       25.00   6       
+User Defined Cross Bins            0        0         0                       
+
+
+Automatically Generated Cross Bins for cross_sel_in1_zero
+
+
+Element holes
+
+cp_sel            cp_in1_vals COUNT AT LEAST NUMBER 
+[sel_11 , sel_10] *           --    --       4      
+[sel_00]          *           --    --       2      
+
+
+Covered bins
+
+cp_sel cp_in1_vals COUNT AT LEAST 
+sel_01 max         1     1        
+sel_01 zero        4     1        
+
+
+User Defined Cross Bins for cross_sel_in1_zero
+
+
+Excluded/Illegal bins
+
+NAME       COUNT STATUS   
+others_bin 0     Excluded 
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cross_sel_in2_zero
+
+
+Samples crossed: cp_sel cp_in2_vals
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              8        6         2       25.00   6       
+Automatically Generated Cross Bins 8        6         2       25.00   6       
+User Defined Cross Bins            0        0         0                       
+
+
+Automatically Generated Cross Bins for cross_sel_in2_zero
+
+
+Element holes
+
+cp_sel            cp_in2_vals COUNT AT LEAST NUMBER 
+[sel_11]          *           --    --       2      
+[sel_01 , sel_00] *           --    --       4      
+
+
+Covered bins
+
+cp_sel cp_in2_vals COUNT AT LEAST 
+sel_10 max         1     1        
+sel_10 zero        3     1        
+
+
+User Defined Cross Bins for cross_sel_in2_zero
+
+
+Excluded/Illegal bins
+
+NAME       COUNT STATUS   
+others_bin 0     Excluded 
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cross_sel_in3_zero
+
+
+Samples crossed: cp_sel cp_in3_vals
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              8        6         2       25.00   6       
+Automatically Generated Cross Bins 8        6         2       25.00   6       
+User Defined Cross Bins            0        0         0                       
+
+
+Automatically Generated Cross Bins for cross_sel_in3_zero
+
+
+Element holes
+
+cp_sel                     cp_in3_vals COUNT AT LEAST NUMBER 
+[sel_10 , sel_01 , sel_00] *           --    --       6      
+
+
+Covered bins
+
+cp_sel cp_in3_vals COUNT AT LEAST 
+sel_11 max         1     1        
+sel_11 zero        2     1        
+
+
+User Defined Cross Bins for cross_sel_in3_zero
+
+
+Excluded/Illegal bins
+
+NAME       COUNT STATUS   
+others_bin 0     Excluded 
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.mux_cg
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 65.28 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                        
+ 65.28  65.28    1      100    1        1            64           64                    $unit::mux_coverage::mux_cg 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.mux_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 12       0         12      100.00  
+Crosses   32       25        7       21.88   
+
+
+Variables for Group Instance  tb_top.me.obj.mux_cg
+
+
+VARIABLE    EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_sel      4        0         4       100.00  100  1      1        0                    
+cp_in0_vals 2        0         2       100.00  100  1      1        0                    
+cp_in1_vals 2        0         2       100.00  100  1      1        0                    
+cp_in2_vals 2        0         2       100.00  100  1      1        0                    
+cp_in3_vals 2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.mux_cg
+
+
+CROSS              EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cross_sel_in0_zero 8        7         1       12.50   100  1      1        0                     
+cross_sel_in1_zero 8        6         2       25.00   100  1      1        0                     
+cross_sel_in2_zero 8        6         2       25.00   100  1      1        0                     
+cross_sel_in3_zero 8        6         2       25.00   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_sel
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_sel
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+sel_11 25    1        --              
+sel_10 26    1        --              
+sel_01 30    1        --              
+sel_00 21    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_in0_vals
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_in0_vals
+
+
+Excluded/Illegal bins
+
+NAME   COUNT SUBSUMED VALUES STATUS   
+others 89    --              Excluded 
+
+
+Covered bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+max  3     1        --              
+zero 10    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_in1_vals
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_in1_vals
+
+
+Excluded/Illegal bins
+
+NAME   COUNT SUBSUMED VALUES STATUS   
+others 85    --              Excluded 
+
+
+Covered bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+max  6     1        --              
+zero 11    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_in2_vals
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_in2_vals
+
+
+Excluded/Illegal bins
+
+NAME   COUNT SUBSUMED VALUES STATUS   
+others 87    --              Excluded 
+
+
+Covered bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+max  6     1        --              
+zero 9     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_in3_vals
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_in3_vals
+
+
+Excluded/Illegal bins
+
+NAME   COUNT SUBSUMED VALUES STATUS   
+others 87    --              Excluded 
+
+
+Covered bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+max  9     1        --              
+zero 6     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cross_sel_in0_zero
+
+
+Samples crossed: cp_sel cp_in0_vals
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              8        7         1       12.50   7       
+Automatically Generated Cross Bins 8        7         1       12.50   7       
+User Defined Cross Bins            0        0         0                       
+
+
+Automatically Generated Cross Bins for cross_sel_in0_zero
+
+
+Element holes
+
+cp_sel                     cp_in0_vals COUNT AT LEAST NUMBER 
+[sel_11 , sel_10 , sel_01] *           --    --       6      
+
+
+Uncovered bins
+
+cp_sel   cp_in0_vals COUNT AT LEAST NUMBER 
+[sel_00] [max]       0     1        1      
+
+
+Covered bins
+
+cp_sel cp_in0_vals COUNT AT LEAST 
+sel_00 zero        2     1        
+
+
+User Defined Cross Bins for cross_sel_in0_zero
+
+
+Excluded/Illegal bins
+
+NAME       COUNT STATUS   
+others_bin 0     Excluded 
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cross_sel_in1_zero
+
+
+Samples crossed: cp_sel cp_in1_vals
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              8        6         2       25.00   6       
+Automatically Generated Cross Bins 8        6         2       25.00   6       
+User Defined Cross Bins            0        0         0                       
+
+
+Automatically Generated Cross Bins for cross_sel_in1_zero
+
+
+Element holes
+
+cp_sel            cp_in1_vals COUNT AT LEAST NUMBER 
+[sel_11 , sel_10] *           --    --       4      
+[sel_00]          *           --    --       2      
+
+
+Covered bins
+
+cp_sel cp_in1_vals COUNT AT LEAST 
+sel_01 max         1     1        
+sel_01 zero        4     1        
+
+
+User Defined Cross Bins for cross_sel_in1_zero
+
+
+Excluded/Illegal bins
+
+NAME       COUNT STATUS   
+others_bin 0     Excluded 
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cross_sel_in2_zero
+
+
+Samples crossed: cp_sel cp_in2_vals
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              8        6         2       25.00   6       
+Automatically Generated Cross Bins 8        6         2       25.00   6       
+User Defined Cross Bins            0        0         0                       
+
+
+Automatically Generated Cross Bins for cross_sel_in2_zero
+
+
+Element holes
+
+cp_sel            cp_in2_vals COUNT AT LEAST NUMBER 
+[sel_11]          *           --    --       2      
+[sel_01 , sel_00] *           --    --       4      
+
+
+Covered bins
+
+cp_sel cp_in2_vals COUNT AT LEAST 
+sel_10 max         1     1        
+sel_10 zero        3     1        
+
+
+User Defined Cross Bins for cross_sel_in2_zero
+
+
+Excluded/Illegal bins
+
+NAME       COUNT STATUS   
+others_bin 0     Excluded 
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cross_sel_in3_zero
+
+
+Samples crossed: cp_sel cp_in3_vals
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              8        6         2       25.00   6       
+Automatically Generated Cross Bins 8        6         2       25.00   6       
+User Defined Cross Bins            0        0         0                       
+
+
+Automatically Generated Cross Bins for cross_sel_in3_zero
+
+
+Element holes
+
+cp_sel                     cp_in3_vals COUNT AT LEAST NUMBER 
+[sel_10 , sel_01 , sel_00] *           --    --       6      
+
+
+Covered bins
+
+cp_sel cp_in3_vals COUNT AT LEAST 
+sel_11 max         1     1        
+sel_11 zero        2     1        
+
+
+User Defined Cross Bins for cross_sel_in3_zero
+
+
+Excluded/Illegal bins
+
+NAME       COUNT STATUS   
+others_bin 0     Excluded 
+
+

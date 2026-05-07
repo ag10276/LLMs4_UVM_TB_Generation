@@ -1,0 +1,340 @@
+Group : $unit::apb_coverage::apb_cg
+
+===============================================================================
+Group : $unit::apb_coverage::apb_cg
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+100.00 100.00    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/apb/gem31/gem31_apb_uvm_tb_all.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                 
+100.00 1      100    1        64           64            tb_top.me.obj.apb_cg 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::apb_coverage::apb_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 9        0         9       100.00  
+Crosses   10       0         10      100.00  
+
+
+Variables for Group  $unit::apb_coverage::apb_cg
+
+
+VARIABLE         EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_pwrite        2        0         2       100.00  100  1      1        0                    
+cp_pslverr       2        0         2       100.00  100  1      1        0                    
+cp_addr_validity 2        0         2       100.00  100  1      1        0                    
+cp_addr_corners  3        0         3       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::apb_coverage::apb_cg
+
+
+CROSS             EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cr_write_validity 4        0         4       100.00  100  1      1        0                     
+cr_write_corners  6        0         6       100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_pwrite
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_pwrite
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+write 28    1        --              
+read  32    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_pslverr
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_pslverr
+
+
+Bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+error    10    1        --              
+no_error 50    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_addr_validity
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_addr_validity
+
+
+Bins
+
+NAME          COUNT AT LEAST SUBSUMED VALUES 
+out_of_bounds 10    1        --              
+valid         50    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_addr_corners
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_addr_corners
+
+
+Bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+others   44    1        --              
+max_addr 8     1        --              
+min_addr 8     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cr_write_validity
+
+
+Samples crossed: cp_pwrite cp_addr_validity
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 4        0         4       100.00          
+
+
+Automatically Generated Cross Bins for cr_write_validity
+
+
+Bins
+
+cp_pwrite cp_addr_validity COUNT AT LEAST 
+write     out_of_bounds    6     1        
+write     valid            22    1        
+read      out_of_bounds    4     1        
+read      valid            28    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cr_write_corners
+
+
+Samples crossed: cp_pwrite cp_addr_corners
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 6        0         6       100.00          
+
+
+Automatically Generated Cross Bins for cr_write_corners
+
+
+Bins
+
+cp_pwrite cp_addr_corners COUNT AT LEAST 
+write     min_addr        4     1        
+write     max_addr        4     1        
+write     others          20    1        
+read      max_addr        4     1        
+read      others          24    1        
+read      min_addr        4     1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.apb_cg
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                        
+100.00 100.00    1      100    1        1            64           64                    $unit::apb_coverage::apb_cg 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.apb_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 9        0         9       100.00  
+Crosses   10       0         10      100.00  
+
+
+Variables for Group Instance  tb_top.me.obj.apb_cg
+
+
+VARIABLE         EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_pwrite        2        0         2       100.00  100  1      1        0                    
+cp_pslverr       2        0         2       100.00  100  1      1        0                    
+cp_addr_validity 2        0         2       100.00  100  1      1        0                    
+cp_addr_corners  3        0         3       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.apb_cg
+
+
+CROSS             EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cr_write_validity 4        0         4       100.00  100  1      1        0                     
+cr_write_corners  6        0         6       100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_pwrite
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_pwrite
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+write 28    1        --              
+read  32    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_pslverr
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_pslverr
+
+
+Bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+error    10    1        --              
+no_error 50    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_addr_validity
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_addr_validity
+
+
+Bins
+
+NAME          COUNT AT LEAST SUBSUMED VALUES 
+out_of_bounds 10    1        --              
+valid         50    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_addr_corners
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_addr_corners
+
+
+Bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+others   44    1        --              
+max_addr 8     1        --              
+min_addr 8     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cr_write_validity
+
+
+Samples crossed: cp_pwrite cp_addr_validity
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 4        0         4       100.00          
+
+
+Automatically Generated Cross Bins for cr_write_validity
+
+
+Bins
+
+cp_pwrite cp_addr_validity COUNT AT LEAST 
+write     out_of_bounds    6     1        
+write     valid            22    1        
+read      out_of_bounds    4     1        
+read      valid            28    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cr_write_corners
+
+
+Samples crossed: cp_pwrite cp_addr_corners
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 6        0         6       100.00          
+
+
+Automatically Generated Cross Bins for cr_write_corners
+
+
+Bins
+
+cp_pwrite cp_addr_corners COUNT AT LEAST 
+write     min_addr        4     1        
+write     max_addr        4     1        
+write     others          20    1        
+read      max_addr        4     1        
+read      others          24    1        
+read      min_addr        4     1        
+
+

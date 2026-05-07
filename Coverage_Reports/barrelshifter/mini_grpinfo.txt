@@ -1,0 +1,118 @@
+Group : $unit::barrel_shift_coverage::cg_barrel_shift
+
+===============================================================================
+Group : $unit::barrel_shift_coverage::cg_barrel_shift
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 66.67 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/barrelshifter/mini/mini_barrelshifter_uvm_tb_all.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::barrel_shift_coverage::cg_barrel_shift
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 5        1         4       83.33   
+Crosses   6        4         2       33.33   
+
+
+Variables for Group  $unit::barrel_shift_coverage::cg_barrel_shift
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+x        3        1         2       66.67   100  1      1        0                    
+s        2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::barrel_shift_coverage::cg_barrel_shift
+
+
+CROSS              EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cg_barrel_shift_cc 6        4         2       33.33   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable x
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        1         2       66.67   
+
+
+User Defined Bins for x
+
+
+Uncovered bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES NUMBER 
+all_x_00 0     1        --              1      
+
+
+Covered bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+all_x_ff 1     1        --              
+all_x_01 1     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable s
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for s
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+all_s_0 1     1        --              
+all_s_7 1     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cg_barrel_shift_cc
+
+
+Samples crossed: x s
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 6        4         2       33.33   4       
+
+
+Automatically Generated Cross Bins for cg_barrel_shift_cc
+
+
+Element holes
+
+x          s COUNT AT LEAST NUMBER 
+[all_x_00] * --    --       2      
+
+
+Uncovered bins
+
+x          s         COUNT AT LEAST NUMBER 
+[all_x_ff] [all_s_7] 0     1        1      
+[all_x_01] [all_s_0] 0     1        1      
+
+
+Covered bins
+
+x        s       COUNT AT LEAST 
+all_x_ff all_s_0 1     1        
+all_x_01 all_s_7 1     1        
+
+

@@ -1,0 +1,400 @@
+Group : $unit::adder_coverage::adder_cg
+
+===============================================================================
+Group : $unit::adder_coverage::adder_cg
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+ 95.24  95.24    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/adder/pro_adder_uvm_tb_all.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                   
+ 95.24 1      100    1        64           64            tb_top.me.obj.adder_cg 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::adder_coverage::adder_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 13       0         13      100.00  
+Crosses   13       3         10      83.33   
+
+
+Variables for Group  $unit::adder_coverage::adder_cg
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_a     3        0         3       100.00  100  1      1        0                    
+cp_b     3        0         3       100.00  100  1      1        0                    
+cp_cin   2        0         2       100.00  100  1      1        2                    
+cp_sum   3        0         3       100.00  100  1      1        0                    
+cp_cout  2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::adder_coverage::adder_cg
+
+
+CROSS          EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cross_a_b      9        3         6       66.67   100  1      1        0                     
+cross_cin_cout 4        0         4       100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_a
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_a
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+others 98    1        --              
+max    1     1        --              
+min    7     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_b
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_b
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+others 95    1        --              
+max    6     1        --              
+min    5     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_cin
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for cp_cin
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 56    1        { [ 0 ] }       
+auto[1] 50    1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_sum
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_sum
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+others 95    1        --              
+max    5     1        --              
+min    6     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_cout
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_cout
+
+
+Bins
+
+NAME        COUNT AT LEAST SUBSUMED VALUES 
+overflow    53    1        --              
+no_overflow 53    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cross_a_b
+
+
+Samples crossed: cp_a cp_b
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 9        3         6       66.67   3       
+
+
+Automatically Generated Cross Bins for cross_a_b
+
+
+Uncovered bins
+
+cp_a  cp_b     COUNT AT LEAST NUMBER 
+[max] [others] 0     1        1      
+[max] [min]    0     1        1      
+[min] [max]    0     1        1      
+
+
+Covered bins
+
+cp_a   cp_b   COUNT AT LEAST 
+others min    4     1        
+others others 89    1        
+others max    5     1        
+max    max    1     1        
+min    others 6     1        
+min    min    1     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cross_cin_cout
+
+
+Samples crossed: cp_cin cp_cout
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 4        0         4       100.00          
+
+
+Automatically Generated Cross Bins for cross_cin_cout
+
+
+Bins
+
+cp_cin  cp_cout     COUNT AT LEAST 
+auto[0] overflow    23    1        
+auto[0] no_overflow 33    1        
+auto[1] no_overflow 20    1        
+auto[1] overflow    30    1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.adder_cg
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 95.24 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                            
+ 95.24  95.24    1      100    1        1            64           64                    $unit::adder_coverage::adder_cg 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.adder_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 13       0         13      100.00  
+Crosses   13       3         10      83.33   
+
+
+Variables for Group Instance  tb_top.me.obj.adder_cg
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_a     3        0         3       100.00  100  1      1        0                    
+cp_b     3        0         3       100.00  100  1      1        0                    
+cp_cin   2        0         2       100.00  100  1      1        2                    
+cp_sum   3        0         3       100.00  100  1      1        0                    
+cp_cout  2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.adder_cg
+
+
+CROSS          EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cross_a_b      9        3         6       66.67   100  1      1        0                     
+cross_cin_cout 4        0         4       100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_a
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_a
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+others 98    1        --              
+max    1     1        --              
+min    7     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_b
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_b
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+others 95    1        --              
+max    6     1        --              
+min    5     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_cin
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for cp_cin
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 56    1        { [ 0 ] }       
+auto[1] 50    1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_sum
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_sum
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+others 95    1        --              
+max    5     1        --              
+min    6     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_cout
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_cout
+
+
+Bins
+
+NAME        COUNT AT LEAST SUBSUMED VALUES 
+overflow    53    1        --              
+no_overflow 53    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cross_a_b
+
+
+Samples crossed: cp_a cp_b
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 9        3         6       66.67   3       
+
+
+Automatically Generated Cross Bins for cross_a_b
+
+
+Uncovered bins
+
+cp_a  cp_b     COUNT AT LEAST NUMBER 
+[max] [others] 0     1        1      
+[max] [min]    0     1        1      
+[min] [max]    0     1        1      
+
+
+Covered bins
+
+cp_a   cp_b   COUNT AT LEAST 
+others min    4     1        
+others others 89    1        
+others max    5     1        
+max    max    1     1        
+min    others 6     1        
+min    min    1     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cross_cin_cout
+
+
+Samples crossed: cp_cin cp_cout
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 4        0         4       100.00          
+
+
+Automatically Generated Cross Bins for cross_cin_cout
+
+
+Bins
+
+cp_cin  cp_cout     COUNT AT LEAST 
+auto[0] overflow    23    1        
+auto[0] no_overflow 33    1        
+auto[1] no_overflow 20    1        
+auto[1] overflow    30    1        
+
+

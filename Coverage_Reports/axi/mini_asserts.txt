@@ -1,0 +1,103 @@
+Assertions
+
+
+Assertions by Category
+           ASSERT PROPERTIES SEQUENCES
+Total          37          9         0
+Category 0     37          9         0
+
+-------------------------------------------------------------------------------
+
+Assertions by Severity
+           ASSERT PROPERTIES SEQUENCES
+Total          37          9         0
+Severity 0     37          9         0
+
+-------------------------------------------------------------------------------
+
+Summary for Assertions
+                 NUMBER PERCENT
+Total Number         37  100.00
+Uncovered            10   27.03
+Success              27   72.97
+Failure               0    0.00
+Incomplete            0    0.00
+Without Attempts      2    5.41
+
+-------------------------------------------------------------------------------
+
+Summary for Cover Properties
+             NUMBER PERCENT
+Total Number      9  100.00
+Uncovered         0    0.00
+Matches           9  100.00
+
+-------------------------------------------------------------------------------
+
+Detail Report for Assertions
+
+Assertions Uncovered:
+                       ASSERTIONS                        CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+tb_top.dut.u_axi_mem_assertions.ASSERT_ARVALID_STABLE           0        0      267              0        0          0
+tb_top.dut.u_axi_mem_assertions.ASSERT_AR_PAYLOAD_STABLE        0        0      267              0        0          0
+tb_top.dut.u_axi_mem_assertions.ASSERT_AWVALID_STABLE           0        0      267              0        0          0
+tb_top.dut.u_axi_mem_assertions.ASSERT_AW_PAYLOAD_STABLE        0        0      267              0        0          0
+tb_top.dut.u_axi_mem_assertions.ASSERT_BVALID_STABLE            0        0      267              0        0          0
+tb_top.dut.u_axi_mem_assertions.ASSERT_RVALID_STABLE            0        0      267              0        0          0
+tb_top.dut.u_axi_mem_assertions.ASSERT_WVALID_STABLE            0        0      267              0        0          0
+tb_top.dut.u_axi_mem_assertions.ASSERT_W_PAYLOAD_STABLE         0        0      267              0        0          0
+uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1          0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1         0        0        0              0        0          0
+
+Assertions Success:
+                                                  ASSERTIONS                                                   CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\axi_incr_seq::body .unnamed$$_0.unnamed$$_1        0        0        5              5        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\axi_incr_seq::body .unnamed$$_0.unnamed$$_2        0        0        5              5        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\axi_main_seq::body .unnamed$$_0                    0        0        1              1        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\axi_main_seq::body .unnamed$$_1                    0        0        1              1        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\axi_rsvd_seq::body .unnamed$$_0                    0        0        1              1        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\axi_rsvd_seq::body .unnamed$$_1                    0        0        1              1        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\axi_wrap_seq::body .unnamed$$_0.unnamed$$_1        0        0        5              5        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\axi_wrap_seq::body .unnamed$$_0.unnamed$$_2        0        0        5              5        0          0
+tb_top.dut.u_axi_mem_assertions.ASSERT_ARREADY_LOW_IN_DATA                                                            0        0      267             97        0          0
+tb_top.dut.u_axi_mem_assertions.ASSERT_AWREADY_EXCLUSIVE                                                              0        0      267            101        0          0
+tb_top.dut.u_axi_mem_assertions.ASSERT_BID_MATCHES                                                                    0        0      267             11        0          0
+tb_top.dut.u_axi_mem_assertions.ASSERT_BRESP_OKAY                                                                     0        0      267             10        0          0
+tb_top.dut.u_axi_mem_assertions.ASSERT_BRESP_SLVERR                                                                   0        0      267              1        0          0
+tb_top.dut.u_axi_mem_assertions.ASSERT_BVALID_ONLY_RESP                                                               0        0      267            252        0          0
+tb_top.dut.u_axi_mem_assertions.ASSERT_RESET_OUTPUTS                                                                  0        0      267              5        0          0
+tb_top.dut.u_axi_mem_assertions.ASSERT_RID_MATCHES                                                                    0        0      267             86        0          0
+tb_top.dut.u_axi_mem_assertions.ASSERT_RLAST_NOT_EARLY                                                                0        0      267             75        0          0
+tb_top.dut.u_axi_mem_assertions.ASSERT_RLAST_ON_LAST                                                                  0        0      267             11        0          0
+tb_top.dut.u_axi_mem_assertions.ASSERT_RRESP_OKAY                                                                     0        0      267             75        0          0
+tb_top.dut.u_axi_mem_assertions.ASSERT_RRESP_SLVERR                                                                   0        0      267             11        0          0
+tb_top.dut.u_axi_mem_assertions.ASSERT_RSVD_BURST_READ                                                                0        0      267              1        0          0
+tb_top.dut.u_axi_mem_assertions.ASSERT_RSVD_BURST_WRITE                                                               0        0      267              1        0          0
+tb_top.dut.u_axi_mem_assertions.ASSERT_RVALID_ONLY_DATA                                                               0        0      267            166        0          0
+tb_top.dut.u_axi_mem_assertions.ASSERT_WLAST_NOT_EARLY                                                                0        0      267             79        0          0
+tb_top.dut.u_axi_mem_assertions.ASSERT_WLAST_ON_LAST                                                                  0        0      267             11        0          0
+tb_top.dut.u_axi_mem_assertions.ASSERT_WREADY_EXCLUSIVE                                                               0        0      267            173        0          0
+uvm_pkg.\uvm_component_name_check_visitor::visit .unnamed$$_0                                                         0        0       27             27        0          0
+
+Assertions Without Attempts:
+                       ASSERTIONS                       CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1         0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1        0        0        0              0        0          0
+
+-------------------------------------------------------------------------------
+
+Detail Report for Cover Properties
+
+Cover Properties Matches:
+                   COVER PROPERTIES                    CATEGORY SEVERITY ATTEMPTS MATCHES INCOMPLETE
+tb_top.dut.u_axi_mem_assertions.COVER_BRESP_SLVERR            0        0      267       1          0
+tb_top.dut.u_axi_mem_assertions.COVER_BVALID                  0        0      267      11          0
+tb_top.dut.u_axi_mem_assertions.COVER_RESET                   0        0      267       5          0
+tb_top.dut.u_axi_mem_assertions.COVER_RLAST                   0        0      267      11          0
+tb_top.dut.u_axi_mem_assertions.COVER_RRESP_SLVERR            0        0      267      11          0
+tb_top.dut.u_axi_mem_assertions.COVER_RSVD_BURST_READ         0        0      267       1          0
+tb_top.dut.u_axi_mem_assertions.COVER_RSVD_BURST_WRITE        0        0      267       1          0
+tb_top.dut.u_axi_mem_assertions.COVER_RVALID                  0        0      267      86          0
+tb_top.dut.u_axi_mem_assertions.COVER_WLAST                   0        0      267      11          0
+
+

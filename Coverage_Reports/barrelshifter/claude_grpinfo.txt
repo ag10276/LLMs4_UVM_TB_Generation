@@ -1,0 +1,832 @@
+Group : $unit::bshifter_coverage::cg_bshifter
+
+===============================================================================
+Group : $unit::bshifter_coverage::cg_bshifter
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+ 91.35  91.35    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/barrelshifter/claude/claude_barrelshifter_uvm_tb_all.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                      
+ 91.35 1      100    1        64           64            tb_top.me.obj.cg_bshifter 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::bshifter_coverage::cg_bshifter
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 19       0         19      100.00  
+Crosses   88       16        72      78.39   
+
+
+Variables for Group  $unit::bshifter_coverage::cg_bshifter
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_x     8        0         8       100.00  100  1      1        0                    
+cp_s     8        0         8       100.00  100  1      1        0                    
+cp_y     3        0         3       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::bshifter_coverage::cg_bshifter
+
+
+CROSS  EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_x_s 64       9         55      85.94   100  1      1        0                     
+cx_s_y 24       7         17      70.83   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_x
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 8        0         8       100.00  
+
+
+User Defined Bins for cp_x
+
+
+Bins
+
+NAME       COUNT AT LEAST SUBSUMED VALUES 
+high_range 512   1        --              
+low_range  687   1        --              
+alt_10     8     1        --              
+alt_01     8     1        --              
+lsb_only   16    1        --              
+msb_only   18    1        --              
+max        18    1        --              
+zero       17    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_s
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 8        0         8       100.00  
+
+
+User Defined Bins for cp_s
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+shift_0 183   1        --              
+shift_1 140   1        --              
+shift_2 152   1        --              
+shift_3 142   1        --              
+shift_4 98    1        --              
+shift_5 122   1        --              
+shift_6 249   1        --              
+shift_7 182   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_y
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_y
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+nonzero 1061  1        --              
+max     2     1        --              
+zero    205   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_x_s
+
+
+Samples crossed: cp_x cp_s
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 64       9         55      85.94   9       
+
+
+Automatically Generated Cross Bins for cx_x_s
+
+
+Uncovered bins
+
+cp_x     cp_s                          COUNT AT LEAST NUMBER 
+[alt_10] [shift_0]                     0     1        1      
+[alt_10] [shift_2]                     0     1        1      
+[alt_10] [shift_4 , shift_5 , shift_6] --    --       3      
+[alt_01] [shift_3 , shift_4 , shift_5] --    --       3      
+[alt_01] [shift_7]                     0     1        1      
+
+
+Covered bins
+
+cp_x       cp_s    COUNT AT LEAST 
+high_range shift_4 44    1        
+high_range shift_2 70    1        
+high_range shift_5 62    1        
+high_range shift_3 58    1        
+high_range shift_6 58    1        
+high_range shift_1 52    1        
+high_range shift_7 84    1        
+high_range shift_0 84    1        
+low_range  shift_5 52    1        
+low_range  shift_4 46    1        
+low_range  shift_3 76    1        
+low_range  shift_2 72    1        
+low_range  shift_7 90    1        
+low_range  shift_6 183   1        
+low_range  shift_1 78    1        
+low_range  shift_0 90    1        
+alt_10     shift_3 2     1        
+alt_10     shift_7 2     1        
+alt_10     shift_1 4     1        
+alt_01     shift_2 2     1        
+alt_01     shift_0 2     1        
+alt_01     shift_6 2     1        
+alt_01     shift_1 2     1        
+lsb_only   shift_5 2     1        
+lsb_only   shift_4 2     1        
+lsb_only   shift_3 2     1        
+lsb_only   shift_2 2     1        
+lsb_only   shift_7 2     1        
+lsb_only   shift_6 2     1        
+lsb_only   shift_1 2     1        
+lsb_only   shift_0 2     1        
+msb_only   shift_5 2     1        
+msb_only   shift_4 2     1        
+msb_only   shift_3 2     1        
+msb_only   shift_2 2     1        
+msb_only   shift_7 2     1        
+msb_only   shift_6 2     1        
+msb_only   shift_1 4     1        
+msb_only   shift_0 2     1        
+max        shift_5 2     1        
+max        shift_4 2     1        
+max        shift_3 2     1        
+max        shift_2 4     1        
+max        shift_7 2     1        
+max        shift_6 2     1        
+max        shift_1 2     1        
+max        shift_0 2     1        
+zero       shift_5 2     1        
+zero       shift_4 2     1        
+zero       shift_3 2     1        
+zero       shift_2 2     1        
+zero       shift_7 2     1        
+zero       shift_6 2     1        
+zero       shift_1 2     1        
+zero       shift_0 3     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_s_y
+
+
+Samples crossed: cp_s cp_y
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 24       7         17      70.83   7       
+
+
+Automatically Generated Cross Bins for cx_s_y
+
+
+Uncovered bins
+
+cp_s                                                                  cp_y  COUNT AT LEAST NUMBER 
+[shift_1 , shift_2 , shift_3 , shift_4 , shift_5 , shift_6 , shift_7] [max] --    --       7      
+
+
+Covered bins
+
+cp_s    cp_y    COUNT AT LEAST 
+shift_0 nonzero 178   1        
+shift_0 zero    3     1        
+shift_0 max     2     1        
+shift_1 zero    4     1        
+shift_1 nonzero 136   1        
+shift_2 zero    6     1        
+shift_2 nonzero 146   1        
+shift_3 zero    16    1        
+shift_3 nonzero 126   1        
+shift_4 zero    14    1        
+shift_4 nonzero 84    1        
+shift_5 zero    22    1        
+shift_5 nonzero 100   1        
+shift_6 zero    46    1        
+shift_6 nonzero 203   1        
+shift_7 zero    94    1        
+shift_7 nonzero 88    1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.cg_bshifter
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 91.35 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                                  
+ 91.35  91.35    1      100    1        1            64           64                    $unit::bshifter_coverage::cg_bshifter 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.cg_bshifter
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 19       0         19      100.00  
+Crosses   88       16        72      78.39   
+
+
+Variables for Group Instance  tb_top.me.obj.cg_bshifter
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_x     8        0         8       100.00  100  1      1        0                    
+cp_s     8        0         8       100.00  100  1      1        0                    
+cp_y     3        0         3       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.cg_bshifter
+
+
+CROSS  EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_x_s 64       9         55      85.94   100  1      1        0                     
+cx_s_y 24       7         17      70.83   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_x
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 8        0         8       100.00  
+
+
+User Defined Bins for cp_x
+
+
+Bins
+
+NAME       COUNT AT LEAST SUBSUMED VALUES 
+high_range 512   1        --              
+low_range  687   1        --              
+alt_10     8     1        --              
+alt_01     8     1        --              
+lsb_only   16    1        --              
+msb_only   18    1        --              
+max        18    1        --              
+zero       17    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_s
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 8        0         8       100.00  
+
+
+User Defined Bins for cp_s
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+shift_0 183   1        --              
+shift_1 140   1        --              
+shift_2 152   1        --              
+shift_3 142   1        --              
+shift_4 98    1        --              
+shift_5 122   1        --              
+shift_6 249   1        --              
+shift_7 182   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_y
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_y
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+nonzero 1061  1        --              
+max     2     1        --              
+zero    205   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_x_s
+
+
+Samples crossed: cp_x cp_s
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 64       9         55      85.94   9       
+
+
+Automatically Generated Cross Bins for cx_x_s
+
+
+Uncovered bins
+
+cp_x     cp_s                          COUNT AT LEAST NUMBER 
+[alt_10] [shift_0]                     0     1        1      
+[alt_10] [shift_2]                     0     1        1      
+[alt_10] [shift_4 , shift_5 , shift_6] --    --       3      
+[alt_01] [shift_3 , shift_4 , shift_5] --    --       3      
+[alt_01] [shift_7]                     0     1        1      
+
+
+Covered bins
+
+cp_x       cp_s    COUNT AT LEAST 
+high_range shift_4 44    1        
+high_range shift_2 70    1        
+high_range shift_5 62    1        
+high_range shift_3 58    1        
+high_range shift_6 58    1        
+high_range shift_1 52    1        
+high_range shift_7 84    1        
+high_range shift_0 84    1        
+low_range  shift_5 52    1        
+low_range  shift_4 46    1        
+low_range  shift_3 76    1        
+low_range  shift_2 72    1        
+low_range  shift_7 90    1        
+low_range  shift_6 183   1        
+low_range  shift_1 78    1        
+low_range  shift_0 90    1        
+alt_10     shift_3 2     1        
+alt_10     shift_7 2     1        
+alt_10     shift_1 4     1        
+alt_01     shift_2 2     1        
+alt_01     shift_0 2     1        
+alt_01     shift_6 2     1        
+alt_01     shift_1 2     1        
+lsb_only   shift_5 2     1        
+lsb_only   shift_4 2     1        
+lsb_only   shift_3 2     1        
+lsb_only   shift_2 2     1        
+lsb_only   shift_7 2     1        
+lsb_only   shift_6 2     1        
+lsb_only   shift_1 2     1        
+lsb_only   shift_0 2     1        
+msb_only   shift_5 2     1        
+msb_only   shift_4 2     1        
+msb_only   shift_3 2     1        
+msb_only   shift_2 2     1        
+msb_only   shift_7 2     1        
+msb_only   shift_6 2     1        
+msb_only   shift_1 4     1        
+msb_only   shift_0 2     1        
+max        shift_5 2     1        
+max        shift_4 2     1        
+max        shift_3 2     1        
+max        shift_2 4     1        
+max        shift_7 2     1        
+max        shift_6 2     1        
+max        shift_1 2     1        
+max        shift_0 2     1        
+zero       shift_5 2     1        
+zero       shift_4 2     1        
+zero       shift_3 2     1        
+zero       shift_2 2     1        
+zero       shift_7 2     1        
+zero       shift_6 2     1        
+zero       shift_1 2     1        
+zero       shift_0 3     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_s_y
+
+
+Samples crossed: cp_s cp_y
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 24       7         17      70.83   7       
+
+
+Automatically Generated Cross Bins for cx_s_y
+
+
+Uncovered bins
+
+cp_s                                                                  cp_y  COUNT AT LEAST NUMBER 
+[shift_1 , shift_2 , shift_3 , shift_4 , shift_5 , shift_6 , shift_7] [max] --    --       7      
+
+
+Covered bins
+
+cp_s    cp_y    COUNT AT LEAST 
+shift_0 nonzero 178   1        
+shift_0 zero    3     1        
+shift_0 max     2     1        
+shift_1 zero    4     1        
+shift_1 nonzero 136   1        
+shift_2 zero    6     1        
+shift_2 nonzero 146   1        
+shift_3 zero    16    1        
+shift_3 nonzero 126   1        
+shift_4 zero    14    1        
+shift_4 nonzero 84    1        
+shift_5 zero    22    1        
+shift_5 nonzero 100   1        
+shift_6 zero    46    1        
+shift_6 nonzero 203   1        
+shift_7 zero    94    1        
+shift_7 nonzero 88    1        
+
+
+Group : $unit::bshifter_coverage::cg_single_bits
+
+===============================================================================
+Group : $unit::bshifter_coverage::cg_single_bits
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+100.00 100.00    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/barrelshifter/claude/claude_barrelshifter_uvm_tb_all.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                         
+100.00 1      100    1        64           64            tb_top.me.obj.cg_single_bits 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::bshifter_coverage::cg_single_bits
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 16       0         16      100.00  
+Crosses   64       0         64      100.00  
+
+
+Variables for Group  $unit::bshifter_coverage::cg_single_bits
+
+
+VARIABLE  EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_x_bits 8        0         8       100.00  100  1      1        0                    
+cp_s_all  8        0         8       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::bshifter_coverage::cg_single_bits
+
+
+CROSS        EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_bit_shift 64       0         64      100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_x_bits
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 8        0         8       100.00  
+
+
+User Defined Bins for cp_x_bits
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+bit7 18    1        --              
+bit6 18    1        --              
+bit5 20    1        --              
+bit4 20    1        --              
+bit3 22    1        --              
+bit2 18    1        --              
+bit1 24    1        --              
+bit0 16    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_s_all
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 8        0         8       100.00  
+
+
+User Defined Bins for cp_s_all
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+shift_0 183   1        --              
+shift_1 140   1        --              
+shift_2 152   1        --              
+shift_3 142   1        --              
+shift_4 98    1        --              
+shift_5 122   1        --              
+shift_6 249   1        --              
+shift_7 182   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_bit_shift
+
+
+Samples crossed: cp_x_bits cp_s_all
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 64       0         64      100.00          
+
+
+Automatically Generated Cross Bins for cx_bit_shift
+
+
+Bins
+
+cp_x_bits cp_s_all COUNT AT LEAST 
+bit7      shift_5  2     1        
+bit7      shift_4  2     1        
+bit7      shift_3  2     1        
+bit7      shift_2  2     1        
+bit7      shift_7  2     1        
+bit7      shift_6  2     1        
+bit7      shift_1  4     1        
+bit7      shift_0  2     1        
+bit6      shift_5  2     1        
+bit6      shift_4  2     1        
+bit6      shift_3  4     1        
+bit6      shift_2  2     1        
+bit6      shift_7  2     1        
+bit6      shift_6  2     1        
+bit6      shift_1  2     1        
+bit6      shift_0  2     1        
+bit5      shift_5  2     1        
+bit5      shift_4  2     1        
+bit5      shift_3  2     1        
+bit5      shift_2  4     1        
+bit5      shift_7  4     1        
+bit5      shift_6  2     1        
+bit5      shift_1  2     1        
+bit5      shift_0  2     1        
+bit4      shift_5  2     1        
+bit4      shift_4  4     1        
+bit4      shift_3  2     1        
+bit4      shift_2  4     1        
+bit4      shift_7  2     1        
+bit4      shift_6  2     1        
+bit4      shift_1  2     1        
+bit4      shift_0  2     1        
+bit3      shift_5  2     1        
+bit3      shift_4  2     1        
+bit3      shift_3  2     1        
+bit3      shift_2  2     1        
+bit3      shift_7  4     1        
+bit3      shift_6  2     1        
+bit3      shift_1  4     1        
+bit3      shift_0  4     1        
+bit2      shift_5  2     1        
+bit2      shift_4  2     1        
+bit2      shift_3  4     1        
+bit2      shift_2  2     1        
+bit2      shift_7  2     1        
+bit2      shift_6  2     1        
+bit2      shift_1  2     1        
+bit2      shift_0  2     1        
+bit1      shift_5  4     1        
+bit1      shift_4  4     1        
+bit1      shift_3  4     1        
+bit1      shift_2  2     1        
+bit1      shift_7  4     1        
+bit1      shift_6  2     1        
+bit1      shift_1  2     1        
+bit1      shift_0  2     1        
+bit0      shift_5  2     1        
+bit0      shift_4  2     1        
+bit0      shift_3  2     1        
+bit0      shift_2  2     1        
+bit0      shift_7  2     1        
+bit0      shift_6  2     1        
+bit0      shift_1  2     1        
+bit0      shift_0  2     1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.cg_single_bits
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                                     
+100.00 100.00    1      100    1        1            64           64                    $unit::bshifter_coverage::cg_single_bits 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.cg_single_bits
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 16       0         16      100.00  
+Crosses   64       0         64      100.00  
+
+
+Variables for Group Instance  tb_top.me.obj.cg_single_bits
+
+
+VARIABLE  EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_x_bits 8        0         8       100.00  100  1      1        0                    
+cp_s_all  8        0         8       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.cg_single_bits
+
+
+CROSS        EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_bit_shift 64       0         64      100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_x_bits
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 8        0         8       100.00  
+
+
+User Defined Bins for cp_x_bits
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+bit7 18    1        --              
+bit6 18    1        --              
+bit5 20    1        --              
+bit4 20    1        --              
+bit3 22    1        --              
+bit2 18    1        --              
+bit1 24    1        --              
+bit0 16    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_s_all
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 8        0         8       100.00  
+
+
+User Defined Bins for cp_s_all
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+shift_0 183   1        --              
+shift_1 140   1        --              
+shift_2 152   1        --              
+shift_3 142   1        --              
+shift_4 98    1        --              
+shift_5 122   1        --              
+shift_6 249   1        --              
+shift_7 182   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_bit_shift
+
+
+Samples crossed: cp_x_bits cp_s_all
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 64       0         64      100.00          
+
+
+Automatically Generated Cross Bins for cx_bit_shift
+
+
+Bins
+
+cp_x_bits cp_s_all COUNT AT LEAST 
+bit7      shift_5  2     1        
+bit7      shift_4  2     1        
+bit7      shift_3  2     1        
+bit7      shift_2  2     1        
+bit7      shift_7  2     1        
+bit7      shift_6  2     1        
+bit7      shift_1  4     1        
+bit7      shift_0  2     1        
+bit6      shift_5  2     1        
+bit6      shift_4  2     1        
+bit6      shift_3  4     1        
+bit6      shift_2  2     1        
+bit6      shift_7  2     1        
+bit6      shift_6  2     1        
+bit6      shift_1  2     1        
+bit6      shift_0  2     1        
+bit5      shift_5  2     1        
+bit5      shift_4  2     1        
+bit5      shift_3  2     1        
+bit5      shift_2  4     1        
+bit5      shift_7  4     1        
+bit5      shift_6  2     1        
+bit5      shift_1  2     1        
+bit5      shift_0  2     1        
+bit4      shift_5  2     1        
+bit4      shift_4  4     1        
+bit4      shift_3  2     1        
+bit4      shift_2  4     1        
+bit4      shift_7  2     1        
+bit4      shift_6  2     1        
+bit4      shift_1  2     1        
+bit4      shift_0  2     1        
+bit3      shift_5  2     1        
+bit3      shift_4  2     1        
+bit3      shift_3  2     1        
+bit3      shift_2  2     1        
+bit3      shift_7  4     1        
+bit3      shift_6  2     1        
+bit3      shift_1  4     1        
+bit3      shift_0  4     1        
+bit2      shift_5  2     1        
+bit2      shift_4  2     1        
+bit2      shift_3  4     1        
+bit2      shift_2  2     1        
+bit2      shift_7  2     1        
+bit2      shift_6  2     1        
+bit2      shift_1  2     1        
+bit2      shift_0  2     1        
+bit1      shift_5  4     1        
+bit1      shift_4  4     1        
+bit1      shift_3  4     1        
+bit1      shift_2  2     1        
+bit1      shift_7  4     1        
+bit1      shift_6  2     1        
+bit1      shift_1  2     1        
+bit1      shift_0  2     1        
+bit0      shift_5  2     1        
+bit0      shift_4  2     1        
+bit0      shift_3  2     1        
+bit0      shift_2  2     1        
+bit0      shift_7  2     1        
+bit0      shift_6  2     1        
+bit0      shift_1  2     1        
+bit0      shift_0  2     1        
+
+

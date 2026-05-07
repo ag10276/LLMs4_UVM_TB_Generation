@@ -1,0 +1,81 @@
+Assertions
+
+
+Assertions by Category
+           ASSERT PROPERTIES SEQUENCES
+Total          16          8         0
+Category 0     16          8         0
+
+-------------------------------------------------------------------------------
+
+Assertions by Severity
+           ASSERT PROPERTIES SEQUENCES
+Total          16          8         0
+Severity 0     16          8         0
+
+-------------------------------------------------------------------------------
+
+Summary for Assertions
+                 NUMBER PERCENT
+Total Number         16  100.00
+Uncovered             2   12.50
+Success              14   87.50
+Failure               0    0.00
+Incomplete            0    0.00
+Without Attempts      2   12.50
+
+-------------------------------------------------------------------------------
+
+Summary for Cover Properties
+             NUMBER PERCENT
+Total Number      8  100.00
+Uncovered         0    0.00
+Matches           8  100.00
+
+-------------------------------------------------------------------------------
+
+Detail Report for Assertions
+
+Assertions Uncovered:
+                       ASSERTIONS                       CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1         0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1        0        0        0              0        0          0
+
+Assertions Success:
+                                                   ASSERTIONS                                                    CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\arb_main_seq::body .unnamed$$_0                      0        0        1              1        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\arb_random_seq::body .unnamed$$_0.unnamed$$_1        0        0       93             93        0          0
+tb_top.dut.u_rr_arbiter_assertions.ASSERT_GRANT_ONE_HOT_OR_ZERO                                                         0        0      107            105        0          0
+tb_top.dut.u_rr_arbiter_assertions.ASSERT_GRANT_SUBSET_REQ                                                              0        0      107            105        0          0
+tb_top.dut.u_rr_arbiter_assertions.ASSERT_LOWEST_BIT_MASKED                                                             0        0      107             87        0          0
+tb_top.dut.u_rr_arbiter_assertions.ASSERT_LOWEST_BIT_RAW                                                                0        0      107             16        0          0
+tb_top.dut.u_rr_arbiter_assertions.ASSERT_MASKED_PRIORITY                                                               0        0      107             87        0          0
+tb_top.dut.u_rr_arbiter_assertions.ASSERT_NO_GRANT_NO_REQ                                                               0        0      107              2        0          0
+tb_top.dut.u_rr_arbiter_assertions.ASSERT_PTR_ADVANCES                                                                  0        0      107            102        0          0
+tb_top.dut.u_rr_arbiter_assertions.ASSERT_PTR_HOLDS                                                                     0        0      107              3        0          0
+tb_top.dut.u_rr_arbiter_assertions.ASSERT_PTR_ONE_HOT                                                                   0        0      107            105        0          0
+tb_top.dut.u_rr_arbiter_assertions.ASSERT_RESET                                                                         0        0      107              2        0          0
+tb_top.dut.u_rr_arbiter_assertions.ASSERT_WRAPAROUND                                                                    0        0      107             18        0          0
+uvm_pkg.\uvm_component_name_check_visitor::visit .unnamed$$_0                                                           0        0       27             27        0          0
+
+Assertions Without Attempts:
+                       ASSERTIONS                       CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1         0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1        0        0        0              0        0          0
+
+-------------------------------------------------------------------------------
+
+Detail Report for Cover Properties
+
+Cover Properties Matches:
+                     COVER PROPERTIES                      CATEGORY SEVERITY ATTEMPTS MATCHES INCOMPLETE
+tb_top.dut.u_rr_arbiter_assertions.COVER_LOWEST_BIT_MASKED        0        0      107      87          0
+tb_top.dut.u_rr_arbiter_assertions.COVER_LOWEST_BIT_RAW           0        0      107      16          0
+tb_top.dut.u_rr_arbiter_assertions.COVER_MASKED_PRIORITY          0        0      107      87          0
+tb_top.dut.u_rr_arbiter_assertions.COVER_NO_GRANT_NO_REQ          0        0      107       2          0
+tb_top.dut.u_rr_arbiter_assertions.COVER_PTR_ADVANCES             0        0      107     102          0
+tb_top.dut.u_rr_arbiter_assertions.COVER_PTR_HOLDS                0        0      107       3          0
+tb_top.dut.u_rr_arbiter_assertions.COVER_RESET                    0        0      107       2          0
+tb_top.dut.u_rr_arbiter_assertions.COVER_WRAPAROUND               0        0      107      18          0
+
+

@@ -1,0 +1,88 @@
+Assertions
+
+
+Assertions by Category
+           ASSERT PROPERTIES SEQUENCES
+Total          19          9         0
+Category 0     19          9         0
+
+-------------------------------------------------------------------------------
+
+Assertions by Severity
+           ASSERT PROPERTIES SEQUENCES
+Total          19          9         0
+Severity 0     19          9         0
+
+-------------------------------------------------------------------------------
+
+Summary for Assertions
+                 NUMBER PERCENT
+Total Number         19  100.00
+Uncovered             4   21.05
+Success              15   78.95
+Failure               0    0.00
+Incomplete            0    0.00
+Without Attempts      2   10.53
+
+-------------------------------------------------------------------------------
+
+Summary for Cover Properties
+             NUMBER PERCENT
+Total Number      9  100.00
+Uncovered         1   11.11
+Matches           8   88.89
+
+-------------------------------------------------------------------------------
+
+Detail Report for Assertions
+
+Assertions Uncovered:
+                       ASSERTIONS                       CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+tb_top.dut.u_ahb_mem_assertions.ASSERT_ADDR_STABLE             0        0       57              0        0          0
+tb_top.dut.u_ahb_mem_assertions.ASSERT_ERR2_TO_OKAY            0        0       57              0        0          0
+uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1         0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1        0        0        0              0        0          0
+
+Assertions Success:
+                                                  ASSERTIONS                                                   CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\ahb_sequence::body .unnamed$$_0                    0        0        1              1        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\ahb_sequence::body .unnamed$$_1.unnamed$$_2        0        0       10             10        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\ahb_sequence::body .unnamed$$_3.unnamed$$_4        0        0       10             10        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\ahb_sequence::body .unnamed$$_5                    0        0       30             30        0          0
+\$unit::/eda/synopsys/vcs/U-2023.03-SP2-5/etc/uvm-1.2/uvm_pkg.sv .\ahb_sequence::body .unnamed$$_6                    0        0        4              4        0          0
+tb_top.dut.u_ahb_mem_assertions.ASSERT_ERR1_TO_ERR2                                                                   0        0       57              1        0          0
+tb_top.dut.u_ahb_mem_assertions.ASSERT_ERROR_TRIGGER                                                                  0        0       57              1        0          0
+tb_top.dut.u_ahb_mem_assertions.ASSERT_HREADYOUT_ERR1                                                                 0        0       57              1        0          0
+tb_top.dut.u_ahb_mem_assertions.ASSERT_HREADYOUT_ERR2                                                                 0        0       57              1        0          0
+tb_top.dut.u_ahb_mem_assertions.ASSERT_HREADYOUT_OKAY                                                                 0        0       57             53        0          0
+tb_top.dut.u_ahb_mem_assertions.ASSERT_NO_WRITE_DURING_ERROR                                                          0        0       57              2        0          0
+tb_top.dut.u_ahb_mem_assertions.ASSERT_RESET                                                                          0        0       57              2        0          0
+tb_top.dut.u_ahb_mem_assertions.ASSERT_VALID_READ_OK                                                                  0        0       57             29        0          0
+tb_top.dut.u_ahb_mem_assertions.ASSERT_VALID_WRITE_OK                                                                 0        0       57             22        0          0
+uvm_pkg.\uvm_component_name_check_visitor::visit .unnamed$$_0                                                         0        0       27             27        0          0
+
+Assertions Without Attempts:
+                       ASSERTIONS                       CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1         0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1        0        0        0              0        0          0
+
+-------------------------------------------------------------------------------
+
+Detail Report for Cover Properties
+
+Cover Properties Uncovered:
+                 COVER PROPERTIES                  CATEGORY SEVERITY ATTEMPTS MATCHES INCOMPLETE
+tb_top.dut.u_ahb_mem_assertions.COVER_ERR2_TO_OKAY        0        0       57       0          0
+
+Cover Properties Matches:
+                  COVER PROPERTIES                   CATEGORY SEVERITY ATTEMPTS MATCHES INCOMPLETE
+tb_top.dut.u_ahb_mem_assertions.COVER_ERR1_TO_ERR2          0        0       57       1          0
+tb_top.dut.u_ahb_mem_assertions.COVER_ERROR_TRIGGER         0        0       57       1          0
+tb_top.dut.u_ahb_mem_assertions.COVER_HREADYOUT_ERR1        0        0       57       1          0
+tb_top.dut.u_ahb_mem_assertions.COVER_HREADYOUT_ERR2        0        0       57       1          0
+tb_top.dut.u_ahb_mem_assertions.COVER_HREADYOUT_OKAY        0        0       57      53          0
+tb_top.dut.u_ahb_mem_assertions.COVER_RESET                 0        0       57       2          0
+tb_top.dut.u_ahb_mem_assertions.COVER_VALID_READ_OK         0        0       57      29          0
+tb_top.dut.u_ahb_mem_assertions.COVER_VALID_WRITE_OK        0        0       57      22          0
+
+

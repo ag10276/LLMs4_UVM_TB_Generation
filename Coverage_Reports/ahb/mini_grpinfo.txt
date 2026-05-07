@@ -1,0 +1,318 @@
+Group : $unit::ahb_coverage::cov_transaction
+
+===============================================================================
+Group : $unit::ahb_coverage::cov_transaction
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+ 80.00  80.00    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/ahb/mini/mini_ahb_uvm_tb_all.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                          
+ 80.00 1      100    1        64           64            tb_top.me.obj.cov_transaction 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::ahb_coverage::cov_transaction
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 11       3         8       75.00   
+Crosses   6        0         6       100.00  
+
+
+Variables for Group  $unit::ahb_coverage::cov_transaction
+
+
+VARIABLE  EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_hsel   2        1         1       50.00   100  1      1        0                    
+cp_haddr  2        0         2       100.00  100  1      1        0                    
+cp_htrans 4        2         2       50.00   100  1      1        0                    
+cp_hsize  3        0         3       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::ahb_coverage::cov_transaction
+
+
+CROSS             EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cross_haddr_hsize 6        0         6       100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_hsel
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        1         1       50.00   
+
+
+User Defined Bins for cp_hsel
+
+
+Uncovered bins
+
+NAME         COUNT AT LEAST SUBSUMED VALUES NUMBER 
+not_selected 0     1        --              1      
+
+
+Covered bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+selected 53    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_haddr
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_haddr
+
+
+Bins
+
+NAME      COUNT AT LEAST SUBSUMED VALUES 
+high_addr 23    1        --              
+low_addr  30    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_htrans
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        2         2       50.00   
+
+
+User Defined Bins for cp_htrans
+
+
+Uncovered bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES NUMBER 
+busy 0     1        --              1      
+idle 0     1        --              1      
+
+
+Covered bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+seq    9     1        --              
+nonseq 44    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_hsize
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_hsize
+
+
+Bins
+
+NAME        COUNT AT LEAST SUBSUMED VALUES 
+word_access 30    1        --              
+half_access 13    1        --              
+byte_access 10    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cross_haddr_hsize
+
+
+Samples crossed: cp_haddr cp_hsize
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 6        0         6       100.00          
+
+
+Automatically Generated Cross Bins for cross_haddr_hsize
+
+
+Bins
+
+cp_haddr  cp_hsize    COUNT AT LEAST 
+high_addr byte_access 4     1        
+high_addr half_access 6     1        
+high_addr word_access 13    1        
+low_addr  byte_access 6     1        
+low_addr  half_access 7     1        
+low_addr  word_access 17    1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.cov_transaction
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 80.00 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                                 
+ 80.00  80.00    1      100    1        1            64           64                    $unit::ahb_coverage::cov_transaction 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.cov_transaction
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 11       3         8       75.00   
+Crosses   6        0         6       100.00  
+
+
+Variables for Group Instance  tb_top.me.obj.cov_transaction
+
+
+VARIABLE  EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_hsel   2        1         1       50.00   100  1      1        0                    
+cp_haddr  2        0         2       100.00  100  1      1        0                    
+cp_htrans 4        2         2       50.00   100  1      1        0                    
+cp_hsize  3        0         3       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.cov_transaction
+
+
+CROSS             EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cross_haddr_hsize 6        0         6       100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_hsel
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        1         1       50.00   
+
+
+User Defined Bins for cp_hsel
+
+
+Uncovered bins
+
+NAME         COUNT AT LEAST SUBSUMED VALUES NUMBER 
+not_selected 0     1        --              1      
+
+
+Covered bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+selected 53    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_haddr
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_haddr
+
+
+Bins
+
+NAME      COUNT AT LEAST SUBSUMED VALUES 
+high_addr 23    1        --              
+low_addr  30    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_htrans
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        2         2       50.00   
+
+
+User Defined Bins for cp_htrans
+
+
+Uncovered bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES NUMBER 
+busy 0     1        --              1      
+idle 0     1        --              1      
+
+
+Covered bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+seq    9     1        --              
+nonseq 44    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_hsize
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_hsize
+
+
+Bins
+
+NAME        COUNT AT LEAST SUBSUMED VALUES 
+word_access 30    1        --              
+half_access 13    1        --              
+byte_access 10    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cross_haddr_hsize
+
+
+Samples crossed: cp_haddr cp_hsize
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 6        0         6       100.00          
+
+
+Automatically Generated Cross Bins for cross_haddr_hsize
+
+
+Bins
+
+cp_haddr  cp_hsize    COUNT AT LEAST 
+high_addr byte_access 4     1        
+high_addr half_access 6     1        
+high_addr word_access 13    1        
+low_addr  byte_access 6     1        
+low_addr  half_access 7     1        
+low_addr  word_access 17    1        
+
+

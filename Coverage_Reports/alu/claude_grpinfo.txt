@@ -1,0 +1,1070 @@
+Group : $unit::alu_coverage::alu_cg
+
+===============================================================================
+Group : $unit::alu_coverage::alu_cg
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+ 92.75  92.75    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/alu/claude_alu_uvm_tb_all.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                 
+ 92.75 1      100    1        64           64            tb_top.me.obj.alu_cg 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::alu_coverage::alu_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 35       0         35      100.00  
+Crosses   192      32        160     83.07   
+
+
+Variables for Group  $unit::alu_coverage::alu_cg
+
+
+VARIABLE         EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_opcode        8        0         8       100.00  100  1      1        0                    
+cp_a             8        0         8       100.00  100  1      1        0                    
+cp_b             8        0         8       100.00  100  1      1        0                    
+cp_y             3        0         3       100.00  100  1      1        0                    
+cp_sign_flag     2        0         2       100.00  100  1      1        0                    
+cp_carry_flag    2        0         2       100.00  100  1      1        0                    
+cp_zero_flag     2        0         2       100.00  100  1      1        0                    
+cp_overflow_flag 2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::alu_coverage::alu_cg
+
+
+CROSS           EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_opcode_carry 16       4         12      75.00   100  1      1        0                     
+cx_opcode_zero  16       0         16      100.00  100  1      1        0                     
+cx_opcode_sign  16       1         15      93.75   100  1      1        0                     
+cx_opcode_ovf   16       6         10      62.50   100  1      1        0                     
+cx_opcode_a     64       7         57      89.06   100  1      1        0                     
+cx_opcode_b     64       14        50      78.12   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_opcode
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 8        0         8       100.00  
+
+
+User Defined Bins for cp_opcode
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+shr    49    1        --              
+shl    51    1        --              
+not_op 147   1        --              
+xor_op 65    1        --              
+or_op  44    1        --              
+and_op 43    1        --              
+sub    113   1        --              
+add    121   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_a
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 8        0         8       100.00  
+
+
+User Defined Bins for cp_a
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+high    345   1        --              
+mid     109   1        --              
+low     123   1        --              
+max_val 16    1        --              
+min_neg 6     1        --              
+max_pos 11    1        --              
+one     8     1        --              
+zero    15    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_b
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 8        0         8       100.00  
+
+
+User Defined Bins for cp_b
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+high    245   1        --              
+mid     214   1        --              
+low     112   1        --              
+max_val 13    1        --              
+min_neg 4     1        --              
+max_pos 2     1        --              
+one     13    1        --              
+zero    30    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_y
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_y
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+others 593   1        --              
+max    18    1        --              
+zero   22    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_sign_flag
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_sign_flag
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+clear 395   1        --              
+set   238   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_carry_flag
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_carry_flag
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+clear 472   1        --              
+set   161   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_zero_flag
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_zero_flag
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+clear 611   1        --              
+set   22    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_overflow_flag
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_overflow_flag
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+clear 574   1        --              
+set   59    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_opcode_carry
+
+
+Samples crossed: cp_opcode cp_carry_flag
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       4         12      75.00   4       
+
+
+Automatically Generated Cross Bins for cx_opcode_carry
+
+
+Uncovered bins
+
+cp_opcode                          cp_carry_flag COUNT AT LEAST NUMBER 
+[not_op , xor_op , or_op , and_op] [set]         --    --       4      
+
+
+Covered bins
+
+cp_opcode cp_carry_flag COUNT AT LEAST 
+shr       clear         25    1        
+shr       set           24    1        
+shl       clear         27    1        
+shl       set           24    1        
+not_op    clear         147   1        
+xor_op    clear         65    1        
+or_op     clear         44    1        
+and_op    clear         43    1        
+sub       clear         55    1        
+sub       set           58    1        
+add       set           55    1        
+add       clear         66    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_opcode_zero
+
+
+Samples crossed: cp_opcode cp_zero_flag
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       0         16      100.00          
+
+
+Automatically Generated Cross Bins for cx_opcode_zero
+
+
+Bins
+
+cp_opcode cp_zero_flag COUNT AT LEAST 
+shr       clear        48    1        
+shr       set          1     1        
+shl       clear        49    1        
+shl       set          2     1        
+not_op    set          2     1        
+not_op    clear        145   1        
+xor_op    clear        63    1        
+xor_op    set          2     1        
+or_op     clear        43    1        
+or_op     set          1     1        
+and_op    set          8     1        
+and_op    clear        35    1        
+sub       clear        111   1        
+sub       set          2     1        
+add       clear        117   1        
+add       set          4     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_opcode_sign
+
+
+Samples crossed: cp_opcode cp_sign_flag
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       1         15      93.75   1       
+
+
+Automatically Generated Cross Bins for cx_opcode_sign
+
+
+Uncovered bins
+
+cp_opcode cp_sign_flag COUNT AT LEAST NUMBER 
+[shr]     [set]        0     1        1      
+
+
+Covered bins
+
+cp_opcode cp_sign_flag COUNT AT LEAST 
+shr       clear        49    1        
+shl       set          26    1        
+shl       clear        25    1        
+not_op    clear        130   1        
+not_op    set          17    1        
+xor_op    set          31    1        
+xor_op    clear        34    1        
+or_op     set          35    1        
+or_op     clear        9     1        
+and_op    clear        29    1        
+and_op    set          14    1        
+sub       set          53    1        
+sub       clear        60    1        
+add       set          62    1        
+add       clear        59    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_opcode_ovf
+
+
+Samples crossed: cp_opcode cp_overflow_flag
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       6         10      62.50   6       
+
+
+Automatically Generated Cross Bins for cx_opcode_ovf
+
+
+Uncovered bins
+
+cp_opcode                                      cp_overflow_flag COUNT AT LEAST NUMBER 
+[shr , shl , not_op , xor_op , or_op , and_op] [set]            --    --       6      
+
+
+Covered bins
+
+cp_opcode cp_overflow_flag COUNT AT LEAST 
+shr       clear            49    1        
+shl       clear            51    1        
+not_op    clear            147   1        
+xor_op    clear            65    1        
+or_op     clear            44    1        
+and_op    clear            43    1        
+sub       set              32    1        
+sub       clear            81    1        
+add       set              27    1        
+add       clear            94    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_opcode_a
+
+
+Samples crossed: cp_opcode cp_a
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 64       7         57      89.06   7       
+
+
+Automatically Generated Cross Bins for cx_opcode_a
+
+
+Uncovered bins
+
+cp_opcode cp_a                COUNT AT LEAST NUMBER 
+[shr]     [zero]              0     1        1      
+[not_op]  [min_neg , max_pos] --    --       2      
+[xor_op]  [max_pos]           0     1        1      
+[or_op]   [min_neg]           0     1        1      
+[or_op]   [one]               0     1        1      
+[and_op]  [min_neg]           0     1        1      
+
+
+Covered bins
+
+cp_opcode cp_a    COUNT AT LEAST 
+shr       mid     9     1        
+shr       low     17    1        
+shr       max_val 2     1        
+shr       min_neg 1     1        
+shr       max_pos 1     1        
+shr       high    18    1        
+shr       one     1     1        
+shl       zero    1     1        
+shl       low     15    1        
+shl       mid     9     1        
+shl       max_val 3     1        
+shl       min_neg 1     1        
+shl       high    20    1        
+shl       max_pos 1     1        
+shl       one     1     1        
+not_op    mid     3     1        
+not_op    low     11    1        
+not_op    max_val 2     1        
+not_op    zero    2     1        
+not_op    one     1     1        
+not_op    high    128   1        
+xor_op    min_neg 1     1        
+xor_op    mid     17    1        
+xor_op    low     10    1        
+xor_op    zero    1     1        
+xor_op    max_val 1     1        
+xor_op    one     1     1        
+xor_op    high    34    1        
+or_op     low     10    1        
+or_op     mid     10    1        
+or_op     max_val 1     1        
+or_op     zero    1     1        
+or_op     max_pos 2     1        
+or_op     high    20    1        
+and_op    low     8     1        
+and_op    mid     5     1        
+and_op    zero    2     1        
+and_op    max_val 2     1        
+and_op    one     1     1        
+and_op    max_pos 1     1        
+and_op    high    24    1        
+sub       mid     30    1        
+sub       low     26    1        
+sub       max_val 2     1        
+sub       min_neg 1     1        
+sub       zero    4     1        
+sub       one     1     1        
+sub       high    45    1        
+sub       max_pos 4     1        
+add       mid     26    1        
+add       low     26    1        
+add       min_neg 2     1        
+add       max_val 3     1        
+add       zero    4     1        
+add       high    56    1        
+add       one     2     1        
+add       max_pos 2     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_opcode_b
+
+
+Samples crossed: cp_opcode cp_b
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 64       14        50      78.12   14      
+
+
+Automatically Generated Cross Bins for cx_opcode_b
+
+
+Uncovered bins
+
+cp_opcode         cp_b                      COUNT AT LEAST NUMBER 
+[shr]             [min_neg]                 0     1        1      
+[shl]             [max_val]                 0     1        1      
+[shl]             [max_pos , one]           --    --       2      
+[not_op , xor_op] [min_neg , max_pos]       --    --       4      
+[or_op]           [min_neg , max_pos , one] --    --       3      
+[and_op]          [max_pos , one]           --    --       2      
+[sub]             [max_pos]                 0     1        1      
+
+
+Covered bins
+
+cp_opcode cp_b    COUNT AT LEAST 
+shr       max_val 1     1        
+shr       low     4     1        
+shr       mid     11    1        
+shr       zero    6     1        
+shr       max_pos 1     1        
+shr       one     2     1        
+shr       high    24    1        
+shl       min_neg 1     1        
+shl       low     9     1        
+shl       mid     11    1        
+shl       zero    5     1        
+shl       high    25    1        
+not_op    max_val 1     1        
+not_op    low     9     1        
+not_op    mid     111   1        
+not_op    zero    4     1        
+not_op    one     1     1        
+not_op    high    21    1        
+xor_op    low     11    1        
+xor_op    zero    3     1        
+xor_op    mid     14    1        
+xor_op    max_val 1     1        
+xor_op    one     2     1        
+xor_op    high    34    1        
+or_op     max_val 2     1        
+or_op     low     9     1        
+or_op     mid     6     1        
+or_op     zero    3     1        
+or_op     high    24    1        
+and_op    min_neg 1     1        
+and_op    low     10    1        
+and_op    mid     11    1        
+and_op    zero    1     1        
+and_op    max_val 2     1        
+and_op    high    18    1        
+sub       min_neg 1     1        
+sub       mid     32    1        
+sub       low     27    1        
+sub       max_val 5     1        
+sub       zero    2     1        
+sub       high    42    1        
+sub       one     4     1        
+add       mid     18    1        
+add       low     33    1        
+add       max_val 1     1        
+add       min_neg 1     1        
+add       zero    6     1        
+add       max_pos 1     1        
+add       high    57    1        
+add       one     4     1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.alu_cg
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 92.75 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                        
+ 92.75  92.75    1      100    1        1            64           64                    $unit::alu_coverage::alu_cg 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.alu_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 35       0         35      100.00  
+Crosses   192      32        160     83.07   
+
+
+Variables for Group Instance  tb_top.me.obj.alu_cg
+
+
+VARIABLE         EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_opcode        8        0         8       100.00  100  1      1        0                    
+cp_a             8        0         8       100.00  100  1      1        0                    
+cp_b             8        0         8       100.00  100  1      1        0                    
+cp_y             3        0         3       100.00  100  1      1        0                    
+cp_sign_flag     2        0         2       100.00  100  1      1        0                    
+cp_carry_flag    2        0         2       100.00  100  1      1        0                    
+cp_zero_flag     2        0         2       100.00  100  1      1        0                    
+cp_overflow_flag 2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.alu_cg
+
+
+CROSS           EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_opcode_carry 16       4         12      75.00   100  1      1        0                     
+cx_opcode_zero  16       0         16      100.00  100  1      1        0                     
+cx_opcode_sign  16       1         15      93.75   100  1      1        0                     
+cx_opcode_ovf   16       6         10      62.50   100  1      1        0                     
+cx_opcode_a     64       7         57      89.06   100  1      1        0                     
+cx_opcode_b     64       14        50      78.12   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_opcode
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 8        0         8       100.00  
+
+
+User Defined Bins for cp_opcode
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+shr    49    1        --              
+shl    51    1        --              
+not_op 147   1        --              
+xor_op 65    1        --              
+or_op  44    1        --              
+and_op 43    1        --              
+sub    113   1        --              
+add    121   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_a
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 8        0         8       100.00  
+
+
+User Defined Bins for cp_a
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+high    345   1        --              
+mid     109   1        --              
+low     123   1        --              
+max_val 16    1        --              
+min_neg 6     1        --              
+max_pos 11    1        --              
+one     8     1        --              
+zero    15    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_b
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 8        0         8       100.00  
+
+
+User Defined Bins for cp_b
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+high    245   1        --              
+mid     214   1        --              
+low     112   1        --              
+max_val 13    1        --              
+min_neg 4     1        --              
+max_pos 2     1        --              
+one     13    1        --              
+zero    30    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_y
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_y
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+others 593   1        --              
+max    18    1        --              
+zero   22    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_sign_flag
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_sign_flag
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+clear 395   1        --              
+set   238   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_carry_flag
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_carry_flag
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+clear 472   1        --              
+set   161   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_zero_flag
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_zero_flag
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+clear 611   1        --              
+set   22    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_overflow_flag
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_overflow_flag
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+clear 574   1        --              
+set   59    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_opcode_carry
+
+
+Samples crossed: cp_opcode cp_carry_flag
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       4         12      75.00   4       
+
+
+Automatically Generated Cross Bins for cx_opcode_carry
+
+
+Uncovered bins
+
+cp_opcode                          cp_carry_flag COUNT AT LEAST NUMBER 
+[not_op , xor_op , or_op , and_op] [set]         --    --       4      
+
+
+Covered bins
+
+cp_opcode cp_carry_flag COUNT AT LEAST 
+shr       clear         25    1        
+shr       set           24    1        
+shl       clear         27    1        
+shl       set           24    1        
+not_op    clear         147   1        
+xor_op    clear         65    1        
+or_op     clear         44    1        
+and_op    clear         43    1        
+sub       clear         55    1        
+sub       set           58    1        
+add       set           55    1        
+add       clear         66    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_opcode_zero
+
+
+Samples crossed: cp_opcode cp_zero_flag
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       0         16      100.00          
+
+
+Automatically Generated Cross Bins for cx_opcode_zero
+
+
+Bins
+
+cp_opcode cp_zero_flag COUNT AT LEAST 
+shr       clear        48    1        
+shr       set          1     1        
+shl       clear        49    1        
+shl       set          2     1        
+not_op    set          2     1        
+not_op    clear        145   1        
+xor_op    clear        63    1        
+xor_op    set          2     1        
+or_op     clear        43    1        
+or_op     set          1     1        
+and_op    set          8     1        
+and_op    clear        35    1        
+sub       clear        111   1        
+sub       set          2     1        
+add       clear        117   1        
+add       set          4     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_opcode_sign
+
+
+Samples crossed: cp_opcode cp_sign_flag
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       1         15      93.75   1       
+
+
+Automatically Generated Cross Bins for cx_opcode_sign
+
+
+Uncovered bins
+
+cp_opcode cp_sign_flag COUNT AT LEAST NUMBER 
+[shr]     [set]        0     1        1      
+
+
+Covered bins
+
+cp_opcode cp_sign_flag COUNT AT LEAST 
+shr       clear        49    1        
+shl       set          26    1        
+shl       clear        25    1        
+not_op    clear        130   1        
+not_op    set          17    1        
+xor_op    set          31    1        
+xor_op    clear        34    1        
+or_op     set          35    1        
+or_op     clear        9     1        
+and_op    clear        29    1        
+and_op    set          14    1        
+sub       set          53    1        
+sub       clear        60    1        
+add       set          62    1        
+add       clear        59    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_opcode_ovf
+
+
+Samples crossed: cp_opcode cp_overflow_flag
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       6         10      62.50   6       
+
+
+Automatically Generated Cross Bins for cx_opcode_ovf
+
+
+Uncovered bins
+
+cp_opcode                                      cp_overflow_flag COUNT AT LEAST NUMBER 
+[shr , shl , not_op , xor_op , or_op , and_op] [set]            --    --       6      
+
+
+Covered bins
+
+cp_opcode cp_overflow_flag COUNT AT LEAST 
+shr       clear            49    1        
+shl       clear            51    1        
+not_op    clear            147   1        
+xor_op    clear            65    1        
+or_op     clear            44    1        
+and_op    clear            43    1        
+sub       set              32    1        
+sub       clear            81    1        
+add       set              27    1        
+add       clear            94    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_opcode_a
+
+
+Samples crossed: cp_opcode cp_a
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 64       7         57      89.06   7       
+
+
+Automatically Generated Cross Bins for cx_opcode_a
+
+
+Uncovered bins
+
+cp_opcode cp_a                COUNT AT LEAST NUMBER 
+[shr]     [zero]              0     1        1      
+[not_op]  [min_neg , max_pos] --    --       2      
+[xor_op]  [max_pos]           0     1        1      
+[or_op]   [min_neg]           0     1        1      
+[or_op]   [one]               0     1        1      
+[and_op]  [min_neg]           0     1        1      
+
+
+Covered bins
+
+cp_opcode cp_a    COUNT AT LEAST 
+shr       mid     9     1        
+shr       low     17    1        
+shr       max_val 2     1        
+shr       min_neg 1     1        
+shr       max_pos 1     1        
+shr       high    18    1        
+shr       one     1     1        
+shl       zero    1     1        
+shl       low     15    1        
+shl       mid     9     1        
+shl       max_val 3     1        
+shl       min_neg 1     1        
+shl       high    20    1        
+shl       max_pos 1     1        
+shl       one     1     1        
+not_op    mid     3     1        
+not_op    low     11    1        
+not_op    max_val 2     1        
+not_op    zero    2     1        
+not_op    one     1     1        
+not_op    high    128   1        
+xor_op    min_neg 1     1        
+xor_op    mid     17    1        
+xor_op    low     10    1        
+xor_op    zero    1     1        
+xor_op    max_val 1     1        
+xor_op    one     1     1        
+xor_op    high    34    1        
+or_op     low     10    1        
+or_op     mid     10    1        
+or_op     max_val 1     1        
+or_op     zero    1     1        
+or_op     max_pos 2     1        
+or_op     high    20    1        
+and_op    low     8     1        
+and_op    mid     5     1        
+and_op    zero    2     1        
+and_op    max_val 2     1        
+and_op    one     1     1        
+and_op    max_pos 1     1        
+and_op    high    24    1        
+sub       mid     30    1        
+sub       low     26    1        
+sub       max_val 2     1        
+sub       min_neg 1     1        
+sub       zero    4     1        
+sub       one     1     1        
+sub       high    45    1        
+sub       max_pos 4     1        
+add       mid     26    1        
+add       low     26    1        
+add       min_neg 2     1        
+add       max_val 3     1        
+add       zero    4     1        
+add       high    56    1        
+add       one     2     1        
+add       max_pos 2     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_opcode_b
+
+
+Samples crossed: cp_opcode cp_b
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 64       14        50      78.12   14      
+
+
+Automatically Generated Cross Bins for cx_opcode_b
+
+
+Uncovered bins
+
+cp_opcode         cp_b                      COUNT AT LEAST NUMBER 
+[shr]             [min_neg]                 0     1        1      
+[shl]             [max_val]                 0     1        1      
+[shl]             [max_pos , one]           --    --       2      
+[not_op , xor_op] [min_neg , max_pos]       --    --       4      
+[or_op]           [min_neg , max_pos , one] --    --       3      
+[and_op]          [max_pos , one]           --    --       2      
+[sub]             [max_pos]                 0     1        1      
+
+
+Covered bins
+
+cp_opcode cp_b    COUNT AT LEAST 
+shr       max_val 1     1        
+shr       low     4     1        
+shr       mid     11    1        
+shr       zero    6     1        
+shr       max_pos 1     1        
+shr       one     2     1        
+shr       high    24    1        
+shl       min_neg 1     1        
+shl       low     9     1        
+shl       mid     11    1        
+shl       zero    5     1        
+shl       high    25    1        
+not_op    max_val 1     1        
+not_op    low     9     1        
+not_op    mid     111   1        
+not_op    zero    4     1        
+not_op    one     1     1        
+not_op    high    21    1        
+xor_op    low     11    1        
+xor_op    zero    3     1        
+xor_op    mid     14    1        
+xor_op    max_val 1     1        
+xor_op    one     2     1        
+xor_op    high    34    1        
+or_op     max_val 2     1        
+or_op     low     9     1        
+or_op     mid     6     1        
+or_op     zero    3     1        
+or_op     high    24    1        
+and_op    min_neg 1     1        
+and_op    low     10    1        
+and_op    mid     11    1        
+and_op    zero    1     1        
+and_op    max_val 2     1        
+and_op    high    18    1        
+sub       min_neg 1     1        
+sub       mid     32    1        
+sub       low     27    1        
+sub       max_val 5     1        
+sub       zero    2     1        
+sub       high    42    1        
+sub       one     4     1        
+add       mid     18    1        
+add       low     33    1        
+add       max_val 1     1        
+add       min_neg 1     1        
+add       zero    6     1        
+add       max_pos 1     1        
+add       high    57    1        
+add       one     4     1        
+
+

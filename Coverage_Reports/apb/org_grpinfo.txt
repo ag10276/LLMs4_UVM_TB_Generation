@@ -1,0 +1,770 @@
+Group : $unit::func_cov::cg_signals
+
+===============================================================================
+Group : $unit::func_cov::cg_signals
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+100.00 100.00    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/apb/testbench.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                     
+100.00 1      100    1        64           64            tb_top.me.obj.cg_signals 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::func_cov::cg_signals
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 10       0         10      100.00  
+
+
+Variables for Group  $unit::func_cov::cg_signals
+
+
+VARIABLE      EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_resetn     2        0         2       100.00  100  1      1        0                    
+cp_pwrite     2        0         2       100.00  100  1      1        0                    
+cp_pslverr    2        0         2       100.00  100  1      1        0                    
+cp_pready     2        0         2       100.00  100  1      1        0                    
+cp_addr_range 2        0         2       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_resetn
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_resetn
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 5     1        --              
+all_1 220   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_pwrite
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_pwrite
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 149   1        --              
+all_1 76    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_pslverr
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_pslverr
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 149   1        --              
+all_1 76    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_pready
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_pready
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 5     1        --              
+all_1 220   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_addr_range
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_addr_range
+
+
+Bins
+
+NAME      COUNT AT LEAST SUBSUMED VALUES 
+OUT_RANGE 76    1        --              
+IN_RANGE  149   1        --              
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.cg_signals
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                        
+100.00 100.00    1      100    1        1            64           64                    $unit::func_cov::cg_signals 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.cg_signals
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 10       0         10      100.00  
+
+
+Variables for Group Instance  tb_top.me.obj.cg_signals
+
+
+VARIABLE      EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_resetn     2        0         2       100.00  100  1      1        0                    
+cp_pwrite     2        0         2       100.00  100  1      1        0                    
+cp_pslverr    2        0         2       100.00  100  1      1        0                    
+cp_pready     2        0         2       100.00  100  1      1        0                    
+cp_addr_range 2        0         2       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_resetn
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_resetn
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 5     1        --              
+all_1 220   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_pwrite
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_pwrite
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 149   1        --              
+all_1 76    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_pslverr
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_pslverr
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 149   1        --              
+all_1 76    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_pready
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_pready
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+all_0 5     1        --              
+all_1 220   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_addr_range
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_addr_range
+
+
+Bins
+
+NAME      COUNT AT LEAST SUBSUMED VALUES 
+OUT_RANGE 76    1        --              
+IN_RANGE  149   1        --              
+
+
+Group : $unit::func_cov::cg_transitions
+
+===============================================================================
+Group : $unit::func_cov::cg_transitions
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+100.00 100.00    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/apb/testbench.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                         
+100.00 1      100    1        64           64            tb_top.me.obj.cg_transitions 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::func_cov::cg_transitions
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 4        0         4       100.00  
+Crosses   4        0         4       100.00  
+
+
+Variables for Group  $unit::func_cov::cg_transitions
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_prev  2        0         2       100.00  100  1      1        0                    
+cp_curr  2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::func_cov::cg_transitions
+
+
+CROSS  EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_b2b 4        0         4       100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_prev
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_prev
+
+
+Bins
+
+NAME       COUNT AT LEAST SUBSUMED VALUES 
+PREV_WRITE 76    1        --              
+PREV_READ  139   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_curr
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_curr
+
+
+Bins
+
+NAME       COUNT AT LEAST SUBSUMED VALUES 
+CURR_WRITE 76    1        --              
+CURR_READ  139   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_b2b
+
+
+Samples crossed: cp_prev cp_curr
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 4        0         4       100.00          
+
+
+Automatically Generated Cross Bins for cx_b2b
+
+
+Bins
+
+cp_prev    cp_curr    COUNT AT LEAST 
+PREV_WRITE CURR_WRITE 44    1        
+PREV_WRITE CURR_READ  32    1        
+PREV_READ  CURR_WRITE 32    1        
+PREV_READ  CURR_READ  107   1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.cg_transitions
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                            
+100.00 100.00    1      100    1        1            64           64                    $unit::func_cov::cg_transitions 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.cg_transitions
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 4        0         4       100.00  
+Crosses   4        0         4       100.00  
+
+
+Variables for Group Instance  tb_top.me.obj.cg_transitions
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_prev  2        0         2       100.00  100  1      1        0                    
+cp_curr  2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.cg_transitions
+
+
+CROSS  EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_b2b 4        0         4       100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_prev
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_prev
+
+
+Bins
+
+NAME       COUNT AT LEAST SUBSUMED VALUES 
+PREV_WRITE 76    1        --              
+PREV_READ  139   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_curr
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_curr
+
+
+Bins
+
+NAME       COUNT AT LEAST SUBSUMED VALUES 
+CURR_WRITE 76    1        --              
+CURR_READ  139   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_b2b
+
+
+Samples crossed: cp_prev cp_curr
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 4        0         4       100.00          
+
+
+Automatically Generated Cross Bins for cx_b2b
+
+
+Bins
+
+cp_prev    cp_curr    COUNT AT LEAST 
+PREV_WRITE CURR_WRITE 44    1        
+PREV_WRITE CURR_READ  32    1        
+PREV_READ  CURR_WRITE 32    1        
+PREV_READ  CURR_READ  107   1        
+
+
+Group : $unit::func_cov::cg_transactions
+
+===============================================================================
+Group : $unit::func_cov::cg_transactions
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+100.00 100.00    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/apb/testbench.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                          
+100.00 1      100    1        64           64            tb_top.me.obj.cg_transactions 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::func_cov::cg_transactions
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 6        0         6       100.00  
+Crosses   8        0         8       100.00  
+
+
+Variables for Group  $unit::func_cov::cg_transactions
+
+
+VARIABLE     EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_direction 2        0         2       100.00  100  1      1        0                    
+cp_range     2        0         2       100.00  100  1      1        0                    
+cp_error     2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::func_cov::cg_transactions
+
+
+CROSS        EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_dir_range 4        0         4       100.00  100  1      1        0                     
+cx_dir_error 4        0         4       100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_direction
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_direction
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+WRITE 76    1        --              
+READ  144   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_range
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_range
+
+
+Bins
+
+NAME      COUNT AT LEAST SUBSUMED VALUES 
+OUT_RANGE 76    1        --              
+IN_RANGE  144   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_error
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_error
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+ERROR  76    1        --              
+NO_ERR 144   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_dir_range
+
+
+Samples crossed: cp_direction cp_range
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 4        0         4       100.00          
+
+
+Automatically Generated Cross Bins for cx_dir_range
+
+
+Bins
+
+cp_direction cp_range  COUNT AT LEAST 
+WRITE        OUT_RANGE 37    1        
+WRITE        IN_RANGE  39    1        
+READ         OUT_RANGE 39    1        
+READ         IN_RANGE  105   1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_dir_error
+
+
+Samples crossed: cp_direction cp_error
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 4        0         4       100.00          
+
+
+Automatically Generated Cross Bins for cx_dir_error
+
+
+Bins
+
+cp_direction cp_error COUNT AT LEAST 
+WRITE        ERROR    37    1        
+WRITE        NO_ERR   39    1        
+READ         ERROR    39    1        
+READ         NO_ERR   105   1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.cg_transactions
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                             
+100.00 100.00    1      100    1        1            64           64                    $unit::func_cov::cg_transactions 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.cg_transactions
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 6        0         6       100.00  
+Crosses   8        0         8       100.00  
+
+
+Variables for Group Instance  tb_top.me.obj.cg_transactions
+
+
+VARIABLE     EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_direction 2        0         2       100.00  100  1      1        0                    
+cp_range     2        0         2       100.00  100  1      1        0                    
+cp_error     2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.cg_transactions
+
+
+CROSS        EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_dir_range 4        0         4       100.00  100  1      1        0                     
+cx_dir_error 4        0         4       100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_direction
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_direction
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+WRITE 76    1        --              
+READ  144   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_range
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_range
+
+
+Bins
+
+NAME      COUNT AT LEAST SUBSUMED VALUES 
+OUT_RANGE 76    1        --              
+IN_RANGE  144   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_error
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_error
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+ERROR  76    1        --              
+NO_ERR 144   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_dir_range
+
+
+Samples crossed: cp_direction cp_range
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 4        0         4       100.00          
+
+
+Automatically Generated Cross Bins for cx_dir_range
+
+
+Bins
+
+cp_direction cp_range  COUNT AT LEAST 
+WRITE        OUT_RANGE 37    1        
+WRITE        IN_RANGE  39    1        
+READ         OUT_RANGE 39    1        
+READ         IN_RANGE  105   1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_dir_error
+
+
+Samples crossed: cp_direction cp_error
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 4        0         4       100.00          
+
+
+Automatically Generated Cross Bins for cx_dir_error
+
+
+Bins
+
+cp_direction cp_error COUNT AT LEAST 
+WRITE        ERROR    37    1        
+WRITE        NO_ERR   39    1        
+READ         ERROR    39    1        
+READ         NO_ERR   105   1        
+
+

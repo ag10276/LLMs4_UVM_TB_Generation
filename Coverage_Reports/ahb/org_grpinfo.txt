@@ -1,0 +1,1210 @@
+Group : $unit::func_cov::cg_transitions
+
+===============================================================================
+Group : $unit::func_cov::cg_transitions
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+ 41.67  41.67    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/ahb/testbench.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                         
+ 41.67 1      100    1        64           64            tb_top.me.obj.cg_transitions 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::func_cov::cg_transitions
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 8        4         4       50.00   
+Crosses   16       12        4       25.00   
+
+
+Variables for Group  $unit::func_cov::cg_transitions
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_prev  4        2         2       50.00   100  1      1        0                    
+cp_curr  4        2         2       50.00   100  1      1        0                    
+
+
+Crosses for Group  $unit::func_cov::cg_transitions
+
+
+CROSS    EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_trans 16       12        4       25.00   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_prev
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        2         2       50.00   
+
+
+User Defined Bins for cp_prev
+
+
+Uncovered bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES NUMBER 
+BUSY 0     1        --              1      
+IDLE 0     1        --              1      
+
+
+Covered bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+SEQ    15    1        --              
+NONSEQ 43    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_curr
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        2         2       50.00   
+
+
+User Defined Bins for cp_curr
+
+
+Uncovered bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES NUMBER 
+BUSY 0     1        --              1      
+IDLE 0     1        --              1      
+
+
+Covered bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+SEQ    17    1        --              
+NONSEQ 41    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_trans
+
+
+Samples crossed: cp_prev cp_curr
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       12        4       25.00   12      
+
+
+Automatically Generated Cross Bins for cx_trans
+
+
+Element holes
+
+cp_prev       cp_curr COUNT AT LEAST NUMBER 
+[BUSY , IDLE] *       --    --       8      
+
+
+Uncovered bins
+
+cp_prev        cp_curr       COUNT AT LEAST NUMBER 
+[SEQ , NONSEQ] [BUSY , IDLE] --    --       4      
+
+
+Covered bins
+
+cp_prev cp_curr COUNT AT LEAST 
+SEQ     SEQ     10    1        
+SEQ     NONSEQ  5     1        
+NONSEQ  SEQ     7     1        
+NONSEQ  NONSEQ  36    1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.cg_transitions
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 41.67 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                            
+ 41.67  41.67    1      100    1        1            64           64                    $unit::func_cov::cg_transitions 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.cg_transitions
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 8        4         4       50.00   
+Crosses   16       12        4       25.00   
+
+
+Variables for Group Instance  tb_top.me.obj.cg_transitions
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_prev  4        2         2       50.00   100  1      1        0                    
+cp_curr  4        2         2       50.00   100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.cg_transitions
+
+
+CROSS    EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_trans 16       12        4       25.00   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_prev
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        2         2       50.00   
+
+
+User Defined Bins for cp_prev
+
+
+Uncovered bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES NUMBER 
+BUSY 0     1        --              1      
+IDLE 0     1        --              1      
+
+
+Covered bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+SEQ    15    1        --              
+NONSEQ 43    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_curr
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        2         2       50.00   
+
+
+User Defined Bins for cp_curr
+
+
+Uncovered bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES NUMBER 
+BUSY 0     1        --              1      
+IDLE 0     1        --              1      
+
+
+Covered bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+SEQ    17    1        --              
+NONSEQ 41    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_trans
+
+
+Samples crossed: cp_prev cp_curr
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       12        4       25.00   12      
+
+
+Automatically Generated Cross Bins for cx_trans
+
+
+Element holes
+
+cp_prev       cp_curr COUNT AT LEAST NUMBER 
+[BUSY , IDLE] *       --    --       8      
+
+
+Uncovered bins
+
+cp_prev        cp_curr       COUNT AT LEAST NUMBER 
+[SEQ , NONSEQ] [BUSY , IDLE] --    --       4      
+
+
+Covered bins
+
+cp_prev cp_curr COUNT AT LEAST 
+SEQ     SEQ     10    1        
+SEQ     NONSEQ  5     1        
+NONSEQ  SEQ     7     1        
+NONSEQ  NONSEQ  36    1        
+
+
+Group : $unit::func_cov::cg_signals
+
+===============================================================================
+Group : $unit::func_cov::cg_signals
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+ 65.48  65.48    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/ahb/testbench.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                     
+ 65.48 1      100    1        64           64            tb_top.me.obj.cg_signals 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::func_cov::cg_signals
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 22       9         13      65.48   
+
+
+Variables for Group  $unit::func_cov::cg_signals
+
+
+VARIABLE  EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_htrans 4        2         2       50.00   100  1      1        0                    
+cp_hsize  4        1         3       75.00   100  1      1        0                    
+cp_hburst 6        4         2       33.33   100  1      1        0                    
+cp_hwrite 2        0         2       100.00  100  1      1        0                    
+cp_hresp  2        0         2       100.00  100  1      1        0                    
+cp_hsel   2        1         1       50.00   100  1      1        0                    
+cp_resetn 2        1         1       50.00   100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_htrans
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        2         2       50.00   
+
+
+User Defined Bins for cp_htrans
+
+
+Uncovered bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES NUMBER 
+BUSY 0     1        --              1      
+IDLE 0     1        --              1      
+
+
+Covered bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+SEQ    17    1        --              
+NONSEQ 44    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_hsize
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        1         3       75.00   
+
+
+User Defined Bins for cp_hsize
+
+
+Uncovered bins
+
+NAME        COUNT AT LEAST SUBSUMED VALUES NUMBER 
+UNSUPPORTED 0     1        --              1      
+
+
+Covered bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+WORD 52    1        --              
+HALF 5     1        --              
+BYTE 4     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_hburst
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 6        4         2       33.33   
+
+
+User Defined Bins for cp_hburst
+
+
+Uncovered bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES NUMBER 
+INCR8 0     1        --              1      
+WRAP8 0     1        --              1      
+WRAP4 0     1        --              1      
+INCR  0     1        --              1      
+
+
+Covered bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+INCR4  14    1        --              
+SINGLE 47    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_hwrite
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_hwrite
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+WRITE 40    1        --              
+READ  21    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_hresp
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_hresp
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+ERROR 5     1        --              
+OKAY  56    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_hsel
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        1         1       50.00   
+
+
+User Defined Bins for cp_hsel
+
+
+Uncovered bins
+
+NAME       COUNT AT LEAST SUBSUMED VALUES NUMBER 
+DEASSERTED 0     1        --              1      
+
+
+Covered bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+ASSERTED 61    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_resetn
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        1         1       50.00   
+
+
+User Defined Bins for cp_resetn
+
+
+Uncovered bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES NUMBER 
+RESET 0     1        --              1      
+
+
+Covered bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+ACTIVE 61    1        --              
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.cg_signals
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 65.48 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                        
+ 65.48  65.48    1      100    1        1            64           64                    $unit::func_cov::cg_signals 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.cg_signals
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 22       9         13      65.48   
+
+
+Variables for Group Instance  tb_top.me.obj.cg_signals
+
+
+VARIABLE  EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_htrans 4        2         2       50.00   100  1      1        0                    
+cp_hsize  4        1         3       75.00   100  1      1        0                    
+cp_hburst 6        4         2       33.33   100  1      1        0                    
+cp_hwrite 2        0         2       100.00  100  1      1        0                    
+cp_hresp  2        0         2       100.00  100  1      1        0                    
+cp_hsel   2        1         1       50.00   100  1      1        0                    
+cp_resetn 2        1         1       50.00   100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_htrans
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        2         2       50.00   
+
+
+User Defined Bins for cp_htrans
+
+
+Uncovered bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES NUMBER 
+BUSY 0     1        --              1      
+IDLE 0     1        --              1      
+
+
+Covered bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+SEQ    17    1        --              
+NONSEQ 44    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_hsize
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        1         3       75.00   
+
+
+User Defined Bins for cp_hsize
+
+
+Uncovered bins
+
+NAME        COUNT AT LEAST SUBSUMED VALUES NUMBER 
+UNSUPPORTED 0     1        --              1      
+
+
+Covered bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+WORD 52    1        --              
+HALF 5     1        --              
+BYTE 4     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_hburst
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 6        4         2       33.33   
+
+
+User Defined Bins for cp_hburst
+
+
+Uncovered bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES NUMBER 
+INCR8 0     1        --              1      
+WRAP8 0     1        --              1      
+WRAP4 0     1        --              1      
+INCR  0     1        --              1      
+
+
+Covered bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+INCR4  14    1        --              
+SINGLE 47    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_hwrite
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_hwrite
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+WRITE 40    1        --              
+READ  21    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_hresp
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_hresp
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+ERROR 5     1        --              
+OKAY  56    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_hsel
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        1         1       50.00   
+
+
+User Defined Bins for cp_hsel
+
+
+Uncovered bins
+
+NAME       COUNT AT LEAST SUBSUMED VALUES NUMBER 
+DEASSERTED 0     1        --              1      
+
+
+Covered bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+ASSERTED 61    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_resetn
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        1         1       50.00   
+
+
+User Defined Bins for cp_resetn
+
+
+Uncovered bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES NUMBER 
+RESET 0     1        --              1      
+
+
+Covered bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+ACTIVE 61    1        --              
+
+
+Group : $unit::func_cov::cg_transactions
+
+===============================================================================
+Group : $unit::func_cov::cg_transactions
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+ 81.25  81.25    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/ahb/testbench.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                          
+ 81.25 1      100    1        64           64            tb_top.me.obj.cg_transactions 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::func_cov::cg_transactions
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 12       1         11      93.75   
+Crosses   44       18        26      68.75   
+
+
+Variables for Group  $unit::func_cov::cg_transactions
+
+
+VARIABLE     EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_dir       2        0         2       100.00  100  1      1        0                    
+cp_size      4        1         3       75.00   100  1      1        0                    
+cp_resp      2        0         2       100.00  100  1      1        0                    
+cp_byte_lane 4        0         4       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::func_cov::cg_transactions
+
+
+CROSS            EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_dir_size      8        2         6       75.00   100  1      1        0                     
+cx_dir_resp      4        0         4       100.00  100  1      1        0                     
+cx_size_lane     16       8         8       50.00   100  1      1        0                     
+cx_dir_size_resp 16       8         8       50.00   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_dir
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_dir
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+WRITE 40    1        --              
+READ  21    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_size
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        1         3       75.00   
+
+
+User Defined Bins for cp_size
+
+
+Uncovered bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES NUMBER 
+UNSUP 0     1        --              1      
+
+
+Covered bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+WORD 52    1        --              
+HALF 5     1        --              
+BYTE 4     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_resp
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_resp
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+ERROR 5     1        --              
+OKAY  56    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_byte_lane
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_byte_lane
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+LANE3 3     1        --              
+LANE2 2     1        --              
+LANE1 3     1        --              
+LANE0 53    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_dir_size
+
+
+Samples crossed: cp_dir cp_size
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 8        2         6       75.00   2       
+
+
+Automatically Generated Cross Bins for cx_dir_size
+
+
+Element holes
+
+cp_dir cp_size COUNT AT LEAST NUMBER 
+*      [UNSUP] --    --       2      
+
+
+Covered bins
+
+cp_dir cp_size COUNT AT LEAST 
+WRITE  WORD    34    1        
+WRITE  HALF    3     1        
+WRITE  BYTE    3     1        
+READ   WORD    18    1        
+READ   HALF    2     1        
+READ   BYTE    1     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_dir_resp
+
+
+Samples crossed: cp_dir cp_resp
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 4        0         4       100.00          
+
+
+Automatically Generated Cross Bins for cx_dir_resp
+
+
+Bins
+
+cp_dir cp_resp COUNT AT LEAST 
+WRITE  ERROR   3     1        
+WRITE  OKAY    37    1        
+READ   ERROR   2     1        
+READ   OKAY    19    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_size_lane
+
+
+Samples crossed: cp_size cp_byte_lane
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       8         8       50.00   8       
+
+
+Automatically Generated Cross Bins for cx_size_lane
+
+
+Element holes
+
+cp_size cp_byte_lane COUNT AT LEAST NUMBER 
+[UNSUP] *            --    --       4      
+
+
+Uncovered bins
+
+cp_size cp_byte_lane    COUNT AT LEAST NUMBER 
+[WORD]  [LANE3 , LANE2] --    --       2      
+[HALF]  [LANE0]         0     1        1      
+[BYTE]  [LANE1]         0     1        1      
+
+
+Covered bins
+
+cp_size cp_byte_lane COUNT AT LEAST 
+WORD    LANE1        1     1        
+WORD    LANE0        51    1        
+HALF    LANE3        2     1        
+HALF    LANE2        1     1        
+HALF    LANE1        2     1        
+BYTE    LANE3        1     1        
+BYTE    LANE2        1     1        
+BYTE    LANE0        2     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_dir_size_resp
+
+
+Samples crossed: cp_dir cp_size cp_resp
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       8         8       50.00   8       
+
+
+Automatically Generated Cross Bins for cx_dir_size_resp
+
+
+Element holes
+
+cp_dir  cp_size cp_resp COUNT AT LEAST NUMBER 
+[WRITE] [UNSUP] *       --    --       2      
+[READ]  [UNSUP] *       --    --       2      
+
+
+Uncovered bins
+
+cp_dir  cp_size cp_resp COUNT AT LEAST NUMBER 
+[WRITE] [BYTE]  [ERROR] 0     1        1      
+[READ]  [WORD]  [ERROR] 0     1        1      
+[READ]  [HALF]  [OKAY]  0     1        1      
+[READ]  [BYTE]  [ERROR] 0     1        1      
+
+
+Covered bins
+
+cp_dir cp_size cp_resp COUNT AT LEAST 
+WRITE  WORD    ERROR   1     1        
+WRITE  WORD    OKAY    33    1        
+WRITE  HALF    ERROR   2     1        
+WRITE  HALF    OKAY    1     1        
+WRITE  BYTE    OKAY    3     1        
+READ   WORD    OKAY    18    1        
+READ   HALF    ERROR   2     1        
+READ   BYTE    OKAY    1     1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.cg_transactions
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 81.25 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                             
+ 81.25  81.25    1      100    1        1            64           64                    $unit::func_cov::cg_transactions 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.cg_transactions
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 12       1         11      93.75   
+Crosses   44       18        26      68.75   
+
+
+Variables for Group Instance  tb_top.me.obj.cg_transactions
+
+
+VARIABLE     EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_dir       2        0         2       100.00  100  1      1        0                    
+cp_size      4        1         3       75.00   100  1      1        0                    
+cp_resp      2        0         2       100.00  100  1      1        0                    
+cp_byte_lane 4        0         4       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.cg_transactions
+
+
+CROSS            EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_dir_size      8        2         6       75.00   100  1      1        0                     
+cx_dir_resp      4        0         4       100.00  100  1      1        0                     
+cx_size_lane     16       8         8       50.00   100  1      1        0                     
+cx_dir_size_resp 16       8         8       50.00   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_dir
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_dir
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+WRITE 40    1        --              
+READ  21    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_size
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        1         3       75.00   
+
+
+User Defined Bins for cp_size
+
+
+Uncovered bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES NUMBER 
+UNSUP 0     1        --              1      
+
+
+Covered bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+WORD 52    1        --              
+HALF 5     1        --              
+BYTE 4     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_resp
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_resp
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+ERROR 5     1        --              
+OKAY  56    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_byte_lane
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_byte_lane
+
+
+Bins
+
+NAME  COUNT AT LEAST SUBSUMED VALUES 
+LANE3 3     1        --              
+LANE2 2     1        --              
+LANE1 3     1        --              
+LANE0 53    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_dir_size
+
+
+Samples crossed: cp_dir cp_size
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 8        2         6       75.00   2       
+
+
+Automatically Generated Cross Bins for cx_dir_size
+
+
+Element holes
+
+cp_dir cp_size COUNT AT LEAST NUMBER 
+*      [UNSUP] --    --       2      
+
+
+Covered bins
+
+cp_dir cp_size COUNT AT LEAST 
+WRITE  WORD    34    1        
+WRITE  HALF    3     1        
+WRITE  BYTE    3     1        
+READ   WORD    18    1        
+READ   HALF    2     1        
+READ   BYTE    1     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_dir_resp
+
+
+Samples crossed: cp_dir cp_resp
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 4        0         4       100.00          
+
+
+Automatically Generated Cross Bins for cx_dir_resp
+
+
+Bins
+
+cp_dir cp_resp COUNT AT LEAST 
+WRITE  ERROR   3     1        
+WRITE  OKAY    37    1        
+READ   ERROR   2     1        
+READ   OKAY    19    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_size_lane
+
+
+Samples crossed: cp_size cp_byte_lane
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       8         8       50.00   8       
+
+
+Automatically Generated Cross Bins for cx_size_lane
+
+
+Element holes
+
+cp_size cp_byte_lane COUNT AT LEAST NUMBER 
+[UNSUP] *            --    --       4      
+
+
+Uncovered bins
+
+cp_size cp_byte_lane    COUNT AT LEAST NUMBER 
+[WORD]  [LANE3 , LANE2] --    --       2      
+[HALF]  [LANE0]         0     1        1      
+[BYTE]  [LANE1]         0     1        1      
+
+
+Covered bins
+
+cp_size cp_byte_lane COUNT AT LEAST 
+WORD    LANE1        1     1        
+WORD    LANE0        51    1        
+HALF    LANE3        2     1        
+HALF    LANE2        1     1        
+HALF    LANE1        2     1        
+BYTE    LANE3        1     1        
+BYTE    LANE2        1     1        
+BYTE    LANE0        2     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_dir_size_resp
+
+
+Samples crossed: cp_dir cp_size cp_resp
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 16       8         8       50.00   8       
+
+
+Automatically Generated Cross Bins for cx_dir_size_resp
+
+
+Element holes
+
+cp_dir  cp_size cp_resp COUNT AT LEAST NUMBER 
+[WRITE] [UNSUP] *       --    --       2      
+[READ]  [UNSUP] *       --    --       2      
+
+
+Uncovered bins
+
+cp_dir  cp_size cp_resp COUNT AT LEAST NUMBER 
+[WRITE] [BYTE]  [ERROR] 0     1        1      
+[READ]  [WORD]  [ERROR] 0     1        1      
+[READ]  [HALF]  [OKAY]  0     1        1      
+[READ]  [BYTE]  [ERROR] 0     1        1      
+
+
+Covered bins
+
+cp_dir cp_size cp_resp COUNT AT LEAST 
+WRITE  WORD    ERROR   1     1        
+WRITE  WORD    OKAY    33    1        
+WRITE  HALF    ERROR   2     1        
+WRITE  HALF    OKAY    1     1        
+WRITE  BYTE    OKAY    3     1        
+READ   WORD    OKAY    18    1        
+READ   HALF    ERROR   2     1        
+READ   BYTE    OKAY    1     1        
+
+

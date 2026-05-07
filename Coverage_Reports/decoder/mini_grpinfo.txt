@@ -1,0 +1,172 @@
+Group : $unit::decoder_coverage::cg_dec
+
+===============================================================================
+Group : $unit::decoder_coverage::cg_dec
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+  7.03   7.03    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/done/decoder/mini/mini_decoder_uvm_tb_all.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                 
+  7.03 1      100    1        64           64            tb_top.me.obj.cg_dec 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::decoder_coverage::cg_dec
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 72       70        2       7.03    
+
+
+Variables for Group  $unit::decoder_coverage::cg_dec
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+a_cp     8        7         1       12.50   100  1      1        8                    
+d_cp     64       63        1       1.56    100  1      1        64                   
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable a_cp
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 8        7         1       12.50   
+
+
+Automatically Generated Bins for a_cp
+
+
+Uncovered bins
+
+NAME                COUNT AT LEAST SUBSUMED VALUES NUMBER 
+[auto[0] - auto[1]] --    --       { [ 0 : 1 ] }   2      
+[auto[3] - auto[7]] --    --       { [ 3 : 7 ] }   5      
+
+
+Covered bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[2] 11    1        { [ 2 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable d_cp
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 64       63        1       1.56    
+
+
+Automatically Generated Bins for d_cp
+
+
+Uncovered bins
+
+NAME                         COUNT AT LEAST SUBSUMED VALUES NUMBER 
+[auto[0:3]]                  0     1        [{ [ 0 : 3 ] }] 1      
+[auto[8:11] - auto[252:255]] --    --       { [ 8 : 255 ] } 62     
+
+
+Covered bins
+
+NAME      COUNT AT LEAST SUBSUMED VALUES 
+auto[4:7] 11    1        { [ 4 : 7 ] }   
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.cg_dec
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+  7.03 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                            
+  7.03   7.03    1      100    1        1            64           64                    $unit::decoder_coverage::cg_dec 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.cg_dec
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 72       70        2       7.03    
+
+
+Variables for Group Instance  tb_top.me.obj.cg_dec
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+a_cp     8        7         1       12.50   100  1      1        8                    
+d_cp     64       63        1       1.56    100  1      1        64                   
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable a_cp
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 8        7         1       12.50   
+
+
+Automatically Generated Bins for a_cp
+
+
+Uncovered bins
+
+NAME                COUNT AT LEAST SUBSUMED VALUES NUMBER 
+[auto[0] - auto[1]] --    --       { [ 0 : 1 ] }   2      
+[auto[3] - auto[7]] --    --       { [ 3 : 7 ] }   5      
+
+
+Covered bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[2] 11    1        { [ 2 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable d_cp
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 64       63        1       1.56    
+
+
+Automatically Generated Bins for d_cp
+
+
+Uncovered bins
+
+NAME                         COUNT AT LEAST SUBSUMED VALUES NUMBER 
+[auto[0:3]]                  0     1        [{ [ 0 : 3 ] }] 1      
+[auto[8:11] - auto[252:255]] --    --       { [ 8 : 255 ] } 62     
+
+
+Covered bins
+
+NAME      COUNT AT LEAST SUBSUMED VALUES 
+auto[4:7] 11    1        { [ 4 : 7 ] }   
+
+

@@ -1,0 +1,136 @@
+Group : $unit::shift_register_coverage::cg
+
+===============================================================================
+Group : $unit::shift_register_coverage::cg
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 78.91 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/usr/mini/mini_usr_uvm_tb_all.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::shift_register_coverage::cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 72       54        18      78.91   
+
+
+Variables for Group  $unit::shift_register_coverage::cg
+
+
+VARIABLE             EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+item.control         4        0         4       100.00  100  1      1        4                    
+item.parallel_in     64       54        10      15.62   100  1      1        64                   
+item.serial_in_right 2        0         2       100.00  100  1      1        2                    
+item.serial_in_left  2        0         2       100.00  100  1      1        2                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable item.control
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 4        0         4       100.00  
+
+
+Automatically Generated Bins for item.control
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 4     1        { [ 0 ] }       
+auto[1] 3     1        { [ 1 ] }       
+auto[2] 2     1        { [ 2 ] }       
+auto[3] 3     1        { [ 3 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable item.parallel_in
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 64       54        10      15.62   
+
+
+Automatically Generated Bins for item.parallel_in
+
+
+Uncovered bins
+
+NAME                            COUNT AT LEAST SUBSUMED VALUES     NUMBER 
+[auto[4:7] - auto[24:27]]       --    --       { [ 4 : 27 ] }      6      
+[auto[32:35] - auto[36:39]]     --    --       { [ 32 : 39 ] }     2      
+[auto[44:47] - auto[156:159]]   --    --       { [ 44 : 159 ] }    29     
+[auto[164:167] - auto[168:171]] --    --       { [ 164 : 171 ] }   2      
+[auto[176:179]]                 0     1        [{ [ 176 : 179 ] }] 1      
+[auto[184:187] - auto[188:191]] --    --       { [ 184 : 191 ] }   2      
+[auto[196:199] - auto[204:207]] --    --       { [ 196 : 207 ] }   3      
+[auto[212:215] - auto[224:227]] --    --       { [ 212 : 227 ] }   4      
+[auto[232:235] - auto[236:239]] --    --       { [ 232 : 239 ] }   2      
+[auto[244:247] - auto[252:255]] --    --       { [ 244 : 255 ] }   3      
+
+
+Covered bins
+
+NAME          COUNT AT LEAST SUBSUMED VALUES   
+auto[0:3]     3     1        { [ 0 : 3 ] }     
+auto[28:31]   1     1        { [ 28 : 31 ] }   
+auto[40:43]   1     1        { [ 40 : 43 ] }   
+auto[160:163] 1     1        { [ 160 : 163 ] } 
+auto[172:175] 1     1        { [ 172 : 175 ] } 
+auto[180:183] 1     1        { [ 180 : 183 ] } 
+auto[192:195] 1     1        { [ 192 : 195 ] } 
+auto[208:211] 1     1        { [ 208 : 211 ] } 
+auto[228:231] 1     1        { [ 228 : 231 ] } 
+auto[240:243] 1     1        { [ 240 : 243 ] } 
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable item.serial_in_right
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for item.serial_in_right
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 7     1        { [ 0 ] }       
+auto[1] 5     1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable item.serial_in_left
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for item.serial_in_left
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 9     1        { [ 0 ] }       
+auto[1] 3     1        { [ 1 ] }       
+
+

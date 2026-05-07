@@ -1,0 +1,115 @@
+Group : $unit::fifo_coverage::cg_fifo_operations
+
+===============================================================================
+Group : $unit::fifo_coverage::cg_fifo_operations
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 72.40 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/syncfifo/mini/mini_syncfifo_uvm_tb_all.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::fifo_coverage::cg_fifo_operations
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 68       53        15      72.40   
+
+
+Variables for Group  $unit::fifo_coverage::cg_fifo_operations
+
+
+VARIABLE       EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+tr_cov.wr_data 64       53        11      17.19   100  1      1        64                   
+tr_cov.r_en    2        0         2       100.00  100  1      1        2                    
+tr_cov.w_en    2        0         2       100.00  100  1      1        2                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable tr_cov.wr_data
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 64       53        11      17.19   
+
+
+Automatically Generated Bins for tr_cov.wr_data
+
+
+Uncovered bins
+
+NAME                            COUNT AT LEAST SUBSUMED VALUES     NUMBER 
+[auto[4:7] - auto[40:43]]       --    --       { [ 4 : 43 ] }      10     
+[auto[48:51] - auto[72:75]]     --    --       { [ 48 : 75 ] }     7      
+[auto[80:83] - auto[116:119]]   --    --       { [ 80 : 119 ] }    10     
+[auto[124:127]]                 0     1        [{ [ 124 : 127 ] }] 1      
+[auto[132:135]]                 0     1        [{ [ 132 : 135 ] }] 1      
+[auto[140:143] - auto[168:171]] --    --       { [ 140 : 171 ] }   8      
+[auto[176:179] - auto[204:207]] --    --       { [ 176 : 207 ] }   8      
+[auto[212:215] - auto[216:219]] --    --       { [ 212 : 219 ] }   2      
+[auto[228:231] - auto[236:239]] --    --       { [ 228 : 239 ] }   3      
+[auto[244:247] - auto[252:255]] --    --       { [ 244 : 255 ] }   3      
+
+
+Covered bins
+
+NAME          COUNT AT LEAST SUBSUMED VALUES   
+auto[0:3]     1     1        { [ 0 : 3 ] }     
+auto[44:47]   1     1        { [ 44 : 47 ] }   
+auto[76:79]   1     1        { [ 76 : 79 ] }   
+auto[120:123] 1     1        { [ 120 : 123 ] } 
+auto[128:131] 1     1        { [ 128 : 131 ] } 
+auto[136:139] 1     1        { [ 136 : 139 ] } 
+auto[172:175] 1     1        { [ 172 : 175 ] } 
+auto[208:211] 1     1        { [ 208 : 211 ] } 
+auto[220:223] 1     1        { [ 220 : 223 ] } 
+auto[224:227] 1     1        { [ 224 : 227 ] } 
+auto[240:243] 9     1        { [ 240 : 243 ] } 
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable tr_cov.r_en
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for tr_cov.r_en
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 7     1        { [ 0 ] }       
+auto[1] 12    1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable tr_cov.w_en
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for tr_cov.w_en
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 7     1        { [ 0 ] }       
+auto[1] 12    1        { [ 1 ] }       
+
+

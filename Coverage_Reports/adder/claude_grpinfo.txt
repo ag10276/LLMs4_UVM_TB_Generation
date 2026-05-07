@@ -1,0 +1,740 @@
+Group : $unit::adder_coverage::adder_cg
+
+===============================================================================
+Group : $unit::adder_coverage::adder_cg
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+100.00 100.00    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/adder/claude_adder_uvm_tb_all.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                   
+100.00 1      100    1        64           64            tb_top.me.obj.adder_cg 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::adder_coverage::adder_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 18       0         18      100.00  
+Crosses   107      0         107     100.00  
+
+
+Variables for Group  $unit::adder_coverage::adder_cg
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_a     5        0         5       100.00  100  1      1        0                    
+cp_b     5        0         5       100.00  100  1      1        0                    
+cp_cin   2        0         2       100.00  100  1      1        0                    
+cp_sum   4        0         4       100.00  100  1      1        0                    
+cp_cout  2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::adder_coverage::adder_cg
+
+
+CROSS         EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_a_b        25       0         25      100.00  100  1      1        0                     
+cx_a_cin      10       0         10      100.00  100  1      1        0                     
+cx_b_cin      10       0         10      100.00  100  1      1        0                     
+cx_all_inputs 50       0         50      100.00  100  1      1        0                     
+cx_cout_sum   8        0         8       100.00  100  1      1        0                     
+cx_cout_cin   4        0         4       100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_a
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_a
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+high    188   1        --              
+mid     537   1        --              
+low     173   1        --              
+max_val 165   1        --              
+zero    65    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_b
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_b
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+high    187   1        --              
+mid     528   1        --              
+low     189   1        --              
+max_val 155   1        --              
+zero    69    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_cin
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_cin
+
+
+Bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+carry_in 609   1        --              
+no_carry 519   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_sum
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_sum
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+high    429   1        --              
+low     462   1        --              
+max_val 164   1        --              
+zero    73    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_cout
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_cout
+
+
+Bins
+
+NAME      COUNT AT LEAST SUBSUMED VALUES 
+carry_out 619   1        --              
+no_carry  509   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_a_b
+
+
+Samples crossed: cp_a cp_b
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 25       0         25      100.00          
+
+
+Automatically Generated Cross Bins for cx_a_b
+
+
+Bins
+
+cp_a    cp_b    COUNT AT LEAST 
+high    max_val 7     1        
+high    zero    15    1        
+high    mid     92    1        
+high    low     39    1        
+high    high    35    1        
+mid     max_val 30    1        
+mid     low     89    1        
+mid     zero    32    1        
+mid     mid     284   1        
+mid     high    102   1        
+low     max_val 7     1        
+low     mid     92    1        
+low     zero    13    1        
+low     low     32    1        
+low     high    29    1        
+max_val mid     31    1        
+max_val low     16    1        
+max_val zero    3     1        
+max_val max_val 105   1        
+max_val high    10    1        
+zero    mid     29    1        
+zero    low     13    1        
+zero    max_val 6     1        
+zero    zero    6     1        
+zero    high    11    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_a_cin
+
+
+Samples crossed: cp_a cp_cin
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 10       0         10      100.00          
+
+
+Automatically Generated Cross Bins for cx_a_cin
+
+
+Bins
+
+cp_a    cp_cin   COUNT AT LEAST 
+high    no_carry 88    1        
+high    carry_in 100   1        
+mid     carry_in 264   1        
+mid     no_carry 273   1        
+low     carry_in 86    1        
+low     no_carry 87    1        
+max_val carry_in 129   1        
+max_val no_carry 36    1        
+zero    carry_in 30    1        
+zero    no_carry 35    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_b_cin
+
+
+Samples crossed: cp_b cp_cin
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 10       0         10      100.00          
+
+
+Automatically Generated Cross Bins for cx_b_cin
+
+
+Bins
+
+cp_b    cp_cin   COUNT AT LEAST 
+high    no_carry 88    1        
+high    carry_in 99    1        
+mid     carry_in 259   1        
+mid     no_carry 269   1        
+low     carry_in 96    1        
+low     no_carry 93    1        
+max_val carry_in 126   1        
+max_val no_carry 29    1        
+zero    carry_in 29    1        
+zero    no_carry 40    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_all_inputs
+
+
+Samples crossed: cp_a cp_b cp_cin
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 50       0         50      100.00          
+
+
+Automatically Generated Cross Bins for cx_all_inputs
+
+
+Bins
+
+cp_a    cp_b    cp_cin   COUNT AT LEAST 
+high    high    carry_in 20    1        
+high    high    no_carry 15    1        
+high    mid     no_carry 44    1        
+high    mid     carry_in 48    1        
+high    low     no_carry 16    1        
+high    low     carry_in 23    1        
+high    max_val no_carry 3     1        
+high    max_val carry_in 4     1        
+high    zero    carry_in 5     1        
+high    zero    no_carry 10    1        
+mid     high    no_carry 48    1        
+mid     high    carry_in 54    1        
+mid     mid     carry_in 138   1        
+mid     mid     no_carry 146   1        
+mid     low     carry_in 43    1        
+mid     low     no_carry 46    1        
+mid     max_val carry_in 14    1        
+mid     max_val no_carry 16    1        
+mid     zero    carry_in 15    1        
+mid     zero    no_carry 17    1        
+low     high    no_carry 15    1        
+low     high    carry_in 14    1        
+low     mid     carry_in 47    1        
+low     mid     no_carry 45    1        
+low     low     carry_in 16    1        
+low     low     no_carry 16    1        
+low     max_val no_carry 3     1        
+low     max_val carry_in 4     1        
+low     zero    no_carry 8     1        
+low     zero    carry_in 5     1        
+max_val high    carry_in 5     1        
+max_val high    no_carry 5     1        
+max_val mid     no_carry 16    1        
+max_val mid     carry_in 15    1        
+max_val low     no_carry 10    1        
+max_val low     carry_in 6     1        
+max_val max_val carry_in 102   1        
+max_val max_val no_carry 3     1        
+max_val zero    carry_in 1     1        
+max_val zero    no_carry 2     1        
+zero    high    no_carry 5     1        
+zero    high    carry_in 6     1        
+zero    mid     no_carry 18    1        
+zero    mid     carry_in 11    1        
+zero    low     no_carry 5     1        
+zero    low     carry_in 8     1        
+zero    max_val no_carry 4     1        
+zero    max_val carry_in 2     1        
+zero    zero    carry_in 3     1        
+zero    zero    no_carry 3     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_cout_sum
+
+
+Samples crossed: cp_cout cp_sum
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 8        0         8       100.00          
+
+
+Automatically Generated Cross Bins for cx_cout_sum
+
+
+Bins
+
+cp_cout   cp_sum  COUNT AT LEAST 
+carry_out low     333   1        
+carry_out zero    70    1        
+carry_out max_val 102   1        
+carry_out high    114   1        
+no_carry  max_val 62    1        
+no_carry  low     129   1        
+no_carry  zero    3     1        
+no_carry  high    315   1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_cout_cin
+
+
+Samples crossed: cp_cout cp_cin
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 4        0         4       100.00          
+
+
+Automatically Generated Cross Bins for cx_cout_cin
+
+
+Bins
+
+cp_cout   cp_cin   COUNT AT LEAST 
+carry_out carry_in 379   1        
+carry_out no_carry 240   1        
+no_carry  carry_in 230   1        
+no_carry  no_carry 279   1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.adder_cg
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                            
+100.00 100.00    1      100    1        1            64           64                    $unit::adder_coverage::adder_cg 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.adder_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 18       0         18      100.00  
+Crosses   107      0         107     100.00  
+
+
+Variables for Group Instance  tb_top.me.obj.adder_cg
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_a     5        0         5       100.00  100  1      1        0                    
+cp_b     5        0         5       100.00  100  1      1        0                    
+cp_cin   2        0         2       100.00  100  1      1        0                    
+cp_sum   4        0         4       100.00  100  1      1        0                    
+cp_cout  2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.adder_cg
+
+
+CROSS         EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_a_b        25       0         25      100.00  100  1      1        0                     
+cx_a_cin      10       0         10      100.00  100  1      1        0                     
+cx_b_cin      10       0         10      100.00  100  1      1        0                     
+cx_all_inputs 50       0         50      100.00  100  1      1        0                     
+cx_cout_sum   8        0         8       100.00  100  1      1        0                     
+cx_cout_cin   4        0         4       100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_a
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_a
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+high    188   1        --              
+mid     537   1        --              
+low     173   1        --              
+max_val 165   1        --              
+zero    65    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_b
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_b
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+high    187   1        --              
+mid     528   1        --              
+low     189   1        --              
+max_val 155   1        --              
+zero    69    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_cin
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_cin
+
+
+Bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+carry_in 609   1        --              
+no_carry 519   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_sum
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_sum
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+high    429   1        --              
+low     462   1        --              
+max_val 164   1        --              
+zero    73    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_cout
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_cout
+
+
+Bins
+
+NAME      COUNT AT LEAST SUBSUMED VALUES 
+carry_out 619   1        --              
+no_carry  509   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_a_b
+
+
+Samples crossed: cp_a cp_b
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 25       0         25      100.00          
+
+
+Automatically Generated Cross Bins for cx_a_b
+
+
+Bins
+
+cp_a    cp_b    COUNT AT LEAST 
+high    max_val 7     1        
+high    zero    15    1        
+high    mid     92    1        
+high    low     39    1        
+high    high    35    1        
+mid     max_val 30    1        
+mid     low     89    1        
+mid     zero    32    1        
+mid     mid     284   1        
+mid     high    102   1        
+low     max_val 7     1        
+low     mid     92    1        
+low     zero    13    1        
+low     low     32    1        
+low     high    29    1        
+max_val mid     31    1        
+max_val low     16    1        
+max_val zero    3     1        
+max_val max_val 105   1        
+max_val high    10    1        
+zero    mid     29    1        
+zero    low     13    1        
+zero    max_val 6     1        
+zero    zero    6     1        
+zero    high    11    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_a_cin
+
+
+Samples crossed: cp_a cp_cin
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 10       0         10      100.00          
+
+
+Automatically Generated Cross Bins for cx_a_cin
+
+
+Bins
+
+cp_a    cp_cin   COUNT AT LEAST 
+high    no_carry 88    1        
+high    carry_in 100   1        
+mid     carry_in 264   1        
+mid     no_carry 273   1        
+low     carry_in 86    1        
+low     no_carry 87    1        
+max_val carry_in 129   1        
+max_val no_carry 36    1        
+zero    carry_in 30    1        
+zero    no_carry 35    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_b_cin
+
+
+Samples crossed: cp_b cp_cin
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 10       0         10      100.00          
+
+
+Automatically Generated Cross Bins for cx_b_cin
+
+
+Bins
+
+cp_b    cp_cin   COUNT AT LEAST 
+high    no_carry 88    1        
+high    carry_in 99    1        
+mid     carry_in 259   1        
+mid     no_carry 269   1        
+low     carry_in 96    1        
+low     no_carry 93    1        
+max_val carry_in 126   1        
+max_val no_carry 29    1        
+zero    carry_in 29    1        
+zero    no_carry 40    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_all_inputs
+
+
+Samples crossed: cp_a cp_b cp_cin
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 50       0         50      100.00          
+
+
+Automatically Generated Cross Bins for cx_all_inputs
+
+
+Bins
+
+cp_a    cp_b    cp_cin   COUNT AT LEAST 
+high    high    carry_in 20    1        
+high    high    no_carry 15    1        
+high    mid     no_carry 44    1        
+high    mid     carry_in 48    1        
+high    low     no_carry 16    1        
+high    low     carry_in 23    1        
+high    max_val no_carry 3     1        
+high    max_val carry_in 4     1        
+high    zero    carry_in 5     1        
+high    zero    no_carry 10    1        
+mid     high    no_carry 48    1        
+mid     high    carry_in 54    1        
+mid     mid     carry_in 138   1        
+mid     mid     no_carry 146   1        
+mid     low     carry_in 43    1        
+mid     low     no_carry 46    1        
+mid     max_val carry_in 14    1        
+mid     max_val no_carry 16    1        
+mid     zero    carry_in 15    1        
+mid     zero    no_carry 17    1        
+low     high    no_carry 15    1        
+low     high    carry_in 14    1        
+low     mid     carry_in 47    1        
+low     mid     no_carry 45    1        
+low     low     carry_in 16    1        
+low     low     no_carry 16    1        
+low     max_val no_carry 3     1        
+low     max_val carry_in 4     1        
+low     zero    no_carry 8     1        
+low     zero    carry_in 5     1        
+max_val high    carry_in 5     1        
+max_val high    no_carry 5     1        
+max_val mid     no_carry 16    1        
+max_val mid     carry_in 15    1        
+max_val low     no_carry 10    1        
+max_val low     carry_in 6     1        
+max_val max_val carry_in 102   1        
+max_val max_val no_carry 3     1        
+max_val zero    carry_in 1     1        
+max_val zero    no_carry 2     1        
+zero    high    no_carry 5     1        
+zero    high    carry_in 6     1        
+zero    mid     no_carry 18    1        
+zero    mid     carry_in 11    1        
+zero    low     no_carry 5     1        
+zero    low     carry_in 8     1        
+zero    max_val no_carry 4     1        
+zero    max_val carry_in 2     1        
+zero    zero    carry_in 3     1        
+zero    zero    no_carry 3     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_cout_sum
+
+
+Samples crossed: cp_cout cp_sum
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 8        0         8       100.00          
+
+
+Automatically Generated Cross Bins for cx_cout_sum
+
+
+Bins
+
+cp_cout   cp_sum  COUNT AT LEAST 
+carry_out low     333   1        
+carry_out zero    70    1        
+carry_out max_val 102   1        
+carry_out high    114   1        
+no_carry  max_val 62    1        
+no_carry  low     129   1        
+no_carry  zero    3     1        
+no_carry  high    315   1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_cout_cin
+
+
+Samples crossed: cp_cout cp_cin
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 4        0         4       100.00          
+
+
+Automatically Generated Cross Bins for cx_cout_cin
+
+
+Bins
+
+cp_cout   cp_cin   COUNT AT LEAST 
+carry_out carry_in 379   1        
+carry_out no_carry 240   1        
+no_carry  carry_in 230   1        
+no_carry  no_carry 279   1        
+
+

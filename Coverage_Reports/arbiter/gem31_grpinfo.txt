@@ -1,0 +1,392 @@
+Group : $unit::arb_coverage::cg_arb
+
+===============================================================================
+Group : $unit::arb_coverage::cg_arb
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+ 88.39  88.39    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/arbiter/gem31/gem31_arbiter_uvm_tb_all.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME   
+ 88.39 1      100    1        64           64            cg_arb 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::arb_coverage::cg_arb
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 21       0         21      100.00  
+Crosses   31       18        13      41.94   
+
+
+Variables for Group  $unit::arb_coverage::cg_arb
+
+
+VARIABLE       EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_req         7        0         7       100.00  100  1      1        0                    
+cp_grant       5        0         5       100.00  100  1      1        0                    
+cp_grant_trans 7        0         7       100.00  100  1      1        0                    
+cp_rst         2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::arb_coverage::cg_arb
+
+
+CROSS        EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_req_grant 31       18        13      41.94   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_req
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 7        0         7       100.00  
+
+
+User Defined Bins for cp_req
+
+
+Bins
+
+NAME      COUNT AT LEAST SUBSUMED VALUES 
+multi     69    1        --              
+all_ones  5     1        --              
+one_hot_1 6     1        --              
+one_hot_2 9     1        --              
+one_hot_4 7     1        --              
+one_hot_8 7     1        --              
+zero      2     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_grant
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_grant
+
+
+Excluded/Illegal bins
+
+NAME        COUNT SUBSUMED VALUES STATUS  
+non_one_hot 0     --              Illegal 
+
+
+Covered bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+grant_b3 31    1        --              
+grant_b2 23    1        --              
+grant_b1 29    1        --              
+grant_b0 20    1        --              
+zero     2     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_grant_trans
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 7        0         7       100.00  
+
+
+User Defined Bins for cp_grant_trans
+
+
+Bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+seq_1_3  9     1        --              
+seq_0_3  5     1        --              
+seq_0_2  6     1        --              
+wrap_3_0 12    1        --              
+seq_2_3  15    1        --              
+seq_1_2  11    1        --              
+seq_0_1  9     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_rst
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_rst
+
+
+Bins
+
+NAME           COUNT AT LEAST SUBSUMED VALUES 
+reset_inactive 105   1        --              
+reset_active   2     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_req_grant
+
+
+Samples crossed: cp_req cp_grant
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              31       18        13      41.94   18      
+Automatically Generated Cross Bins 31       18        13      41.94   18      
+User Defined Cross Bins            0        0         0                       
+
+
+Automatically Generated Cross Bins for cx_req_grant
+
+
+Uncovered bins
+
+cp_req             cp_grant                                COUNT AT LEAST NUMBER 
+[multi , all_ones] [zero]                                  --    --       2      
+[one_hot_1]        [grant_b3 , grant_b2 , grant_b1]        --    --       3      
+[one_hot_1]        [zero]                                  0     1        1      
+[one_hot_2]        [grant_b3 , grant_b2]                   --    --       2      
+[one_hot_2]        [grant_b0 , zero]                       --    --       2      
+[one_hot_4]        [grant_b3]                              0     1        1      
+[one_hot_4]        [grant_b1 , grant_b0 , zero]            --    --       3      
+[one_hot_8]        [grant_b2 , grant_b1 , grant_b0 , zero] --    --       4      
+
+
+Covered bins
+
+cp_req    cp_grant COUNT AT LEAST 
+multi     grant_b1 19    1        
+multi     grant_b2 15    1        
+multi     grant_b0 12    1        
+multi     grant_b3 23    1        
+all_ones  grant_b2 1     1        
+all_ones  grant_b1 1     1        
+all_ones  grant_b3 1     1        
+all_ones  grant_b0 2     1        
+one_hot_1 grant_b0 6     1        
+one_hot_2 grant_b1 9     1        
+one_hot_4 grant_b2 7     1        
+one_hot_8 grant_b3 7     1        
+zero      zero     2     1        
+
+
+User Defined Cross Bins for cx_req_grant
+
+
+Excluded/Illegal bins
+
+NAME                       COUNT STATUS  
+ill_zero_req_nonzero_grant 0     Illegal 
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : cg_arb
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 88.39 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                        
+ 88.39  88.39    1      100    1        1            64           64                    $unit::arb_coverage::cg_arb 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   cg_arb
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 21       0         21      100.00  
+Crosses   31       18        13      41.94   
+
+
+Variables for Group Instance  cg_arb
+
+
+VARIABLE       EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_req         7        0         7       100.00  100  1      1        0                    
+cp_grant       5        0         5       100.00  100  1      1        0                    
+cp_grant_trans 7        0         7       100.00  100  1      1        0                    
+cp_rst         2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  cg_arb
+
+
+CROSS        EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_req_grant 31       18        13      41.94   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_req
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 7        0         7       100.00  
+
+
+User Defined Bins for cp_req
+
+
+Bins
+
+NAME      COUNT AT LEAST SUBSUMED VALUES 
+multi     69    1        --              
+all_ones  5     1        --              
+one_hot_1 6     1        --              
+one_hot_2 9     1        --              
+one_hot_4 7     1        --              
+one_hot_8 7     1        --              
+zero      2     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_grant
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_grant
+
+
+Excluded/Illegal bins
+
+NAME        COUNT SUBSUMED VALUES STATUS  
+non_one_hot 0     --              Illegal 
+
+
+Covered bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+grant_b3 31    1        --              
+grant_b2 23    1        --              
+grant_b1 29    1        --              
+grant_b0 20    1        --              
+zero     2     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_grant_trans
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 7        0         7       100.00  
+
+
+User Defined Bins for cp_grant_trans
+
+
+Bins
+
+NAME     COUNT AT LEAST SUBSUMED VALUES 
+seq_1_3  9     1        --              
+seq_0_3  5     1        --              
+seq_0_2  6     1        --              
+wrap_3_0 12    1        --              
+seq_2_3  15    1        --              
+seq_1_2  11    1        --              
+seq_0_1  9     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_rst
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_rst
+
+
+Bins
+
+NAME           COUNT AT LEAST SUBSUMED VALUES 
+reset_inactive 105   1        --              
+reset_active   2     1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_req_grant
+
+
+Samples crossed: cp_req cp_grant
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              31       18        13      41.94   18      
+Automatically Generated Cross Bins 31       18        13      41.94   18      
+User Defined Cross Bins            0        0         0                       
+
+
+Automatically Generated Cross Bins for cx_req_grant
+
+
+Uncovered bins
+
+cp_req             cp_grant                                COUNT AT LEAST NUMBER 
+[multi , all_ones] [zero]                                  --    --       2      
+[one_hot_1]        [grant_b3 , grant_b2 , grant_b1]        --    --       3      
+[one_hot_1]        [zero]                                  0     1        1      
+[one_hot_2]        [grant_b3 , grant_b2]                   --    --       2      
+[one_hot_2]        [grant_b0 , zero]                       --    --       2      
+[one_hot_4]        [grant_b3]                              0     1        1      
+[one_hot_4]        [grant_b1 , grant_b0 , zero]            --    --       3      
+[one_hot_8]        [grant_b2 , grant_b1 , grant_b0 , zero] --    --       4      
+
+
+Covered bins
+
+cp_req    cp_grant COUNT AT LEAST 
+multi     grant_b1 19    1        
+multi     grant_b2 15    1        
+multi     grant_b0 12    1        
+multi     grant_b3 23    1        
+all_ones  grant_b2 1     1        
+all_ones  grant_b1 1     1        
+all_ones  grant_b3 1     1        
+all_ones  grant_b0 2     1        
+one_hot_1 grant_b0 6     1        
+one_hot_2 grant_b1 9     1        
+one_hot_4 grant_b2 7     1        
+one_hot_8 grant_b3 7     1        
+zero      zero     2     1        
+
+
+User Defined Cross Bins for cx_req_grant
+
+
+Excluded/Illegal bins
+
+NAME                       COUNT STATUS  
+ill_zero_req_nonzero_grant 0     Illegal 
+
+

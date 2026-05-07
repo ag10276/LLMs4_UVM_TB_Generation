@@ -1,0 +1,76 @@
+Assertions
+
+
+Assertions by Category
+           ASSERT PROPERTIES SEQUENCES
+Total           9          6         0
+Category 0      9          6         0
+
+-------------------------------------------------------------------------------
+
+Assertions by Severity
+           ASSERT PROPERTIES SEQUENCES
+Total           9          6         0
+Severity 0      9          6         0
+
+-------------------------------------------------------------------------------
+
+Summary for Assertions
+                 NUMBER PERCENT
+Total Number          9  100.00
+Uncovered             2   22.22
+Success               7   77.78
+Failure               0    0.00
+Incomplete            1   11.11
+Without Attempts      2   22.22
+
+-------------------------------------------------------------------------------
+
+Summary for Cover Properties
+             NUMBER PERCENT
+Total Number      6  100.00
+Uncovered         0    0.00
+Matches           6  100.00
+
+-------------------------------------------------------------------------------
+
+Detail Report for Assertions
+
+Assertions Uncovered:
+                       ASSERTIONS                       CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1         0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1        0        0        0              0        0          0
+
+Assertions Success:
+                          ASSERTIONS                          CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+tb_top.dut.u_usr_assertions.ASSERT_HOLD                              0        0      116             15        0          0
+tb_top.dut.u_usr_assertions.ASSERT_LEFT_SHIFT                        0        0      116             29        0          0
+tb_top.dut.u_usr_assertions.ASSERT_LOAD_THEN_HOLD                    0        0      116              7        0          1
+tb_top.dut.u_usr_assertions.ASSERT_PARALLEL_LOAD                     0        0      116             44        0          0
+tb_top.dut.u_usr_assertions.ASSERT_RIGHT_SHIFT                       0        0      116             25        0          0
+tb_top.dut.u_usr_assertions.ASSERT_SYNC_RESET                        0        0      116              1        0          0
+uvm_pkg.\uvm_component_name_check_visitor::visit .unnamed$$_0        0        0       27             27        0          0
+
+Assertions Incomplete:
+                    ASSERTIONS                    CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+tb_top.dut.u_usr_assertions.ASSERT_LOAD_THEN_HOLD        0        0      116              7        0          1
+
+Assertions Without Attempts:
+                       ASSERTIONS                       CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1         0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1        0        0        0              0        0          0
+
+-------------------------------------------------------------------------------
+
+Detail Report for Cover Properties
+
+Cover Properties Matches:
+                COVER PROPERTIES                 CATEGORY SEVERITY ATTEMPTS MATCHES INCOMPLETE
+tb_top.dut.u_usr_assertions.COVER_HOLD                  0        0      116      15          0
+tb_top.dut.u_usr_assertions.COVER_LEFT_SHIFT            0        0      116      29          0
+tb_top.dut.u_usr_assertions.COVER_LOAD_THEN_HOLD        0        0      116       7          1
+tb_top.dut.u_usr_assertions.COVER_PARALLEL_LOAD         0        0      116      44          0
+tb_top.dut.u_usr_assertions.COVER_RIGHT_SHIFT           0        0      116      25          0
+tb_top.dut.u_usr_assertions.COVER_SYNC_RESET            0        0      116       1          0
+
+

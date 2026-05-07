@@ -1,0 +1,682 @@
+Group : $unit::alu_coverage::alu_cg
+
+===============================================================================
+Group : $unit::alu_coverage::alu_cg
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+ 91.38  91.38    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/alu/gem31_alu_uvm_tb_all.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                 
+ 91.38 1      100    1        64           64            tb_top.me.obj.alu_cg 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::alu_coverage::alu_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 26       0         26      100.00  
+Crosses   200      138       62      31.00   
+
+
+Variables for Group  $unit::alu_coverage::alu_cg
+
+
+VARIABLE       EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_opcode      8        0         8       100.00  100  1      1        0                    
+cp_a           5        0         5       100.00  100  1      1        0                    
+cp_b           5        0         5       100.00  100  1      1        0                    
+cp_flags_sign  2        0         2       100.00  100  1      1        0                    
+cp_flags_carry 2        0         2       100.00  100  1      1        0                    
+cp_flags_zero  2        0         2       100.00  100  1      1        0                    
+cp_flags_ovf   2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group  $unit::alu_coverage::alu_cg
+
+
+CROSS         EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cr_opcode_a_b 200      138       62      31.00   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_opcode
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 8        0         8       100.00  
+
+
+User Defined Bins for cp_opcode
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+op_shr 23    1        --              
+op_shl 31    1        --              
+op_not 39    1        --              
+op_xor 23    1        --              
+op_or  39    1        --              
+op_and 39    1        --              
+sub    29    1        --              
+add    28    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_a
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_a
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+others  198   1        --              
+neg_min 15    1        --              
+pos_max 12    1        --              
+ones    10    1        --              
+zeros   16    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_b
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_b
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+others  206   1        --              
+neg_min 11    1        --              
+pos_max 12    1        --              
+ones    9     1        --              
+zeros   13    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_flags_sign
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_flags_sign
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+clr  145   1        --              
+set  106   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_flags_carry
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_flags_carry
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+clr  193   1        --              
+set  58    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_flags_zero
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_flags_zero
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+clr  228   1        --              
+set  23    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_flags_ovf
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_flags_ovf
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+clr  236   1        --              
+set  15    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cr_opcode_a_b
+
+
+Samples crossed: cp_opcode cp_a cp_b
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 200      138       62      31.00   138     
+
+
+Automatically Generated Cross Bins for cr_opcode_a_b
+
+
+Element holes
+
+cp_opcode cp_a      cp_b COUNT AT LEAST NUMBER 
+[op_shl]  [zeros]   *    --    --       5      
+[op_not]  [ones]    *    --    --       5      
+[op_xor]  [ones]    *    --    --       5      
+[op_or]   [pos_max] *    --    --       5      
+[op_and]  [ones]    *    --    --       5      
+[add]     [pos_max] *    --    --       5      
+
+
+Uncovered bins
+
+cp_opcode cp_a      cp_b                                COUNT AT LEAST NUMBER 
+[op_shr]  [others]  [neg_min]                           0     1        1      
+[op_shr]  [others]  [zeros]                             0     1        1      
+[op_shr]  [neg_min] [neg_min , pos_max , ones , zeros]  --    --       4      
+[op_shr]  [pos_max] [others , neg_min , pos_max]        --    --       3      
+[op_shr]  [ones]    [neg_min , pos_max]                 --    --       2      
+[op_shr]  [ones]    [zeros]                             0     1        1      
+[op_shr]  [zeros]   [neg_min , pos_max , ones]          --    --       3      
+[op_shl]  [others]  [neg_min , pos_max , ones , zeros]  --    --       4      
+[op_shl]  [neg_min] [others , neg_min]                  --    --       2      
+[op_shl]  [neg_min] [zeros]                             0     1        1      
+[op_shl]  [pos_max] [neg_min]                           0     1        1      
+[op_shl]  [pos_max] [ones , zeros]                      --    --       2      
+[op_shl]  [ones]    [others]                            0     1        1      
+[op_shl]  [ones]    [pos_max , ones , zeros]            --    --       3      
+[op_not]  [others]  [neg_min , pos_max , ones , zeros]  --    --       4      
+[op_not]  [neg_min] [ones , zeros]                      --    --       2      
+[op_not]  [pos_max] [neg_min , pos_max , ones]          --    --       3      
+[op_not]  [zeros]   [pos_max , ones , zeros]            --    --       3      
+[op_xor]  [others]  [pos_max , ones , zeros]            --    --       3      
+[op_xor]  [neg_min] [others , neg_min , pos_max , ones] --    --       4      
+[op_xor]  [pos_max] [others , neg_min]                  --    --       2      
+[op_xor]  [pos_max] [ones , zeros]                      --    --       2      
+[op_xor]  [zeros]   [neg_min , pos_max , ones , zeros]  --    --       4      
+[op_or]   [others]  [neg_min]                           0     1        1      
+[op_or]   [others]  [ones , zeros]                      --    --       2      
+[op_or]   [neg_min] [ones , zeros]                      --    --       2      
+[op_or]   [ones]    [neg_min]                           0     1        1      
+[op_or]   [ones]    [ones , zeros]                      --    --       2      
+[op_or]   [zeros]   [others , neg_min , pos_max]        --    --       3      
+[op_and]  [others]  [pos_max , ones , zeros]            --    --       3      
+[op_and]  [neg_min] [others , neg_min , pos_max]        --    --       3      
+[op_and]  [neg_min] [zeros]                             0     1        1      
+[op_and]  [pos_max] [others]                            0     1        1      
+[op_and]  [pos_max] [pos_max , ones]                    --    --       2      
+[op_and]  [zeros]   [neg_min]                           0     1        1      
+[op_and]  [zeros]   [ones]                              0     1        1      
+[sub]     [others]  [neg_min]                           0     1        1      
+[sub]     [others]  [zeros]                             0     1        1      
+[sub]     [neg_min] [others]                            0     1        1      
+[sub]     [neg_min] [pos_max , ones , zeros]            --    --       3      
+[sub]     [pos_max] [neg_min , pos_max , ones]          --    --       3      
+[sub]     [ones]    [others]                            0     1        1      
+[sub]     [ones]    [pos_max , ones , zeros]            --    --       3      
+[sub]     [zeros]   [others , neg_min]                  --    --       2      
+[sub]     [zeros]   [ones]                              0     1        1      
+[add]     [others]  [neg_min , pos_max , ones , zeros]  --    --       4      
+[add]     [neg_min] [others]                            0     1        1      
+[add]     [neg_min] [pos_max , ones , zeros]            --    --       3      
+[add]     [ones]    [neg_min , pos_max]                 --    --       2      
+[add]     [zeros]   [others]                            0     1        1      
+[add]     [zeros]   [pos_max , ones]                    --    --       2      
+
+
+Covered bins
+
+cp_opcode cp_a    cp_b    COUNT AT LEAST 
+op_shr    others  pos_max 1     1        
+op_shr    others  others  12    1        
+op_shr    others  ones    1     1        
+op_shr    neg_min others  1     1        
+op_shr    pos_max ones    1     1        
+op_shr    pos_max zeros   1     1        
+op_shr    ones    others  1     1        
+op_shr    ones    ones    2     1        
+op_shr    zeros   others  2     1        
+op_shr    zeros   zeros   1     1        
+op_shl    others  others  26    1        
+op_shl    neg_min ones    1     1        
+op_shl    neg_min pos_max 1     1        
+op_shl    pos_max pos_max 1     1        
+op_shl    pos_max others  1     1        
+op_shl    ones    neg_min 1     1        
+op_not    others  others  30    1        
+op_not    neg_min others  1     1        
+op_not    neg_min pos_max 2     1        
+op_not    neg_min neg_min 1     1        
+op_not    pos_max others  2     1        
+op_not    pos_max zeros   1     1        
+op_not    zeros   others  1     1        
+op_not    zeros   neg_min 1     1        
+op_xor    others  others  18    1        
+op_xor    others  neg_min 1     1        
+op_xor    neg_min zeros   2     1        
+op_xor    pos_max pos_max 1     1        
+op_xor    zeros   others  1     1        
+op_or     others  others  31    1        
+op_or     others  pos_max 1     1        
+op_or     neg_min others  1     1        
+op_or     neg_min pos_max 1     1        
+op_or     neg_min neg_min 1     1        
+op_or     ones    others  1     1        
+op_or     ones    pos_max 1     1        
+op_or     zeros   ones    1     1        
+op_or     zeros   zeros   1     1        
+op_and    others  others  32    1        
+op_and    others  neg_min 1     1        
+op_and    neg_min ones    1     1        
+op_and    pos_max zeros   1     1        
+op_and    pos_max neg_min 1     1        
+op_and    zeros   others  1     1        
+op_and    zeros   pos_max 1     1        
+op_and    zeros   zeros   1     1        
+sub       others  pos_max 1     1        
+sub       others  others  20    1        
+sub       others  ones    1     1        
+sub       neg_min neg_min 1     1        
+sub       pos_max others  1     1        
+sub       pos_max zeros   1     1        
+sub       ones    neg_min 1     1        
+sub       zeros   pos_max 1     1        
+sub       zeros   zeros   2     1        
+add       others  others  22    1        
+add       neg_min neg_min 1     1        
+add       ones    others  1     1        
+add       ones    ones    1     1        
+add       ones    zeros   1     1        
+add       zeros   neg_min 1     1        
+add       zeros   zeros   1     1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.alu_cg
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 91.38 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                        
+ 91.38  91.38    1      100    1        1            64           64                    $unit::alu_coverage::alu_cg 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.alu_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 26       0         26      100.00  
+Crosses   200      138       62      31.00   
+
+
+Variables for Group Instance  tb_top.me.obj.alu_cg
+
+
+VARIABLE       EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_opcode      8        0         8       100.00  100  1      1        0                    
+cp_a           5        0         5       100.00  100  1      1        0                    
+cp_b           5        0         5       100.00  100  1      1        0                    
+cp_flags_sign  2        0         2       100.00  100  1      1        0                    
+cp_flags_carry 2        0         2       100.00  100  1      1        0                    
+cp_flags_zero  2        0         2       100.00  100  1      1        0                    
+cp_flags_ovf   2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  tb_top.me.obj.alu_cg
+
+
+CROSS         EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cr_opcode_a_b 200      138       62      31.00   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_opcode
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 8        0         8       100.00  
+
+
+User Defined Bins for cp_opcode
+
+
+Bins
+
+NAME   COUNT AT LEAST SUBSUMED VALUES 
+op_shr 23    1        --              
+op_shl 31    1        --              
+op_not 39    1        --              
+op_xor 23    1        --              
+op_or  39    1        --              
+op_and 39    1        --              
+sub    29    1        --              
+add    28    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_a
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_a
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+others  198   1        --              
+neg_min 15    1        --              
+pos_max 12    1        --              
+ones    10    1        --              
+zeros   16    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_b
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_b
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+others  206   1        --              
+neg_min 11    1        --              
+pos_max 12    1        --              
+ones    9     1        --              
+zeros   13    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_flags_sign
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_flags_sign
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+clr  145   1        --              
+set  106   1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_flags_carry
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_flags_carry
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+clr  193   1        --              
+set  58    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_flags_zero
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_flags_zero
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+clr  228   1        --              
+set  23    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_flags_ovf
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_flags_ovf
+
+
+Bins
+
+NAME COUNT AT LEAST SUBSUMED VALUES 
+clr  236   1        --              
+set  15    1        --              
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cr_opcode_a_b
+
+
+Samples crossed: cp_opcode cp_a cp_b
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 200      138       62      31.00   138     
+
+
+Automatically Generated Cross Bins for cr_opcode_a_b
+
+
+Element holes
+
+cp_opcode cp_a      cp_b COUNT AT LEAST NUMBER 
+[op_shl]  [zeros]   *    --    --       5      
+[op_not]  [ones]    *    --    --       5      
+[op_xor]  [ones]    *    --    --       5      
+[op_or]   [pos_max] *    --    --       5      
+[op_and]  [ones]    *    --    --       5      
+[add]     [pos_max] *    --    --       5      
+
+
+Uncovered bins
+
+cp_opcode cp_a      cp_b                                COUNT AT LEAST NUMBER 
+[op_shr]  [others]  [neg_min]                           0     1        1      
+[op_shr]  [others]  [zeros]                             0     1        1      
+[op_shr]  [neg_min] [neg_min , pos_max , ones , zeros]  --    --       4      
+[op_shr]  [pos_max] [others , neg_min , pos_max]        --    --       3      
+[op_shr]  [ones]    [neg_min , pos_max]                 --    --       2      
+[op_shr]  [ones]    [zeros]                             0     1        1      
+[op_shr]  [zeros]   [neg_min , pos_max , ones]          --    --       3      
+[op_shl]  [others]  [neg_min , pos_max , ones , zeros]  --    --       4      
+[op_shl]  [neg_min] [others , neg_min]                  --    --       2      
+[op_shl]  [neg_min] [zeros]                             0     1        1      
+[op_shl]  [pos_max] [neg_min]                           0     1        1      
+[op_shl]  [pos_max] [ones , zeros]                      --    --       2      
+[op_shl]  [ones]    [others]                            0     1        1      
+[op_shl]  [ones]    [pos_max , ones , zeros]            --    --       3      
+[op_not]  [others]  [neg_min , pos_max , ones , zeros]  --    --       4      
+[op_not]  [neg_min] [ones , zeros]                      --    --       2      
+[op_not]  [pos_max] [neg_min , pos_max , ones]          --    --       3      
+[op_not]  [zeros]   [pos_max , ones , zeros]            --    --       3      
+[op_xor]  [others]  [pos_max , ones , zeros]            --    --       3      
+[op_xor]  [neg_min] [others , neg_min , pos_max , ones] --    --       4      
+[op_xor]  [pos_max] [others , neg_min]                  --    --       2      
+[op_xor]  [pos_max] [ones , zeros]                      --    --       2      
+[op_xor]  [zeros]   [neg_min , pos_max , ones , zeros]  --    --       4      
+[op_or]   [others]  [neg_min]                           0     1        1      
+[op_or]   [others]  [ones , zeros]                      --    --       2      
+[op_or]   [neg_min] [ones , zeros]                      --    --       2      
+[op_or]   [ones]    [neg_min]                           0     1        1      
+[op_or]   [ones]    [ones , zeros]                      --    --       2      
+[op_or]   [zeros]   [others , neg_min , pos_max]        --    --       3      
+[op_and]  [others]  [pos_max , ones , zeros]            --    --       3      
+[op_and]  [neg_min] [others , neg_min , pos_max]        --    --       3      
+[op_and]  [neg_min] [zeros]                             0     1        1      
+[op_and]  [pos_max] [others]                            0     1        1      
+[op_and]  [pos_max] [pos_max , ones]                    --    --       2      
+[op_and]  [zeros]   [neg_min]                           0     1        1      
+[op_and]  [zeros]   [ones]                              0     1        1      
+[sub]     [others]  [neg_min]                           0     1        1      
+[sub]     [others]  [zeros]                             0     1        1      
+[sub]     [neg_min] [others]                            0     1        1      
+[sub]     [neg_min] [pos_max , ones , zeros]            --    --       3      
+[sub]     [pos_max] [neg_min , pos_max , ones]          --    --       3      
+[sub]     [ones]    [others]                            0     1        1      
+[sub]     [ones]    [pos_max , ones , zeros]            --    --       3      
+[sub]     [zeros]   [others , neg_min]                  --    --       2      
+[sub]     [zeros]   [ones]                              0     1        1      
+[add]     [others]  [neg_min , pos_max , ones , zeros]  --    --       4      
+[add]     [neg_min] [others]                            0     1        1      
+[add]     [neg_min] [pos_max , ones , zeros]            --    --       3      
+[add]     [ones]    [neg_min , pos_max]                 --    --       2      
+[add]     [zeros]   [others]                            0     1        1      
+[add]     [zeros]   [pos_max , ones]                    --    --       2      
+
+
+Covered bins
+
+cp_opcode cp_a    cp_b    COUNT AT LEAST 
+op_shr    others  pos_max 1     1        
+op_shr    others  others  12    1        
+op_shr    others  ones    1     1        
+op_shr    neg_min others  1     1        
+op_shr    pos_max ones    1     1        
+op_shr    pos_max zeros   1     1        
+op_shr    ones    others  1     1        
+op_shr    ones    ones    2     1        
+op_shr    zeros   others  2     1        
+op_shr    zeros   zeros   1     1        
+op_shl    others  others  26    1        
+op_shl    neg_min ones    1     1        
+op_shl    neg_min pos_max 1     1        
+op_shl    pos_max pos_max 1     1        
+op_shl    pos_max others  1     1        
+op_shl    ones    neg_min 1     1        
+op_not    others  others  30    1        
+op_not    neg_min others  1     1        
+op_not    neg_min pos_max 2     1        
+op_not    neg_min neg_min 1     1        
+op_not    pos_max others  2     1        
+op_not    pos_max zeros   1     1        
+op_not    zeros   others  1     1        
+op_not    zeros   neg_min 1     1        
+op_xor    others  others  18    1        
+op_xor    others  neg_min 1     1        
+op_xor    neg_min zeros   2     1        
+op_xor    pos_max pos_max 1     1        
+op_xor    zeros   others  1     1        
+op_or     others  others  31    1        
+op_or     others  pos_max 1     1        
+op_or     neg_min others  1     1        
+op_or     neg_min pos_max 1     1        
+op_or     neg_min neg_min 1     1        
+op_or     ones    others  1     1        
+op_or     ones    pos_max 1     1        
+op_or     zeros   ones    1     1        
+op_or     zeros   zeros   1     1        
+op_and    others  others  32    1        
+op_and    others  neg_min 1     1        
+op_and    neg_min ones    1     1        
+op_and    pos_max zeros   1     1        
+op_and    pos_max neg_min 1     1        
+op_and    zeros   others  1     1        
+op_and    zeros   pos_max 1     1        
+op_and    zeros   zeros   1     1        
+sub       others  pos_max 1     1        
+sub       others  others  20    1        
+sub       others  ones    1     1        
+sub       neg_min neg_min 1     1        
+sub       pos_max others  1     1        
+sub       pos_max zeros   1     1        
+sub       ones    neg_min 1     1        
+sub       zeros   pos_max 1     1        
+sub       zeros   zeros   2     1        
+add       others  others  22    1        
+add       neg_min neg_min 1     1        
+add       ones    others  1     1        
+add       ones    ones    1     1        
+add       ones    zeros   1     1        
+add       zeros   neg_min 1     1        
+add       zeros   zeros   1     1        
+
+

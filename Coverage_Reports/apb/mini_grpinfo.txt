@@ -1,0 +1,150 @@
+Group : $unit::apb_coverage::cg_apb
+
+===============================================================================
+Group : $unit::apb_coverage::cg_apb
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 40.62 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/ag10276/Documents/Spring26/gen_script_compile_attempt1/prepped/apb/mini/mini_apb_uvm_tb_all.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   $unit::apb_coverage::cg_apb
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 68       61        7       52.08   
+Crosses   128      120       8       6.25    
+
+
+Variables for Group  $unit::apb_coverage::cg_apb
+
+
+VARIABLE  EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_addr   64       60        4       6.25    100  1      1        64                   
+cp_write  2        0         2       100.00  100  1      1        2                    
+cp_enable 2        1         1       50.00   100  1      1        2                    
+
+
+Crosses for Group  $unit::apb_coverage::cg_apb
+
+
+CROSS        EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+addr_x_write 128      120       8       6.25    100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_addr
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 64       60        4       6.25    
+
+
+Automatically Generated Bins for cp_addr
+
+
+Uncovered bins
+
+NAME                                                        COUNT AT LEAST SUBSUMED VALUES                 NUMBER 
+[auto[67108864:134217727] - auto[671088640:738197503]]      --    --       { [ 67108864 : 738197503 ] }    10     
+[auto[805306368:872415231] - auto[1811939328:1879048191]]   --    --       { [ 805306368 : 1879048191 ] }  16     
+[auto[1946157056:2013265919] - auto[3825205248:3892314111]] --    --       { [ 1946157056 : 3892314111 ] } 29     
+[auto[3959422976:4026531839] - auto[4227858432:4294967295]] --    --       { [ 3959422976 : 4294967295 ] } 5      
+
+
+Covered bins
+
+NAME                        COUNT AT LEAST SUBSUMED VALUES                 
+auto[0:67108863]            2     1        { [ 0 : 67108863 ] }            
+auto[738197504:805306367]   2     1        { [ 738197504 : 805306367 ] }   
+auto[1879048192:1946157055] 2     1        { [ 1879048192 : 1946157055 ] } 
+auto[3892314112:3959422975] 2     1        { [ 3892314112 : 3959422975 ] } 
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_write
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        0         2       100.00  
+
+
+Automatically Generated Bins for cp_write
+
+
+Bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[0] 4     1        { [ 0 ] }       
+auto[1] 4     1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_enable
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        1         1       50.00   
+
+
+Automatically Generated Bins for cp_enable
+
+
+Uncovered bins
+
+NAME      COUNT AT LEAST SUBSUMED VALUES NUMBER 
+[auto[0]] 0     1        [{ [ 0 ] }]     1      
+
+
+Covered bins
+
+NAME    COUNT AT LEAST SUBSUMED VALUES 
+auto[1] 8     1        { [ 1 ] }       
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross addr_x_write
+
+
+Samples crossed: cp_addr cp_write
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 128      120       8       6.25    120     
+
+
+Automatically Generated Cross Bins for addr_x_write
+
+
+Element holes
+
+cp_addr                                                     cp_write COUNT AT LEAST NUMBER 
+[auto[67108864:134217727] - auto[671088640:738197503]]      *        --    --       20     
+[auto[805306368:872415231] - auto[1811939328:1879048191]]   *        --    --       32     
+[auto[1946157056:2013265919] - auto[3825205248:3892314111]] *        --    --       58     
+[auto[3959422976:4026531839] - auto[4227858432:4294967295]] *        --    --       10     
+
+
+Covered bins
+
+cp_addr                     cp_write COUNT AT LEAST 
+auto[0:67108863]            auto[0]  1     1        
+auto[0:67108863]            auto[1]  1     1        
+auto[738197504:805306367]   auto[0]  1     1        
+auto[738197504:805306367]   auto[1]  1     1        
+auto[1879048192:1946157055] auto[0]  1     1        
+auto[1879048192:1946157055] auto[1]  1     1        
+auto[3892314112:3959422975] auto[0]  1     1        
+auto[3892314112:3959422975] auto[1]  1     1        
+
+
